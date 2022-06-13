@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  nullDialogue: 0
+  unique: 0
+  seen: 1
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000030000000500000004000000
+  Lines:
+  - speaker: 4
+    speakerEmotion: 3
+    otherReactions: []
+    text: Lord Deddington...he's...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    text: Still asleep!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: ...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: N-No, I think Lord Deddington is...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: (Here it comes.)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    text: <b><color=red>DEAD!!</b></color=red>.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 1
+    otherReactions: []
+    text: <i>OH PICKLES, HE'S <color=red>DEAD</b>!</i>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 1
+    otherReactions: []
+    text: HE'S DEAD!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: ...*cough*
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 3
+    otherReactions: []
+    text: How could this happen!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: (This isn't good...)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 3
+    otherReactions: []
+    text: HE NEEDS A PROPER BURIAL!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    text: ...Who could do such a thing?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: A good question, <color=#00ffffff>General Tuskson</color>.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 2
+    otherReactions: []
+    text: <b>!?</b>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 2
+    otherReactions: []
+    text: <i>Is Slotheleus dying as well now???</i>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 3
+    otherReactions: []
+    text: '?'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 2
+    otherReactions: []
+    text: '?'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: "It's so stuffy in here, \na pleasure to <i> see </i> all of you."
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 2
+    otherReactions: []
+    text: Slotheleus is...?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: Allow me to introduce myself, I'm <color=orange>Eva Dence</color>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: <color=orange>The great detective
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    text: <b>THE GREAT DETECTIVE?</b>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 1
+    otherReactions: []
+    text: A DISGUISE!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 1
+    otherReactions: []
+    text: A <i>WOMEN</i>!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 2
+  availableAnswers: []
+  options:
+  - text: Ms. Dence, Shall I change your name in the visitors' book?
+    reaction: {fileID: 11400000}
+    trigger: {fileID: 0}
+  - text: Oh, apologies, you are not invited to this party please leave immediately.
+    reaction: {fileID: 11400000, guid: ba0e21300ae241a47b53442ddec8f349, type: 2}
+    trigger: {fileID: 0}
+  - text: '[...]'
+    reaction: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
+    trigger: {fileID: 0}

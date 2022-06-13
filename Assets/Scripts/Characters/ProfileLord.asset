@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e1cc7fdb1bbcb4b95b4e73eab4c20f, type: 3}
+  m_Name: ProfileLord
+  m_EditorClassIdentifier: 
+  identity: 1
+  name: Lord Deddington
+  Portrait: {fileID: 21300000, guid: 787b4397ec8687c4d8e9eb359330aaa6, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  knownToPlayer: 1
+  currentRoom: 0
+  Timetable:
+  - startHour: 0
+    room: 9
+    state: 0
+  connectedClues:
+  - {fileID: 11400000, guid: 0763128f3b0f3aa448bbda9cf999a8cf, type: 2}
+  - {fileID: 11400000, guid: 33cf64ff6183bb14aaa2561d344a6832, type: 2}
+  - {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+  dialogues:
+  - {fileID: 11400000, guid: 3d7103416f326fe42ad6c811b99d606e, type: 2}
+  - {fileID: 11400000, guid: aa10a33976acafe42b2c75c3c68eb044, type: 2}
+  - {fileID: 11400000, guid: 19afe3b75abdecd4db3edc6a0564c10c, type: 2}
+  nullDialogue: {fileID: 11400000, guid: e12a85367e885a44d8f9ff86cd5c0e82, type: 2}
+  nullDialogueReaction: {fileID: 11400000, guid: 85fe4317da07b6046ae08aaf4b430ccd, type: 2}

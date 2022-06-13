@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: ChessGameAnswer
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 9, y: 24}
+  includedCharacters: 0000000004000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Please apologize my intrusion, General, what where you pondering about
+      just now?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: No need to apologize, I was thinking about the last time myself and the
+      Lord played chess, in the library.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: <color=grey>(That's right, this Walrus liked playing chess with the Lord,
+      and never lost...perhaps</color><color=#00ff00ff> I should look into this chess
+      game</color>)
+    fixedClue: {fileID: 11400000, guid: 33cf64ff6183bb14aaa2561d344a6832, type: 2}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: "I beat him, as always. \nEven when I only played with half the board.\nI
+      will never forget the last words he said to me."
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: '"Next time, you only get pawns, to balance it out"'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: Hmmm, Deddington...I would have loved to see the day.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: 'I am deeply sorry for your loss.
+
+      Surely, the match would have gone
+      down in history.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: GardenerFrontyard
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines:
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: <i>Hello Hugh</i>, I'm up here!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: I know we have a murder case on our hands but a clean lawn is still important!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: I'm sure that how Lord Deddington would have wanted it.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: (Deddington did care about this lawn quite a lot)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 0
+  availableAnswers: []
+  options: []

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: ChessHint
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: I saw Lord Deddington prevail against the General in a game of chess before
+      his unfortunate passing.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: General Edna Tuskson herself <color=#F53763><i>lost </i></color>against
+      Lord Deddington!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: I find that hard to believe.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: 'In fact, I heard the score between the two is <b>3245-0</b>.
+
+      Edna
+      beating out Deddington<i>just barely</i>.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Well, then this makes it 3245-1.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Seems like the Lord could have <color=#00ff00ff>one last great achievement</color>
+      before his passing.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: '!!
+
+      Perhaps...'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Are you suggesting, that...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: Yes, perhaps...<color=#F53763>this loss</color> has something to do with
+      the murder case!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: Edna is a sore loser, quick to lose her temper, someone who clings onto
+      <color=#F53763>a defeat</color> for years.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: I'm afraid I've grown more suspicious of Edna than I would have liked.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    text: Thank you for sharing this with me, Hugh.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Oh, always happy to help.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
+  availableAnswers: []
+  options: []

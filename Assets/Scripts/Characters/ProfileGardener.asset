@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e1cc7fdb1bbcb4b95b4e73eab4c20f, type: 3}
+  m_Name: ProfileGardener
+  m_EditorClassIdentifier: 
+  identity: 5
+  name: Gertie Potts
+  Portrait: {fileID: 21300000, guid: b8a3bdae32f15534198b68c038138b78, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  knownToPlayer: 1
+  currentRoom: 0
+  Timetable:
+  - startHour: 0
+    room: 0
+    state: 0
+  - startHour: 6
+    room: 2
+    state: 0
+  - startHour: 11
+    room: 14
+    state: 2
+  - startHour: 13
+    room: 2
+    state: 0
+  - startHour: 14
+    room: 1
+    state: 3
+  - startHour: 16
+    room: 2
+    state: 0
+  - startHour: 19
+    room: 2
+    state: 0
+  - startHour: 20
+    room: 2
+    state: 1
+  - startHour: 23
+    room: 2
+    state: 0
+  connectedClues:
+  - {fileID: 11400000, guid: 13449a48fc54b8a42b091f831a0fe43b, type: 2}
+  - {fileID: 11400000, guid: 715b211f33ae38843904f488c9bb82bb, type: 2}
+  - {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
+  dialogues:
+  - {fileID: 11400000, guid: 26c75a0856f33144d882b4398c43a782, type: 2}
+  nullDialogue: {fileID: 11400000, guid: baf9266516cd99346b69f4caa370502a, type: 2}
+  nullDialogueReaction: {fileID: 11400000, guid: b57f053a4d7d6514a94f7632f3b00e89, type: 2}

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: EdnaSuprised
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: ea1e031bac3080e49a8c8a7ee6b4ea77, type: 2}
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000004000000
+  Lines:
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    text: <b>JA, BEIM KLABAUTERMANN </b>
+    fixedClue: {fileID: 11400000, guid: 8d30eec8a0660f04682baa26b7d30a12, type: 2}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    text: That gold bar  must be at least as heavy as half of my medals.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 2
+    otherReactions: []
+    text: Well, Butler you have certainly proven your strength to this High General
+      Marshal Sergeant.
+    fixedClue: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: Tell me, what is your Name?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Hugh Diddit, Ma'am.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: (She should know this...was she not here 3 days ago?)
+    fixedClue: {fileID: 11400000, guid: 440426e73105c8d49baa83a8da742955, type: 2}
+    clueHidden: 1
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    text: Very well, I'll call you...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 2
+    otherReactions: []
+    text: <b> THE BUTLER DIDDIT </b>
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: ...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []

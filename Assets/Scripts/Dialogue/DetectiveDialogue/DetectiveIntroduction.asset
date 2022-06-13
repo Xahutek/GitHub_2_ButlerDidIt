@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: DetectiveIntroduction
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  nullDialogue: 0
+  unique: 0
+  seen: 1
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000
+  Lines:
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: Ladies and Gentlemen, we have murder case on our hands, specifically,
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 2
+    otherReactions: []
+    text: someone commited <i> bougiecide </i>.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 2
+  availableAnswers: []
+  options:
+  - text: ...Bougiecide?
+    reaction: {fileID: 11400000, guid: 24989956b0a2a024483df4a9c80695ce, type: 2}
+    trigger: {fileID: 0}
+  - text: '[Say Nothing]'
+    reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
+    trigger: {fileID: 0}
