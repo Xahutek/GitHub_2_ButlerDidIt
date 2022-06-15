@@ -8,7 +8,7 @@ using TMPro;
 public class Bubble : MonoBehaviour
 {
     public RectTransform container;
-    bool isOpen;
+    public bool isOpen;
     [HideInInspector]public Vector2 Root;
     public bool animated = true;
 
@@ -17,7 +17,7 @@ public class Bubble : MonoBehaviour
         get { return container.sizeDelta.y; }
     }
 
-    Tween
+    protected Tween
         MoveTween;
 
     public void Show(Vector2 Root, float heightStack)
@@ -51,7 +51,7 @@ public class Bubble : MonoBehaviour
         else
             transform.position = pos;
     }
-    public void Disappear()
+    public virtual void Disappear()
     {
         isOpen = false;
 
@@ -61,7 +61,7 @@ public class Bubble : MonoBehaviour
         Root = Vector2.zero;
     }
 
-    Coroutine scaleRoutine=null;
+    protected Coroutine scaleRoutine=null;
     public IEnumerator Scale(float time, bool on)
     {
         float startScale = transform.localScale.y;

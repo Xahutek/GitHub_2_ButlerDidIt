@@ -295,8 +295,11 @@ public class DialogueManager : MonoBehaviour
         InputBubble.transform.GetChild(0).localScale = Vector3.one * BaseScale;
         ClueBubble.transform.GetChild(0).localScale = Vector3.one * BaseScale;
 
-        if (gainedClue == null)
+        if (gainedClue == null&&ClueBubble.isOpen)
+        {
             ClueBubble.Disappear();
+            yield return new WaitForSeconds(0.75f*speed);
+        }
 
         wasIntermitted = false;
 

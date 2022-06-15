@@ -3096,15 +3096,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02151fba65fa8594b83f5f73358b651c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1373673874664567377 stripped
+--- !u!114 &4963398043311790652 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1881608211948627879, guid: 9f579b9b3a0ba684cb068f178237a0e4, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5615176842048540618, guid: 9f579b9b3a0ba684cb068f178237a0e4, type: 3}
   m_PrefabInstance: {fileID: 652060627048224246}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd105057cebfca04ebdd4721f1247cdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 398c397d56a482b469c137d4692c197f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6881654944036831977 stripped
@@ -3197,11 +3197,13 @@ MonoBehaviour:
   - {fileID: 5504765712844799941}
   arrivedAtEnd: 0
   InputBubble: {fileID: 6881654944036831977}
-  ClueBubble: {fileID: 1373673874664567377}
+  ClueBubble: {fileID: 4963398043311790652}
   OptionsBubbles:
   - {fileID: 7212231703830740840}
   - {fileID: 4085087822938384540}
   - {fileID: 4085087823927794834}
+  gainedClue: {fileID: 0}
+  wasIntermitted: 0
   profile: {fileID: 0}
 --- !u!1001 &4412992797190698244
 PrefabInstance:
