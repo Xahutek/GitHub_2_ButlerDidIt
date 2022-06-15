@@ -345,6 +345,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     Dialogue.Option[] options = dialogue.options;
                     ClearAnimations();
+                    if (this==eventMain)
                     foreach (InteractableCharacter c in CharacterObjects)
                     {
                         if (c.character == Character.Butler)
