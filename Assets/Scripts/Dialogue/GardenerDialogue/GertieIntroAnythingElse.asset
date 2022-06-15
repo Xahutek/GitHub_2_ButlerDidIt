@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroductionIKilledTheLord
+  m_Name: GertieIntroAnythingElse
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -24,10 +24,22 @@ MonoBehaviour:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
-    text: ...Oh no!
+    text: ...Aaaanything else?
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 3
+  ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: What are your plans for today?
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: ' General Tuskson and Lord Tyrell are already here.'
+    reaction: {fileID: 0}
+    trigger: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
+    rewards: []
+  - text: Tell me about Slotheleus Sus.
+    reaction: {fileID: 0}
+    trigger: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
+    rewards: []

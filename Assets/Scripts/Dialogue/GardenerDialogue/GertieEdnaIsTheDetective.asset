@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroductionIKilledTheLord
+  m_Name: GertieEdnaIsTheDetective
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -21,13 +21,31 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: ...Oh no!
+    text: I think Edna might be a detective
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: ' I''m sure she has stories about being a detective on sea.'
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: Perhaps this Slotheleus gentleman?
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: I think Edna might be a detective
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: 'It''s Tyrell, right? '
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []

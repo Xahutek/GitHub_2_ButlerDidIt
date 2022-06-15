@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroductionIKilledTheLord
+  m_Name: GertieEdnaAndTyrellAreHere
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -21,10 +21,30 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: Edna and Tyrell are already here
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
-    text: ...Oh no!
+    text: Splendid, I will say hello as soon as I'm done here.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: 'They haven''t met in such a long time!
+
+'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    text: It's been a whole 10 days since they last saw each other!
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

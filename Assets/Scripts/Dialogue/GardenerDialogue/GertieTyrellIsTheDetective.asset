@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroduction
+  m_Name: GertieTyrellIsTheDetective
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -19,53 +19,45 @@ MonoBehaviour:
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000005000000
+  includedCharacters: 
   Lines:
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: ...
+    text: It's Tyrell, right?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    text: I mean...he LOOKS like one today, doesn't he?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
-    text: '!'
+    text: Hmmm...maybe.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
-    text: Good Morning to you, Hugh!
+    text: Perhaps he just likes detective stories?
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    text: Does the Lord have any special instructions towards the garden for me?
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    text: 'For todays suprise party
-
-'
-    fixedClue: {fileID: 11400000, guid: a724cea2f55e3394dac3c568832bbb6c, type: 2}
-    clueHidden: 0
-  ending: 2
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: The Lord is dead and I killed him
-    reaction: {fileID: 11400000, guid: e2beda21d1436e443971d024a90aa498, type: 2}
-    trigger: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
-    rewards: []
-  - text: No
-    reaction: {fileID: 11400000, guid: c97a87a5712a1174497defe7e2608c0f, type: 2}
+  - text: Perhaps this Slotheleus gentleman?
+    reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []
-  - text: Yes
-    reaction: {fileID: 11400000, guid: 338d1ebdd22e4bc4e8b3438836e4d9f1, type: 2}
+  - text: I think Edna might be a detective
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: 'It''s Tyrell, right? '
+    reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []
