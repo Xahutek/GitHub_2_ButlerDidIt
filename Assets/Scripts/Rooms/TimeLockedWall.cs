@@ -5,7 +5,7 @@ using UnityEngine;
 public class TimeLockedWall : MonoBehaviour
 {
     public bool available;
-    public Vector2 AvailableHours;
+    public Vector2 AvailableHours = new Vector2(0, 24);
     public string LockMessage;
     public BoxCollider2D col;
 
