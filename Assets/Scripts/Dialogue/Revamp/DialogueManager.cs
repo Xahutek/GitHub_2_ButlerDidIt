@@ -283,7 +283,8 @@ public class DialogueManager : MonoBehaviour
         List<Dialogue.Line> lines = new List<Dialogue.Line>();
         lines.AddRange(dialogue.Lines);
 
-        arrivedAtEnd = line >= lines.Count;
+        bool hasClueQueued = gainedClue != null;
+        arrivedAtEnd = line >= lines.Count&&!hasClueQueued;
         float height = VerticalBaseHeight;
 
         foreach (Bubble B in bubbles)
@@ -317,7 +318,7 @@ public class DialogueManager : MonoBehaviour
             {
                 B.Disappear();
             }
-            else if (line >= lines.Count) //End
+            else if (line >= lines.Count&&!hasClueQueued) //End
             {
                 Debug.Log("Arrive at End");
 
@@ -366,11 +367,11 @@ public class DialogueManager : MonoBehaviour
 
                 height -= B.height * BaseScale + BoxVerticalSpacing;
             }
-            else if (line >= 0) //Positive > Line of this Dialogue
+            else if (line >= 0||hasClueQueued) //Positive > Line of this Dialogue
             {
                 Vector2 thisRoot = Locus;
 
-                if (isNew && gainedClue != null)
+                if (isNew && hasClueQueued)
                 {
                     //Vector2 thisRoot = Locus;
                     Dialogue.Line L = new Dialogue.Line(Character.Butler, gainedClue.name);
