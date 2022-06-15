@@ -113,7 +113,10 @@ public class Dialogue : ScriptableObject
         foreach (Option O in availableAnswers)
         {
             if (O.trigger == c)
+            {
                 answers.Add(O);
+                if (c is Item) { Item item = c as Item; item.givenAway = true; }
+            }
         }
         if (answers.Count == 0)
             return null;

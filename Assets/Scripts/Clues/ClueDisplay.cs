@@ -34,7 +34,7 @@ public class ClueDisplay : MonoBehaviour
     }
     public void Refresh(Item item)
     {
-        if (item == null)
+        if (item == null || item.givenAway)
         {
             Clear();
             return;
@@ -43,6 +43,7 @@ public class ClueDisplay : MonoBehaviour
         text.text = item.name;
         itemImage.sprite = item.picture;
         gameObject.SetActive(true);
+
     }
     public void Clear()
     {
