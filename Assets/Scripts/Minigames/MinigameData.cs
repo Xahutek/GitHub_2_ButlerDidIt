@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Calendar;
 
 public static class MinigameData
 {
     //Calendar
-    public static int daysCrossed = 13;
+    public static List<bool> calendar;
 
     //Chess
-    [System.Serializable] public class ChessFigure
+    [System.Serializable]
+    public class ChessFigure
     {
         public Vector2Int coordinates;
 
@@ -29,8 +31,8 @@ public static class MinigameData
         blackKing,
         whiteKing;
     public static ChessFigure[]
-        blackfigures= new ChessFigure[0],
-        whiteFigures= new ChessFigure[0];
+        blackfigures = new ChessFigure[0],
+        whiteFigures = new ChessFigure[0];
 
     public static void SaveTo(ChessBoard.GameManager manager)
     {
@@ -56,6 +58,6 @@ public static class MinigameData
 
     public static void SaveTo(Calendar.GameManager manager)
     {
-        daysCrossed = manager.daysCrossed;
+        calendar = manager.calendarDict;
     }
 }

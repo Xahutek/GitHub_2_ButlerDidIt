@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Calendar;
 
-[System.Serializable]public class ProgressFile
+[System.Serializable]
+public class ProgressFile
 {
     public bool Fresh;
     //Time
@@ -12,12 +14,14 @@ using UnityEngine;
     public float[] playerPosition;
 
     //Characters
-    [System.Serializable]public class Character_ProgressFile
+    [System.Serializable]
+    public class Character_ProgressFile
     {
         public Character identity;
         public bool knownToPlayer;
         public List<Dialogue_ProgressFile> dialogues;
-        [System.Serializable]public class Dialogue_ProgressFile
+        [System.Serializable]
+        public class Dialogue_ProgressFile
         {
             public string name;
             public bool seen;
@@ -105,12 +109,12 @@ using UnityEngine;
 #if UNITY_EDITOR
             inEditor = true;
 #endif
-            c.AlterKnown(Character.Butler, ButlerKnows,inEditor);
-            c.AlterKnown(Character.Detective, DetectiveKnows,inEditor);
-            c.AlterKnown(Character.Imposter, ImposterKnows,inEditor);
-            c.AlterKnown(Character.Tycoon, TycoonKnows,inEditor);
-            c.AlterKnown(Character.General, GeneralKnows,inEditor);
-            c.AlterKnown(Character.Gardener, GardenerKnows,inEditor);
+            c.AlterKnown(Character.Butler, ButlerKnows, inEditor);
+            c.AlterKnown(Character.Detective, DetectiveKnows, inEditor);
+            c.AlterKnown(Character.Imposter, ImposterKnows, inEditor);
+            c.AlterKnown(Character.Tycoon, TycoonKnows, inEditor);
+            c.AlterKnown(Character.General, GeneralKnows, inEditor);
+            c.AlterKnown(Character.Gardener, GardenerKnows, inEditor);
 
             if (c is Item)
                 (c as Item).givenAway = item_givenAway;
@@ -124,12 +128,13 @@ using UnityEngine;
     public class Minigames_ProgressFile
     {
         //Calendar
-        public int daysCrossed=13;
+        public List<bool> calendar;
 
         //Chess
-        [System.Serializable]public class SerializedVector2
+        [System.Serializable]
+        public class SerializedVector2
         {
-            public float x=0, y=0;
+            public float x = 0, y = 0;
 
             public SerializedVector2(float X, float Y)
             {
@@ -143,15 +148,20 @@ using UnityEngine;
             }
         }
         public SerializedVector2
-            blackKing= new SerializedVector2(0, 6),
-            whiteKing=new SerializedVector2(7,7);
+            blackKing = new SerializedVector2(0, 6),
+            whiteKing = new SerializedVector2(7, 7);
         public SerializedVector2[]
-            blackfigures= new SerializedVector2[0],
-            whiteFigures=new SerializedVector2[0];
+            blackfigures = new SerializedVector2[0],
+            whiteFigures = new SerializedVector2[0];
 
         public Minigames_ProgressFile()
         {
-            daysCrossed = 13;
+            calendar = new List<bool>();
+            for (int i = 0; i < 30; i++)
+            {
+                if (i < 13) calendar.Add(true);
+                else calendar.Add(false);
+            }
 
             blackKing = new SerializedVector2(0, 6);
             whiteKing = new SerializedVector2(7, 7);
@@ -162,23 +172,23 @@ using UnityEngine;
 
         public void Save()
         {
-            daysCrossed = MinigameData.daysCrossed;
+            calendar = MinigameData.calendar;
 
-            blackKing = new SerializedVector2(MinigameData.blackKing!=null?MinigameData.blackKing.coordinates:new Vector2(0,6));
-            whiteKing = new SerializedVector2(MinigameData.blackKing!=null?MinigameData.whiteKing.coordinates:new Vector2(7,7));
+            blackKing = new SerializedVector2(MinigameData.blackKing != null ? MinigameData.blackKing.coordinates : new Vector2(0, 6));
+            whiteKing = new SerializedVector2(MinigameData.blackKing != null ? MinigameData.whiteKing.coordinates : new Vector2(7, 7));
 
             List<SerializedVector2>
                 blackList = new List<SerializedVector2>(),
                 whiteList = new List<SerializedVector2>();
 
             if (MinigameData.blackfigures != null) foreach (MinigameData.ChessFigure figure in MinigameData.blackfigures)
-            {
-                blackList.Add(new SerializedVector2(figure.coordinates));
-            }
+                {
+                    blackList.Add(new SerializedVector2(figure.coordinates));
+                }
             if (MinigameData.blackfigures != null) foreach (MinigameData.ChessFigure figure in MinigameData.whiteFigures)
-            {
-                whiteList.Add(new SerializedVector2(figure.coordinates));
-            }
+                {
+                    whiteList.Add(new SerializedVector2(figure.coordinates));
+                }
 
             blackfigures = blackList.ToArray();
             whiteFigures = whiteList.ToArray();
@@ -186,8 +196,7 @@ using UnityEngine;
 
         public void Load()
         {
-            Debug.Log("days crossed"+ daysCrossed);
-            MinigameData.daysCrossed = daysCrossed;
+            MinigameData.calendar = calendar;
 
             MinigameData.blackKing = new MinigameData.ChessFigure(blackKing);
             MinigameData.whiteKing = new MinigameData.ChessFigure(whiteKing);
@@ -231,8 +240,8 @@ using UnityEngine;
 
     public void Save()
     {
-        currentHour=Clock.Hour;
-        currentMinute=Clock.Minute;
+        currentHour = Clock.Hour;
+        currentMinute = Clock.Minute;
 
         Vector2 playerPos = PlayerController.main.position;
         playerPosition = new float[2] { playerPos.x, playerPos.y };
@@ -265,7 +274,7 @@ using UnityEngine;
         Clock.main.currentMinute = currentMinute;
 
         //Player Position
-        PlayerController.main.position = playerPosition==null||playerPosition.Length != 2? new Vector2(28.5f, 34f ) :new Vector2(playerPosition[0], playerPosition[1]);
+        PlayerController.main.position = playerPosition == null || playerPosition.Length != 2 ? new Vector2(28.5f, 34f) : new Vector2(playerPosition[0], playerPosition[1]);
 
         //Characters
         foreach (Character_ProgressFile CP in characters)

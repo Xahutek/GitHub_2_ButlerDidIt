@@ -9,7 +9,7 @@ namespace Calendar
 {
     public class DayField : MonoBehaviour, IPointerClickHandler
     {
-        
+
         private Collider2D coll;
         private Image image;
         public bool crossed;
@@ -23,17 +23,21 @@ namespace Calendar
 
         public void OnPointerClick(PointerEventData pointerEventData)
         {
-            if (!crossed)
+            SetCross(!crossed);
+            GameManager.main.CheckState();
+        }
+
+        public void SetCross(bool cross)
+        {
+            crossed = cross;
+            if (crossed)
             {
                 image.color = Color.white;
-                crossed = true;
             }
             else
             {
                 image.color = Color.clear;
-                crossed = false;
             }
-            GameManager.main.CheckState();
         }
     }
 }

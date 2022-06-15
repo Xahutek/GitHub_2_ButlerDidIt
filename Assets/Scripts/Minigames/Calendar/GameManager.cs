@@ -16,7 +16,8 @@ namespace Calendar
         public Clue TyrellLastVisitor;
 
         public CalendarDays calendar;
-        [HideInInspector]public int daysCrossed;
+        public List<bool> calendarDict;
+        [HideInInspector] public int daysCrossed;
         private void Awake()
         {
             main = this;
@@ -25,24 +26,24 @@ namespace Calendar
         private void CalendarCrosses()
         {
             bool aBlock = true;
-            for (int i = 1; i < calendar.fields.Count; i++)
+            for (int i = 0; i < calendar.allFields.Count; i++)
             {
-                bool crossState = calendar.fields[i].GetComponent<DayField>().crossed;
+                bool crossState = calendar.allFields[i].crossed;
                 if (aBlock && crossState)
                 {
-                    daysCrossed = i;
-                    if(i > 13) { return; }
+                    daysCrossed = i + 1;
+                    if (i + 1 > 13) { return; }
                 }
                 else if (!crossState)
-                {                    
-                    if (i <= 9) { return; }
+                {
+                    if (i + 1 <= 9) { return; }
                     aBlock = false;
                 }
-                else if(!aBlock && crossState)
+                else if (!aBlock && crossState)
                 {
                     daysCrossed = 0;
                     return;
-                }                            
+                }
             }
         }
 
@@ -50,10 +51,10 @@ namespace Calendar
         {
             CalendarCrosses();
             if (daysCrossed >= 9)
-            {                
-                if(daysCrossed== 13) { gameState = GameState.untouched; }
+            {
+                if (daysCrossed == 13) { gameState = GameState.untouched; }
                 else if (daysCrossed == 11) { gameState = GameState.EdnaSus; }
-                else if (daysCrossed == 9) { gameState = GameState.TyrellSus; } 
+                else if (daysCrossed == 9) { gameState = GameState.TyrellSus; }
                 else { gameState = GameState.CalendarSus; }
             }
             else { gameState = GameState.CalendarSus; }
@@ -78,14 +79,15 @@ namespace Calendar
         public override void Open()
         {
             base.Open();
+            Load();
             CheckState();
         }
         public override void Load()
         {
-            daysCrossed = MinigameData.daysCrossed;
+            calendar.LoadCalendar(MinigameData.calendar);
         }
         public override void Close()
-        {          
+        {
             CheckState();
             if (gameState == GameState.EdnaSus)
             {
@@ -102,10 +104,16 @@ namespace Calendar
                 TyrellLastVisitor.MakeUnknownTo(Character.Butler);
                 EdnaLastVisitor.MakeUnknownTo(Character.Butler);
             }
+            Save();
             base.Close();
         }
         public override void Save()
         {
+            calendarDict = new List<bool>();
+            for (int i = 0; i < calendar.allFields.Count; i++)
+            {
+                calendarDict.Add(calendar.allFields[i].crossed);
+            }
             MinigameData.SaveTo(this);
         }
     }

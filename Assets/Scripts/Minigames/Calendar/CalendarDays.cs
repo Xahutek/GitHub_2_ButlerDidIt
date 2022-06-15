@@ -6,26 +6,31 @@ namespace Calendar
 {
     public class CalendarDays : MonoBehaviour
     {
-        public Dictionary<int, DayField> fields = new Dictionary<int, DayField>();
-        [SerializeField] List<DayField> allFields;
+        public List<bool> fields = new List<bool>();
+        [SerializeField] public List<DayField> allFields;
 
         private void Awake()
         {
-            fields = new Dictionary<int, DayField>();
+            fields = new List<bool>();
         }
+
 
         private void Start()
         {
-            allFields = new List<DayField>();      
-            foreach(Transform child in transform)
+            allFields = new List<DayField>();
+            foreach (Transform child in transform)
             {
                 allFields.Add(child.GetComponentInChildren<DayField>());
             }
+        }
+
+        public void LoadCalendar(List<bool> calendar)
+        {
             for (int i = 0; i < allFields.Count; i++)
             {
-                fields.Add(i + 1, allFields[i]);
+                allFields[i].SetCross(calendar[i]);
             }
         }
-    }   
+    }
 }
 
