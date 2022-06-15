@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 1
@@ -22,162 +24,212 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: Lord Deddington...he's...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Still asleep!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: ...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: N-No, I think Lord Deddington is...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: (Here it comes.)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: <b><color=red>DEAD!!</b></color=red>.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: <i>OH PICKLES, HE'S <color=red>DEAD</b>!</i>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: HE'S DEAD!?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...*cough*
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: How could this happen!?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: (This isn't good...)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: HE NEEDS A PROPER BURIAL!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: ...Who could do such a thing?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 1
+    otherReactions: []
+    isThought: 0
+    text: I could do that! I am the gardener, after all!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 1
+    otherReactions: []
+    isThought: 0
+    text: GARDENER, YOU COMMITED THIS DEED!?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 1
+    otherReactions: []
+    isThought: 0
+    text: Ah N-no! I meant the <i>burial</i>. I could do the burial.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: A good question, <color=#00ffffff>General Tuskson</color>.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: <b>!?</b>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: <i>Is Slotheleus dying as well now???</i>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: '?'
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: '?'
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: "It's so stuffy in here, \na pleasure to <i> see </i> all of you."
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: Slotheleus is...?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: Allow me to introduce myself, I'm <color=orange>Eva Dence</color>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: <color=orange>The great detective
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: <b>THE GREAT DETECTIVE?</b>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: A DISGUISE!?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: A <i>WOMEN</i>!?
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 2
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
   - text: Ms. Dence, Shall I change your name in the visitors' book?
     reaction: {fileID: 11400000}
     trigger: {fileID: 0}
+    rewards: []
   - text: Oh, apologies, you are not invited to this party please leave immediately.
     reaction: {fileID: 11400000, guid: ba0e21300ae241a47b53442ddec8f349, type: 2}
     trigger: {fileID: 0}
+    rewards: []
   - text: '[...]'
     reaction: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
     trigger: {fileID: 0}
+    rewards: []
