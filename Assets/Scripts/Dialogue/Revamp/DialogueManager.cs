@@ -350,6 +350,7 @@ public class DialogueManager : MonoBehaviour
                         if (c.character == Character.Butler)
                         {
                             thisRoot = c.transform.position;
+
                             break;
                         }
                     }
