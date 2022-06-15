@@ -62,6 +62,7 @@ public class DialogueManager : MonoBehaviour
     public List<SpeechBubble> bubbles = new List<SpeechBubble>();
     public bool arrivedAtEnd;
     public Bubble InputBubble;
+    public SpeechBubble ClueBubble;
     public OptionBubble[] OptionsBubbles;
     bool wasCleared, NextQueued;
 
@@ -218,6 +219,7 @@ public class DialogueManager : MonoBehaviour
 
         ClearOptions();
         InputBubble.Disappear();
+        ClueBubble.Disappear();
 
         dialogue.Begin();
         NextBubble();
@@ -242,7 +244,7 @@ public class DialogueManager : MonoBehaviour
     public void NextBubble()
     {
         NextQueued = false;
-        if (!arrivedAtEnd)
+        if (!arrivedAtEnd&&!wasIntermitted)
         {
             line++;
             bubbles.Insert(0, bubbles[bubbles.Count - 1]);
@@ -255,6 +257,8 @@ public class DialogueManager : MonoBehaviour
     bool isRefreshing=false;
     Coroutine RefreshRoutine=null;
     SpeechBubble currentlyTyping;
+    public Clue gainedClue=null;
+    public bool wasIntermitted;
     public void Refresh()
     {
         if (isRefreshing) return;
@@ -289,7 +293,12 @@ public class DialogueManager : MonoBehaviour
             B.transform.GetChild(0).localScale = Vector3.one * BaseScale;
         }
         InputBubble.transform.GetChild(0).localScale = Vector3.one * BaseScale;
+        ClueBubble.transform.GetChild(0).localScale = Vector3.one * BaseScale;
 
+        if (gainedClue == null)
+            ClueBubble.Disappear();
+
+        wasIntermitted = false;
 
         //Refresh
         for (int i = 0; i < bubbles.Count; i++)
@@ -351,30 +360,54 @@ public class DialogueManager : MonoBehaviour
             }
             else if (line >= 0) //Positive > Line of this Dialogue
             {
-                Character speaker = lines[line].speaker;
-
                 Vector2 thisRoot = Locus;
-                if(CharacterObjects.Count==2)
-                {
-                    thisRoot += (speaker == Characters[0] ? Vector2.left : Vector2.right)
-                    * BoxHorizontalSpacing * BoxHorizontalSign;
-                }
-                else if(Characters.Contains(speaker))
-                {
-                    thisRoot = CharacterObjects[Characters.IndexOf(speaker)].transform.position;
-                }
-                    
-                B.Refresh(lines[line], thisRoot, height,isNew);
 
-                if (isNew)
+                if (isNew && gainedClue != null)
                 {
-                    currentlyTyping = B;
-                    lines[line].OnDisplay();
-                    SetEmotion(lines[line].speaker,lines[line].speakerEmotion,true);
+                    //Vector2 thisRoot = Locus;
 
-                    foreach (Dialogue.Line.CharacterReaction R in lines[line].otherReactions)
+                    ClueBubble.Refresh(new Dialogue.Line(Character.Butler, gainedClue.name), thisRoot, height, true);
+
+                    currentlyTyping = ClueBubble;
+
+                    gainedClue = null;
+                    wasIntermitted = true;
+
+                    yield return new WaitForFixedUpdate();
+
+                    height += ClueBubble.height * BaseScale + BoxVerticalSpacing;
+
+                    continue;
+                }
+                else
+                {
+                    Character speaker = lines[line].speaker;
+
+                    if (CharacterObjects.Count == 2)
                     {
-                        SetEmotion(R.character,R.emotion,false);
+                        thisRoot += (speaker == Characters[0] ? Vector2.left : Vector2.right)
+                        * BoxHorizontalSpacing * BoxHorizontalSign;
+                    }
+                    else if (Characters.Contains(speaker))
+                    {
+                        thisRoot = CharacterObjects[Characters.IndexOf(speaker)].transform.position;
+                    }
+
+                    B.Refresh(lines[line], thisRoot, height, isNew);
+
+                    if (isNew)
+                    {
+                        currentlyTyping = B;
+                        lines[line].OnDisplay();
+                        SetEmotion(lines[line].speaker, lines[line].speakerEmotion, true);
+
+                        if (lines[line].fixedClue)
+                            gainedClue = lines[line].fixedClue;
+
+                        foreach (Dialogue.Line.CharacterReaction R in lines[line].otherReactions)
+                        {
+                            SetEmotion(R.character, R.emotion, false);
+                        }
                     }
                 }
             }
@@ -382,6 +415,8 @@ public class DialogueManager : MonoBehaviour
             {
                 B.Adjust(height);
             }
+
+            if (wasIntermitted) line--;
 
             yield return new WaitForFixedUpdate(); //Wait for Box 
 
@@ -410,6 +445,7 @@ public class DialogueManager : MonoBehaviour
 
         ClearOptions();
 
+        ClueBubble.Disappear();
         InputBubble.Disappear();
         wasCleared = true;
 

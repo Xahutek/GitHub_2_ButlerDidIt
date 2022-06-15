@@ -74,7 +74,7 @@ public class SpeechBubble : Bubble
             images[i].color = new Color(images[i].color.r, images[i].color.g, images[i].color.b, Mathf.Lerp(0.5f, 1, value));
         }
         text.color = new Color(text.color.r, text.color.g, text.color.b, Mathf.Lerp(0.5f, 1, value));
-        Debug.Log(camPos.y + " / " + bubblePos.y + " = " + value);
+        //Debug.Log(camPos.y + " / " + bubblePos.y + " = " + value);
     }
 
     private void CharacterColor()
