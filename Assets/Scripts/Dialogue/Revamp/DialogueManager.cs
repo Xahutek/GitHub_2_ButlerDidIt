@@ -345,6 +345,16 @@ public class DialogueManager : MonoBehaviour
                 {
                     Dialogue.Option[] options = dialogue.options;
                     ClearAnimations();
+                    if (this==eventMain)
+                    foreach (InteractableCharacter c in CharacterObjects)
+                    {
+                        if (c.character == Character.Butler)
+                        {
+                            thisRoot = c.transform.position;
+
+                            break;
+                        }
+                    }
                     for (int o = 0; o < OptionsBubbles.Length; o++)
                     {
                         Dialogue.Option option = o < options.Length ? options[o] : null;
