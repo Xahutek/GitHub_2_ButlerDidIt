@@ -21,9 +21,10 @@ public class ClueLibrary : ScriptableObject
         {
             c.FullReset();
         }
-        foreach (Clue c in AllItems)
+        foreach (Item i in AllItems)
         {
-            c.FullReset();
+            i.FullReset();
+            i.FullGivenReset();
         }
     }
 
