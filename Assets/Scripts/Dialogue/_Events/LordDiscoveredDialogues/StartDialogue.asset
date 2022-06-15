@@ -222,10 +222,10 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: Ms. Dence, Shall I change your name in the visitors' book?
-    reaction: {fileID: 11400000}
+    reaction: {fileID: 11400000, guid: b5ff7d187598b8e4c8f97e322af9c12f, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Oh, apologies, you are not invited to this party please leave immediately.
+  - text: 
     reaction: {fileID: 11400000, guid: ba0e21300ae241a47b53442ddec8f349, type: 2}
     trigger: {fileID: 0}
     rewards: []
