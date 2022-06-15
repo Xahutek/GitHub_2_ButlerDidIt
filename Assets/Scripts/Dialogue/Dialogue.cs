@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dialogue")]
 public class Dialogue : ScriptableObject
 {
-
     public Clue Trigger_Optional;
     public Clue[] 
         NecessaryCluesKnown = new Clue[0],
@@ -61,6 +60,7 @@ public class Dialogue : ScriptableObject
         public Character speaker;
         public CharacterEmotion speakerEmotion;
         public CharacterReaction[] otherReactions;
+        public bool isThought;
         [System.Serializable]public class CharacterReaction
         {
             public Character character;

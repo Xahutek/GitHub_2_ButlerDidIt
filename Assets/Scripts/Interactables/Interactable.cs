@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
 
     private Collider2D colli;
 
-    private void Awake()
+    public virtual void Awake()
     {
         if(visuals==null&&transform.childCount>0)
         visuals = transform.GetChild(0).gameObject;

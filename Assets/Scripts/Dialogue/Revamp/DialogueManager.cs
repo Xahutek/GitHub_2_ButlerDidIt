@@ -123,7 +123,7 @@ public class DialogueManager : MonoBehaviour
         }
         foreach (InteractableCharacter I in CharacterObjects)
         {
-            I.inDialogue = false;
+            I.inDialogue = true;
             I.isTalking = false;
         }
 
@@ -238,6 +238,8 @@ public class DialogueManager : MonoBehaviour
 
     public void SkipTypewriter()
     {
+        SetEmotion(currentlyTyping.line.speaker, currentlyTyping.line.speakerEmotion, false);
+
         currentlyTyping.ForceEnd();
         currentlyTyping = null;
     }
@@ -341,6 +343,7 @@ public class DialogueManager : MonoBehaviour
                 else if (dialogue.ending == Dialogue.EndingType.SpecificQuestion) //Show Options
                 {
                     Dialogue.Option[] options = dialogue.options;
+                    ClearAnimations();
                     for (int o = 0; o < OptionsBubbles.Length; o++)
                     {
                         Dialogue.Option option = o < options.Length ? options[o] : null;
@@ -357,6 +360,8 @@ public class DialogueManager : MonoBehaviour
                     inventoryUI.Open();
                     InputBubble.Appear(thisRoot, height);
                     height += InputBubble.height * BaseScale + BoxVerticalSpacing;
+
+                    ClearAnimations();
                 }
 
                 height -= B.height * BaseScale + BoxVerticalSpacing;
@@ -368,13 +373,15 @@ public class DialogueManager : MonoBehaviour
                 if (isNew && gainedClue != null)
                 {
                     //Vector2 thisRoot = Locus;
-
-                    ClueBubble.Refresh(new Dialogue.Line(Character.Butler, gainedClue.name), thisRoot, height, true);
+                    Dialogue.Line L = new Dialogue.Line(Character.Butler, gainedClue.name);
+                    ClueBubble.Refresh(this,L, thisRoot, height, true);
 
                     currentlyTyping = ClueBubble;
 
                     gainedClue = null;
                     wasIntermitted = true;
+
+                    ClearAnimations();
 
                     yield return new WaitForFixedUpdate();
 
@@ -396,21 +403,13 @@ public class DialogueManager : MonoBehaviour
                         thisRoot = CharacterObjects[Characters.IndexOf(speaker)].transform.position;
                     }
 
-                    B.Refresh(lines[line], thisRoot, height, isNew);
+                    B.Refresh(this,lines[line], thisRoot, height, isNew);
 
                     if (isNew)
                     {
                         currentlyTyping = B;
                         lines[line].OnDisplay();
-                        SetEmotion(lines[line].speaker, lines[line].speakerEmotion, true);
-
-                        if (lines[line].fixedClue)
-                            gainedClue = lines[line].fixedClue;
-
-                        foreach (Dialogue.Line.CharacterReaction R in lines[line].otherReactions)
-                        {
-                            SetEmotion(R.character, R.emotion, false);
-                        }
+                        RefreshAnimations(lines[line]);
                     }
                 }
             }
@@ -463,6 +462,28 @@ public class DialogueManager : MonoBehaviour
 
             B.Disappear();
             B.option = null;
+        }
+    }
+
+    public void ClearAnimations()
+    {
+        foreach (Character c in Characters)
+        {
+            SetEmotion(c, CharacterEmotion.Standart, false);
+        }
+    }
+    public void RefreshAnimations(Dialogue.Line L)
+    {
+        ClearAnimations();
+
+        SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
+
+        if (L.fixedClue)
+            gainedClue = L.fixedClue;
+
+        foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)
+        {
+            SetEmotion(R.character, R.emotion, false);
         }
     }
 

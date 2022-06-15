@@ -5,6 +5,14 @@ using UnityEngine;
 public class InteractableCharacter : Interactable
 {
     public Character character;
+
+    public Animator animator;
+
+    public override void Awake()
+    {
+        base.Awake();
+        animator=GetComponentInChildren<Animator>();
+    }
     public override void ClickInteract()
     {
         if (PlayerController.main.grounded && !GameManager.isPaused)
@@ -18,7 +26,8 @@ public class InteractableCharacter : Interactable
     {
         set
         {
-            //Do animator stuff
+            if (animator)
+                animator.SetBool("TalkReady",value);
         }
     }
     public void SetAnimation(CharacterEmotion emotion)
@@ -29,7 +38,8 @@ public class InteractableCharacter : Interactable
     {
         set
         {
-            //Do animator stuff
+            if (animator)
+                animator.SetBool("IsTalking", value);
         }
     }
 }

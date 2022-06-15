@@ -27,8 +27,9 @@ public class PlayerController : InteractableCharacter
     private float currentHorizontalSpeed, currentVerticalSpeed;
     [HideInInspector]public float isMovingHorizontally, isMovingVertically;
 
-    private void Awake()
+    public override void Awake()
     {
+        base.Awake();
         if (main == null)
             main = this;
         col= GetComponent<CapsuleCollider2D>();

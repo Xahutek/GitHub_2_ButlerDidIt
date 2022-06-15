@@ -13,7 +13,7 @@ public class SpeechBubble : Bubble
     private Character currentChara;
     public Color butlerColor, evaColor, tyrellColor, ednaColor, gertieColor, susColor;
     public bool isTyping;
-    public virtual void Refresh(Dialogue.Line line, Vector2 Root, float heightStack, bool Typewriter=false)
+    public virtual void Refresh(DialogueManager manager,Dialogue.Line line, Vector2 Root, float heightStack, bool Typewriter=false)
     {
         this.line = line;
 
@@ -23,7 +23,7 @@ public class SpeechBubble : Bubble
             text.text = line.text.CustomParse();
 
             if (Typewriter)
-                TypewriterRoutine = StartCoroutine(ExecuteTypewriter(line));
+                TypewriterRoutine = StartCoroutine(ExecuteTypewriter(manager,line));
         }
 
         Show(Root, heightStack);
@@ -32,7 +32,7 @@ public class SpeechBubble : Bubble
     }
 
     Coroutine TypewriterRoutine = null;
-    IEnumerator ExecuteTypewriter(Dialogue.Line line)
+    IEnumerator ExecuteTypewriter(DialogueManager manager,Dialogue.Line line)
     {
         isTyping = true;
 
@@ -49,6 +49,8 @@ public class SpeechBubble : Bubble
         }
         text.maxVisibleCharacters = fullCharactersShown;
 
+        manager.SetEmotion(line.speaker, line.speakerEmotion, false);
+
         isTyping = false;
     }
 
@@ -57,6 +59,7 @@ public class SpeechBubble : Bubble
         if (TypewriterRoutine == null) return;
         StopCoroutine(TypewriterRoutine);
         text.maxVisibleCharacters = text.text.Length;
+
         isTyping = false;
     }
 
