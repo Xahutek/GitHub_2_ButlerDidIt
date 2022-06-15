@@ -375,7 +375,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     //Vector2 thisRoot = Locus;
                     Dialogue.Line L = new Dialogue.Line(Character.Butler, gainedClue.name);
-                    ClueBubble.Refresh(this,L, thisRoot, height, true);
+                    ClueBubble.Refresh(this, L, thisRoot, height, true);
 
                     currentlyTyping = ClueBubble;
 
@@ -390,18 +390,18 @@ public class DialogueManager : MonoBehaviour
 
                     continue;
                 }
-                else
+                else if (lines.Count > line && line >= 0) 
                 {
-                    Character speaker = lines[line].speaker;
+                    //Character speaker = lines[line].speaker;
 
                     if (CharacterObjects.Count == 2)
                     {
-                        thisRoot += (speaker == Characters[0] ? Vector2.left : Vector2.right)
+                        thisRoot += (lines[line].speaker == Characters[0] ? Vector2.left : Vector2.right)
                         * BoxHorizontalSpacing * BoxHorizontalSign;
                     }
-                    else if (Characters.Contains(speaker))
+                    else if (Characters.Contains(lines[line].speaker))
                     {
-                        thisRoot = CharacterObjects[Characters.IndexOf(speaker)].transform.position;
+                        thisRoot = CharacterObjects[Characters.IndexOf(lines[line].speaker)].transform.position;
                     }
 
                     B.Refresh(this,lines[line], thisRoot, height, isNew);
