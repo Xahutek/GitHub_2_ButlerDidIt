@@ -13,33 +13,39 @@ MonoBehaviour:
   m_Name: EdnaIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 6}
   includedCharacters: 0000000004000000
   Lines:
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: BUTLER OF HOUSE <b>DEDDINGTON </b>!!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Let the Lord know <color=#00ffffff> General Edna Tuskson</color> has arrived!
-    fixedClue: {fileID: 11400000, guid: fd76556a8a6fa6c48bac15523d735c83, type: 2}
+    fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 1
     otherReactions: []
+    isThought: 1
     text: (Oh no)
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: fd76556a8a6fa6c48bac15523d735c83, type: 2}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: Say, Butler, is the Lord asleep already?
     fixedClue: {fileID: 0}
     clueHidden: 0
