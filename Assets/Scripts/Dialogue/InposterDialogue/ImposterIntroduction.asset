@@ -13,21 +13,25 @@ MonoBehaviour:
   m_Name: ImposterIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000006000000
   Lines:
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...Top of the six o' clock to you, Butler Diddit!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: How is the the old Lord Deddigton *cough* holding up?
     fixedClue: {fileID: 0}
     clueHidden: 0
@@ -36,8 +40,8 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: I killed him this midnight
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 269f6f7e42e2c6d44a5ad7687e0a2d8d, type: 2}
+    trigger: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     rewards: []
   - text: Just great, he is sleeping in.
     reaction: {fileID: 11400000, guid: d4106ab8b4d0438488976b73ba12d4d3, type: 2}
