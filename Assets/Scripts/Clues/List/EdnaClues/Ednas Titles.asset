@@ -16,15 +16,16 @@ MonoBehaviour:
   picture: {fileID: 0}
   required: []
   nullify: []
+  DisplayThoughtBubbleOnGain: 0
   _ButlerKnows: 1
   _DetectiveKnows: 0
   _InposterKnows: 0
   _TycoonKnows: 0
   _GeneralKnows: 0
   _GardenerKnows: 0
-  ButlerWeight: 0
-  LordWeight: 0
-  DetectiveWeight: 0
-  TycoonWeight: 0
-  GeneralWeight: 0
-  GardenerWeight: 0
+  ButlerKnows: 1
+  DetectiveKnows: 0
+  ImposterKnows: 0
+  TycoonKnows: 0
+  GeneralKnows: 0
+  GardenerKnows: 0
