@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DraggableImage : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    new RectTransform transform;
+    public new RectTransform transform;
     public float scrollSpeed=0.1f, moveSpeed=1;
     float currentZoom = 1;
     public Vector2
@@ -13,10 +13,6 @@ public class DraggableImage : MonoBehaviour, IPointerClickHandler, IPointerDownH
         moveBoundsX = new Vector2( 0, 2000f),
         moveBoundsY = new Vector2( 0,1250f);
 
-    private void Awake()
-    {
-        transform = GetComponent<RectTransform>();
-    }
     private void Update()
     {
         float scrollDelta = Input.mouseScrollDelta.y;

@@ -12,9 +12,9 @@ public class Mindmap : MonoBehaviour
     public static bool isOpen;
 
     public MindLine mindLinePrefab;
-    public Transform mindlineParent;
+    public Transform mindlineParent, CenterPopUp;
 
-    public Image Blackground;
+    public Image Background;
     public float fadeDuration;
     public DraggableImage MindmapObject;
 
@@ -22,15 +22,33 @@ public class Mindmap : MonoBehaviour
 
     Tween tween;
 
+    public delegate void MindmapToggleDelegate(bool on,float duration, Vector3 mid);
+    public event MindmapToggleDelegate OnMindmapToggle;
+    public void ToggleEvent(bool on, float duration)
+    {
+        OnMindmapToggle?.Invoke(on,duration, CenterPopUp.position);
+    }
+
 
     private void Awake()
     {
         main = this;
+        maxAlpha = Background.color.a;
     }
     private void Start()
     {
         isOpen = false;
         MindmapObject.gameObject.SetActive(false);
+        MindmapObject.transform.anchoredPosition = Vector3.zero;
+        MindmapObject.transform.localScale = Vector3.one;
+        Background.gameObject.SetActive(true);
+        currentAlpha = 0;
+        RefreshBackground();
+
+        foreach (InfoKnot K in Knots)
+        {
+            OnMindmapToggle += K.ToggleEvent;
+        }
     }
 
     public void ShowComment(InfoKnot info)=>Comment.main.ShowComment(info.Comment.text);
@@ -54,12 +72,15 @@ public class Mindmap : MonoBehaviour
         if (isOpen) return;
         isOpen = true;
         MindmapObject.gameObject.SetActive(false);
+        MindmapObject.transform.anchoredPosition = Vector3.zero;
+        MindmapObject.transform.localScale = Vector3.one;
+
+        Background.raycastTarget = true;
 
         DOTween.Kill(tween);
-
         currentAlpha = 0;
-        tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 1, fadeDuration)
-            .OnUpdate(() => RefreshBlackground()).OnComplete(() => Refresh());
+        tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, maxAlpha, fadeDuration)
+            .OnUpdate(() => RefreshBackground()).OnComplete(() => Refresh());
 
         HideComment();
     }
@@ -67,23 +88,26 @@ public class Mindmap : MonoBehaviour
     {
         if (!isOpen) return;
         isOpen = false;
-        MindmapObject.gameObject.SetActive(false);
+
+        Background.raycastTarget = false;
+
+        ToggleEvent(false,fadeDuration);
 
         DOTween.Kill(tween);
-
-        currentAlpha = 1;
+        currentAlpha = maxAlpha;
         tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 0, fadeDuration)
-            .OnUpdate(() => RefreshBlackground());
+            .OnUpdate(() => RefreshBackground())
+            .OnComplete(() => MindmapObject.gameObject.SetActive(false));
 
         HideComment();
     }
 
-    float currentAlpha;
-    public void RefreshBlackground()
+    float maxAlpha,currentAlpha;
+    public void RefreshBackground()
     {
-        Color cov = Blackground.color;
+        Color cov = Background.color;
         cov.a = currentAlpha;
-        Blackground.color = cov;
+        Background.color = cov;
     }
 
 
@@ -109,6 +133,7 @@ public class Mindmap : MonoBehaviour
         foreach (MindLine L in mindLines.Values)
         {
             list.Add(L.gameObject);
+            OnMindmapToggle -= L.ToggleEvent;
         }
         mindLines = new Dictionary<Connection, MindLine>();
         for (int i = 0; i < list.Count; i++)
@@ -158,9 +183,12 @@ public class Mindmap : MonoBehaviour
                     MindLine L = Instantiate(mindLinePrefab, mindlineParent);
                     L.Refresh(A, B);
                     mindLines.Add(new Connection(A,B),L);
+                    OnMindmapToggle += L.ToggleEvent;
                 }
             }
         }
+
+        ToggleEvent(true, fadeDuration);
     }
 
 

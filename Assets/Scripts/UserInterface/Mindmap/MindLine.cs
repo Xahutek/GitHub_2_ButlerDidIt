@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(Image))]
 public class MindLine : MonoBehaviour
@@ -21,6 +22,7 @@ public class MindLine : MonoBehaviour
         image = GetComponent<Image>();
         rectTransform = GetComponent<RectTransform>();
     }
+
     public void Refresh(InfoKnot A, InfoKnot B)
     {
 
@@ -45,6 +47,28 @@ public class MindLine : MonoBehaviour
             isMajor = A.relevance == InfoKnot.Relevance.Major || B.relevance == InfoKnot.Relevance.Major;
 
         image.color = isMajor ? MajorColor : MinorColor;
+    }
+
+    protected Tween tween;float currentAlpha;
+    public virtual void ToggleEvent(bool on, float duration, Vector3 mid)
+    {
+        float delay = on ? Mathf.Clamp01((transform.position - mid).magnitude / 3) : 0;
+        Debug.Log(delay);
+
+        DOTween.Kill(tween);
+        currentAlpha = (!on ? 1 : 0);
+        Refresh();
+        tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, (on ? 1 : 0), duration)
+            .SetEase(on ? Ease.InSine : Ease.OutSine)
+            .SetDelay(delay)
+            .OnUpdate(() => Refresh());
+
+    }
+    public void Refresh()
+    {
+        Color cov = image.color;
+        cov.a = currentAlpha;
+        image.color = cov;
     }
 
     //private void Awake()

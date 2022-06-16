@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class InfoKnot : MonoBehaviour
 {
@@ -59,5 +60,21 @@ public class InfoKnot : MonoBehaviour
         gameObject.SetActive(hinted||revealed);
         Hint.SetActive(hinted);
         Content.SetActive(revealed);
+    }
+
+    protected Tween tween;
+    public virtual void ToggleEvent(bool on, float duration, Vector3 mid)
+    {
+        if (on) Refresh();
+
+        float delay= on?Mathf.Clamp01((transform.position - mid).magnitude / 3):0;
+        Debug.Log(delay);
+
+        DOTween.Kill(tween);
+        transform.localScale = Vector3.one* (!on ? 1 : 0);
+        tween = transform.DOScale((on ? 1 : 0), duration).OnComplete(() => Refresh())
+            .SetEase(on ? Ease.OutBack : Ease.OutSine)
+            .SetDelay(delay);
+
     }
 }
