@@ -13,13 +13,58 @@ MonoBehaviour:
   m_Name: TyrellTalksAboutHisBuisnesses
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 0, y: 24}
+  AvailabilityHours: {x: 4, y: 24}
   includedCharacters: 
-  Lines: []
-  ending: 0
+  Lines:
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I love parties.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But you know what I love <i>more</i> than parties?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Money.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And I work hard for all the money I make, I have 25 buisness to run.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: In order to run them all, I think I have to work around 200 hours a week
+      to stay on top of things.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (Of course he does, he works 200 hours a week. Obviously)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

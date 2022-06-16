@@ -16,24 +16,28 @@ MonoBehaviour:
   name: Theodore T.T. Tyrell
   Portrait: {fileID: 21300000, guid: bf2178aaea1d85140a8a22cc154c79c7, type: 3}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 0
+  knownToPlayer: 1
   currentRoom: 0
   Timetable:
   - startHour: 0
     room: 0
     state: 0
+    important: 0
   - startHour: 3
     room: 4
     state: 0
+    important: 0
   - startHour: 3
     room: 4
     state: 0
+    important: 0
   connectedClues:
   - {fileID: 11400000, guid: 40d25572fcd51dd4e88faddd4a3a0447, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 14f5c5f74f8f5914da644e5641d73e17, type: 2}
   - {fileID: 11400000, guid: 2f8182faced44b742a20377c91545064, type: 2}
   - {fileID: 11400000, guid: 2655ba2b00def8d45a396800473c824a, type: 2}
+  - {fileID: 11400000, guid: d279387cdfe563d499dd4a78c30a226f, type: 2}
   - {fileID: 11400000, guid: 2f4529af7b51f1d41bcd8771669e9c2e, type: 2}
   - {fileID: 11400000, guid: 1c3780d6dcd174142800520c0a6928f9, type: 2}
   - {fileID: 11400000, guid: e62c3a5fac09aca458b99ddc1f73d394, type: 2}

@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: TyrellIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000003000000
   Lines:
   - speaker: 3
     speakerEmotion: 4
     otherReactions: []
+    isThought: 0
     text: '...Ahem!
 
       <color=#ffa500ff>Tycoon Theodore Tyrell</color=#ffa500ff>
@@ -31,21 +34,32 @@ MonoBehaviour:
   - speaker: 3
     speakerEmotion: 4
     otherReactions: []
+    isThought: 0
     text: Good, late evening, <color=#00ffffff>General Tuskson! </color=#00ffffff>
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Evening, <i> Butler </i>.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: Good Evening, Lord Tyrell.
+    isThought: 1
+    text: (I didn't think the evening could get any worse after murdering Lord Deddington)
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...Good Evening, Lord Tyrell.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

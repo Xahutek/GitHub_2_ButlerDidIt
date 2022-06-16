@@ -13,33 +13,57 @@ MonoBehaviour:
   m_Name: ImposterLordMurdered
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000006000000
   Lines:
-  - speaker: 6
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: Still *cough* asleep, the old chap? Very well
+    isThought: 0
+    text: 'A good morning to you too, Sir.
+
+      We are happy to have you.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I just killed him a few hours ago.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
+    text: 'Killed him with your excellent service, huh?
+
+      A good *cough* jest.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
     text: The suprise party is already in full force, I take it?
     fixedClue: {fileID: 11400000, guid: a724cea2f55e3394dac3c568832bbb6c, type: 2}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Now then, I will introduce myself to the *cough* guests.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'Happy to have you.
 
       Now, before you go...'
@@ -48,30 +72,35 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Who...are you?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: "Who am I? *cough* *cough* \nWhy, dear Butler, I am..."
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Slotheleus.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Slotheleus...Sus.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: (I have never heard of this man, I wonder if the other guests know anything
       about him?)
     fixedClue: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
@@ -79,6 +108,7 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Very well then! Enjoy your stay at Manor Deddington.
     fixedClue: {fileID: 0}
     clueHidden: 0
