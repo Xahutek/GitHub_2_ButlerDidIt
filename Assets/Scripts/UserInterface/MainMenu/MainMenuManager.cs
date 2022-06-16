@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -10,11 +11,29 @@ public class MainMenuManager : MonoBehaviour
         PageInfo,
         ValetInfo,
         ButlerInfo;
-    [SerializeField] GameObject LoadGameButton;
+    [SerializeField] Button LoadGameButton;
+    public Image DiffPainting;
+    public GameObject unplayedPainting, continuePainting;
 
     private void Start()
     {
-        LoadGameButton.SetActive(SaveSystem.GetSavedProgress()!=null);
+        if (SaveSystem.GetSavedProgress() == null || SaveSystem.GetSavedProgress().Fresh)
+        {
+            LoadGameButton.enabled = false;
+            continuePainting.SetActive(false);
+            unplayedPainting.SetActive(true);
+        }
+        else 
+        {
+            LoadGameButton.enabled = true;
+            unplayedPainting.SetActive(false);
+            continuePainting.SetActive(true);
+        }
+        //SelectedDifficulty = SaveSystem.GetSavedProgress(). //DifficultySetting when available
+
+        DiffPainting.sprite = SelectedDifficulty == Difficulty.Page ? PageInfo.GetComponentInParent<Image>().sprite :
+                            SelectedDifficulty == Difficulty.Valet ? ValetInfo.GetComponentInParent<Image>().sprite :
+                            ButlerInfo.GetComponentInParent<Image>().sprite;
     }
 
     public void SelectDifficulty(int diff)

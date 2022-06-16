@@ -15,15 +15,18 @@ public class OptionsMenu : MonoBehaviour
     public TMP_Text resTxt;
     private int ResIndex = 0;
     [SerializeField] private Slider volumeSlider = null;
+    private AudioSource music;
 
     private void Start()
     {
+        music = FindObjectOfType<AudioSource>();
         foreach (Resolution resolution in Screen.resolutions)
             if (resolution.width / resolution.height == 16 / 9)
                 resos.Add(resolution);
         ResIndex = PlayerPrefs.GetInt(RESOLUTION_PRED_KEY, 0);
     }
 
+    #region FullScreen
     public void ToggleFullScreen()
     {
         if (Screen.fullScreenMode == FullScreenMode.Windowed)
@@ -37,7 +40,9 @@ public class OptionsMenu : MonoBehaviour
             fullScreenCross.SetActive(false);
         }
     }
+    #endregion
 
+    #region Resolution
     public void SetResButton(bool increment)
     {
         ResIndex = increment && ResIndex >= resos.Count - 1 ? 0 : 
@@ -52,8 +57,14 @@ public class OptionsMenu : MonoBehaviour
         resTxt.text = res.width + " x " + res.height;
     }
 
+    #endregion
+
+    #region Volume
     public void VolumeSlider(float volume)
     {
         PlayerPrefs.SetFloat("Master_Volume", Mathf.Round(volume * 100.0f) * 0.01f);
+        PlayerPrefs.Save();
+        music.volume = volume;
     }
+    #endregion
 }
