@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: EdnaWantsToSeeTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 8, y: 24}
   includedCharacters: 
   Lines:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'I''ll just keep calling you "The Butler, Diddit"
 
 '
@@ -30,30 +33,35 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: And Diddit, me and the other guests are growing impatient.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: At sharp 9, I will open the door and wake Lord Deddington
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: ccd6c2cb955c365469d3c83c20e09267, type: 2}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 1
     text: (Give it your best shot, your wake-up-calls won't help)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: I would advise against that the Lord is very...particular about his sleep.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: It's a perfectly reasonable time to wake up and I'd like to spent as much
       time with Lord Deddington as possible
     fixedClue: {fileID: 0}
@@ -61,6 +69,7 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'As tomorrow morning, I have to depart again. The sea is calling me, and
       I still have open buisnesses on the old salt chuck.
 
@@ -70,6 +79,7 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Have I told the story of the time I build a ship out of two shipwrecks
       while in the middle of the ocean?
     fixedClue: {fileID: 0}
@@ -77,12 +87,14 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: (Yes, you tell it to everyone everytime you are over for a visist)
+    isThought: 1
+    text: (Yes, and everyone else has to listen, every time without fail)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: I'd love to hear it but sadly have important butler buisness to attend
       to.
     fixedClue: {fileID: 0}
