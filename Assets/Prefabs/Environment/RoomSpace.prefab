@@ -54,6 +54,8 @@ MonoBehaviour:
   fadeDuration: 1
   isOpen: 0
   isLoaded: 0
+  subspace: {fileID: 0}
+  unloadHandeledByMotherSpace: 0
 --- !u!212 &1966512948447799554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,7 +94,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1088076403
-  m_SortingLayer: 2
+  m_SortingLayer: 6
   m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: a5f0c425f356aeb4093f71cbd18b7d0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
@@ -112,7 +114,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7654765675619738571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

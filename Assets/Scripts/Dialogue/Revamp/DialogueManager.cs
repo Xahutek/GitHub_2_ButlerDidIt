@@ -149,6 +149,7 @@ public class DialogueManager : MonoBehaviour
         if (!isQuestion) dialogue.seen = true;
 
         dialogueCameraLocus.gameObject.SetActive(false);
+        SoundManager.main.OnSpeakCharacter(Character.Butler);
 
         Clear();
         inventoryUI.Close();
@@ -420,6 +421,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         currentlyTyping = B;
                         lines[line].OnDisplay();
+                        if(lines[line].speaker!=Character.Butler) SoundManager.main.OnSpeakCharacter(lines[line].speaker);
                         RefreshAnimations(lines[line]);
                     }
                 }

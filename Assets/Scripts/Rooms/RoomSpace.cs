@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public class RoomSpace : MonoBehaviour
 {
+    private Collider2D col;
     [SerializeField] private LayerMask LMPlayer;
     [SerializeField] private string SceneName;
 
@@ -19,12 +20,23 @@ public class RoomSpace : MonoBehaviour
 
     private void Awake()
     {
+        col=GetComponent<Collider2D>();
+        col.enabled = false;
         for (int i = 0; i < Overlay.Length; i++)
         {
             Color cov = Overlay[i].color;
             cov.a = 1;
             Overlay[i].color = cov;
         }
+    }
+
+    private void Start()
+    {
+        Invoke("Enable",0.1f);
+    }
+    public void Enable()
+    {
+        col.enabled = true;
     }
 
 
