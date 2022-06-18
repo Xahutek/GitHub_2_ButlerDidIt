@@ -5,6 +5,7 @@ using UnityEngine;
 public class MinigameObject : MonoBehaviour
 {
     public Canvas canvas;
+    private MinigameManager mgmanager;
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class MinigameObject : MonoBehaviour
             canvas.sortingOrder = 90;
         }
         Open();
+        mgmanager = FindObjectOfType<MinigameManager>();
     }
     public virtual void Open()
     {
@@ -33,4 +35,6 @@ public class MinigameObject : MonoBehaviour
     {
 
     }
+
+    public void BackButton() { mgmanager.Close(); }
 }

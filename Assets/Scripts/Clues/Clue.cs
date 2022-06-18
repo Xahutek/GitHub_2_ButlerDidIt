@@ -13,8 +13,9 @@ public class Clue : ScriptableObject
         required,
         nullify;
     public bool DisplayThoughtBubbleOnGain = true;
+    public bool seenInInventory = false;
 
-   [SerializeField] private bool
+    [SerializeField] private bool
         _ButlerKnows,
         _DetectiveKnows,
         _InposterKnows,
@@ -162,6 +163,7 @@ public class Clue : ScriptableObject
         TycoonKnows = _TycoonKnows;
         GeneralKnows = _GeneralKnows;
         GardenerKnows = _GardenerKnows;
+        seenInInventory = false;
     }
 }
 
