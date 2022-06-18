@@ -10,53 +10,60 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ImposterIntroduction 1
+  m_Name: ImposterSuspicious
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
+  unique: 0
   seen: 0
-  AvailabilityHours: {x: 6.5, y: 9}
-  includedCharacters: 0000000006000000
+  AvailabilityHours: {x: 8.5, y: 9}
+  includedCharacters: 
   Lines:
   - speaker: 6
-    speakerEmotion: 4
+    speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The Lords library.
+    text: ..!!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6
-    speakerEmotion: 4
+    speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Quite an experience to stand in a room full of knowledge and perspective
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 6
-    speakerEmotion: 4
-    otherReactions: []
-    isThought: 0
-    text: I'm sure Lord Deddington is an avid reader.
-    fixedClue: {fileID: 0}
+    text: heLLO*cough*, Butler-man!
+    fixedClue: {fileID: 11400000, guid: 35a338698c6387e4fa81dc9593a12334, type: 2}
     clueHidden: 0
   - speaker: 0
-    speakerEmotion: 1
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: (Can't he see the layers of dust on these books?)
+    isThought: 0
+    text: Is everything alright? Can I assist you in anything?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: N-no! I just admired how nicely decorated this conservatory is.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He most certainly is.
+    text: I am certain our gardener will appreciate it
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 3
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...Do you have something to ask me?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 0
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 0000000004000000
   Lines:
@@ -46,10 +46,16 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler, don't take it to heart but after eating this mighty grape, I have
-      come to the conclusion to only surround my with people I consider of enough
-      physical strength.
+    text: Butler, don't take it to heart but after eating this mighty grape...
     fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I have come to the conclusion to only surround my with what I consider
+      of sufficient physical strength.
+    fixedClue: {fileID: 11400000, guid: d678a0797bc93ed4c92c8c781050b4f9, type: 2}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
@@ -72,7 +78,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (it's always some new stupid thing when she is here)
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: d678a0797bc93ed4c92c8c781050b4f9, type: 2}
     clueHidden: 0
   ending: 3
   ResumeFixed: {fileID: 0}

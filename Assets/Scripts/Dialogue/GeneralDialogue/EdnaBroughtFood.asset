@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
@@ -70,13 +70,17 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '...So. General, how long are you planning on staying today?
+    text: ...So. General, how long are you planning on staying today?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'The Lord is sleeping...very soundly tonight.
 
-      The
-      Lord is sleeping...very soundly tonight.
-
-      Perhaps the party has to be
-      cancelled?'
+      Perhaps the party
+      has to be cancelled?'
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4

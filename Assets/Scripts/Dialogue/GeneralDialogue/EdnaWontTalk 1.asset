@@ -10,68 +10,69 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellTalksAboutHisBuisnesses
+  m_Name: EdnaWontTalk 1
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
-  NecessaryCluesKnown: []
-  NecessaryCluesUnknown: []
+  NecessaryCluesKnown:
+  - {fileID: 11400000, guid: d678a0797bc93ed4c92c8c781050b4f9, type: 2}
+  NecessaryCluesUnknown:
+  - {fileID: 11400000, guid: 336a93f7b0686734eb9f2b155a028f11, type: 2}
+  - {fileID: 11400000, guid: 8d30eec8a0660f04682baa26b7d30a12, type: 2}
   nullDialogue: 0
   unique: 1
   seen: 1
-  AvailabilityHours: {x: 4, y: 24}
+  AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
-  - speaker: 3
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I love parties.
+    text: ...General Tuskson?
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 3
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But you know what I love <i>more</i> than parties?
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Money.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: And I work hard for all the money I make, I have 25 buisness to run.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: In order to run them all, I think I have to work around 200 hours a week
-      to stay on top of things.
+    text: ...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Of course he does, he works 200 hours a week. Obviously)
+    text: '(She will really just ignore me?
+
+      I don''t think we have any overly
+      heavy objects around that I could lift up...)'
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 3
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    isThought: 0
-    text: Can my hard-working self do anything for you?
+    isThought: 1
+    text: (Until I found a <color=green>solution</color>, I can go and <color=green>do
+      something else</color>, only a matter of <color=#add8e6ff>time</color> until
+      the next guests show up)
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (After all, my pocket watch relentlessly ticks away)
+    fixedClue: {fileID: 11400000, guid: afe723cfb2441564cb85828122ae5227, type: 2}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (If I want to get out of this today, I can't allow myself to sit around
+      for too long)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
