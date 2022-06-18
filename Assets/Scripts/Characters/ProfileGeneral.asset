@@ -22,39 +22,51 @@ MonoBehaviour:
   - startHour: 0
     room: 4
     state: 0
+    important: 0
   - startHour: 3
     room: 4
     state: 2
+    important: 0
   - startHour: 5
     room: 5
     state: 1
+    important: 0
   - startHour: 8
     room: 13
     state: 0
+    important: 0
   - startHour: 9
     room: 13
     state: 3
+    important: 0
   - startHour: 11
     room: 18
     state: 0
+    important: 0
   - startHour: 13
     room: 18
     state: 0
+    important: 0
   - startHour: 14
     room: 8
     state: 2
+    important: 0
   - startHour: 16
     room: 2
     state: 0
+    important: 0
   - startHour: 19
     room: 16
     state: 0
+    important: 0
   - startHour: 21
     room: 10
     state: 0
+    important: 0
   - startHour: 23
     room: 8
     state: 0
+    important: 0
   connectedClues:
   - {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
   - {fileID: 11400000, guid: 440426e73105c8d49baa83a8da742955, type: 2}
@@ -67,9 +79,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 66c15bcb9dd586a44a7ac8942c1f6f70, type: 2}
   - {fileID: 11400000, guid: 109d6301240bc854796feb257b11a187, type: 2}
   - {fileID: 11400000, guid: ce913d2e05db6f149812374b4b6ad7da, type: 2}
-  - {fileID: 11400000, guid: e4829b112b640534c89617823b5acab9, type: 2}
   - {fileID: 11400000, guid: e53f010a268d37e40b25ab6dc6e48f9d, type: 2}
   - {fileID: 11400000, guid: cbff364699638f241ae9384e4ce62be8, type: 2}
+  - {fileID: 11400000, guid: e4829b112b640534c89617823b5acab9, type: 2}
   - {fileID: 11400000, guid: 695b6f2f875464f42a8974fbc956b4b2, type: 2}
   - {fileID: 11400000, guid: 77a19f6d7b7c0f2449cb541c3e3868fa, type: 2}
   - {fileID: 11400000, guid: 5428ccd93db6eda49bf6b4fdd8553c9e, type: 2}

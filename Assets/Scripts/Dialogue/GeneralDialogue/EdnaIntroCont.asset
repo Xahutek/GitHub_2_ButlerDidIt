@@ -46,8 +46,16 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler, don't take it to heart but I've made it a point to only converse
-      with people of physical prowess.
+    text: Butler, don't take it to heart but after eating this mighty grape, I have
+      come to the conclusion to only surround my with people I consider of enough
+      physical strength.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: I can no longer be dragged down by the mediocre
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
@@ -63,8 +71,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (it's always some new stupid thing when she is here, last week she called
-      herself a "<i>Sigma-Walrus</i>" what does that even mean?)
+    text: (it's always some new stupid thing when she is here)
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

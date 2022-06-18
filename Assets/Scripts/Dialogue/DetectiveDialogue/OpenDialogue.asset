@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: OpenDialogue
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 1
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000002000000
+  includedCharacters: 00000000
   Lines:
-  - speaker: 2
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
-    text: Let's hear it!
+    isThought: 0
+    text: I think there is something...
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 0
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

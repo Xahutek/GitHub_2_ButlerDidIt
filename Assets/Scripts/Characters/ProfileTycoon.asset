@@ -27,8 +27,28 @@ MonoBehaviour:
     room: 4
     state: 0
     important: 0
-  - startHour: 3
-    room: 4
+  - startHour: 6
+    room: 15
+    state: 0
+    important: 0
+  - startHour: 8
+    room: 5
+    state: 2
+    important: 0
+  - startHour: 9.5
+    room: 5
+    state: 3
+    important: 0
+  - startHour: 10
+    room: 9
+    state: 0
+    important: 0
+  - startHour: 11
+    room: 13
+    state: 3
+    important: 0
+  - startHour: 12
+    room: 12
     state: 0
     important: 0
   connectedClues:
@@ -43,5 +63,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e62c3a5fac09aca458b99ddc1f73d394, type: 2}
   - {fileID: 11400000, guid: f73cdd84f56e8af4e97172e934cd77c6, type: 2}
   - {fileID: 11400000, guid: fd888340d3953b241bcf224b55a006ab, type: 2}
+  - {fileID: 11400000, guid: 14f5c5f74f8f5914da644e5641d73e17, type: 2}
   nullDialogue: {fileID: 11400000, guid: ca2b1d4bf4f57f54fb69ff723567285c, type: 2}
   nullDialogueReaction: {fileID: 11400000, guid: dfd5d42e4fbd69d4394cdadfee2f17aa, type: 2}

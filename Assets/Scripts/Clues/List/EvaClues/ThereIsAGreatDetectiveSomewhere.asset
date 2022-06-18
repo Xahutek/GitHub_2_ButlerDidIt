@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
-  m_Name: Ednas Titles
+  m_Name: ThereIsAGreatDetectiveSomewhere
   m_EditorClassIdentifier: 
-  name: 'Edna seems to have many honor titles '
+  name: "There will be a genius-level detective at this suprise party?\nThat's bad,
+    those are really good at solving murder cases. \nAnd I just commited one."
   picture: {fileID: 0}
   required: []
   nullify: []
   DisplayThoughtBubbleOnGain: 0
   seenInInventory: 0
-  _ButlerKnows: 0
-  _DetectiveKnows: 0
-  _InposterKnows: 0
-  _TycoonKnows: 0
+  _ButlerKnows: 1
+  _DetectiveKnows: 1
+  _InposterKnows: 1
+  _TycoonKnows: 1
   _GeneralKnows: 1
-  _GardenerKnows: 0
-  ButlerKnows: 0
+  _GardenerKnows: 1
+  ButlerKnows: 1
   DetectiveKnows: 0
   ImposterKnows: 0
   TycoonKnows: 0

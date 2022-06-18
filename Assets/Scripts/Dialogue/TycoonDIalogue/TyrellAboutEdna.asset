@@ -10,88 +10,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellIntroduction
+  m_Name: TyrellAboutEdna
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
+  unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000003000000
+  includedCharacters: 0300000000000000
   Lines:
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: ...
-    fixedClue: {fileID: 0}
-    clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: ...
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 4
-    otherReactions: []
     isThought: 0
-    text: '...Ahem!
-
-      <color=#ffa500ff>Tycoon Theodore Theodoros T. Tyrell The
-      Third (senior) has arrived!'
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: "I am here for lunch at a party. \nAnd a party.\n"
-    fixedClue: {fileID: 11400000, guid: 747760185156d954285b9045362c9962, type: 2}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: But mostly lunch, one less meal paid for.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 4
-    otherReactions: []
-    isThought: 0
-    text: Good, late evening, <color=#00ffffff>General Tuskson! </color=#00ffffff>
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Evening, <i> Butler </i>.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (I didn't think the evening could get any worse after murdering Lord Deddington)
-    fixedClue: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
-    clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (Do I really have to keep talking to him?)
+    text: General Edna Tuskson is quite succesful, given her amount of titles, isn't
+      she?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Good Evening, Lord Tyrell.
+    text: Well, I honestly don't get all the fuss about her.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: She doesn't nearly have as much money as me or Lord Deddington.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Those medals are not worth that much!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I told her she should try to deposit her wealth into a bank instead of
+      pinning it onto her jacket!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: In fact, I have asked her to join my charity deposit for women of modest
+      means  but she claimed she didn't understand what I was talking about.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: (A charity deposit for women of modest means? I didn't take Tyrell for
+      the type to give money <i>away.</i>)
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3
