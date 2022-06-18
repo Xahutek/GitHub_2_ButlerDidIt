@@ -112,7 +112,7 @@ public class InventoryUI : MonoBehaviour
             siblingI++;
             ClueDisplays[i].transform.SetSiblingIndex(siblingI);
 
-            if(c) ClueDisplays[i].Refresh(c);
+            if(c) ClueDisplays[i].Refresh(c, true);
             else ClueDisplays[i].Refresh(n);
         }
         foreach (ClueDisplay CD in ItemDisplays)
@@ -166,7 +166,7 @@ public class InventoryUI : MonoBehaviour
                     if (i >= ItemDisplays.Count)
                         ItemDisplays.Add(Instantiate(ItemDisplayPrefab, ItemDisplays[i - 1].transform.parent));
                     ItemDisplays[i].transform.SetSiblingIndex(i);
-                    ItemDisplays[i].Refresh(I);
+                    ItemDisplays[i].Refresh(I, true);
                 }
             }
         }
