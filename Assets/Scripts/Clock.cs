@@ -64,7 +64,6 @@ public class Clock : MonoBehaviour
         if (internalRefresh)
         {
             internalRefresh = false;
-
             currentHour = Hour;
             currentMinute = currentHour * 60;
         }
@@ -83,10 +82,10 @@ public class Clock : MonoBehaviour
         float
             passingTime = Time.deltaTime,
             timefactor = 24f / CompleteDay,
-            normalized = passingTime * timefactor* SpeedTime;
+            normalized = passingTime * timefactor;
 
-        currentMinute += normalized;
-        currentHour += normalized / 60;
+        currentMinute += normalized*SpeedTime;
+        currentHour += normalized / 60*SpeedTime;
 
 
         Hour = currentHour;

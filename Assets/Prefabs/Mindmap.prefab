@@ -496,6 +496,7 @@ MonoBehaviour:
   - {fileID: 8291351094451684913}
   - {fileID: 2526355966263162654}
   - {fileID: 7685191837183426346}
+  - {fileID: 3671435222820187153}
 --- !u!222 &3319289579716311467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5358,17 +5359,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
---- !u!114 &2526355966263162654 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
-  m_PrefabInstance: {fileID: 7276856489353002118}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486045797a701e145957e0f78c7cb030, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6874744707968715607 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4295142734653126609, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5378,6 +5368,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2526355966263162654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+  m_PrefabInstance: {fileID: 7276856489353002118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486045797a701e145957e0f78c7cb030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &2593438099326547019 stripped
@@ -5515,6 +5516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+--- !u!224 &3296091359308235034 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+  m_PrefabInstance: {fileID: 7691930432245221847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3264200197283119695 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5537,11 +5543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &3296091359308235034 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
-  m_PrefabInstance: {fileID: 7691930432245221847}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8430865855065204617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5667,8 +5668,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: I made it look like Lord Deddington died on the day the tycoon, Tyrell,
-        visited.
+      value: 'Tycoon is running a new charity event.
+
+        Something is fishy,
+        Tyrell would never give money away.'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5684,7 +5687,7 @@ PrefabInstance:
       objectReference: {fileID: 2231162439471151882}
     - target: {fileID: 6231773743944275472, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Name
-      value: TycoonChange (1)
+      value: TycoonCharity
       objectReference: {fileID: 0}
     - target: {fileID: 6850957677461986452, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalScale.x
@@ -5720,6 +5723,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+--- !u!114 &3671435222820187153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+  m_PrefabInstance: {fileID: 8430865855065204617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486045797a701e145957e0f78c7cb030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5664149942658715736 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4295142734653126609, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5866,6 +5880,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+--- !u!224 &4581921435664090275 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+  m_PrefabInstance: {fileID: 8689529578398583918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4567938844155889654 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5888,11 +5907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &4581921435664090275 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
-  m_PrefabInstance: {fileID: 8689529578398583918}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9060446924699948157
 PrefabInstance:
   m_ObjectHideFlags: 0

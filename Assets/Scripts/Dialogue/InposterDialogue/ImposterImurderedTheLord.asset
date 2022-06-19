@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
   m_Name: ImposterImurderedTheLord
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -20,8 +20,29 @@ MonoBehaviour:
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
-  ending: 0
+  Lines:
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: You killed the Lord? With your good work?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Ha...ha...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...It was a joke, right?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
