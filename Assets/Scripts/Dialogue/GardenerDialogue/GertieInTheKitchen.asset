@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EdnaDeadLord 4
+  m_Name: GertieInTheKitchen
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -18,17 +18,19 @@ MonoBehaviour:
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 9, y: 11}
-  includedCharacters: 0000000000000000
+  AvailabilityHours: {x: 10, y: 12.5}
+  includedCharacters: 
   Lines:
-  - speaker: 4
-    speakerEmotion: 3
+  - speaker: 5
+    speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: A disaster of utmost proportions
+    text: 'Times are tought be we still have to eat!
+
+'
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 3
+  ending: 0
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

@@ -10,54 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: StudyChamber
+  m_Name: GertieLordDead
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
-  AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000002000000
+  AvailabilityHours: {x: 9, y: 12}
+  includedCharacters: 
   Lines:
-  - speaker: 2
+  - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I''m so sorry your dear Lord died.
-
-      I''m sure this is heavy on you,
-      Diddit.'
+    text: I...can't believe he is really dead.
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 0
+  - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Appreciated.
+    text: What am I ever going to do!?
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 2
+  - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Do you have something to show me?
-    fixedClue: {fileID: 11400000, guid: 78382f132f28dc245b6982d52f7c20d8, type: 2}
+    text: Who will tell me what to do with the garden!?
+    fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: How do you like the Manor?
-    reaction: {fileID: 11400000, guid: 36a8e0868a631234f86ad24ed12807eb, type: 2}
+  - text: I am so sorry for your loss.
+    reaction: {fileID: 11400000, guid: d9377f7a126f42e499486aaba2155094, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: I'd like to tell you something
-    reaction: {fileID: 11400000, guid: 49dfe6b6aeded09498f14cc29906caa6, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: What is your current suspicion?
-    reaction: {fileID: 11400000, guid: ab82347dedf1c894a9a29904e282fb19, type: 2}
+  - text: You are a great gardener, you can take care of it yourself.
+    reaction: {fileID: 11400000, guid: 27bcb599e51a77f458808eb2c6aed503, type: 2}
     trigger: {fileID: 0}
     rewards: []

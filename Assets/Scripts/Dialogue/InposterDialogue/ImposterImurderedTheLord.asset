@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EdnaDeadLord 4
+  m_Name: ImposterImurderedTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -18,17 +18,10 @@ MonoBehaviour:
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 9, y: 11}
-  includedCharacters: 0000000000000000
-  Lines:
-  - speaker: 4
-    speakerEmotion: 3
-    otherReactions: []
-    isThought: 0
-    text: A disaster of utmost proportions
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  ending: 3
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 0
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

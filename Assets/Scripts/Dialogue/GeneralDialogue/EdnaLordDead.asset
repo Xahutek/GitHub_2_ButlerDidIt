@@ -10,44 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EdnaNameCalling
+  m_Name: EdnaLordDead
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
-  seen: 1
-  AvailabilityHours: {x: 8, y: 9}
+  unique: 1
+  seen: 0
+  AvailabilityHours: {x: 9, y: 12}
   includedCharacters: 
   Lines:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler, what should I call you from now on?
+    text: Lord Deddington he...passed away?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Murdered! Unbelievable, who would do such a thing?
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I'd prefer if you called me...
+    text: A tragedy!
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 2
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Truly!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "Butler...give me some time. \nI need to grieve."
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options:
-  - text: A murderer
-    reaction: {fileID: 11400000, guid: de118f6d3fe24a142b0072675e867351, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: Diddit
-    reaction: {fileID: 11400000, guid: de118f6d3fe24a142b0072675e867351, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: Hugh
-    reaction: {fileID: 11400000, guid: de118f6d3fe24a142b0072675e867351, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []
