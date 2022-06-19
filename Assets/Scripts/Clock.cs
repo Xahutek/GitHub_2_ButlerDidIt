@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
+    float SpeedTime = 2;
     public static Clock main;
     public static float TotalHours
     {
@@ -52,6 +53,14 @@ public class Clock : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SpeedTime = 20;
+        }
+        if (Input.GetKeyUp(KeyCode.T))
+        {
+            SpeedTime = 2;
+        }
         if (internalRefresh)
         {
             internalRefresh = false;
@@ -74,7 +83,7 @@ public class Clock : MonoBehaviour
         float
             passingTime = Time.deltaTime,
             timefactor = 24f / CompleteDay,
-            normalized = passingTime * timefactor;
+            normalized = passingTime * timefactor* SpeedTime;
 
         currentMinute += normalized;
         currentHour += normalized / 60;

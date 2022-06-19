@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 6}
   includedCharacters: 0000000004000000
   Lines:
@@ -39,7 +39,7 @@ MonoBehaviour:
     speakerEmotion: 1
     otherReactions: []
     isThought: 1
-    text: (Oh no)
+    text: (Oh no.)
     fixedClue: {fileID: 11400000, guid: fd76556a8a6fa6c48bac15523d735c83, type: 2}
     clueHidden: 0
   - speaker: 4

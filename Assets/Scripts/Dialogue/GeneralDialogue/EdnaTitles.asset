@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000004000000
   Lines:
@@ -81,7 +81,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (What have I done)
+    text: (What have I done?)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...My...Congratulations to all those titles
+    text: My...Congratulations to all those titles.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0

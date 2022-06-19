@@ -24,18 +24,21 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: Edna and Tyrell are already here
+    isThought: 0
+    text: Edna and Tyrell are already here.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Splendid, I will say hello as soon as I'm done here.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'They haven''t met in such a long time!
 
 '
@@ -44,6 +47,7 @@ MonoBehaviour:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: It's been a whole 10 days since they last saw each other!
     fixedClue: {fileID: 0}
     clueHidden: 0

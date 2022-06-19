@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8d30eec8a0660f04682baa26b7d30a12, type: 2}
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
@@ -53,7 +53,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (Until I found a <color=green>solution</color>, I can go and <color=green>do
-      something else</color>, only a matter of <color=#add8e6ff>time</color> until
+      something else</color>, only a matter of <color=#add8e6ff>time</color>.) until
       the next guests show up)
     fixedClue: {fileID: 0}
     clueHidden: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (After all, my pocket watch relentlessly ticks away)
+    text: (After all, my pocket watch relentlessly ticks away.)
     fixedClue: {fileID: 11400000, guid: afe723cfb2441564cb85828122ae5227, type: 2}
     clueHidden: 0
   - speaker: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (If I want to get out of this today, I can't allow myself to sit around
-      for too long)
+      for too long.)
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

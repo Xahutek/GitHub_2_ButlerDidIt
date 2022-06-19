@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
@@ -32,7 +32,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (She's expecting something from me, I can feel it)
+    text: (She's expecting something from me, I can feel it.)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (Ah! That's right! I am a Butler! I should bring her something to eat from
-      the <color=green>living room</color>)
+      the <color=green>living room</color>.)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4

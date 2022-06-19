@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 4, y: 24}
   includedCharacters: 
   Lines:
@@ -61,7 +61,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Of course he does, he works 200 hours a week. Obviously)
+    text: (Of course he does, he works 200 hours a week. Obviously.)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
