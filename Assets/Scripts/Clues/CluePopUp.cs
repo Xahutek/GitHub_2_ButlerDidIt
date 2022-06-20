@@ -19,6 +19,7 @@ public class CluePopUp : MonoBehaviour
 
     public void Start()
     {
+
         playerReference = PlayerController.main;
 
         EventSystem.main.OnGetClue += PopUp;
@@ -30,8 +31,6 @@ public class CluePopUp : MonoBehaviour
     Tween SizeTween, PosTween, CircleTween, CircleZoom;
     public void PopUp(Clue C)
     {
-        if (!C.DisplayThoughtBubbleOnGain) return;
-
         Refresh(C);
 
         transform.position = ((Vector3)playerReference.position + (Vector3)bubbleOffset + Camera.main.ScreenToWorldPoint(rightUpCorner)) *0.5f;

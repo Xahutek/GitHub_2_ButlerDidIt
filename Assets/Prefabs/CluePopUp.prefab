@@ -189,7 +189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4273283304876815264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -245,6 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clue: {fileID: 0}
   itemImage: {fileID: 5290406357357707511}
+  exclamationMark: {fileID: 0}
   text: {fileID: 2811405502412622927}
 --- !u!222 &5098492585239522399
 CanvasRenderer:

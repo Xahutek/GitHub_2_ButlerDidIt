@@ -12,18 +12,20 @@ public class Clue : ScriptableObject
     private Clue[]
         required,
         nullify;
-    public bool DisplayThoughtBubbleOnGain = true;
     public bool seenInInventory = false;
+    public bool
+    isInventoryClue,
+    isMindmapClue;
 
-    [SerializeField] private bool
-        _ButlerKnows,
-        _DetectiveKnows,
-        _InposterKnows,
-        _TycoonKnows,
-        _GeneralKnows,
-        _GardenerKnows;
+    //[SerializeField] private bool
+    //    _ButlerKnows,
+    //    _DetectiveKnows,
+    //    _InposterKnows,
+    //    _TycoonKnows,
+    //    _GeneralKnows,
+    //    _GardenerKnows;
 
-   [SerializeField]protected bool
+    [SerializeField]protected bool
         ButlerKnows,
         DetectiveKnows,
         ImposterKnows,
@@ -43,16 +45,14 @@ public class Clue : ScriptableObject
     {
         switch (C)
         {
-            case Character.Butler: ButlerKnows = k; if (editor) ButlerKnows=_ButlerKnows; break;
-            case Character.Detective: DetectiveKnows = k; if (editor) DetectiveKnows = _DetectiveKnows; break;
-            case Character.Tycoon: TycoonKnows = k; if (editor) TycoonKnows = _TycoonKnows; break;
-            case Character.General: GeneralKnows = k; if (editor) GeneralKnows = _GeneralKnows; break;
-            case Character.Gardener: GardenerKnows = k; if (editor) GardenerKnows = _GardenerKnows; break;
+            case Character.Butler: ButlerKnows = k; break;
+            case Character.Detective: DetectiveKnows = k; break;
+            case Character.Tycoon: TycoonKnows = k; break;
+            case Character.General: GeneralKnows = k; break;
+            case Character.Gardener: GardenerKnows = k; break;
             case Character.Imposter:
                 DetectiveKnows = k;
                 ImposterKnows = k;
-                if (editor) DetectiveKnows = _DetectiveKnows;
-                if (editor) ImposterKnows = _InposterKnows;
                 break;
             default:
                 return;
@@ -158,12 +158,11 @@ public class Clue : ScriptableObject
 
     public void FullReset()
     {
-        ButlerKnows = _ButlerKnows;
-        DetectiveKnows = _DetectiveKnows;
-        TycoonKnows = _TycoonKnows;
-        GeneralKnows = _GeneralKnows;
-        GardenerKnows = _GardenerKnows;
-        seenInInventory = false;
+        //ButlerKnows = _ButlerKnows;
+        //DetectiveKnows = _DetectiveKnows;
+        //TycoonKnows = _TycoonKnows;
+        //GeneralKnows = _GeneralKnows;
+        //GardenerKnows = _GardenerKnows;
     }
 }
 

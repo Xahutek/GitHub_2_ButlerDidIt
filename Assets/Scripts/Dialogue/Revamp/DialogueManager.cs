@@ -491,7 +491,7 @@ public class DialogueManager : MonoBehaviour
 
         SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
 
-        if (L.fixedClue)
+        if (L.fixedClue&&L.fixedClue.isInventoryClue)
             gainedClue = L.fixedClue;
 
         foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)

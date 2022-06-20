@@ -218,7 +218,7 @@ public class InventoryUI : MonoBehaviour
         while (!checksOut && nextC != Character.Butler)
         {
             next += 1;
-            if (next >=characters.Count) next = characters.Count - 1;
+            if (next >=characters.Count) next = 0;
             nextC = (Character)next;
             checksOut = !hideUnknownCharacters || nextC.Profile().knownToPlayer;
         }

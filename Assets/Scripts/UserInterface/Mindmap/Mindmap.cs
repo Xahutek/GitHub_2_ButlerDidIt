@@ -48,6 +48,10 @@ public class Mindmap : MonoBehaviour
         foreach (InfoKnot K in Knots)
         {
             OnMindmapToggle += K.ToggleEvent;
+            if(K is ClueInfoKnot)
+            {
+                (K as ClueInfoKnot).clue.isMindmapClue = true;
+            }
         }
     }
 
