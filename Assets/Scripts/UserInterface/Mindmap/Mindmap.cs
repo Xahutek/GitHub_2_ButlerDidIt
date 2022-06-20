@@ -56,12 +56,15 @@ public class Mindmap : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Tab) || (isOpen && Input.GetKeyUp(KeyCode.Escape)))
+
+        if (GameLoadData.difficulty != Difficulty.Butler && (Input.GetKeyUp(KeyCode.Tab) || (isOpen && Input.GetKeyUp(KeyCode.Escape))))
             Toggle();
     }
 
     public void Toggle()
     {
+        Debug.Log(GameLoadData.difficulty);
+
         if (isOpen)
             Close();
         else Open();

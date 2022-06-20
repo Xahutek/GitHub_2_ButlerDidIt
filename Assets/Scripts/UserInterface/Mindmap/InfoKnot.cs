@@ -68,7 +68,6 @@ public class InfoKnot : MonoBehaviour
         if (on) Refresh();
 
         float delay= on?Mathf.Clamp01((transform.position - mid).magnitude / 3):0;
-        Debug.Log(delay);
 
         DOTween.Kill(tween);
         transform.localScale = Vector3.one* (!on ? 1 : 0);

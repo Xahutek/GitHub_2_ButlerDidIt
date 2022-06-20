@@ -7,6 +7,10 @@ using Calendar;
 public class ProgressFile
 {
     public bool Fresh;
+
+    //Difficulty
+    public Difficulty difficulty;
+
     //Time
     public float currentHour, currentMinute;
 
@@ -222,6 +226,9 @@ public class ProgressFile
 
     public ProgressFile() //New Game
     {
+        difficulty= GameLoadData.difficulty;
+        Debug.Log(difficulty);
+
         currentHour = 0;
         currentMinute = 0;
 
@@ -240,6 +247,9 @@ public class ProgressFile
 
     public void Save()
     {
+        difficulty = GameLoadData.difficulty;
+        Debug.Log(difficulty);
+
         currentHour = Clock.Hour;
         currentMinute = Clock.Minute;
 
@@ -269,6 +279,9 @@ public class ProgressFile
 
     public void Load()
     {
+        GameLoadData.difficulty=difficulty;
+        Debug.Log(difficulty);
+
         //Time
         Clock.main.currentHour = currentHour;
         Clock.main.currentMinute = currentMinute;
