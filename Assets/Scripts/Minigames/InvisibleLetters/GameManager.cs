@@ -74,6 +74,7 @@ namespace Letters
             { 
                 gameState = GameState.Deciphered;
                 EmptyLetters.givenAway = true;
+                foreach(PaperSpot spot in spots) { spot.time = spot.minHoldTime + spot.completeTime; }
             }
             else if (EmptyLetters.KnownTo(Character.Butler))
             {

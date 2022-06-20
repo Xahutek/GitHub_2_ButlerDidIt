@@ -10,7 +10,7 @@ namespace Letters
         [HideInInspector] public TMP_Text text;
         public Color inkColor;
         private Coroutine heating;
-        private float time, minHoldTime = 1.5f, completeTime = 4;
+        [HideInInspector] public float time, minHoldTime = 1.5f, completeTime = 4;
 
         private void Awake()
         {
