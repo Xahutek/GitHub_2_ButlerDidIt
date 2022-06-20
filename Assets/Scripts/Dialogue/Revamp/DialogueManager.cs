@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
             else NextQueued = true;
         }
         
-        if (isOpen && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
+        if (isOpen && main == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
             Close();
         if (!isOpen && !wasCleared)
             Clear();
