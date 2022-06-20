@@ -17,19 +17,21 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: I think Edna might be a detective
+    isThought: 0
+    text: I think Edna might be a detective.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ' I''m sure she has stories about being a detective on sea.'
     fixedClue: {fileID: 0}
     clueHidden: 0

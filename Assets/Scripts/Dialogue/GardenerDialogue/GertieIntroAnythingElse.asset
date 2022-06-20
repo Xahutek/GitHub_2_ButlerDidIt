@@ -18,12 +18,13 @@ MonoBehaviour:
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 0, y: 24}
+  AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...Aaaanything else?
     fixedClue: {fileID: 0}
     clueHidden: 0
@@ -32,14 +33,14 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: What are your plans for today?
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 9c780c630b3770a48bc97db6b1e12a1a, type: 2}
     trigger: {fileID: 0}
     rewards: []
   - text: ' General Tuskson and Lord Tyrell are already here.'
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 9d729c43c36a5b542a9ef78c7c40ae20, type: 2}
     trigger: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
     rewards: []
   - text: Tell me about Slotheleus Sus.
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: ede1b3ffa1f0a094595022f08c197ae4, type: 2}
     trigger: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
     rewards: []

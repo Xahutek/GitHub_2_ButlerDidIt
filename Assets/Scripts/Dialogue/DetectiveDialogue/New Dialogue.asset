@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
@@ -22,15 +24,18 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
-    text: 'Standard Answer '
+    isThought: 0
+    text: Standard Answer.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: (She can't just say "Standard Answer"...can she?)
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 0
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

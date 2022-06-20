@@ -18,6 +18,9 @@ public class ClockDisplay : MonoBehaviour
         minuteHand.localRotation = Quaternion.Euler(0, 0, -Clock.Minute * minutesToDegrees);
 
         UpdateMarkers();
+
+        if (GameLoadData.difficulty != Difficulty.Page)
+            gameObject.SetActive(false);
     }
 
     public ClockMarker[] markers= new ClockMarker[0];

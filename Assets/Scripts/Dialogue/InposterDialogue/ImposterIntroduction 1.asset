@@ -16,9 +16,9 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
-  AvailabilityHours: {x: 6, y: 7}
+  AvailabilityHours: {x: 6.5, y: 9}
   includedCharacters: 0000000006000000
   Lines:
   - speaker: 6
@@ -32,7 +32,7 @@ MonoBehaviour:
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
-    text: Quite an experience to stand in a room full of knowledge and perspective
+    text: Quite an experience to stand in a room full of knowledge and perspective.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 6

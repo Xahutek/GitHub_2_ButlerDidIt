@@ -26,7 +26,7 @@ namespace Calendar
 
         public void LoadCalendar(List<bool> calendar)
         {
-            for (int i = 0; i < allFields.Count; i++)
+            for (int i = 0; i < Mathf.Min(allFields.Count,calendar.Count); i++)
             {
                 allFields[i].SetCross(calendar[i]);
             }

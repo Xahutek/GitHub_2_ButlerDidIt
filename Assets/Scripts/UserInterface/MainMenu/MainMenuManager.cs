@@ -54,12 +54,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void NewGame()
     {
+        GameLoadData.difficulty = SelectedDifficulty;
         SaveSystem.SaveNewGame();
         LoadGame();
     }
     public void LoadGame()
     {
-        GameLoadData.difficulty = SelectedDifficulty;
         StartCoroutine(ExecuteLoadScene("_MainManor"));
     }
 

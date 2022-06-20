@@ -17,18 +17,46 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000003000000
   Lines:
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: ...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: ...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   - speaker: 3
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
     text: '...Ahem!
 
-      <color=#ffa500ff>Tycoon Theodore Tyrell</color=#ffa500ff>
-      [...] Tyrell has arrived!'
+      <color=#ffa500ff>Tycoon Theodore Theodoros T. Tyrell The
+      Third (senior) has arrived!'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "I am here for lunch at a party. \nAnd a party.\n"
+    fixedClue: {fileID: 11400000, guid: 747760185156d954285b9045362c9962, type: 2}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But mostly lunch, one less meal paid for.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
@@ -49,7 +77,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (I didn't think the evening could get any worse after murdering Lord Deddington)
+    text: (I didn't think the evening could get any worse after murdering Lord Deddington.)
+    fixedClue: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (Do I really have to keep talking to him?)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0

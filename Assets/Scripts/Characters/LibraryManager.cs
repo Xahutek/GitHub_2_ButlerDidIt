@@ -7,6 +7,19 @@ public class LibraryManager : MonoBehaviour
     public CharacterProfile[] Profiles;
     public ClueLibrary clueLibrary;
 
+    private void Awake()
+    {
+        foreach (Item i in clueLibrary.AllItems)
+        {
+            i.isMindmapClue = false;
+            i.isInventoryClue = false;
+        }
+        foreach (Clue c in clueLibrary.AllClues)
+        {
+            c.isMindmapClue = false;
+            c.isInventoryClue = false;
+        }
+    }
     public void Start()
     {
         clueLibrary.SetUp();

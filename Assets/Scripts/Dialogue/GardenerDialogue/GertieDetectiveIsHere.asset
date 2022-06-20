@@ -17,19 +17,21 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    text: I think the detective might be among us
+    isThought: 0
+    text: I think the detective might be among us.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'Ah! R-Really?
 
       Who do you think could the great detective be?'

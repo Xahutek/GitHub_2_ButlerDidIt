@@ -16,7 +16,7 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
   AvailabilityHours: {x: 4, y: 24}
   includedCharacters: 
@@ -61,10 +61,17 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Of course he does, he works 200 hours a week. Obviously)
+    text: (Of course he does, he works 200 hours a week. Obviously.)
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 3
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Can my hard-working self do anything for you?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  ending: 0
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

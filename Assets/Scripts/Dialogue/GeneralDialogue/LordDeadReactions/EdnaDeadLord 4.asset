@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: EdnaDeadLord 4
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
+  unique: 0
   seen: 0
   AvailabilityHours: {x: 9, y: 11}
   includedCharacters: 0000000000000000
@@ -22,9 +24,11 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: A disaster of utmost proportions
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

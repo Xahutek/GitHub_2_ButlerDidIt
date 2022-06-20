@@ -22,49 +22,64 @@ MonoBehaviour:
   - startHour: 0
     room: 0
     state: 0
+    important: 0
   - startHour: 9
-    room: 5
+    room: 9
     state: 0
+    important: 0
   - startHour: 10
-    room: 5
+    room: 10
     state: 0
+    important: 0
   - startHour: 11
-    room: 5
+    room: 13
     state: 0
+    important: 0
   - startHour: 12
     room: 5
     state: 0
+    important: 0
   - startHour: 13
-    room: 5
+    room: 8
     state: 0
+    important: 0
   - startHour: 14
     room: 12
     state: 0
+    important: 0
   - startHour: 15
     room: 1
     state: 0
+    important: 0
   - startHour: 16
     room: 4
     state: 0
+    important: 0
   - startHour: 17
     room: 5
     state: 0
+    important: 0
   - startHour: 18
     room: 6
     state: 0
+    important: 0
   - startHour: 19
     room: 2
     state: 0
+    important: 0
   - startHour: 19
     room: 3
     state: 0
+    important: 0
   - startHour: 20
     room: 3
     state: 0
+    important: 0
   connectedClues:
   - {fileID: 11400000, guid: 5ff44aba2dcfac940ac04e0102508066, type: 2}
   - {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
   dialogues:
+  - {fileID: 11400000, guid: 44ded19f7eef8984796c309955f68ce2, type: 2}
   - {fileID: 11400000, guid: 478939be1b629af45b45757643db74e7, type: 2}
   - {fileID: 11400000, guid: 4b048b3f241abd54091ffe2ed3af9975, type: 2}
   - {fileID: 11400000, guid: b8aea03101cd1ca46b07897fc98ec88f, type: 2}

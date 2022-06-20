@@ -16,16 +16,16 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
-  AvailabilityHours: {x: 4, y: 24}
+  AvailabilityHours: {x: 5, y: 6.5}
   includedCharacters: 
   Lines:
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: There he is! Slotheleus Sus is here!
+    text: Slotheleus Sus is here!
     fixedClue: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
     clueHidden: 0
   - speaker: 3
@@ -40,8 +40,16 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Two crazy guests, one I have never herad of and one genius level detective...just
-      my luck)
+    text: (Two crazy guests, one guest I have never herad of and one genius level
+      detective...just my luck.)
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: While I have intelligent and logical dialogue with Slotheleus, why don't
+      you talk to the gardener in the garden?
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

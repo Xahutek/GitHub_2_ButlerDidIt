@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: GreenlightLordDiscovered
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 1
@@ -22,18 +24,21 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: So, the Lord is dead.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: He truly is.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: To find the murderer, <color=#00ff00ff>I will search the house for clues</color>
       and <color=#00ff00ff>question each of you.
     fixedClue: {fileID: 0}
@@ -41,6 +46,7 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: I trust no one of you will <color=#00ff00ff>tamper</color> with the <color=#00ff00ff>evidence.
       if you do see someone acting strange, report back to me.
     fixedClue: {fileID: 0}
@@ -48,12 +54,14 @@ MonoBehaviour:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Your help is <i>so </i>appreciated, Detective Dence!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Gentlemen and Ladies, <color=#00ff00ff>on midnight sharp</color>, I promise
       to have untangled this enigma.
     fixedClue: {fileID: 0}
@@ -61,18 +69,21 @@ MonoBehaviour:
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: <b>I</b> will have it figured out <i>before then<i>!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'No you won''t. '
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 1
     text: <color=#808080ff>(I need to</color><color=#ff0000ff> cover all my traces</color><color=#808080ff>
       until then)
     fixedClue: {fileID: 0}
@@ -80,6 +91,7 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 1
     text: <color=#808080ff>(</color><color=#ff0000ff>Manipulate</color><color=#808080ff>
       the evidence)
     fixedClue: {fileID: 0}
@@ -87,6 +99,7 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 1
     text: <color=#808080ff>(Construct a</color> <color=#ff0000ff>false motive</color><color=#808080ff>,</color>
       <color=#ff0000ff>incriminate</color><color=#808080ff> someone else)
     fixedClue: {fileID: 0}
@@ -94,6 +107,7 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 1
     text: <color=#808080ff>(Just don't be suspicious, <color=#ff0000ff>don't get
       caught.</color><color=#808080ff>)
     fixedClue: {fileID: 0}
@@ -101,6 +115,7 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'I will <color=#ff0000ff>catch the killer</color>.
 
       The meeting is
@@ -109,6 +124,14 @@ MonoBehaviour:
 '
     fixedClue: {fileID: 0}
     clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Navigating through the mansion, picking up on every clue
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   ending: 3
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

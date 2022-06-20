@@ -49,7 +49,8 @@ public class SpeechBubble : Bubble
         }
         text.maxVisibleCharacters = fullCharactersShown;
 
-        manager.SetEmotion(line.speaker, line.speakerEmotion, false);
+        if(manager!=null)//Null on clue pop up
+            manager.SetEmotion(line.speaker, line.speakerEmotion, false);
 
         isTyping = false;
     }

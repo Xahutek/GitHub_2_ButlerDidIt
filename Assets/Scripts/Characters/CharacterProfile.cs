@@ -122,6 +122,10 @@ public class CharacterProfile : ScriptableObject
         {
             d.seen = false;
         }
+        foreach (Clue c in connectedClues)
+        {
+            c.isInventoryClue = true;
+        }
 
         currentRoom = Room.Null;
         bool knowntoplayer = identity == Character.Butler || identity == Character.Lord || identity == Character.Gardener;

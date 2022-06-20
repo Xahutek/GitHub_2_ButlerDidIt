@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Bougiecide
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
@@ -22,31 +24,36 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: How do I like the study? Well...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: It certainly has the fresh smell of bougiecide in the air.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: An aura of Deadlordichor too.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: In all seriousness, Mr.Diddit, my opinion on the house isn't that important
-      right now, someone died and I'd like to solve the case
+      right now, someone died and I'd like to solve the case.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 4
     otherReactions: []
+    isThought: 0
     text: "Perhaps I'll come by again in a few weeks and then we can chat about architecture
       and \r\ninterior design."
     fixedClue: {fileID: 0}

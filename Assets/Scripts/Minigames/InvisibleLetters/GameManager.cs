@@ -98,6 +98,7 @@ namespace Letters
                     break;
                 case GameState.Burnt:
                     BurntLetters.MakeKnownTo(Character.Butler);
+                    EmptyLetters.givenAway = true;
                     FilledLetters.givenAway = true;
                     break;
                 default: //no letters in inventory or burnt                    

@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
             else NextQueued = true;
         }
         
-        if (isOpen && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
+        if (isOpen && main == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
             Close();
         if (!isOpen && !wasCleared)
             Clear();
@@ -491,7 +491,7 @@ public class DialogueManager : MonoBehaviour
 
         SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
 
-        if (L.fixedClue)
+        if (L.fixedClue&&L.fixedClue.isInventoryClue)
             gainedClue = L.fixedClue;
 
         foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)

@@ -17,14 +17,40 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...Oh no!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'Well I didn''t know him but it''s always sad when people die.
+
+      Was
+      it an accident?'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Don't worry, I won't tell anyone.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But do you have a plan on what to do? I heard one of the guests is a great
+      detective, do you have an idea who it could be?
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

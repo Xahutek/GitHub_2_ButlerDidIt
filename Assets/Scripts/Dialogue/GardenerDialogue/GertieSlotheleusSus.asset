@@ -17,19 +17,21 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: There is another guest, Slotheleus Sus.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'I''ve heard the Lord talk about him!
 
       Allegedly, Sir Sus is a close
@@ -39,12 +41,14 @@ MonoBehaviour:
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: I am sure the Lord would love to hear all sorts of stories from him!
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: Do you...think that the detective is already here?
     fixedClue: {fileID: 0}
     clueHidden: 0
@@ -53,10 +57,14 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: I think one of the guests might be the detective
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 38c13ef8828c1c4479cc2219036d1b31, type: 2}
     trigger: {fileID: 0}
     rewards: []
   - text: I don't think he's here yet.
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 59c24e4cee0071041acdd3c9abfce038, type: 2}
     trigger: {fileID: 0}
+    rewards: []
+  - text: Have you seen Slotheleus do anything suspicious?
+    reaction: {fileID: 11400000, guid: 6a0351f5c104b08448db323b1da746e4, type: 2}
+    trigger: {fileID: 11400000, guid: 35a338698c6387e4fa81dc9593a12334, type: 2}
     rewards: []
