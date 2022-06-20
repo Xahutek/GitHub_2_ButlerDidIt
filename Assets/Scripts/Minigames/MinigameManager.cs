@@ -9,6 +9,7 @@ public class MinigameManager : MonoBehaviour
 
     public static MinigameObject currentMinigame = null;
     public static string sceneName;
+    private Coroutine execution;
     public static bool isOpen
     {
         get { return actionQueued||currentMinigame != null||SceneManager.GetSceneByName(sceneName).isLoaded; }
@@ -29,8 +30,8 @@ public class MinigameManager : MonoBehaviour
     public void Open(string name)
     {
         if (isOpen) Close();
-
-        StartCoroutine(ExecuteAction(name,true));
+        if(execution == null)
+        execution = StartCoroutine(ExecuteAction(name,true));
     }
 
     public void Close()
@@ -38,7 +39,10 @@ public class MinigameManager : MonoBehaviour
         if (!isOpen) return;
 
         if(currentMinigame)currentMinigame.Close();
-        StartCoroutine(ExecuteAction(sceneName, false));
+        if (execution == null)
+        {
+            execution = StartCoroutine(ExecuteAction(sceneName, false));
+        }
         currentMinigame = null;
     }
 
@@ -67,7 +71,7 @@ public class MinigameManager : MonoBehaviour
         GlobalBlackscreen.on = false;
         yield return new WaitForSeconds(0.5f);
         actionQueued = false;
-
+        execution = null;
     }
 
 }
