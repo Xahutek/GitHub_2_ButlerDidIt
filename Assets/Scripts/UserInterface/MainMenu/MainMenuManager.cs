@@ -29,7 +29,7 @@ public class MainMenuManager : MonoBehaviour
             unplayedPainting.SetActive(false);
             continuePainting.SetActive(true);
         }
-        //SelectedDifficulty = SaveSystem.GetSavedProgress(). //DifficultySetting when available
+        SelectedDifficulty = SaveSystem.GetSavedProgress().difficulty;
 
         DiffPainting.sprite = SelectedDifficulty == Difficulty.Page ? PageInfo.GetComponentInParent<Image>().sprite :
                             SelectedDifficulty == Difficulty.Valet ? ValetInfo.GetComponentInParent<Image>().sprite :
