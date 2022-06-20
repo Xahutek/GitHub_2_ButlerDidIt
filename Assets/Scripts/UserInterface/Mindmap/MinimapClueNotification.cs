@@ -12,7 +12,7 @@ public class MinimapClueNotification : MonoBehaviour
     Tween popUpTween;
     public void PopUp(Clue C)
     {
-        if (!C.isMindmapClue) return;
+        if (!C.isMindmapClue||GameLoadData.difficulty==Difficulty.Butler) return;
 
         DOTween.Kill(popUpTween);
         popUpTween = transform.DOScaleX(1, 0.2f).SetEase(Ease.InOutSine).SetLoops(6, LoopType.Yoyo);
