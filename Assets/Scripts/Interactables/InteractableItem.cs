@@ -14,6 +14,10 @@ public class InteractableItem : Interactable
 
     private void Awake()
     {
+        if (item.KnownTo(Character.Butler))
+        {
+            gameObject.SetActive(false);
+        }
        GetComponent<Image>().sprite = item.picture;        
     }
 
@@ -29,7 +33,5 @@ public class InteractableItem : Interactable
         transform.DOMove(pos, animSpeed).SetEase(Ease.InOutCirc);
 
         deactivated = true;
-        //This doesn't look as nice if the player moves to the left while animation is running
-        //as the target pos isn't updating
     }
 }
