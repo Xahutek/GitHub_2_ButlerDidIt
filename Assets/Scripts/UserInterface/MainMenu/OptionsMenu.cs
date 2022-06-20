@@ -24,6 +24,8 @@ public class OptionsMenu : MonoBehaviour
             if (resolution.width / resolution.height == 16 / 9)
                 resos.Add(resolution);
         ResIndex = PlayerPrefs.GetInt(RESOLUTION_PRED_KEY, 0);
+        PlayerPrefs.SetFloat("Master_Volume", 0.5f);
+        PlayerPrefs.Save();
     }
 
     #region FullScreen
