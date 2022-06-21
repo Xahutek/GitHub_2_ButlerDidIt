@@ -780,6 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74c5b38b14d72746b953635606ae46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  revealManager: {fileID: 7798078667468317630}
 --- !u!1 &5551356654716629117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4721,7 +4722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -618290
+      value: -808980
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -4729,7 +4730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -618312
+      value: -809002
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -4737,7 +4738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -618346
+      value: -809036
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w

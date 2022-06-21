@@ -35,6 +35,10 @@ public class GrandRevealManager : MonoBehaviour
         int sus;
         Character highest = suspicionManager.GetHighest(out sus);
 
+        Reveal(highest);
+    }
+    public void Reveal(Character highest)
+    {
         Sprite WhoDidIt;
 
         switch (highest)
@@ -61,20 +65,23 @@ public class GrandRevealManager : MonoBehaviour
                 WhoDidIt = TheButlerDidIt;
                 break;
         }
-
+        Reveal(WhoDidIt);
+    }
+    public void Reveal(Sprite WhoDidIt)
+    {
         finalPicture.sprite = WhoDidIt;
         finalPicture.raycastTarget = true;
 
         currentAlpha = 0;
-        DOTween.To(()=>currentAlpha, i => currentAlpha = i, 1, 0.5f)
+        DOTween.To(() => currentAlpha, i => currentAlpha = i, 1, 0.5f)
             .OnUpdate(() => Refresh()).SetEase(Ease.InExpo);
 
         finalPicture.transform.localScale = Vector3.one * 2f;
         finalPicture.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
         finalPicture.transform.rotation = Quaternion.Euler(0, 0, 45f);
         finalPicture.transform.DORotate(Vector3.zero, 0.5f).SetEase(Ease.InExpo);
-
     }
+
     float currentAlpha;
     public void Refresh()
     {
