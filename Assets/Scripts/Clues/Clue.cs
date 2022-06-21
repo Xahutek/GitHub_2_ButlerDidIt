@@ -80,6 +80,7 @@ public class Clue : ScriptableObject
                     return;
             }
         }
+        InventoryUI.main.NewClue();
     }
     public void MakeUnknownTo(Character C)
     {
@@ -100,6 +101,7 @@ public class Clue : ScriptableObject
                     return;
             }
         }
+        InventoryUI.main.NewClue();
     }
 
     public bool KnownTo(Character C)

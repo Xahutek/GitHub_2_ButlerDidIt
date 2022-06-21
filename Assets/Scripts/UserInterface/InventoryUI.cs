@@ -64,7 +64,6 @@ public class InventoryUI : MonoBehaviour
             else tButton.enabled = true;
         }
         Peek();
-        NewClue();
     }
 
     public bool isPeeking;
@@ -116,6 +115,8 @@ public class InventoryUI : MonoBehaviour
             if(c) ClueDisplays[i].Refresh(c, true);
             else ClueDisplays[i].Refresh(n);
         }
+        NewClue();
+
         foreach (ClueDisplay CD in ItemDisplays)
         {
             CD.Clear();
