@@ -15,7 +15,7 @@ public class RoomSpace : MonoBehaviour
     public bool isOpen, isLoaded;
 
     //[HideInInspector] public RoomSpace HeadSpace;
-    public RoomSpace subspace;
+    public RoomSpace[] subspaces;
     public bool unloadHandeledByMotherSpace = false;
 
     private void Awake()
@@ -109,7 +109,7 @@ public class RoomSpace : MonoBehaviour
         }
         Debug.Log(name + ". active " + on);
 
-        if (subspace)
+        foreach (RoomSpace subspace in subspaces)
         {
             Debug.Log("Onto Subspace " + subspace.name + ". active " + on);
             //subspace.HeadSpace = this;
