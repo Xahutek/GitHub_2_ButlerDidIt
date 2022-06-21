@@ -25,7 +25,6 @@ public class MindLine : MonoBehaviour
 
     public void Refresh(InfoKnot A, InfoKnot B)
     {
-
         object1 = A.gameObject.GetComponent<RectTransform>();
         object2 = B.gameObject.GetComponent<RectTransform>();
 

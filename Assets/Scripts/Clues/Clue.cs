@@ -17,29 +17,24 @@ public class Clue : ScriptableObject
     isInventoryClue,
     isMindmapClue;
 
-    //[SerializeField] private bool
-    //    _ButlerKnows,
-    //    _DetectiveKnows,
-    //    _InposterKnows,
-    //    _TycoonKnows,
-    //    _GeneralKnows,
-    //    _GardenerKnows;
+    [SerializeField]
+    private bool
+        presetButlerKnows,
+        presetDetectiveKnows,
+        presetInposterKnows,
+        presetTycoonKnows,
+        presetGeneralKnows,
+        presetGardenerKnows;
 
-    [SerializeField]protected bool
-        ButlerKnows,
+    [Header("Will be overwritten! - These should be display and runtime use unly.")]
+    [SerializeField] protected bool
+        ButlerKnows;
+    [SerializeField] protected bool
         DetectiveKnows,
         ImposterKnows,
         TycoonKnows,
         GeneralKnows,
         GardenerKnows;
-
-     //public float
-     //   ButlerWeight,
-     //   LordWeight,
-     //   DetectiveWeight,
-     //   TycoonWeight,
-     //   GeneralWeight,
-     //   GardenerWeight;
 
     public void AlterKnown(Character C, bool k, bool editor = false)
     {
@@ -160,11 +155,11 @@ public class Clue : ScriptableObject
 
     public void FullReset()
     {
-        //ButlerKnows = _ButlerKnows;
-        //DetectiveKnows = _DetectiveKnows;
-        //TycoonKnows = _TycoonKnows;
-        //GeneralKnows = _GeneralKnows;
-        //GardenerKnows = _GardenerKnows;
+        ButlerKnows = presetButlerKnows;
+        DetectiveKnows = presetDetectiveKnows;
+        TycoonKnows = presetTycoonKnows;
+        GeneralKnows = presetGeneralKnows;
+        GardenerKnows = presetGardenerKnows;
     }
 }
 

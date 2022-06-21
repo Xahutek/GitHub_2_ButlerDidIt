@@ -183,7 +183,7 @@ public class Mindmap : MonoBehaviour
 
                 bool
                     isEmpty = isEmpty = A.relevance == InfoKnot.Relevance.None || B.relevance == InfoKnot.Relevance.None,
-                    isActive = A.isRevealed || B.isRevealed;
+                    isActive = A.isRevealed && B.isRevealed;
 
                 if (!isEmpty && isActive)
                 {

@@ -50,7 +50,7 @@ public class RoomSpace : MonoBehaviour
             Load(true);
             currentAlpha = 1;
             tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 0, fadeDuration)
-                .OnUpdate(() => Refresh());
+                .OnUpdate(() => RefreshOverlay());
         }
     }
     public void ManualFade(bool on)
@@ -60,12 +60,12 @@ public class RoomSpace : MonoBehaviour
         if (on)
         {
             tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 0, fadeDuration)
-                .OnUpdate(() => Refresh());
+                .OnUpdate(() => RefreshOverlay());
         }
         else
         {
             tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 1, fadeDuration)
-                .OnUpdate(() => Refresh()).OnComplete(() => Load(false));
+                .OnUpdate(() => RefreshOverlay()).OnComplete(() => Load(false));
         }
     }
 
@@ -78,13 +78,13 @@ public class RoomSpace : MonoBehaviour
             DOTween.Kill(tween);
             currentAlpha = 0;
             tween = DOTween.To(() => currentAlpha, x => currentAlpha = x, 1, fadeDuration)
-                .OnUpdate(() => Refresh()).OnComplete(() => Load(false));
+                .OnUpdate(() => RefreshOverlay()).OnComplete(() => Load(false));
         }
     }
 
     Tween tween;
     float currentAlpha;
-    public void Refresh()
+    public void RefreshOverlay()
     {
         for (int i = 0; i < Overlay.Length; i++)
         {
@@ -117,6 +117,6 @@ public class RoomSpace : MonoBehaviour
             subspace.Load(on);
         }
 
-        Refresh();
+        RefreshOverlay();
     }
 }

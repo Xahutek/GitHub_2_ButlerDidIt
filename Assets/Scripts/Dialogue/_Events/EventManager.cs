@@ -10,8 +10,32 @@ public class EventManager : MonoBehaviour
     public static EventManager main;
 
     public EventProfile[] allEvents;
+    public Intermission[] allIntermissions;
+    [System.Serializable] public class Intermission
+    {
+        public string message;
+        public Vector2 availableTime = new Vector2(0,0f);
+        public Clue gainedClue;
 
-     GrandRevealManager revealManager;
+        public float duration
+        {
+            get { return availableTime.y - availableTime.x; }
+        }
+
+        public bool Triggered()
+        {
+            bool t = true;
+            if (!Clock.HourPassed(availableTime.x))
+                t = false;
+
+            if (GameManager.isPaused)
+                t = false;
+
+            return t;
+        }
+    }
+
+    GrandRevealManager revealManager;
     public EventDialogueManager dialogue;
     public EventProfile currentProfile;
     public EventObject room;
@@ -29,21 +53,40 @@ public class EventManager : MonoBehaviour
     {
         if (!isOpen&&!GameManager.isPaused)
         {
+            if (Clock.HourPassed(24f))
+            {
+                revealManager.Reveal();
+                return;
+            }
             foreach (EventProfile E in allEvents)
             {
-                if (E.Triggered() && E == allEvents[0])
-                    Debug.Log("");
                 if (E.Triggered())
                 {
                     StartEvent(E);
                     return;
                 }
             }
-            if (Clock.HourPassed(24f))
-                revealManager.Reveal();
+            foreach (Intermission I in allIntermissions)
+            {
+                if (I.Triggered())
+                {
+                    StartIntermission(I);
+                    return;
+                }
+            }
         }
     }
 
+    public void StartIntermission(Intermission inter)
+    {
+        Debug.Log("Start Intermission");
+
+        if (EventRoutine != null) return;
+
+        isOpen = true;
+        if (IntermissionRoutine!=null) StopCoroutine(IntermissionRoutine);
+        EventRoutine = StartCoroutine(IntermissionLoop(inter));
+    }
     public void StartEvent(EventProfile profile)
     {
         Debug.Log("Start Event in "+profile.SceneName);
@@ -54,7 +97,7 @@ public class EventManager : MonoBehaviour
         EventRoutine = StartCoroutine(EventLoop());
     }
 
-    Coroutine EventRoutine=null;
+    Coroutine EventRoutine=null, IntermissionRoutine;
     IEnumerator EventLoop()
     {
         isOpen = true;
@@ -131,5 +174,41 @@ public class EventManager : MonoBehaviour
         isOpen = false;
 
         Debug.Log("End Event");
+    }
+
+    IEnumerator IntermissionLoop(Intermission inter)
+    {
+        isOpen = true;
+
+        GlobalBlackscreen.multiplier = 2;
+        GlobalBlackscreen.on = true;
+
+        float
+            hours = Mathf.FloorToInt(inter.availableTime.x),
+            minutes = (inter.availableTime.x - hours) * 60;
+
+        string timeText = string.Format("{0:00}:{1:00}", hours, minutes) + " \n ";
+
+        GlobalBlackscreen.message =
+            "<color=#808080ff>" + timeText + "</color>"
+            + inter.message;
+
+        yield return new WaitForSeconds(0.5f);
+
+        while (true)
+        {
+            if (Input.anyKeyDown) break;
+            yield return null;
+        }//Wait for intro skip
+
+        Clock.PassHours(inter.duration);
+
+        GlobalBlackscreen.multiplier = 2;
+        GlobalBlackscreen.on = false;
+        yield return new WaitForSeconds(0.35f);
+
+        if(inter.gainedClue!=null)
+        inter.gainedClue.MakeKnownTo(Character.Butler);
+        isOpen = false;
     }
 }

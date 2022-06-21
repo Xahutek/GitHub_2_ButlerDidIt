@@ -12,6 +12,14 @@ public class EventSystem : MonoBehaviour
         main = this;
     }
 
+    public delegate void RefreshRoomsDelegate();
+    public event RefreshRoomsDelegate OnRefreshRooms;
+    public void RefreshRooms()
+    {
+        Debug.Log("RefreshRooms");
+        OnRefreshRooms?.Invoke();
+    }
+
     public delegate void ChangeRoomDelegate(Room room, Character character);
     public event ChangeRoomDelegate OnChangeRoom;
     public void ChangeRoom(Room room, Character character)

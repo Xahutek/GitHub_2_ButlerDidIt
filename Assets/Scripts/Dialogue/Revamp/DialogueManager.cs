@@ -363,6 +363,8 @@ public class DialogueManager : MonoBehaviour
                         OptionBubble O = OptionsBubbles[o];
                         O.Refresh(option, thisRoot, height);
 
+                        yield return new WaitForFixedUpdate();
+
                         height += o < options.Length ? O.height * BaseScale + BoxVerticalSpacing : 0;
                     }
                 }
@@ -491,7 +493,7 @@ public class DialogueManager : MonoBehaviour
 
         SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
 
-        if (L.fixedClue&&L.fixedClue.isInventoryClue)
+        if (L.fixedClue && L.fixedClue.isInventoryClue && !L.fixedClue.KnownTo(Character.Butler))
             gainedClue = L.fixedClue;
 
         foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)
