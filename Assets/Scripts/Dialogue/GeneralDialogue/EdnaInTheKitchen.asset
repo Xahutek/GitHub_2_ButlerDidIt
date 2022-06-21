@@ -10,67 +10,65 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroduction
+  m_Name: EdnaInTheKitchen
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
+  unique: 0
   seen: 0
-  AvailabilityHours: {x: 6, y: 9}
-  includedCharacters: 0000000005000000
+  AvailabilityHours: {x: 11, y: 12.5}
+  includedCharacters: 0000000004000000
   Lines:
-  - speaker: 5
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...
+    text: We are all heartbroken but we still have to eat!
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '!'
+    text: I am sure the great detective will have the case solved in no time!
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Good Morning to you, Hugh!
+    text: Until then, we need help in the kitchen.
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Does the Lord have any special instructions towards the garden for me?
-    fixedClue: {fileID: 11400000, guid: be53509cb4f374446889787dda4e9826, type: 2}
+    text: The giraffe and myself are preparing the food, would you be of assistance
+      and bring us some ingedients?
+    fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'For todays suprise party.
+    text: '(If I help them, it would help make me look less supicious.
 
-'
-    fixedClue: {fileID: 11400000, guid: a724cea2f55e3394dac3c568832bbb6c, type: 2}
+      but
+      I might need the time to cover my tracks)'
+    fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: The Lord is dead and I killed him
-    reaction: {fileID: 11400000, guid: e2beda21d1436e443971d024a90aa498, type: 2}
-    trigger: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
-    rewards: []
-  - text: No
-    reaction: {fileID: 11400000, guid: c97a87a5712a1174497defe7e2608c0f, type: 2}
+  - text: Yes
+    reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []
-  - text: Yes
-    reaction: {fileID: 11400000, guid: 338d1ebdd22e4bc4e8b3438836e4d9f1, type: 2}
+  - text: No
+    reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []

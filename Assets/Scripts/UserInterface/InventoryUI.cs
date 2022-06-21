@@ -115,6 +115,8 @@ public class InventoryUI : MonoBehaviour
             if(c) ClueDisplays[i].Refresh(c, true);
             else ClueDisplays[i].Refresh(n);
         }
+        NewClue();
+
         foreach (ClueDisplay CD in ItemDisplays)
         {
             CD.Clear();
@@ -172,6 +174,7 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    #region Markers
     private void MarkerMovement(bool status)
     {
         DOTween.Kill(charasMarkerTweenID);
@@ -181,6 +184,30 @@ public class InventoryUI : MonoBehaviour
         itemMarkerTweenID =
             CharasMarker.DOLocalMoveX(status && isOpen|| !isOpen ? 310 : 280, 0.2f).intId;        
     }
+
+    public void NewClue()
+    {
+        bool newClue = false;
+        bool newItem = false;
+        foreach (Clue clue in ClueLibrary.main.AllClues)
+        {
+            if (clue.KnownTo(Character.Butler) && !clue.seenInInventory)
+            {
+                if (clue is Item) { newItem = true; } 
+                else if(clue.isInventoryClue) { newClue = true; }
+            }
+        }
+        foreach (Item item in ClueLibrary.main.AllItems)
+        {
+            if (item.KnownTo(Character.Butler) && !item.seenInInventory)
+            {
+                newItem = true; 
+            }
+        }
+        CharasMarker.GetComponentInChildren<TMP_Text>().enabled = newClue;
+        ItemMarker.GetComponentInChildren<TMP_Text>().enabled = newItem;
+    }
+    #endregion
 
     public void OpenButlerInventory() => ChangeCurrentCharacter(Character.Butler);
     public void ChangeCurrentCharacter(bool right) => ChangeCurrentCharacter(right ? nextC : previousC);
