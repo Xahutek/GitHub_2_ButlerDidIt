@@ -13,7 +13,7 @@ public class EventManager : MonoBehaviour
     public Intermission[] allIntermissions;
     [System.Serializable] public class Intermission
     {
-        public string message;
+        [TextArea] public string message;
         public Vector2 availableTime = new Vector2(0,0f);
         public Clue gainedClue;
 

@@ -16,14 +16,15 @@ MonoBehaviour:
   picture: {fileID: 0}
   required: []
   nullify: []
-  DisplayThoughtBubbleOnGain: 0
-  seenInInventory: 0
-  _ButlerKnows: 0
-  _DetectiveKnows: 0
-  _InposterKnows: 0
-  _TycoonKnows: 0
-  _GeneralKnows: 0
-  _GardenerKnows: 0
+  seenInInventory: 1
+  isInventoryClue: 1
+  isMindmapClue: 1
+  presetButlerKnows: 0
+  presetDetectiveKnows: 0
+  presetInposterKnows: 0
+  presetTycoonKnows: 0
+  presetGeneralKnows: 0
+  presetGardenerKnows: 0
   ButlerKnows: 0
   DetectiveKnows: 0
   ImposterKnows: 0

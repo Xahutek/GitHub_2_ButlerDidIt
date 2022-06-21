@@ -991,6 +991,7 @@ MonoBehaviour:
   currentHour: 0
   currentMinute: 0
   CompleteDay: 60
+  SpeedUpMultiplier: 0
 --- !u!1 &6450869814690905443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1494,7 @@ GameObject:
   - component: {fileID: 2772130078575399123}
   - component: {fileID: 7798078667468317630}
   m_Layer: 0
-  m_Name: Events
+  m_Name: EventManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1532,6 +1533,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f406a4d770670db4e8438b67eab1984d, type: 2}
   - {fileID: 11400000, guid: 9be6bd242d2d3eb4d8faae0eef9628cf, type: 2}
   - {fileID: 11400000, guid: 5f0c30065ad8f0e41aee1a87cafeaf7f, type: 2}
+  allIntermissions:
+  - message: Sudddenly the door rings!
+    availableTime: {x: 0, y: 0}
+    gainedClue: {fileID: 0}
+  - message: The door rings...again!?
+    availableTime: {x: 3, y: 0}
+    gainedClue: {fileID: 0}
+  - message: The door rings once more...
+    availableTime: {x: 5, y: 0}
+    gainedClue: {fileID: 0}
   dialogue: {fileID: 5835750674925148920}
   currentProfile: {fileID: 0}
   room: {fileID: 0}
@@ -4291,6 +4302,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9144267140840524815, guid: 93bf1cdec55b1214b94684b05510d862, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.182602
+      objectReference: {fileID: 0}
+    - target: {fileID: 9144267140840524815, guid: 93bf1cdec55b1214b94684b05510d862, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.7091999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bf1cdec55b1214b94684b05510d862, type: 3}
 --- !u!224 &5391039277341851179 stripped
@@ -4702,7 +4721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1061058
+      value: -618290
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -4710,7 +4729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1061080
+      value: -618312
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -4718,7 +4737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1061114
+      value: -618346
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w
