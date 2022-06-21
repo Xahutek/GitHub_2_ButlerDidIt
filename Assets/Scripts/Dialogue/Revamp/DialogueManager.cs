@@ -326,7 +326,6 @@ public class DialogueManager : MonoBehaviour
                 Vector2 thisRoot = Locus + Vector2.left * BoxHorizontalSpacing * BoxHorizontalSign;
 
                 Debug.Log(line);
-                theOneWhoAsked = lines[line - 1].speaker;
 
                 if (dialogue.ending == Dialogue.EndingType.Closed)
                 {
@@ -403,7 +402,8 @@ public class DialogueManager : MonoBehaviour
                 }
                 else if (lines.Count > line && line >= 0) 
                 {
-                    //Character speaker = lines[line].speaker;
+                    if (lines[line].speaker != Character.Butler)
+                        theOneWhoAsked = lines[line].speaker;
 
                     if (CharacterObjects.Count == 2)
                     {
