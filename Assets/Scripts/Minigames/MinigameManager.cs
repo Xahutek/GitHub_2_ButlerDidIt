@@ -6,6 +6,7 @@ using UnityEngine;
 public class MinigameManager : MonoBehaviour
 {
     public static MinigameManager main;
+    public GrandRevealManager revealManager;
 
     public static MinigameObject currentMinigame = null;
     public static string sceneName;
@@ -14,6 +15,7 @@ public class MinigameManager : MonoBehaviour
     {
         get { return actionQueued||currentMinigame != null||SceneManager.GetSceneByName(sceneName).isLoaded; }
     }
+    public static bool blocked;
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class MinigameManager : MonoBehaviour
 
     public void Open(string name)
     {
+        if (blocked) return;
         if (isOpen) Close();
         if(execution == null)
         execution = StartCoroutine(ExecuteAction(name,true));
@@ -36,6 +39,8 @@ public class MinigameManager : MonoBehaviour
 
     public void Close()
     {
+        if (blocked) return;
+
         if (!isOpen) return;
 
         if(currentMinigame)currentMinigame.Close();
