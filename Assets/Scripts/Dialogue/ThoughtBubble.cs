@@ -20,6 +20,7 @@ public class ThoughtBubble : SpeechBubble
     Coroutine popUpRoutine = null;
     IEnumerator ExecuteScenePopUp(Clue C)
     {
+        GameManager.manualPaused = true;
         Dialogue.Line l = new Dialogue.Line(Character.Butler, C.name);
         Refresh(null, l, PlayerController.main.position + Vector2.up * 1.5f, 0, true);
 
@@ -31,17 +32,17 @@ public class ThoughtBubble : SpeechBubble
                 Disappear();
                 yield break;
             }
-
-            transform.position = PlayerController.main.position + Vector2.up * 1.5f;
         }
 
-        float timer = 0;
-        while (timer < 0.5f)
+        while (true)
         {
-            timer+=Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Mouse1))
+                break;
 
-            transform.position = PlayerController.main.position + Vector2.up * 1.5f;
+            yield return null;
         }
+
+        GameManager.manualPaused = false;
 
         Disappear();
     }
