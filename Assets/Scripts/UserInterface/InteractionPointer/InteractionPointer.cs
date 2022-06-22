@@ -1,14 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class InteractionPointer : MonoBehaviour
 {
     public CharacterLocus targetLocus;
+    Tween popUpTween;
+
+    public Vector2
+        XSpacing,
+        YSpacing;
 
     public bool isOpen
     {
-        get { return targetLocus != null; }
+        get { return targetLocus != null && !DialogueManager.isOpen; }
+    }
+
+    private void Start()
+    {
+        ResetAnimation();
+    }
+    public void ResetAnimation()
+    {
+        DOTween.Kill(popUpTween);
+        popUpTween = transform.GetChild(0).DOLocalMoveY(0.1f, 0.4f).SetEase(Ease.OutSine).OnComplete(ResetAnimation);
     }
 
     float scaleI = 0;
@@ -28,7 +44,7 @@ public class InteractionPointer : MonoBehaviour
         Camera cam = Camera.main;
 
         Vector3
-            toPos = targetLocus.transform.position + Vector3.up * 1.25f,
+            toPos = targetLocus.transform.GetChild(0).position + Vector3.up * 1.25f,
             fromPos = cam.transform.position;
         Vector3 dir = (toPos - fromPos).normalized;
 
@@ -41,14 +57,23 @@ public class InteractionPointer : MonoBehaviour
         if (isOffScreen)
         {
             Vector3 cappedTargetScreenPosition = targetScreenPosition;
-            if (cappedTargetScreenPosition.x <= 0) cappedTargetScreenPosition.x = 0f;
-            if (cappedTargetScreenPosition.x >= Screen.width) cappedTargetScreenPosition.x = Screen.width;
-            if (cappedTargetScreenPosition.y <= 0) cappedTargetScreenPosition.y = 0f;
-            if (cappedTargetScreenPosition.x >= Screen.width) cappedTargetScreenPosition.x = Screen.height;
+            if (cappedTargetScreenPosition.x <= 0) cappedTargetScreenPosition.x = XSpacing.x;
+            if (cappedTargetScreenPosition.x >= Screen.width) cappedTargetScreenPosition.x = Screen.width - XSpacing.y;
+            if (cappedTargetScreenPosition.y <= 0) cappedTargetScreenPosition.y = YSpacing.x;
+            if (cappedTargetScreenPosition.x >= Screen.width) cappedTargetScreenPosition.x = Screen.height - YSpacing.y;
 
             Vector3 targetWorldPosition = cam.ScreenToWorldPoint(cappedTargetScreenPosition);
+
+            float angle = Vector2.SignedAngle(Vector2.down,dir);
+            transform.rotation = Quaternion.Euler(0,0,angle);
+
             return targetWorldPosition;
         }
-        return toPos;
+        else
+        {
+            transform.rotation= Quaternion.Euler(0, 0, 0);
+
+            return toPos;
+        }
     }
 }

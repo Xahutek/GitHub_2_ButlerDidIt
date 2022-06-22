@@ -28,8 +28,10 @@ public class InteractionPointerWindow : MonoBehaviour
 
     public void SubscribeCharacterLocus(CharacterLocus locus)
     {
+        UnsubscribeCharacterLocus(locus);
         InteractionPointer pointer = GetFreePointer();
         pointer.targetLocus = locus;
+        pointer.ResetAnimation();
     }
     public void UnsubscribeCharacterLocus(CharacterLocus locus)
     {

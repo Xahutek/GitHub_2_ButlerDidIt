@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class MinimapClueNotification : MonoBehaviour
+public class MndmapClueNotification : MonoBehaviour
 {
     protected void Start()
     {
