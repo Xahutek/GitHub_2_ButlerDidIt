@@ -283,6 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc9e8c81e59c904c98337f635f78f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screen: {fileID: 0}
+  i: 0
 --- !u!114 &114336273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4022,6 +4024,8 @@ MonoBehaviour:
   resultText: {fileID: 939751631}
   EdnaLastVisitor: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
   TyrellLastVisitor: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
+  NoChange: {fileID: 11400000, guid: ac2c6f533794e6a41b76216e9cee19bc, type: 2}
+  TooLate: {fileID: 11400000, guid: 78382f132f28dc245b6982d52f7c20d8, type: 2}
   calendar: {fileID: 211866242}
   calendarDict: 
   daysCrossed: 0

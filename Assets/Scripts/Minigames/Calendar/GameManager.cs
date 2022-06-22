@@ -14,6 +14,8 @@ namespace Calendar
 
         public Clue EdnaLastVisitor;
         public Clue TyrellLastVisitor;
+        public Clue NoChange;
+        public Clue TooLate;
 
         public CalendarDays calendar;
         public List<bool> calendarDict;
@@ -59,21 +61,28 @@ namespace Calendar
             }
             else { gameState = GameState.CalendarSus; }
 
-            switch (gameState)
+            if(Clock.main.currentHour >= 9) 
             {
-                case GameState.untouched:
-                    resultText.text = "How the Lord left it, a cross each day.";
-                    break;
-                case GameState.EdnaSus:
-                    resultText.text = "The General visited last that day.";
-                    break;
-                case GameState.TyrellSus:
-                    resultText.text = "The Tycoon came for a visit to this date.";
-                    break;
-                default: //not getting anywhere
-                    resultText.text = "Who am I trying to fool with this.";
-                    break;
+                resultText.text = "Eva already inspected this room, changing the calendar now won't change anything.";
             }
+            else
+            {
+                switch (gameState)
+                {
+                    case GameState.untouched:
+                        resultText.text = "How the Lord left it, a cross each day.";
+                        break;
+                    case GameState.EdnaSus:
+                        resultText.text = "The General visited last that day.";
+                        break;
+                    case GameState.TyrellSus:
+                        resultText.text = "The Tycoon came for a visit to this date.";
+                        break;
+                    default: //not getting anywhere
+                        resultText.text = "Who am I trying to fool with this.";
+                        break;
+                }
+            }            
         }
 
         public override void Open()
@@ -89,21 +98,32 @@ namespace Calendar
         public override void Close()
         {
             CheckState();
-            if (gameState == GameState.EdnaSus)
+            if(Clock.main.currentHour >= 9)
             {
-                EdnaLastVisitor.MakeKnownTo(Character.Butler);
-                TyrellLastVisitor.MakeUnknownTo(Character.Butler);
-            }
-            else if (gameState == GameState.TyrellSus)
-            {
-                TyrellLastVisitor.MakeKnownTo(Character.Butler);
-                EdnaLastVisitor.MakeUnknownTo(Character.Butler);
+                if(!EdnaLastVisitor.KnownTo(Character.Butler) && !TyrellLastVisitor.KnownTo(Character.Butler))
+                {
+                    TooLate.MakeKnownTo(Character.Butler);
+                }
             }
             else
             {
-                TyrellLastVisitor.MakeUnknownTo(Character.Butler);
-                EdnaLastVisitor.MakeUnknownTo(Character.Butler);
-            }
+                if (gameState == GameState.EdnaSus)
+                {
+                    EdnaLastVisitor.MakeKnownTo(Character.Butler);
+                    TyrellLastVisitor.MakeUnknownTo(Character.Butler);
+                }
+                else if (gameState == GameState.TyrellSus)
+                {
+                    TyrellLastVisitor.MakeKnownTo(Character.Butler);
+                    EdnaLastVisitor.MakeUnknownTo(Character.Butler);
+                }
+                else
+                {
+                    NoChange.MakeKnownTo(Character.Butler);
+                    TyrellLastVisitor.MakeUnknownTo(Character.Butler);
+                    EdnaLastVisitor.MakeUnknownTo(Character.Butler);
+                }
+            }            
             Save();
             base.Close();
         }
