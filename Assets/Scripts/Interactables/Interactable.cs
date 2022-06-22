@@ -33,7 +33,7 @@ public class Interactable : MonoBehaviour
         
     private void Update()
     {        
-        if (Input.GetMouseButtonDown(0)) { Interaction(); }
+        if (Input.GetMouseButtonDown(0)&&!GameManager.isPaused) { Interaction(); }
     }
 
     private void FixedUpdate()

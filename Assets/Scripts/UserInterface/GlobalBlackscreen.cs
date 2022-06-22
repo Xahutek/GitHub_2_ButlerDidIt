@@ -6,9 +6,9 @@ public class GlobalBlackscreen : MonoBehaviour
 {
     public static bool on = false;
 
-    Image screen;
+    [HideInInspector]public Image screen;
     TMP_Text Narrative;
-    float i;
+    [HideInInspector]public float i;
     public static float multiplier = 1;
     public static string message;
 

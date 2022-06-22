@@ -7,6 +7,7 @@ using DG.Tweening;
 public class GrandRevealManager : MonoBehaviour
 {
     SuspicionManager suspicionManager;
+    public EndScreenManager endScreenManager;
 
     bool isOpen;
 
@@ -80,6 +81,8 @@ public class GrandRevealManager : MonoBehaviour
         finalPicture.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
         finalPicture.transform.rotation = Quaternion.Euler(0, 0, 45f);
         finalPicture.transform.DORotate(Vector3.zero, 0.5f).SetEase(Ease.InExpo);
+
+        endScreenManager.Open();
     }
 
     float currentAlpha;

@@ -32,7 +32,7 @@ public class MinigameManager : MonoBehaviour
     public void Open(string name)
     {
         if (blocked) return;
-        if (isOpen) Close();
+        if (isOpen) return;
         if(execution == null)
         execution = StartCoroutine(ExecuteAction(name,true));
     }

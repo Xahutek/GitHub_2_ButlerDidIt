@@ -197,7 +197,7 @@ public class EventManager : MonoBehaviour
 
         while (true)
         {
-            if (Input.anyKeyDown) break;
+            if (Input.anyKeyDown&&Time.timeSinceLevelLoad>1) break;
             yield return null;
         }//Wait for intro skip
 
@@ -205,7 +205,7 @@ public class EventManager : MonoBehaviour
 
         GlobalBlackscreen.multiplier = 2;
         GlobalBlackscreen.on = false;
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(0.5f);
 
         if(inter.gainedClue!=null)
         inter.gainedClue.MakeKnownTo(Character.Butler);
