@@ -13,7 +13,7 @@ public class OutlineScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OutlineColor = Color.black;
+       // OutlineColor = Color.black;
         PlayerPos = GameObject.FindGameObjectWithTag("Player").transform;
         OutlineObject = this.transform;
         outline.SetFloat("Vector1_e2aa71b3209842c5a6eb0b87444d3361", 0.2f);

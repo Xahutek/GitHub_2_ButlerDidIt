@@ -66,6 +66,16 @@ MonoBehaviour:
       to have untangled this enigma.
     fixedClue: {fileID: 0}
     clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'I will navigate through each room and carefully oberserve everything inside.
+
+      If
+      you need to find me, <i>here</i> is where you will find me throughout the day.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
@@ -128,7 +138,56 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Navigating through the mansion, picking up on every clue
+    text: Any questions?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...Ehm...A-Are we still having lunch at 12:30...?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Of course!!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Okay, meeting disbanded.
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3
