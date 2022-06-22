@@ -215,40 +215,43 @@ public class InventoryUI : MonoBehaviour
     {
         currentCharacter= c;
 
-        int
-            current = (int)currentCharacter,
-            next = current + 1,
-            previous = current - 1;
-
         List<Character> characters= new List<Character>();
         foreach (Character C in System.Enum.GetValues(typeof(Character)))
         {
-            if ((C.Profile().knownToPlayer||!hideUnknownCharacters)||C==Character.Butler)
+            if ((C.Profile().knownToPlayer || !hideUnknownCharacters) || C == Character.Butler)
+            {
                 characters.Add(C);
+                Debug.Log("Validated "+C);
+            }
         }
+
+        int
+            current = characters.IndexOf(currentCharacter),
+            next = current + 1,
+            previous = current - 1;
 
         if (previous < 0) previous = characters.Count - 1;
-        if (next > characters.Count) next = 0;
+        if (next >= characters.Count) next = 0;
 
-        previousC = (Character)previous;
-        nextC = (Character)next;
+        previousC = characters[previous];
+        nextC = characters[next];
 
-        bool checksOut=false;
-        while (!checksOut && previousC != Character.Butler)
-        {
-            previous -= 1;
-            if (previous < 0) previous = characters.Count - 1;
-            previousC = (Character)previous;
-            checksOut = !hideUnknownCharacters || previousC.Profile().knownToPlayer;
-        }
-        checksOut = false;
-        while (!checksOut && nextC != Character.Butler)
-        {
-            next += 1;
-            if (next >=characters.Count) next = 0;
-            nextC = (Character)next;
-            checksOut = !hideUnknownCharacters || nextC.Profile().knownToPlayer;
-        }
+        //bool checksOut=false;
+        //while (!checksOut && previousC != Character.Butler)
+        //{
+        //    previous -= 1;
+        //    if (previous < 0) previous = characters.Count - 1;
+        //    previousC = (Character)previous;
+        //    checksOut = !hideUnknownCharacters || previousC.Profile().knownToPlayer;
+        //}
+        //checksOut = false;
+        //while (!checksOut && nextC != Character.Butler)
+        //{
+        //    next += 1;
+        //    if (next >=characters.Count) next = 0;
+        //    nextC = (Character)next;
+        //    checksOut = !hideUnknownCharacters || nextC.Profile().knownToPlayer;
+        //}
 
         PortraitMain.sprite = currentCharacter.Profile().Portrait;
         PortraitLeft.sprite = previousC.Profile().Portrait;
