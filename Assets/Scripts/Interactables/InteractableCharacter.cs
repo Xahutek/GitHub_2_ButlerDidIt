@@ -17,8 +17,12 @@ public class InteractableCharacter : Interactable
     {
         if (PlayerController.main.grounded && !GameManager.isPaused && !EventManager.eventSoon)
         {
+            Transform t = transform.GetChild(0);
+
             Dialogue d = character.Profile().GetDialogue();
             DialogueManager.main.Open(this, d);
+            t.localScale
+                = new Vector3(Mathf.Abs(t.localScale.x) * Mathf.Sign(PlayerController.main.position.x - t.position.x), t.localScale.y, t.localScale.z);
         }        
     }
 
