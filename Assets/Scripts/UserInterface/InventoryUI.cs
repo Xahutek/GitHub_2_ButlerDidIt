@@ -147,7 +147,7 @@ public class InventoryUI : MonoBehaviour
 
             MarkerMovement(showCharas);
 
-            SoundManager.main.effectSource.PlayOneShot(paperTurn);
+            SoundManager.main.PlayOneShot(paperTurn);
 
             if (showCharas)
             {
@@ -182,7 +182,7 @@ public class InventoryUI : MonoBehaviour
         charasMarkerTweenID =
             ItemMarker.DOLocalMoveX(!status && isOpen || !isOpen ? 310 : 280, 0.2f).intId;
         itemMarkerTweenID =
-            CharasMarker.DOLocalMoveX(status && isOpen|| !isOpen ? 310 : 280, 0.2f).intId;        
+            CharasMarker.DOLocalMoveX(status && isOpen|| !isOpen ? 310 : 280, 0.2f).intId;
     }
 
     public void NewClue()
@@ -258,7 +258,7 @@ public class InventoryUI : MonoBehaviour
         PortraitRight.sprite = nextC.Profile().Portrait;
 
         Name.text = currentCharacter.Profile().name;
-        SoundManager.main.effectSource.PlayOneShot(paperTurn);
+        SoundManager.main.PlayOneShot(paperTurn);
 
         Debug.Log("Changed Inventory to "+currentCharacter.ToString());
 
@@ -293,7 +293,7 @@ public class InventoryUI : MonoBehaviour
             ChangeCurrentCharacter(currentCharacter);
             ShowCharas();
 
-            SoundManager.main.effectSource.PlayOneShot(paperOpen);
+            SoundManager.main.PlayOneShot(paperOpen);
             DOTween.Kill(tween);
             tween = rectTransform.DOAnchorPosX(300f, moveDuration).SetEase(Ease.InOutSine);
             DOTween.Kill(numberTween);

@@ -15,9 +15,26 @@ public class CharacterLocus : MonoBehaviour
         if (c != identity || state != box.state|| room!=box.room)
             active = false;
 
-        if (c==identity && c== Character.Detective && box.state ==CharacterState.Normal && state== CharacterState.Normal)
-            Debug.Log("Log "+active);
+        if (c == identity && c == Character.Detective && box.state == CharacterState.Normal && state == CharacterState.Normal)
+            Debug.Log("Log " + active);
+
+        if (active)
+            RefreshMarker();
 
         gameObject.SetActive(active);
+    }
+    public void RefreshMarker()
+    {
+        CharacterProfile p = identity.Profile();
+        Dialogue d = p.GetDialogue();
+        if (d != p.nullDialogue)
+            InteractionPointerWindow.main.SubscribeCharacterLocus(this);
+        else
+            InteractionPointerWindow.main.UnsubscribeCharacterLocus(this);
+    }
+
+    private void OnDisable()
+    {
+        InteractionPointerWindow.main.UnsubscribeCharacterLocus(this);
     }
 }

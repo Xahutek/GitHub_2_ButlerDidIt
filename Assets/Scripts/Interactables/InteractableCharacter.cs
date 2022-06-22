@@ -15,7 +15,7 @@ public class InteractableCharacter : Interactable
     }
     public override void ClickInteract()
     {
-        if (PlayerController.main.grounded && !GameManager.isPaused)
+        if (PlayerController.main.grounded && !GameManager.isPaused && !EventManager.eventSoon)
         {
             Dialogue d = character.Profile().GetDialogue();
             DialogueManager.main.Open(this, d);
@@ -41,5 +41,12 @@ public class InteractableCharacter : Interactable
             if (animator)
                 animator.SetBool("IsTalking", value);
         }
+    }
+
+    public void RefreshLocus()
+    {
+        CharacterLocus locus = GetComponentInParent<CharacterLocus>();
+        if (locus != null)
+            locus.RefreshMarker();
     }
 }

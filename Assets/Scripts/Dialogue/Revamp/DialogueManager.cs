@@ -139,14 +139,15 @@ public class DialogueManager : MonoBehaviour
         if (!isOpen) return;
         isOpen = false;
 
+        bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
+        if (!isQuestion) dialogue.seen = true;
+
         foreach (InteractableCharacter I in CharacterObjects)
         {
+            I.RefreshLocus();
             I.inDialogue = false;
             I.isTalking = false;
         }
-
-        bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
-        if (!isQuestion) dialogue.seen = true;
 
         dialogueCameraLocus.gameObject.SetActive(false);
         SoundManager.main.OnSpeakCharacter(Character.Butler);

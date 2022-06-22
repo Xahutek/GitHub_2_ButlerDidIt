@@ -22,7 +22,7 @@ public class EventManager : MonoBehaviour
             get { return availableTime.y - availableTime.x; }
         }
 
-        public bool Triggered()
+        public bool Triggered(out bool soon)
         {
             bool t = true;
             if (!Clock.HourPassed(availableTime.x))
@@ -30,6 +30,8 @@ public class EventManager : MonoBehaviour
 
             if (GameManager.isPaused)
                 t = false;
+
+            soon = Clock.HourPassed(availableTime.x - (5 / 60));
 
             return t;
         }
@@ -39,6 +41,7 @@ public class EventManager : MonoBehaviour
     public EventDialogueManager dialogue;
     public EventProfile currentProfile;
     public EventObject room;
+    public static bool eventSoon;
 
     private void Awake()
     {
@@ -51,6 +54,7 @@ public class EventManager : MonoBehaviour
 
     private void Update()
     {
+        eventSoon = false;
         if (!isOpen&&!GameManager.isPaused)
         {
             if (Clock.HourPassed(24f))
@@ -60,7 +64,7 @@ public class EventManager : MonoBehaviour
             }
             foreach (EventProfile E in allEvents)
             {
-                if (E.Triggered())
+                if (E.Triggered(out eventSoon))
                 {
                     StartEvent(E);
                     return;
@@ -68,7 +72,7 @@ public class EventManager : MonoBehaviour
             }
             foreach (Intermission I in allIntermissions)
             {
-                if (I.Triggered())
+                if (I.Triggered(out eventSoon))
                 {
                     StartIntermission(I);
                     return;
@@ -82,6 +86,7 @@ public class EventManager : MonoBehaviour
         Debug.Log("Start Intermission");
 
         if (EventRoutine != null) return;
+        DialogueManager.main.Close();
 
         isOpen = true;
         if (IntermissionRoutine!=null) StopCoroutine(IntermissionRoutine);
@@ -90,6 +95,8 @@ public class EventManager : MonoBehaviour
     public void StartEvent(EventProfile profile)
     {
         Debug.Log("Start Event in "+profile.SceneName);
+
+        DialogueManager.main.Close();
 
         isOpen = true;
         this.currentProfile = profile;

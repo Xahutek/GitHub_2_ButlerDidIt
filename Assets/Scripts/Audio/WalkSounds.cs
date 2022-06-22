@@ -33,7 +33,7 @@ public class WalkSounds : MonoBehaviour
     }
     public void MakeStepNoise() 
     {
-        SoundManager.main.effectSource.PlayOneShot(RandomStep(currentList));
+        SoundManager.main.PlayOneShot(RandomStep(currentList));
     }
     
     private AudioClip RandomStep(AudioClip[] clipList)

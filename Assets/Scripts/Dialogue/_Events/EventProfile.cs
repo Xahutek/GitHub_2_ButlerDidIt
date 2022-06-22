@@ -18,7 +18,7 @@ public class EventProfile : ScriptableObject
     public Dialogue[] EventDialogue;
     public Dialogue NullDialogueReaction;
 
-    public bool Triggered()
+    public bool Triggered(out bool soon)
     {
         bool t = true;
         if (!Clock.HourPassed(availableTime.x))
@@ -26,6 +26,8 @@ public class EventProfile : ScriptableObject
 
         if (GameManager.isPaused)
             t = false;
+
+        soon = Clock.HourPassed(availableTime.x - (5 / 60));
 
         return t;
     }

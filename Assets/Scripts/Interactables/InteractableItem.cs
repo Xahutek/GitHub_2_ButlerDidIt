@@ -25,7 +25,7 @@ public class InteractableItem : Interactable
     {
         GetComponentInParent<Canvas>().sortingLayerID = SortingLayer.NameToID("UI");
 
-        SoundManager.main.effectSource.PlayOneShot(pickupSound);
+        SoundManager.main.PlayOneShot(pickupSound);
         cam = FindObjectOfType<Camera>();
         pos = cam.ScreenToWorldPoint(new Vector3(0, cam.pixelHeight / 2, 0));
 

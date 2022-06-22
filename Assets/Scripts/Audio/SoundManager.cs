@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager main;
 
     [SerializeField]
-    public AudioSource effectSource;
+    private AudioSource effectSource;
      SoundSource[] sources;
 
     public float _volume = 1;
@@ -72,6 +72,11 @@ public class SoundManager : MonoBehaviour
 
         r = room;
         Refresh();
+    }
+
+    public void PlayOneShot(AudioClip clip)
+    {
+        effectSource.PlayOneShot(clip);
     }
 
     #endregion

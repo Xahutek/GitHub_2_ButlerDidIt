@@ -40,7 +40,7 @@ public class Portal : MonoBehaviour
         offset = PlayerController.main.position - (Vector2)transform.position;
         if(doorSounds != null)
         {
-            SoundManager.main.effectSource.PlayOneShot(doorSounds[Random.Range(0, doorSounds.Length)]);
+            SoundManager.main.PlayOneShot(doorSounds[Random.Range(0, doorSounds.Length)]);
         }
         StartCoroutine(TravelRoutine(PlayerController.main));
     }
