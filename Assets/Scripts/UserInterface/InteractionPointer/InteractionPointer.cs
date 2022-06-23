@@ -43,8 +43,16 @@ public class InteractionPointer : MonoBehaviour
     {
         Camera cam = Camera.main;
 
+        Transform t;
+        if (targetLocus.transform.childCount == 0)
+            t = targetLocus.transform;
+        else if (targetLocus.transform.GetChild(0).childCount == 0)
+            t = targetLocus.transform.GetChild(0);
+        else
+            t = targetLocus.transform.GetChild(0).GetChild(0);
+
         Vector3
-            toPos = targetLocus.transform.GetChild(0).position + Vector3.up * 1.25f,
+            toPos = targetLocus.transform.GetChild(0).GetChild(0).position + Vector3.up * 1.25f,
             fromPos = cam.transform.position;
         Vector3 dir = (toPos - fromPos).normalized;
 
