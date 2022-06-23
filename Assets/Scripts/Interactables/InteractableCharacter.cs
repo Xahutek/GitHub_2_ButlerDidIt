@@ -7,6 +7,7 @@ public class InteractableCharacter : Interactable
     public Character character;
 
     public Animator animator;
+    public bool facingRight;
 
     public override void Awake()
     {
@@ -22,7 +23,7 @@ public class InteractableCharacter : Interactable
             Dialogue d = character.Profile().GetDialogue();
             DialogueManager.main.Open(this, d);
             t.localScale
-                = new Vector3(Mathf.Abs(t.localScale.x) * Mathf.Sign(PlayerController.main.position.x - t.position.x), t.localScale.y, t.localScale.z);
+                = new Vector3(Mathf.Abs(t.localScale.x) * (facingRight? 1:-1) * Mathf.Sign(PlayerController.main.position.x - t.position.x), t.localScale.y, t.localScale.z);
         }        
     }
 

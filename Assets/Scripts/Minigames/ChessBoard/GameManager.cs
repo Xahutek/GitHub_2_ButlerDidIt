@@ -10,9 +10,9 @@ namespace ChessBoard
         public static GameManager main;
 
         public ChessFigure
-            BlackKing, 
+            BlackKing,
             WhiteKing;
-        public ChessFigure[] 
+        public ChessFigure[]
             blackFigures,
             whiteFigures;
         public GameState gameState;
@@ -30,7 +30,7 @@ namespace ChessBoard
                 BlackKingsSlots = new List<BoardSlot>(),
                 WhiteKingSlots = new List<BoardSlot>();
 
-            Dictionary<ChessFigure, List<BoardSlot>> keyValuePairs = new Dictionary<ChessFigure,List<BoardSlot>>();
+            Dictionary<ChessFigure, List<BoardSlot>> keyValuePairs = new Dictionary<ChessFigure, List<BoardSlot>>();
 
             BlackKingsSlots.Add(BlackKing.slot);
             BlackKingsSlots.AddRange(BlackKing.slot.neighbours);
@@ -45,7 +45,7 @@ namespace ChessBoard
                     BlackKingsSlots.Remove(Fig.slot);
                 foreach (BoardSlot inf in infuence)
                 {
-                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward*200, Color.black, 5);
+                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward * 200, Color.black, 5);
                     if (WhiteKingSlots.Contains(inf))
                         WhiteKingSlots.Remove(inf);
                 }
@@ -57,7 +57,7 @@ namespace ChessBoard
                     WhiteKingSlots.Remove(Fig.slot);
                 foreach (BoardSlot inf in infuence)
                 {
-                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward*100, Color.white, 5);
+                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward * 100, Color.white, 5);
                     if (BlackKingsSlots.Contains(inf))
                         BlackKingsSlots.Remove(inf);
                 }
@@ -156,6 +156,45 @@ namespace ChessBoard
 
     public enum GameState
     {
-        Playing,Draw,BlackWins,WhiteWins
+        Playing, Draw, BlackWins, WhiteWins
     }
+
+    //public struct BMap
+    //{
+    //    public int size;
+    //    public int[,] map;
+
+    //    public int Map(int x, int y)
+    //    {
+    //        return map[x, y];
+    //    }
+    //    public int centeredMap(int x, int y, bool reset=false)
+    //    {
+    //        int half = Mathf.FloorToInt((float)size * 0.5f);
+    //        if (x + half >= size || y + half >= size) return 0;
+    //        else return map[x + half, y + half];
+    //    }
+
+    //    public void SetUp(int size)
+    //    {
+    //        this.size = size;
+    //        map = new int[size, size];
+    //    }
+    //}
+
+    //public static class ChessBoardUtility
+    //{
+    //    public static BMap BoardMask(this BMap board, BMap mask, Vector2 offset)
+    //    {
+    //        for (int x = 0; x < board.size; x++)
+    //        {
+    //            for (int y = 0; y < board.size; y++)
+    //            {
+    //                int
+    //                    boardValue= board.Map(x, y),
+    //                    maskValue=mask.centeredMap(x-, y);
+    //            }
+    //        }
+    //    }
+    //}
 }

@@ -7,32 +7,55 @@ public class Portal : MonoBehaviour
 {
     public static bool isTravelling=false;
 
+    private BoxCollider2D col;
+    public BoxCollider2D clickCol;
+
     [SerializeField] private LayerMask LMPlayer;
-    [SerializeField] protected float interactRadius=2f;
     [SerializeField] protected Portal Locus;
 
     public static Vector3 offset;
     public float lastInput = 0;
+    bool playerInRange;
     public AudioClip[] doorSounds;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        playerInRange = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        playerInRange=false;
+    }
+    private void Awake()
+    {
+        col = GetComponent<BoxCollider2D>();
+    }
     public void Update()
     {
-        if (!isTravelling&&!GameManager.isPaused && CheckInput() && PlayerController.main.grounded &&
-            interactRadius > Vector2.Distance((Vector2)transform.position, PlayerController.main.position))
+
+        if (playerInRange && !isTravelling && !GameManager.isPaused && Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.S) && PlayerController.main.grounded)
             Interact();
+
+        if (Input.GetMouseButtonDown(0) && !GameManager.isPaused && playerInRange)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (clickCol.OverlapPoint(mousePos))
+                Interact();
+        }
     }
     public bool CheckInput()
-    {                
-        if (Input.GetAxisRaw("Vertical") != 0)
+    {
+        float verticalAxis = Input.GetAxisRaw("Vertical");
+        if (verticalAxis != 0)
         {
-            if (lastInput == Input.GetAxisRaw("Vertical")) { lastInput = Input.GetAxisRaw("Vertical"); return false; }
+            if (lastInput == verticalAxis) { lastInput = verticalAxis; return false; }
             else
             {
-                lastInput = Input.GetAxisRaw("Vertical");
+                lastInput = verticalAxis;
                 return true;
             }
         }
-        else { lastInput = Input.GetAxisRaw("Vertical"); return false; }        
+        else { lastInput = verticalAxis; return false; }        
     }
 
     public virtual void Interact()
@@ -47,6 +70,7 @@ public class Portal : MonoBehaviour
     protected virtual IEnumerator TravelRoutine(PlayerController player)
     {
         isTravelling = true;
+        GameManager.manualPaused = true;
 
         GlobalBlackscreen.multiplier = 1;
         GlobalBlackscreen.on = true;
@@ -58,5 +82,6 @@ public class Portal : MonoBehaviour
         isTravelling = false;
 
         GlobalBlackscreen.on = false;
+        GameManager.manualPaused = false;
     }
 }

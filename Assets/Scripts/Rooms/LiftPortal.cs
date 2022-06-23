@@ -41,6 +41,7 @@ public class LiftPortal : Portal
     protected override IEnumerator TravelRoutine(PlayerController player)
     {
         isTravelling = true;
+        GameManager.manualPaused = true;
 
         DOTween.Kill(squashTween);
 
@@ -88,6 +89,7 @@ public class LiftPortal : Portal
                 InsideLiftCamera.SetActive(false);
                 OutsideLiftCamera.SetActive(false);
                 isTravelling = false;
+                GameManager.manualPaused = false;
                 yield break;
             }
 
@@ -115,6 +117,7 @@ public class LiftPortal : Portal
         (Locus as LiftPortal).OutsideLiftCamera.SetActive(false);
 
         isTravelling = false;
+        GameManager.manualPaused = false;
     }
 
     private void MoveChildRecursive(Transform obj, bool opens)
