@@ -44,16 +44,16 @@ public class SegmentedDialogue : Dialogue
                 {
                     foreach (Character c in knowingCharacters)
                     {
-                        if (clue.KnownTo(c))
+                        if (!clue.KnownTo(c))
                         {
-                            triggered = false; break;
+                            triggered = false; return triggered;
                         }
                     }
                     foreach (Character c in unknowingCharacters)
                     {
-                        if (!clue.KnownTo(c))
+                        if (clue.KnownTo(c))
                         {
-                            triggered = false; break;
+                            triggered = false; return triggered;
                         }
                     }
                 }

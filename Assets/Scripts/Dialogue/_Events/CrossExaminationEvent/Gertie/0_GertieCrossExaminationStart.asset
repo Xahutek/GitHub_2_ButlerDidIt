@@ -13,12 +13,42 @@ MonoBehaviour:
   m_Name: 0_GertieCrossExaminationStart
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000030000000400000005000000
-  Lines: []
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Segment 1 Line 1
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Segment 1 Line 2
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Segment 3 Line 1
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Segment 3 Line 2
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
   availableAnswers: []
@@ -37,21 +67,23 @@ MonoBehaviour:
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: Segment 1 Line 1
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: Segment 1 Line 2
       fixedClue: {fileID: 0}
       clueHidden: 0
   - trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
       knowingCharacters: 
-      unknowingCharacters: 
-      activateSuspicionTrigger: 1
+      unknowingCharacters: 00000000
+      activateSuspicionTrigger: 0
       c: 0
       mode: 0
       suspicion: 0
@@ -59,12 +91,14 @@ MonoBehaviour:
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
-      text: Segment 2 Line 1
+      isThought: 0
+      text: Segment 2 Line 1 AAA
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: Segment 2 Line 2
       fixedClue: {fileID: 0}
       clueHidden: 0
@@ -81,12 +115,14 @@ MonoBehaviour:
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: Segment 3 Line 1
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: Segment 3 Line 2
       fixedClue: {fileID: 0}
       clueHidden: 0
