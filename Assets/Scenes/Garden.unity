@@ -4511,6 +4511,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: 32c6b9b4e900bf848a06f41d7ed9bafc, type: 2}
+    - target: {fileID: 3475640701236340246, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
+      propertyPath: visuals
+      value: 
+      objectReference: {fileID: 2132657982}
     - target: {fileID: 3475640702125662856, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -5941,6 +5945,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2132657982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3475640701236340244, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
+  m_PrefabInstance: {fileID: 1771715129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135344691
 GameObject:
   m_ObjectHideFlags: 0

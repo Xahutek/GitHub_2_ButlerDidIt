@@ -16,7 +16,7 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
   AvailabilityHours: {x: 11, y: 12.5}
   includedCharacters: 
@@ -144,7 +144,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Just give me the lemon)
+    text: (In tarnation, just give me the lemon)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
