@@ -13,12 +13,66 @@ MonoBehaviour:
   m_Name: 1_GertieCrossExaminationLordRelationAndLetters
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000030000000400000005000000
-  Lines: []
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Gertie Potts, you've had a unique relationship with the Lord, you said
+      that you never actually met the man.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes! Lord Deddington would always send me letters written in invisible
+      ink!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: They would have instructions on them on what to do with the garden.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' Lord Deddington was a mysterious man.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Gertie Potts, you've had a strange relationship with the Lord, you said
+      that you never actually met the man.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But the letters in your shack prove that strange relationship.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   ending: 2
   ResumeFixed: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   availableAnswers: []
@@ -42,9 +96,90 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
-      text: Lord Relations and Letters
+      isThought: 0
+      text: Gertie Potts, you've had a unique relationship with the Lord, you said
+        that you never actually met the man.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Yes! Lord Deddington would always send me letters written in invisible
+        ink!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: They would have instructions on them on what to do with the garden.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ' Lord Deddington was a mysterious man.'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Gertie Potts, you've had a strange relationship with the Lord, you said
+        that you never actually met the man.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But the letters in your shack prove that strange relationship.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Gertie Potts, you've had a strange relationship with the Lord, you said
+        that you never actually met the man.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I smell hoo-haa.
       fixedClue: {fileID: 0}
       clueHidden: 0

@@ -21,18 +21,65 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000030000000400000005000000
   Lines:
-  - speaker: 0
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Segment 1 Line 1
+    text: 'The day is over. '
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And after this cross examination, we will know who is responsible for the
+      murder of Lord Deddington.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I'd love to say that I already have a good grasp on this case, but there
+      are still some puzzle pieces missing.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Each of the guests and each of the house staff will be questioned, afterwards
+      everything will have cleared up.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Now, I will call each of you onto the stand, during this I will be asking
+      most of the questions, but if the gathering has something to say, feel free
+      to speak up.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This trail will decide your fate.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The persecution calls Gardener Gertie Potts to the stand.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    isThought: 0
-    text: Segment 1 Line 2
+    isThought: 1
+    text: (She is really living up this role)
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 0
@@ -64,18 +111,65 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Segment 1 Line 1
+      text: 'The day is over. '
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And after this cross examination, we will know who is responsible for
+        the murder of Lord Deddington.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I'd love to say that I already have a good grasp on this case, but there
+        are still some puzzle pieces missing.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Each of the guests and each of the house staff will be questioned, afterwards
+        everything will have cleared up.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Now, I will call each of you onto the stand, during this I will be asking
+        most of the questions, but if the gathering has something to say, feel free
+        to speak up.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This trail will decide your fate.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The persecution calls Gardener Gertie Potts to the stand.
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
-      isThought: 0
-      text: Segment 1 Line 2
+      isThought: 1
+      text: (She is really living up this role)
       fixedClue: {fileID: 0}
       clueHidden: 0
   - trigger:
