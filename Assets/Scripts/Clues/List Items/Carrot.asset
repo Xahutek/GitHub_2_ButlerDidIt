@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Carrot
   m_EditorClassIdentifier: 
   name: A carrot, grown in Gerties shack.
-  picture: {fileID: 0}
+  picture: {fileID: 21300000, guid: c3b6ac1eb9ef034449e1a0bfe4a384f4, type: 3}
   required: []
   nullify: []
   seenInInventory: 0
-  isInventoryClue: 0
+  isInventoryClue: 1
   isMindmapClue: 0
   presetButlerKnows: 0
   presetDetectiveKnows: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   presetTycoonKnows: 0
   presetGeneralKnows: 0
   presetGardenerKnows: 0
-  ButlerKnows: 0
+  ButlerKnows: 1
   DetectiveKnows: 0
   ImposterKnows: 0
   TycoonKnows: 0
