@@ -16,9 +16,9 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
-  seen: 0
-  AvailabilityHours: {x: 11, y: 12.5}
+  unique: 1
+  seen: 1
+  AvailabilityHours: {x: 10.5, y: 12.5}
   includedCharacters: 0000000004000000
   Lines:
   - speaker: 4
@@ -42,7 +42,7 @@ MonoBehaviour:
     text: Until then, we need help in the kitchen.
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 0
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
@@ -65,10 +65,10 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: Yes, I will help
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: d7c9ef97246528648b57ce59ceb70058, type: 2}
     trigger: {fileID: 0}
     rewards: []
   - text: Sorry, I can not help you.
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 80889e4393577a5448fec08e6ef494aa, type: 2}
     trigger: {fileID: 0}
     rewards: []

@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 9, y: 12}
   includedCharacters: 
   Lines:
@@ -54,6 +54,13 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: "Butler...give me some time. \nI need to grieve."
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...Will I see you in the kitchen in half an hour?
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 3

@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: TheChessMatch
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
+  unique: 1
   seen: 0
-  AvailabilityHours: {x: 12, y: 18.5}
+  AvailabilityHours: {x: 13, y: 18.5}
   includedCharacters: 0000000004000000
   Lines:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: '"I can''t believe you beat me with only half the board"
 
       Haa...Deddington.'
@@ -30,6 +33,7 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 'Aahh!
 
       It''s you, the Butler, Diddit...'
@@ -38,6 +42,7 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: I'm sorry, I'm still in thoughts...can I help you somehow?
     fixedClue: {fileID: 0}
     clueHidden: 0

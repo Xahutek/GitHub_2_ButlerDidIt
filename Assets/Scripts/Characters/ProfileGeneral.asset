@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Edna Tuskson
   Portrait: {fileID: 21300000, guid: 86e1c4d18c97a0d4881a6e27f7ad7626, type: 3}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 0
+  knownToPlayer: 1
   currentRoom: 0
   Timetable:
   - startHour: 0
@@ -91,9 +91,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3b4f0ee2ec5b25f49a0b6c3e8eb64016, type: 2}
   - {fileID: 11400000, guid: 8407e7b5a050d0f40b2420b3ee8ae2f9, type: 2}
   - {fileID: 11400000, guid: d3b317533dcd3e84cb22d4c13cffa0e9, type: 2}
+  - {fileID: 11400000, guid: 37c4386aee83f714bbf329f3dca6e5ba, type: 2}
   - {fileID: 11400000, guid: 5428ccd93db6eda49bf6b4fdd8553c9e, type: 2}
-  - {fileID: 11400000, guid: 58d53c92c42dbbb4496daf43ea995b3b, type: 2}
-  - {fileID: 11400000, guid: 404f2ee78c8935c498a0caffaaffd67b, type: 2}
-  - {fileID: 11400000, guid: 647a60e053cb6cf4baeea5ac6e356f16, type: 2}
   nullDialogue: {fileID: 11400000, guid: 3ce1354e1147d3c4c9bb754442ef8b2f, type: 2}
   nullDialogueReaction: {fileID: 11400000, guid: 716dc0d2fcdd7f9498412f6ada7a27d0, type: 2}
