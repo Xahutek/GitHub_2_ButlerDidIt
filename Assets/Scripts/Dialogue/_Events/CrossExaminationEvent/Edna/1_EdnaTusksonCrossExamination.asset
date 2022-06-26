@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: 1_EdnaTusksonCrossExamination
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: 4c3866a7218fdd14696d71fa3ebbd0b8, type: 2}
+  availableAnswers: []
+  options: []
+  Segments:
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 7c1ee25c5cf3da942bb2b9700b43b280, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Alright, General. let us preceede to the next point.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I am ready for it.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This right here, this weapon from a battlefield you fought on with the
+        lord, is a keepsake the Lord kept in his bedchambers, correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Perhaps, I am not ready.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Hm?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: T-that is Correct.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 6e851abc97b6b144bb766705118fb3be, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content: []
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: e4acefeb3dcf15a42bdbba30efd2a697, type: 2}
+      knowingCharacters: 04000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Now, if I understand this situation.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: You where selling these weapons to the opposing side during a war, correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: We supplied both sides, for a fair fight, that is the truth.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: A fair fight, for sure.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: My investigations have let me to the conclusion that this weapon has
+        been tempered with.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ..!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ..!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And not just this one weapon.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: These all have been build from the ground up to not function properly.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '!!!'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: W-Well, even if that is true, what does any of that have to do with the
+        case?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Lord Deddington didn't know of this, correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '?'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: However, you thought you did.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He...did not know?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: You see, he kept it as a keepsake, but has never fired it.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But you couldn't handle the thought that Lord Deddington would find out
+        about the real reason for your uncountable honor titles.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: So, perhaps you planned to murder him?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: If you did, you could have done it with you bare hands.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...
+      fixedClue: {fileID: 0}
+      clueHidden: 0
