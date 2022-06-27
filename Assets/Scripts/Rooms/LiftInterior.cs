@@ -5,7 +5,11 @@ using DG.Tweening;
 
 public class LiftInterior : MonoBehaviour
 {
+    public LiftPortal Second, Ground, Basement;
+
     public SpriteRenderer[] Lights;
+
+    public static LiftPortal Locus;
 
     public Camera
         main, fake;
@@ -19,7 +23,14 @@ public class LiftInterior : MonoBehaviour
         
     private void Start()
     {
+        Locus = null;
         originRot = pointer.eulerAngles;
+    }
+
+    public void ClickFloorButton(int floor)
+    {
+        if(Portal.isTravelling)
+            Locus = floor == 0 ? Ground : (floor == 1 ? Second : Basement);
     }
 
     private void Update()
