@@ -11,7 +11,7 @@ public class GrandRevealManager : MonoBehaviour
 
     bool isOpen;
 
-    public Image finalPicture;
+    public Image finalPicture,finalPictureBackground;
 
     public Sprite
         TheButlerDidIt,
@@ -71,16 +71,16 @@ public class GrandRevealManager : MonoBehaviour
     public void Reveal(Sprite WhoDidIt)
     {
         finalPicture.sprite = WhoDidIt;
-        finalPicture.raycastTarget = true;
+        finalPictureBackground.raycastTarget = true;
 
         currentAlpha = 0;
         DOTween.To(() => currentAlpha, i => currentAlpha = i, 1, 0.5f)
             .OnUpdate(() => Refresh()).SetEase(Ease.InExpo);
 
-        finalPicture.transform.localScale = Vector3.one * 2f;
-        finalPicture.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
-        finalPicture.transform.rotation = Quaternion.Euler(0, 0, 45f);
-        finalPicture.transform.DORotate(Vector3.zero, 0.5f).SetEase(Ease.InExpo);
+        finalPicture.transform.parent.localScale = Vector3.one * 2f;
+        finalPicture.transform.parent.DOScale(Vector3.one, 0.5f).SetEase(Ease.InExpo);
+        finalPicture.transform.parent.rotation = Quaternion.Euler(0, 0, 45f);
+        finalPicture.transform.parent.DORotate(Vector3.zero, 0.5f).SetEase(Ease.InExpo);
 
         endScreenManager.Open();
     }
@@ -88,8 +88,12 @@ public class GrandRevealManager : MonoBehaviour
     float currentAlpha;
     public void Refresh()
     {
-        Color cov = finalPicture.color;
+        Color 
+            cov = finalPicture.color,
+            cob = finalPictureBackground.color;
         cov.a = currentAlpha;
+        cob.a = currentAlpha;
         finalPicture.color = cov;
+        finalPictureBackground.color = cob;
     }
 }

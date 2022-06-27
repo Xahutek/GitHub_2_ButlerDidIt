@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
-  m_Name: 0_GertieCrossExaminationStart
+  m_Name: 3_EdnaTusksonCrossExamination_ChessGame
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -19,17 +19,31 @@ MonoBehaviour:
   unique: 0
   seen: 1
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000002000000030000000400000005000000
-  Lines: []
+  includedCharacters: 
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I...guess you actually didn't.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Impressive.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   ending: 4
-  ResumeFixed: {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
+  ResumeFixed: {fileID: 11400000, guid: 3c9c1a1c171ff694dba080bd6901ec67, type: 2}
   availableAnswers: []
   options: []
   Segments:
   - trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
-      knowingCharacters: 
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+      knowingCharacters: 02000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
@@ -40,78 +54,79 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'The day is over. '
+      text: Recently, you've lost to him too.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '!?'
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And after this cross examination, we will know who is responsible for
-        the murder of Lord Deddington.
+      text: In fact, I believe you lost to him 3 days ago!.
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I'd love to say that I already have a good grasp on this case, but there
-        are still some puzzle pieces missing.
+      text: Wh-what? When? How?
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Each of the guests and each of the house staff will be questioned, afterwards
-        everything will have cleared up.
+      text: The chessboard in the library clearly shows it!
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, I will call each of you onto the stand, during this I will be asking
-        most of the questions, but if the gathering has something to say, feel free
-        to speak up.
+      text: The Lord broke your long lasting chess streak, when you played with him.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: No, he did not win!
       fixedClue: {fileID: 0}
       clueHidden: 0
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: This trail will decide your fate.
-      fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: The persecution calls Gardener Gertie Potts to the stand.
-      fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 0
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 1
-      text: (She is really living up this role)
+      text: Don't know what to tell you, the chess board clearly showed it.
       fixedClue: {fileID: 0}
       clueHidden: 0
   - trigger:
       activateClueTrigger: 1
-      clue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
-      knowingCharacters: 00000000
-      unknowingCharacters: 
+      clue: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I have murdered the Lord, but perhaps I did a good job and will make
-        it through this?
+      text: I...guess you actually didn't.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Impressive.
       fixedClue: {fileID: 0}
       clueHidden: 0

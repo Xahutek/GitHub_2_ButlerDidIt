@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92c601663db51864e96f8547e2451984, type: 3}
-  m_Name: Cake
+  m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
+  m_Name: EdnaSoldBadEquipmentToTheOtherSide
   m_EditorClassIdentifier: 
-  name: A full cake, for cake.
+  name: Enda sold faulty weaponry to the opposing side during a war.
   picture: {fileID: 0}
-  required: []
+  required:
+  - {fileID: 11400000, guid: 7c1ee25c5cf3da942bb2b9700b43b280, type: 2}
+  - {fileID: 11400000, guid: 6e851abc97b6b144bb766705118fb3be, type: 2}
   nullify: []
   seenInInventory: 0
   isInventoryClue: 0
@@ -31,5 +33,3 @@ MonoBehaviour:
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
-  givenAway: 0
-  _givenAway: 0

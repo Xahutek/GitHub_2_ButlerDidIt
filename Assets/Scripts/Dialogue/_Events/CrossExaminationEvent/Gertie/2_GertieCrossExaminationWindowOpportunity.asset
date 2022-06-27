@@ -21,25 +21,113 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000030000000400000005000000
   Lines:
-  - speaker: 0
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes! Lord Deddington would always send me letters written in invisible
-      ink! They would have instructions on them on what to do with the garden, Lord
-      Deddington was a mysterious man.
+    text: Mr.Potts, you take care of the garden, the frontyard and anything else
+      important that comes up, correct?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes, Ma'am!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: So you had a perfect understanding of the mansions floor plans!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' As does everyone else who works here ;_;'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' That''s besides the point.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Now, this noon you where working outside, ontop of a tree in the frontyard.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: If you can climb up there so easily, you could have climbed into the house
+      through the window, no problem.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And what is behind that window?
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <b>...THE MURDER LOCATION!</b>.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That's correct, General!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That's true, and you're doing a really good job on those trees.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He is taking excellent care of those plants, I saw it myself!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' Alright, let''s move on.'
     fixedClue: {fileID: 0}
     clueHidden: 0
   ending: 2
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
   options:
-  - text: Option 1
-    reaction: {fileID: 0}
+  - text: The window can be opened from the outside
+    reaction: {fileID: 11400000, guid: 73c7411d2129ac3459d913220e5e638d, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Option 2
-    reaction: {fileID: 0}
+  - text: Say nothing
+    reaction: {fileID: 11400000, guid: 5ce64a8abd65b2545ae224c728f3856b, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: The Lord actually <b>wants</b> windows open during storms.
+    reaction: {fileID: 11400000, guid: 8f3d3cdbec77e7940a4f3c669d6832ba, type: 2}
     trigger: {fileID: 0}
     rewards: []
   Segments:
@@ -53,12 +141,116 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Yes! Lord Deddington would always send me letters written in invisible
-        ink! They would have instructions on them on what to do with the garden,
-        Lord Deddington was a mysterious man.
+      text: Mr.Potts, you take care of the garden, the frontyard and anything else
+        important that comes up, correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Yes, Ma'am!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: So you had a perfect understanding of the mansions floor plans!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 5
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ' As does everyone else who works here ;_;'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ' That''s besides the point.'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Now, this noon you where working outside, ontop of a tree in the frontyard.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: If you can climb up there so easily, you could have climbed into the
+        house through the window, no problem.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And what is behind that window?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: <b>...THE MURDER LOCATION!</b>.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: That's correct, General!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: That's true, and you're doing a really good job on those trees.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He is taking excellent care of those plants, I saw it myself!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ' Alright, let''s move on.'
       fixedClue: {fileID: 0}
       clueHidden: 0
