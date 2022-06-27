@@ -71,7 +71,7 @@ public class SpeechBubble : Bubble
         Vector3 camPos = cam.ScreenToWorldPoint(new Vector3(0, cam.pixelHeight / 4, 0)); //start fade at upper fourth
         Vector3 upperBorder = cam.ScreenToWorldPoint(new Vector3(0, 0, 0));
         Vector2 bubblePos = RectTransformUtility.PixelAdjustPoint(transform.position, transform, GetComponentInParent<Canvas>());
-        float value = (camPos.y / (bubblePos.y - upperBorder.y) - 1) / 100 * 4;
+        float value = (Root.y / (bubblePos.y - upperBorder.y) - 1) / 100 * 4;
 
         for (int i = 0; i < images.Length; i++)
         {

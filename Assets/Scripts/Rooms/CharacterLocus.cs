@@ -27,7 +27,7 @@ public class CharacterLocus : MonoBehaviour
     {
         CharacterProfile p = identity.Profile();
         Dialogue d = p.GetDialogue();
-        if (d.unique && d != p.nullDialogue)
+        if (d.unique && d != p.nullDialogue && state != CharacterState.Sleeping)
             InteractionPointerWindow.main.SubscribeCharacterLocus(this);
         else
             InteractionPointerWindow.main.UnsubscribeCharacterLocus(this);

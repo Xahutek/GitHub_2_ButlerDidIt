@@ -364,9 +364,12 @@ public class DialogueManager : MonoBehaviour
                         OptionBubble O = OptionsBubbles[o];
                         O.Refresh(option, thisRoot, height);
 
-                        yield return new WaitForFixedUpdate();
+                        if (option != null)
+                        {
+                            yield return new WaitForFixedUpdate();
 
-                        height += o < options.Length ? O.height * BaseScale + BoxVerticalSpacing : 0;
+                            height += o < options.Length ? O.height * BaseScale + BoxVerticalSpacing : 0;
+                        }
                     }
                 }
                 else //Open or Open Question
