@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: TyrellLemon
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
-  NecessaryCluesKnown: []
+  NecessaryCluesKnown:
+  - {fileID: 11400000, guid: d25bac856b6d6e142b038ebe5c67ecc7, type: 2}
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
@@ -150,7 +151,7 @@ MonoBehaviour:
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
-    isThought: 1
+    isThought: 0
     text: Here's the lemon!
     fixedClue: {fileID: 11400000, guid: 0f632c8acf931ea41a71bf4f54a2db9b, type: 2}
     clueHidden: 0
