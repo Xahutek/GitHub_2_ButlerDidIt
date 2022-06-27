@@ -10,89 +10,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ConservatoryEventStart
+  m_Name: ButlerExpressesInterest
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000030000000400000005000000
   Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Naturally! I worked here for almost 2 years now.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I see. You have lived under the same roof after all.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The day is slowly coming to a close.
+    text: I consider many of my subordinates in the navy friends myself.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The chain of command always creates a distance between us, but I am positive
+      they do so as well.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And the sun is setting too.
+    text: 'I told you Tuskson:
+
+      Never let your servants get emotionally attached.'
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It makes downsizing such a hassle.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That is exactly what I said...
+    text: 'And I also told you many times:'
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It is setting on a bad day I am afraid.
+    text: The army does not need to decruit many soldiers.
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: "But not an unsuccessful one. \nAt least to me."
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Now that you already brought it up...
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: I'm sure everyone present would be interested in your findings.
+    text: ...
     fixedClue: {fileID: 0}
     clueHidden: 0
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Including you... Butler?
+    text: I figured.
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (Does she suspect me?!)
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  ending: 2
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: ce7466ed921129b45bf98f1e117c6483, type: 2}
   availableAnswers: []
-  options:
-  - text: Of course!
-    reaction: {fileID: 11400000, guid: 474e5c7d209decb4f800114ca216f823, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: I am just here to serve.
-    reaction: {fileID: 11400000, guid: 9b7c01c22ed13544d95b31aab2a646f5, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []

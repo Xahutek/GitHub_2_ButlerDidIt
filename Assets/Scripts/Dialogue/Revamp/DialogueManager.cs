@@ -95,7 +95,10 @@ public class DialogueManager : MonoBehaviour
         }
         
         if (isOpen && main == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
+        {
+            hardEscape = true;
             Close();
+        }
         if (!isOpen && !wasCleared)
             Clear();
 
@@ -112,6 +115,7 @@ public class DialogueManager : MonoBehaviour
         if (isOpen) return;
         isOpen = true;
         wasCleared = false;
+        hardEscape = false;
 
         CharacterObjects = new List<InteractableCharacter>();
         Characters = new List<Character>();
@@ -134,13 +138,18 @@ public class DialogueManager : MonoBehaviour
 
         SetDialogue(D);
     }
+
+    bool hardEscape;
     public virtual void Close()
     {
         if (!isOpen) return;
         isOpen = false;
 
-        bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
-        if (!isQuestion) dialogue.seen = true;
+        if (!hardEscape)
+        {
+            bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
+            if (!isQuestion) dialogue.seen = true;
+        }
 
         foreach (InteractableCharacter I in CharacterObjects)
         {

@@ -202,6 +202,8 @@ public class EventManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
+        EventSystem.main.RefreshRooms();
+
         while (true)
         {
             if (Input.anyKeyDown&&Time.timeSinceLevelLoad>1) break;
