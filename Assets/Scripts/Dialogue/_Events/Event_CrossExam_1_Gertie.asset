@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 090908977a0004c4189716185ff84344, type: 3}
-  m_Name: Event_CrossExam
+  m_Name: Event_CrossExam_1_Gertie
   m_EditorClassIdentifier: 
   SceneName: DiningHall
-  availableTime: {x: 23.5, y: 24}
-  StartDialogue: {fileID: 11400000, guid: 78663651f0de4464eb0e824a14cc29dd, type: 2}
+  availableTime: {x: 23.6, y: 23.7}
+  introduction: '"Alright then. Mr. Potts please take a stand on the podium."'
+  StartDialogue: {fileID: 11400000, guid: e0170a51da1ef4f4e919a2f5dfb54f96, type: 2}
   EventDialogue:
-  - {fileID: 11400000, guid: e0170a51da1ef4f4e919a2f5dfb54f96, type: 2}
   - {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
   - {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   - {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
