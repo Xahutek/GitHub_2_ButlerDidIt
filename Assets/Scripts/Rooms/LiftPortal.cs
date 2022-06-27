@@ -5,11 +5,9 @@ using DG.Tweening;
 
 public class LiftPortal : Portal
 {
-    [SerializeField] LiftPortal UpperLocus,LowerLocus;
-    [SerializeField] float UpperLocusTime,LowerLocusTime;
-
     public GameObject OutsideLiftCamera,InsideLiftCamera;
 
+    public LiftInterior lift;
     public static LiftPortal liftlocation;
     public int floor;
     public Transform pointer;
@@ -36,7 +34,6 @@ public class LiftPortal : Portal
         Debug.Log("Enter Lift");
         base.Interact();
     }
-
    
     protected override IEnumerator TravelRoutine(PlayerController player)
     {
@@ -62,6 +59,9 @@ public class LiftPortal : Portal
         GlobalBlackscreen.multiplier = 4;
         GlobalBlackscreen.on = true;
 
+        LiftUI.on = true;
+
+        LiftInterior.Locus = null;
         Locus = null;
         float t = 0;
         while (Locus==null||t<1/GlobalBlackscreen.multiplier)
@@ -70,20 +70,23 @@ public class LiftPortal : Portal
             yield return null;
             bool cancel = Input.GetKeyDown(KeyCode.Escape);
 
-            Locus = (CheckInput() && lastInput < 0) ? LowerLocus : lastInput > 0 ? UpperLocus : null;
+            Locus = LiftInterior.Locus;
 
-            if ((Locus == LowerLocus && LowerLocusTime > Clock.Hour)|| (Locus == UpperLocus && UpperLocusTime > Clock.Hour))
+            if (Locus == lift.Basement && 3 > Clock.Hour)
             {
+                LiftInterior.Locus = null;
                 Locus=null;
                 cancel = true;
-                Comment.main.ShowComment("Floor Unavailable. It is still to dark down there!",3f,0.75f);
+                Comment.main.ShowComment("Floor Unavailable. It is still to dark down there!", 3f, 0.75f);
             }
             if (cancel)
             {
                 GlobalBlackscreen.multiplier = 1.5f;
                 GlobalBlackscreen.on = false;
 
-                yield return new WaitForSeconds(0.75f);
+                yield return new WaitForSeconds(0.25f);
+                LiftUI.on = false;
+                yield return new WaitForSeconds(0.5f);
 
                 CloseGrid();
                 InsideLiftCamera.SetActive(false);
@@ -109,7 +112,9 @@ public class LiftPortal : Portal
         GlobalBlackscreen.multiplier = 1.5f;
         GlobalBlackscreen.on = false;
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.25f);
+        LiftUI.on = false;
+        yield return new WaitForSeconds(0.5f);
 
         CloseGrid();
         (Locus as LiftPortal).CloseGrid();

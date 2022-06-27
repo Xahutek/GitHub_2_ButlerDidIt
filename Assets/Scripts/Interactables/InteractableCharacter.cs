@@ -9,14 +9,17 @@ public class InteractableCharacter : Interactable
     public Animator animator;
     public bool facingRight;
 
+    public CharacterLocus locus;
+
     public override void Awake()
     {
         base.Awake();
+        locus = GetComponentInParent<CharacterLocus>();
         animator=GetComponentInChildren<Animator>();
     }
     public override void ClickInteract()
     {
-        if (PlayerController.main.grounded && !GameManager.isPaused && !EventManager.eventSoon)
+        if (PlayerController.main.grounded && !GameManager.isPaused && !EventManager.eventSoon&& (locus==null||locus.state!=CharacterState.Sleeping))
         {
             Transform t = transform.GetChild(0);
 
