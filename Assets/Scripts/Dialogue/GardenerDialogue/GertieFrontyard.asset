@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GardenerFrontyard
+  m_Name: GertieFrontyard
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -49,7 +49,14 @@ MonoBehaviour:
     text: (Deddington did care about this lawn quite a lot.)
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 0
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (Also, he is pretty high up in that tree)
+    fixedClue: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
+    clueHidden: 0
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
