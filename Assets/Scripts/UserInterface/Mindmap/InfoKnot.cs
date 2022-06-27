@@ -58,7 +58,7 @@ public class InfoKnot : MonoBehaviour
             hinted = isHinted;
 
         gameObject.SetActive(hinted||revealed);
-        Hint.SetActive(hinted);
+        Hint.SetActive(hinted&&!revealed);
         Content.SetActive(revealed);
     }
 
