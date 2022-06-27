@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Invitation to Puppetry
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
-  NecessaryCluesKnown: []
+  NecessaryCluesKnown:
+  - {fileID: 11400000, guid: 2ee8fe8c041f5304bad96a3af3796033, type: 2}
+  - {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 0, y: 24}
+  AvailabilityHours: {x: 12, y: 14}
   includedCharacters: 
   Lines:
   - speaker: 2

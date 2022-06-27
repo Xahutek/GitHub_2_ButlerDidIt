@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 15, y: 24}
   includedCharacters: 
   Lines:
@@ -49,7 +49,7 @@ MonoBehaviour:
     text: 'Perhaps he could.
 
       Thank you for the clue, Hugh.'
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
     clueHidden: 0
   ending: 3
   ResumeFixed: {fileID: 0}

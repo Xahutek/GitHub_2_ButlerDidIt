@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   picture: {fileID: 0}
-  required: []
+  required:
+  - {fileID: 11400000, guid: 32c6b9b4e900bf848a06f41d7ed9bafc, type: 2}
   nullify: []
   seenInInventory: 0
   isInventoryClue: 0
-  isMindmapClue: 1
+  isMindmapClue: 0
   presetButlerKnows: 0
   presetDetectiveKnows: 0
   presetInposterKnows: 0

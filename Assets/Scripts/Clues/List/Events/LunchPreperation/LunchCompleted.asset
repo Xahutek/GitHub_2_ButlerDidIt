@@ -9,15 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92c601663db51864e96f8547e2451984, type: 3}
-  m_Name: Sugar
+  m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
+  m_Name: LunchCompleted
   m_EditorClassIdentifier: 
-  name: Sugar, our cardinal sin.
-  picture: {fileID: 21300000, guid: 284f9880015584745804a8df776e939d, type: 3}
-  required: []
+  name: 
+  picture: {fileID: 0}
+  required:
+  - {fileID: 11400000, guid: 78793a00707c4cc43bf9d4e78491676d, type: 2}
+  - {fileID: 11400000, guid: 338433b99ce0e824b9de5a68e8b57227, type: 2}
+  - {fileID: 11400000, guid: d6cc3346c168f25469661af44cbd921f, type: 2}
+  - {fileID: 11400000, guid: 6981952a34740b94eb2027143d28c479, type: 2}
+  - {fileID: 11400000, guid: 1753c93575171c04c9d6e65cbd7ca60c, type: 2}
   nullify: []
   seenInInventory: 0
-  isInventoryClue: 1
+  isInventoryClue: 0
   isMindmapClue: 0
   presetButlerKnows: 0
   presetDetectiveKnows: 0
@@ -31,5 +36,3 @@ MonoBehaviour:
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
-  givenAway: 0
-  _givenAway: 0
