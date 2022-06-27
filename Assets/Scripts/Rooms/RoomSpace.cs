@@ -112,7 +112,6 @@ public class RoomSpace : MonoBehaviour
         {
             SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             isLoaded = true;
-            GlobalBlackscreen.on = false;
         }
         else if (!on&&isLoaded&&!isOpen&&!unloadHandeledByMotherSpace)
         {

@@ -138,7 +138,9 @@ public class EventManager : MonoBehaviour
         {
             yield return null;
         } //Wait for scene to load correctly
+        GlobalBlackscreen.on = true;
 
+        yield return new WaitForSeconds(0.3f);
         while (true)
         {
             if (Input.anyKeyDown) break;
@@ -203,7 +205,9 @@ public class EventManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         EventSystem.main.RefreshRooms();
+        GlobalBlackscreen.on = true;
 
+        yield return new WaitForSeconds(0.3f);
         while (true)
         {
             if (Input.anyKeyDown&&Time.timeSinceLevelLoad>1) break;
