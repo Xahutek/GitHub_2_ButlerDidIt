@@ -102,7 +102,7 @@ public class PlayerController : InteractableCharacter
 
     #region Collision
 
-    [SerializeField] private LayerMask LMAll,LMWalls,LMOneWayFloors;
+    public LayerMask LMAll,LMWalls,LMOneWayFloors;
     [HideInInspector]public bool
         grounded;
     private bool
@@ -124,7 +124,7 @@ public class PlayerController : InteractableCharacter
             origin2 = position + Vector2.right * groundCheckWith + Vector2.down * (extentsY - 0.01f);
 
         RaycastHit2D
-            hitGroundLong = Physics2D.Raycast(position, Vector2.down, extentsY + 1.5f, LMAll),
+            hitGroundLong = Physics2D.Raycast(position, Vector2.down, extentsY + 1.5f, LMWalls),
             hitGround1 = Physics2D.Raycast(origin1, Vector2.down, direction1.magnitude, LMWalls),
             hitGround2 = Physics2D.Raycast(origin2, Vector2.down, direction2.magnitude, LMWalls),
             hitGroundOW1 = Physics2D.Raycast(origin1, Vector2.down, direction1.magnitude, LMOneWayFloors),

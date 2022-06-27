@@ -427,7 +427,10 @@ public class DialogueManager : MonoBehaviour
                     }
                     else if (Characters.Contains(lines[line].speaker))
                     {
-                        thisRoot = CharacterObjects[Characters.IndexOf(lines[line].speaker)].transform.position;
+                        Vector2 characterPosition = CharacterObjects[Characters.IndexOf(lines[line].speaker)].transform.position;
+                        RaycastHit2D hitGroundLong = Physics2D.Raycast(characterPosition, Vector2.down, 3, PlayerController.main.LMWalls);
+
+                        thisRoot = new Vector2((hitGroundLong ? hitGroundLong.point : characterPosition).x,thisRoot.y);
                     }
 
                     B.Refresh(this,lines[line], thisRoot, height, isNew);

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: CrossExamStart
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 1
@@ -22,11 +24,12 @@ MonoBehaviour:
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: CROSS EXAMINATION HAS BEGUN ITS OVER FOR YALL!
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 4
-  ResumeFixed: {fileID: 11400000, guid: e0170a51da1ef4f4e919a2f5dfb54f96, type: 2}
+  ending: 3
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
   Segments:
@@ -43,6 +46,7 @@ MonoBehaviour:
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
+      isThought: 0
       text: CROSS EXAMINATION HAS BEGUN ITS OVER FOR YALL!
       fixedClue: {fileID: 0}
       clueHidden: 0
