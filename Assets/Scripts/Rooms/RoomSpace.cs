@@ -33,6 +33,7 @@ public class RoomSpace : MonoBehaviour
     private void Start()
     {
         Invoke("Enable",0.1f);
+        EventSystem.main.OnRefreshRooms += Reload;
     }
     public void Enable()
     {
@@ -92,6 +93,13 @@ public class RoomSpace : MonoBehaviour
             cov.a = currentAlpha;
             Overlay[i].color = cov;
         }
+    }
+    public void Reload()
+    {
+        if (!isOpen) return;
+
+        SceneManager.UnloadSceneAsync(SceneName);
+        SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
     }
     public void Load(bool on)
     {
