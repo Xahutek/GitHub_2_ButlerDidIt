@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: 3_TyrellCrossExaminationFirstDollar
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 0
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
+  Segments:
+  - trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: There must be some reason why you are so obsessed with having more money
+        than the Lord
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I mean your current wealth is already enough to give every animal in
+        the world a good life for 5 years.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And you spend the money on buying newspaper companies.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The truth is, I just really like money!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 
+      fixedClue: {fileID: 0}
+      clueHidden: 0

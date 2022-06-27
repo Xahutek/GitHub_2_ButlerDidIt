@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: 1_TyrellCrossExamination
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 0
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
+  Segments:
+  - trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 0}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Tycoon Theodor Tycell
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: No, wait.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'This says '
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'Tycool Tyrre '
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Ahh..whatever.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: <i>You</i> visited the Lord 5 days ago, is that correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: You visited the Lord 5 days ago, is that correct?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Yes, yes I have!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And why I did that is none of your buisness.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Actually, I think it is some of my buisness.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Your meeting with the Lord seems to have occured the day on which he
+        died!
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Not exactly speaking for your innocence.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Lord Deddington died 5 days ago!?
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I'll always remember his last words...
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '"Goodbye Tyrell, please leave now..."'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '"No, I don''t want to drink your wine."'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '"Please, just call it a night, leave."'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He really had a way with words.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'You know what they say:'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ' "Suspicion raised"'
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Well if you're going to be this defensive over it, I will give you the
+        benefit of the doubt.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I think your visit has nothing to do with the murder.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
+  - trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Moving on.
+      fixedClue: {fileID: 0}
+      clueHidden: 0
