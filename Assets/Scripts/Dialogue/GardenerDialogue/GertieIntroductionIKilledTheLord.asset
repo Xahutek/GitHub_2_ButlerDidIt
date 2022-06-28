@@ -60,7 +60,19 @@ MonoBehaviour:
       detective, do you have an idea who it could be?
     fixedClue: {fileID: 0}
     clueHidden: 0
-  ending: 3
+  ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: What about Slotheleus
+    reaction: {fileID: 11400000, guid: f65146037397ba14681f0b6145410445, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: It's Tyrell, right?
+    reaction: {fileID: 11400000, guid: ff668d8cd185043468d53b1a7eccb47b, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: Edna could be a detective.
+    reaction: {fileID: 11400000, guid: f0e823e8ba7c8ae498047e1f0180af02, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
