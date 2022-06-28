@@ -69,7 +69,7 @@ public class Dialogue : ScriptableObject
 
         [TextArea]public string text;
         public Clue fixedClue;
-        public bool clueHidden;
+        public string spAnimTrigger;
 
         public Line(Character s, string t)
         {
@@ -77,7 +77,7 @@ public class Dialogue : ScriptableObject
             text = t;
         }
 
-        public Line(Character s, string t, CharacterEmotion sE, CharacterReaction[] oE, Clue fC, bool cH)
+        public Line(Character s, string t, CharacterEmotion sE, CharacterReaction[] oE, Clue fC, string anim)
         {
             speaker = s;
             text = t;
@@ -86,12 +86,13 @@ public class Dialogue : ScriptableObject
             otherReactions = oE;
 
             fixedClue = fC;
-            clueHidden = cH;
+
+            spAnimTrigger = anim;
         }
 
         public void OnDisplay()
         {
-            if (!clueHidden && fixedClue)
+            if (fixedClue)
                 fixedClue.MakeKnownTo(Character.Butler);
         }
     }

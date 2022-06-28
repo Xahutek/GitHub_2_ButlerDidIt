@@ -506,15 +506,27 @@ public class DialogueManager : MonoBehaviour
     public void RefreshAnimations(Dialogue.Line L)
     {
         ClearAnimations();
-
-        SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
-
-        if (L.fixedClue && L.fixedClue.isInventoryClue && !L.fixedClue.KnownTo(Character.Butler))
-            gainedClue = L.fixedClue;
-
-        foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)
+        if(L.spAnimTrigger == "")
         {
-            SetEmotion(R.character, R.emotion, false);
+            SetEmotion(L.speaker, L.speakerEmotion, !L.isThought);
+
+            if (L.fixedClue && L.fixedClue.isInventoryClue && !L.fixedClue.KnownTo(Character.Butler))
+                gainedClue = L.fixedClue;
+
+            foreach (Dialogue.Line.CharacterReaction R in L.otherReactions)
+            {
+                SetEmotion(R.character, R.emotion, false);
+            }
+        }
+        else
+        {
+            foreach (InteractableCharacter I in CharacterObjects)
+            {
+                if (I.character == L.speaker)
+                { 
+                    I.animator.SetTrigger(L.spAnimTrigger);
+                }
+            }
         }
     }
 
