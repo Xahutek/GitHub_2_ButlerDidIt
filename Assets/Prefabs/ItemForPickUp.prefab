@@ -213,7 +213,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3475640702125662857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3461481537167306293}
   - component: {fileID: 6807337235960821290}
+  - component: {fileID: 4125381441728448561}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -313,3 +314,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4125381441728448561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000377468492426162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8586c8196d9b80e4cbe9b8c6ee69b5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 0}
+  ItemRadius: 1
+  OutlineThickness: 0.01
