@@ -9,16 +9,14 @@ namespace ChessBoard
     {
         public static GameManager main;
 
-        public ChessFigure
-            BlackKing,
-            WhiteKing;
-        public ChessFigure[]
-            blackFigures,
-            whiteFigures;
         public GameState gameState;
         public TMP_Text resultText;
 
         public Clue LordWinsClue;
+
+        public List<BoardSlot> slots;
+        public List<ChessFigure> figures;
+
 
         private void Awake()
         {
@@ -26,79 +24,43 @@ namespace ChessBoard
         }
         public void CheckState()
         {
-            List<BoardSlot>
-                BlackKingsSlots = new List<BoardSlot>(),
-                WhiteKingSlots = new List<BoardSlot>();
+            bool ednaWon = CheckState(ChessColor.White, false) || CheckState(ChessColor.White, true);
+            bool lordWon = CheckState(ChessColor.Black, false) || CheckState(ChessColor.Black, true);
 
-            Dictionary<ChessFigure, List<BoardSlot>> keyValuePairs = new Dictionary<ChessFigure, List<BoardSlot>>();
-
-            BlackKingsSlots.Add(BlackKing.slot);
-            BlackKingsSlots.AddRange(BlackKing.slot.neighbours);
-
-            WhiteKingSlots.Add(WhiteKing.slot);
-            WhiteKingSlots.AddRange(WhiteKing.slot.neighbours);
-
-            foreach (ChessFigure Fig in blackFigures)
-            {
-                BoardSlot[] infuence = Fig.GetFieldsOfInfluence();
-                if (BlackKingsSlots.Contains(Fig.slot))
-                    BlackKingsSlots.Remove(Fig.slot);
-                foreach (BoardSlot inf in infuence)
-                {
-                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward * 200, Color.black, 5);
-                    if (WhiteKingSlots.Contains(inf))
-                        WhiteKingSlots.Remove(inf);
-                }
-            }
-            foreach (ChessFigure Fig in whiteFigures)
-            {
-                BoardSlot[] infuence = Fig.GetFieldsOfInfluence();
-                if (WhiteKingSlots.Contains(Fig.slot))
-                    WhiteKingSlots.Remove(Fig.slot);
-                foreach (BoardSlot inf in infuence)
-                {
-                    Debug.DrawLine(inf.transform.position, inf.transform.position - inf.transform.forward * 100, Color.white, 5);
-                    if (BlackKingsSlots.Contains(inf))
-                        BlackKingsSlots.Remove(inf);
-                }
-            }
-
-            foreach (BoardSlot s in WhiteKingSlots)
-            {
-                Debug.DrawLine(s.transform.position, s.transform.position - s.transform.forward * 300, Color.green, 5);
-            }
-            foreach (BoardSlot s in BlackKingsSlots)
-            {
-                Debug.DrawLine(s.transform.position, s.transform.position - s.transform.forward * 300, Color.green, 5);
-            }
-
-            bool
-                BlackWon = WhiteKingSlots.Count == 0,
-                WhiteWon = BlackKingsSlots.Count == 0;
-
-            Debug.Log("Black won:" + BlackWon);
-            Debug.Log("White won:" + WhiteWon);
-
-            if (BlackWon && WhiteWon) gameState = GameState.Draw;
-            else if (!BlackWon && WhiteWon) gameState = GameState.WhiteWins;
-            else if (BlackWon && !WhiteWon) gameState = GameState.BlackWins;
+            if (ednaWon && lordWon) gameState = GameState.Draw;
+            else if (ednaWon) gameState = GameState.WhiteWins;
+            else if (lordWon) gameState = GameState.BlackWins;
             else gameState = GameState.Playing;
 
             switch (gameState)
             {
+                case GameState.Playing:
+                    resultText.text = "Who am I trying to fool with this..?";
+                    break;
                 case GameState.Draw:
-                    resultText.text = "A draw. Already more than the Lord could ever accomplish...";
+                    resultText.text = "This looks inconclusive.";
                     break;
                 case GameState.BlackWins:
-                    resultText.text = "Now you'd almost believe the Lord actually won...";
+                    resultText.text = "One would almost believe the Lord finally won...";
                     break;
                 case GameState.WhiteWins:
-                    resultText.text = "Looks like White won... Edna presumably.";
+                    resultText.text = "Looks like White won... Edna presumably";
                     break;
-                default: //Playing
-                    resultText.text = "Looks like the game ended prematurely...";
+                default:
                     break;
             }
+        }
+        public bool CheckState(ChessColor winner, bool flipped)
+        {
+            bool valid = true;
+
+            foreach (BoardSlot slot in slots)
+            {
+                if (slot.isCrucial && !slot.isValid(winner, flipped))
+                    valid = false;
+            }
+
+            return valid;
         }
 
         public override void Open()
@@ -108,44 +70,43 @@ namespace ChessBoard
         }
         public override void Load()
         {
-            if (MinigameData.blackKing != null)
+            List<BoardSlot> pointedSlots = slots;
+
+            if (MinigameData.slotFigures==null||MinigameData.slotFigures.Count==0)
             {
-                BlackKing.slot.figure = null;
-                BlackKing.slot = BoardSlot.slots[MinigameData.blackKing.coordinates];
-                BlackKing.slot.figure = BlackKing;
+                Debug.LogWarning("MinigameData Slotfigures is null or empty");
+                return;
             }
 
-            if (MinigameData.whiteKing != null)
+            foreach (BoardSlot s in slots)
             {
-                WhiteKing.slot.figure = null;
-                WhiteKing.slot = BoardSlot.slots[MinigameData.whiteKing.coordinates];
-                WhiteKing.slot.figure = WhiteKing;
+                s.figure = null;
+            }
+            foreach (ChessFigure f in figures)
+            {
+                f.slot = null;
             }
 
-            if (MinigameData.blackfigures != null)
-                for (int i = 0; i < MinigameData.blackfigures.Length; i++)
-                {
-                    ChessFigure figure = blackFigures[i];
-                    figure.slot.figure = null;
-                    figure.slot = BoardSlot.slots[MinigameData.blackfigures[i].coordinates];
-                    figure.slot.figure = figure;
-                }
+            for (int i = 0; i < MinigameData.slotFigures.Count; i++)
+            {
+                Vector2Int save = MinigameData.slotFigures[i];
 
-            if (MinigameData.whiteFigures != null)
-                for (int i = 0; i < MinigameData.whiteFigures.Length; i++)
+                BoardSlot s = slots[save.x];
+
+                if (save.y == -1)
+                    s.figure = null;
+                else
                 {
-                    ChessFigure figure = whiteFigures[i];
-                    figure.slot.figure = null;
-                    figure.slot = BoardSlot.slots[MinigameData.whiteFigures[i].coordinates];
-                    figure.slot.figure = figure;
+                    s.figure = figures[save.y];
+                    figures[save.y].slot = s;
                 }
+            }
         }
         public override void Close()
         {
             CheckState();
             if (gameState == GameState.BlackWins)
                 LordWinsClue.MakeKnownTo(Character.Butler);
-            BoardSlot.slots = new Dictionary<Vector2, BoardSlot>();
             base.Close();
         }
         public override void Save()
@@ -158,43 +119,4 @@ namespace ChessBoard
     {
         Playing, Draw, BlackWins, WhiteWins
     }
-
-    //public struct BMap
-    //{
-    //    public int size;
-    //    public int[,] map;
-
-    //    public int Map(int x, int y)
-    //    {
-    //        return map[x, y];
-    //    }
-    //    public int centeredMap(int x, int y, bool reset=false)
-    //    {
-    //        int half = Mathf.FloorToInt((float)size * 0.5f);
-    //        if (x + half >= size || y + half >= size) return 0;
-    //        else return map[x + half, y + half];
-    //    }
-
-    //    public void SetUp(int size)
-    //    {
-    //        this.size = size;
-    //        map = new int[size, size];
-    //    }
-    //}
-
-    //public static class ChessBoardUtility
-    //{
-    //    public static BMap BoardMask(this BMap board, BMap mask, Vector2 offset)
-    //    {
-    //        for (int x = 0; x < board.size; x++)
-    //        {
-    //            for (int y = 0; y < board.size; y++)
-    //            {
-    //                int
-    //                    boardValue= board.Map(x, y),
-    //                    maskValue=mask.centeredMap(x-, y);
-    //            }
-    //        }
-    //    }
-    //}
 }

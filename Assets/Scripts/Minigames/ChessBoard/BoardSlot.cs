@@ -7,61 +7,88 @@ namespace ChessBoard
 {
     public class BoardSlot : MonoBehaviour, IDropHandler
     {
-        public static Dictionary<Vector2,BoardSlot> slots = new Dictionary<Vector2, BoardSlot>();
-        [SerializeField] List<BoardSlot> allSlots;
-        public BoardSlot[] neighbours;
+        public ChessColor EdnaWinColor;
+        public FigureType[] ValidEdnaWin;
+        public ChessColor EdnaWinColorFlipped;
+        public FigureType[] ValidEdnaWinFlipped;
+        public ChessColor LordWinColor;
+        public FigureType[] ValidLordWin;
+        public ChessColor LordWinColorFlipped;
+        public FigureType[] ValidLordWinFlipped;
 
-        public Vector2Int Coordinates;
-        public ChessFigure figure = null;
+        public ChessFigure figure;
 
-        private void Awake()
+        public bool isCrucial;
+        public int siblingIndex;
+
+        public bool isValid(ChessColor winner, bool flipped)
         {
-            slots.Add(Coordinates, this);
-        }
-        private void Start()
-        {
-            allSlots = new List<BoardSlot>();
-            foreach (BoardSlot s in slots.Values)
-            {
-                allSlots.Add(s);
-            }
+            if (!isCrucial) return true;
+            if (!figure) return false;
 
+            ChessColor requiredColor;
+            List<FigureType> AllowedTypes= new List<FigureType>();
 
-            List<BoardSlot> neigh = new List<BoardSlot>();
-            for (int x = -1; x <= 1; x++)
+            if (winner==ChessColor.White)
             {
-                for (int y = -1; y <= 1; y++)
+                if (!flipped)
                 {
-                    Vector2 v = Coordinates + new Vector2(x, y);
-                    if (Coordinates == Vector2Int.one * 5) Debug.DrawLine(slots[v].transform.position, slots[v].transform.position - slots[v].transform.forward * 100, Color.yellow, 5);
-                    if (v == Coordinates || !slots.ContainsKey(v)) continue;
-                    if (Coordinates == Vector2Int.one * 5) Debug.DrawLine(slots[v].transform.position, slots[v].transform.position - slots[v].transform.forward * 200, Color.green, 5);
-                    neigh.Add(slots[v]);
+                    requiredColor = EdnaWinColor;
+                    AllowedTypes.AddRange(ValidEdnaWin);
+                }
+                else
+                {
+                    requiredColor = EdnaWinColorFlipped;
+                    AllowedTypes.AddRange(ValidEdnaWinFlipped);
                 }
             }
-            neighbours = neigh.ToArray();
+            else
+            {
+                if (!flipped)
+                {
+                    requiredColor = LordWinColor;
+                    AllowedTypes.AddRange(ValidLordWin);
+                }
+                else
+                {
+                    requiredColor = LordWinColorFlipped;
+                    AllowedTypes.AddRange(ValidLordWinFlipped);
+                }
+            }
+
+            bool valid = true;
+
+            if (figure.color != requiredColor)
+                valid = false;
+
+            if (AllowedTypes.Count != 0 && !AllowedTypes.Contains(figure.type))
+                valid = false;
+
+            return valid;
         }
 
-        public bool KingField(bool Black)
+        public void SetFigure(ChessFigure newFigure)
         {
-            if (figure && figure.type == ChessFigure.Type.King && figure.Black == Black)
-                return true;
-            foreach (BoardSlot n in neighbours)
+            if(newFigure) newFigure.slot.figure = null;
+
+            if (figure != null)
             {
-                if (n.figure && n.figure.type == ChessFigure.Type.King && n.figure.Black == Black)
-                    return true;
+                if (newFigure) newFigure.slot.SetFigure(figure);
+                else figure.slot = null;
             }
-            return false;
+
+            figure = newFigure;
+            if(newFigure) figure.slot = this;
+
+            //figure.transform.SetSiblingIndex(siblingIndex);
         }
 
         public void OnDrop(PointerEventData eventData)
         {
-            ChessFigure F= eventData.pointerDrag.GetComponent<ChessFigure>();
-            if (F != null && figure == null && !KingField(!F.Black))
+            ChessFigure F = eventData.pointerDrag.GetComponent<ChessFigure>();
+            if (F != null)
             {
-                F.slot.figure = null;
-                F.slot = this;
-                figure = F;
+                SetFigure(F);
 
                 GameManager.main.CheckState();
             }

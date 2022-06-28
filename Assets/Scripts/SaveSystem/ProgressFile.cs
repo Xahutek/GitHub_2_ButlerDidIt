@@ -135,28 +135,10 @@ public class ProgressFile
         public List<bool> calendar;
 
         //Chess
-        [System.Serializable]
-        public class SerializedVector2
-        {
-            public float x = 0, y = 0;
-
-            public SerializedVector2(float X, float Y)
-            {
-                x = X;
-                y = Y;
-            }
-            public SerializedVector2(Vector2 vec)
-            {
-                x = vec.x;
-                y = vec.y;
-            }
-        }
-        public SerializedVector2
-            blackKing = new SerializedVector2(0, 6),
-            whiteKing = new SerializedVector2(7, 7);
-        public SerializedVector2[]
-            blackfigures = new SerializedVector2[0],
-            whiteFigures = new SerializedVector2[0];
+        public List<int> 
+            chessDataSlots,
+            chessDataFigures;
+        
 
         public Minigames_ProgressFile()
         {
@@ -167,59 +149,33 @@ public class ProgressFile
                 else calendar.Add(false);
             }
 
-            blackKing = new SerializedVector2(0, 6);
-            whiteKing = new SerializedVector2(7, 7);
-
-            blackfigures = new SerializedVector2[0];
-            whiteFigures = new SerializedVector2[0];
+            chessDataSlots = new List<int>();
+            chessDataFigures = new List<int>();
         }
 
         public void Save()
         {
             calendar = MinigameData.calendar;
 
-            blackKing = new SerializedVector2(MinigameData.blackKing != null ? MinigameData.blackKing.coordinates : new Vector2(0, 6));
-            whiteKing = new SerializedVector2(MinigameData.blackKing != null ? MinigameData.whiteKing.coordinates : new Vector2(7, 7));
-
-            List<SerializedVector2>
-                blackList = new List<SerializedVector2>(),
-                whiteList = new List<SerializedVector2>();
-
-            if (MinigameData.blackfigures != null) foreach (MinigameData.ChessFigure figure in MinigameData.blackfigures)
-                {
-                    blackList.Add(new SerializedVector2(figure.coordinates));
-                }
-            if (MinigameData.blackfigures != null) foreach (MinigameData.ChessFigure figure in MinigameData.whiteFigures)
-                {
-                    whiteList.Add(new SerializedVector2(figure.coordinates));
-                }
-
-            blackfigures = blackList.ToArray();
-            whiteFigures = whiteList.ToArray();
+            chessDataSlots = new List<int>();
+            chessDataFigures = new List<int>();
+            
+            foreach (Vector2Int v in MinigameData.slotFigures)
+            {
+                chessDataSlots.Add(v.x);
+                chessDataFigures.Add(v.y);
+            }
         }
 
         public void Load()
         {
             MinigameData.calendar = calendar;
 
-            MinigameData.blackKing = new MinigameData.ChessFigure(blackKing);
-            MinigameData.whiteKing = new MinigameData.ChessFigure(whiteKing);
-
-            List<MinigameData.ChessFigure>
-                blackList = new List<MinigameData.ChessFigure>(),
-                whiteList = new List<MinigameData.ChessFigure>();
-
-            foreach (SerializedVector2 figure in blackfigures)
+            MinigameData.slotFigures = new List<Vector2Int>();
+            for (int i = 0; i < chessDataSlots.Count; i++)
             {
-                blackList.Add(new MinigameData.ChessFigure(figure));
+                MinigameData.slotFigures.Add(new Vector2Int(chessDataSlots[i], chessDataFigures[i]));
             }
-            foreach (SerializedVector2 figure in whiteFigures)
-            {
-                whiteList.Add(new MinigameData.ChessFigure(figure));
-            }
-
-            MinigameData.blackfigures = blackList.ToArray();
-            MinigameData.whiteFigures = whiteList.ToArray();
         }
     }
     public Minigames_ProgressFile minigames;

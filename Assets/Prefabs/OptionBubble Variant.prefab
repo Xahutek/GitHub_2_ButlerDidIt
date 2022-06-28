@@ -169,15 +169,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.b
-      value: 0.3786935
+      value: 0.8980393
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.g
-      value: 0.63535386
+      value: 0.8980393
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.r
-      value: 0.6981132
+      value: 0.8980393
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654155, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 4092089525967828120}
+  isOpen: 0
   Root: {x: 0, y: 0}
   animated: 1
   text: {fileID: 2869323827288701983}
@@ -316,6 +317,7 @@ MonoBehaviour:
     speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 
     fixedClue: {fileID: 0}
     clueHidden: 0
