@@ -12,7 +12,7 @@ public class LibraryManager : MonoBehaviour
         foreach (Item i in clueLibrary.AllItems)
         {
             i.isMindmapClue = false;
-            i.isInventoryClue = false;
+            i.isInventoryClue = true;
         }
         foreach (Clue c in clueLibrary.AllClues)
         {

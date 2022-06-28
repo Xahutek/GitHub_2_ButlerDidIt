@@ -8,17 +8,17 @@ public class InteractableItem : Interactable
 {
     private Vector3 pos;
     private Camera cam;
-    public Item item; 
     public float animSpeed = 0.5f;
     public AudioClip pickupSound;
 
-    private void Awake()
+    public override void Awake()
     {
-        if (item.KnownTo(Character.Butler))
+        base.Awake();
+        if (Yield.KnownTo(Character.Butler))
         {
             gameObject.SetActive(false);
         }
-       GetComponent<Image>().sprite = item.picture;        
+       GetComponent<Image>().sprite = Yield.picture;        
     }
 
     public override void ClickInteract()
@@ -29,9 +29,7 @@ public class InteractableItem : Interactable
         cam = FindObjectOfType<Camera>();
         pos = cam.ScreenToWorldPoint(new Vector3(0, cam.pixelHeight / 2, 0));
 
-        item.MakeKnownTo(Character.Butler);
-        transform.DOMove(pos, animSpeed).SetEase(Ease.InOutCirc);
-
-        deactivated = true;
+        deactivated = false;
+        transform.DOMove(pos, animSpeed).SetEase(Ease.InOutCirc).OnComplete(() => Deactivate()) ;
     }
 }

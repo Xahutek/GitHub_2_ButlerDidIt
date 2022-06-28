@@ -50,25 +50,21 @@ public class Interactable : MonoBehaviour
 
     public void Interaction()
     {
+        if (!canInteract || blocked || deactivated) return;
+
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (colli.OverlapPoint(mousePosition))
         {
             Debug.Log("interacted");
 
-            if (!canInteract || blocked || deactivated) return;
-
-            if (Vector2.Distance(PlayerController.main.position, transform.position) > interactRange)
-
-                Debug.Log("Touched " + name);
+            deactivated = deactivateOnInteraction;
 
             ClickInteract();
 
             EventSystem.main.Interact(this);
 
             if (Yield) Yield.MakeKnownTo(Character.Butler);
-
-            deactivated = deactivateOnInteraction;
 
             interactTimer = Time.time + interactCooldown;
         }
@@ -78,5 +74,10 @@ public class Interactable : MonoBehaviour
     public virtual void ClickInteract()
     {
 
+    }
+
+    public void Deactivate()
+    {
+        deactivated = deactivateOnInteraction;
     }
 }
