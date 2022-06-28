@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
     float interactTimer=0;
     public bool blocked, deactivated;
 
-    public Vector2Int AvailableTime = new Vector2Int(0, 24);
+    public Vector2 AvailableTime = new Vector2(0, 24);
 
     public Clue Yield;
     public bool deactivateOnInteraction, deactivateIfKnown;
