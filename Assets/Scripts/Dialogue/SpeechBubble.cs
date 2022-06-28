@@ -67,18 +67,18 @@ public class SpeechBubble : Bubble
     public Image[] images;
     private void MakeTransparent()
     {
-        Camera cam = FindObjectOfType<Camera>();
-        Vector3 camPos = cam.ScreenToWorldPoint(new Vector3(0, cam.pixelHeight / 4, 0)); //start fade at upper fourth
-        Vector3 upperBorder = cam.ScreenToWorldPoint(new Vector3(0, 0, 0));
-        Vector2 bubblePos = RectTransformUtility.PixelAdjustPoint(transform.position, transform, GetComponentInParent<Canvas>());
-        float value = (Root.y / (bubblePos.y - upperBorder.y) - 1) / 100 * 4;
-
+        float value = 0;
+        for(int i = 0; i < DialogueManager.main.bubbles.Count - 1; i++)
+        {
+            if (DialogueManager.main.bubbles[i] == this)
+                value = i;
+        }
+        value = value / DialogueManager.main.bubbles.Count;
         for (int i = 0; i < images.Length; i++)
         {
-            images[i].color = new Color(images[i].color.r, images[i].color.g, images[i].color.b, Mathf.Lerp(0.5f, 1, value));
+            images[i].color = new Color(images[i].color.r, images[i].color.g, images[i].color.b, Mathf.Lerp(1, 0.4f, value));
         }
-        text.color = new Color(text.color.r, text.color.g, text.color.b, Mathf.Lerp(0.5f, 1, value));
-        //Debug.Log(camPos.y + " / " + bubblePos.y + " = " + value);
+        text.color = new Color(text.color.r, text.color.g, text.color.b, Mathf.Lerp(1, 0.5f, value));
     }
 
     private void CharacterColor()
