@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: GertieIntroductionIKilledTheLord
+  m_Name: LordDiscoveredFlowersDown
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -21,46 +21,28 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Oh no!
+    text: '[I have put the flowers next to Lord Deddington]'
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'Well I didn''t know him but it''s always sad when people die.
-
-      Was
-      it an accident?'
+    text: <b>WHAT A TOUCHING GESTURE</b>.
     fixedClue: {fileID: 0}
     clueHidden: 0
-  - speaker: 5
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Don't worry, I won't tell anyone.
-    fixedClue: {fileID: 0}
+    text: Well, isn't that something nice.
+    fixedClue: {fileID: 11400000, guid: 4ea75cb4ff2cbe14cb8d1cc69c92ed9a, type: 2}
     clueHidden: 0
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Come back at 07:30, I will set out some flowers we can put down for him.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: But do you have a plan on what to do? I heard one of the guests is a great
-      detective, do you have an idea who it could be?
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  ending: 3
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
   availableAnswers: []
   options: []
