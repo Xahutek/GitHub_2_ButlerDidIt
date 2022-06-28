@@ -85,12 +85,12 @@ public class EventManager : MonoBehaviour
     {
         Debug.Log("Start Intermission");
 
-        if (EventRoutine != null) return;
+        if (IntermissionRoutine != null) return;
         DialogueManager.main.Close();
 
         isOpen = true;
         if (IntermissionRoutine!=null) StopCoroutine(IntermissionRoutine);
-        EventRoutine = StartCoroutine(IntermissionLoop(inter));
+        IntermissionRoutine = StartCoroutine(IntermissionLoop(inter));
     }
     public void StartEvent(EventProfile profile)
     {
@@ -104,7 +104,7 @@ public class EventManager : MonoBehaviour
         EventRoutine = StartCoroutine(EventLoop());
     }
 
-    Coroutine EventRoutine=null, IntermissionRoutine;
+    Coroutine EventRoutine=null, IntermissionRoutine=null;
     IEnumerator EventLoop()
     {
         isOpen = true;

@@ -239,6 +239,7 @@ public class ProgressFile
         Debug.Log(difficulty);
 
         //Time
+        Debug.Log("Saved Time is"+currentHour);
         Clock.main.currentHour = currentHour;
         Clock.main.currentMinute = currentMinute;
 

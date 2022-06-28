@@ -40,6 +40,12 @@ public class RoomSpace : MonoBehaviour
         col.enabled = true;
     }
 
+    private void FixedUpdate()
+    {
+        isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
+        if (isLoaded) loadWasQueued = false;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -94,29 +100,32 @@ public class RoomSpace : MonoBehaviour
             Overlay[i].color = cov;
         }
     }
+
+    bool loadWasQueued;
     public void Reload()
     {
-        if (!isOpen) return;
+        isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
+        if (!isOpen||!isLoaded||loadWasQueued) return;
 
         SceneManager.UnloadSceneAsync(SceneName);
         SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+        loadWasQueued = true;
     }
     public void Load(bool on)
     {
         isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
-        if(on&&isLoaded&&(isOpen||unloadHandeledByMotherSpace))
+        if(on&&isLoaded&&isOpen&&!unloadHandeledByMotherSpace)
         {
             Reload();
         }
-        else if (on&&!isLoaded&&(isOpen||unloadHandeledByMotherSpace))
+        else if (!loadWasQueued&&on&&!isLoaded&&(isOpen||unloadHandeledByMotherSpace))
         {
             SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
-            isLoaded = true;
+            loadWasQueued=true;
         }
         else if (!on&&isLoaded&&!isOpen&&!unloadHandeledByMotherSpace)
         {
             SceneManager.UnloadSceneAsync(SceneName);
-            isLoaded = false;
         }
         Debug.Log(name + ". active " + on);
 

@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
 
     public Clue SaveClue, SaveDeletedClue;
 
+    private void Awake()
+    {
+        manualPaused = true;
+    }
     private void Start()
     {
         dialogueManager = DialogueManager.main;
@@ -21,8 +25,7 @@ public class GameManager : MonoBehaviour
         mindmap = Mindmap.main;
         eventManager = EventManager.main;
 
-        manualPaused = true;
-        Invoke("LoadSave",Time.deltaTime);
+        Invoke("LoadSave",0.1f);
     }
 
     public void LoadSave()
