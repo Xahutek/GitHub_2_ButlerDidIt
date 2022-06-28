@@ -28,16 +28,16 @@ MonoBehaviour:
     text: Personally, I don't understand what we're here for, we all know the butler
       did it.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Nop, highely unlikely.
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  ending: 0
-  ResumeFixed: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: ffdf3206a5d2d364494fde407c2f172d, type: 2}
   availableAnswers: []
   options: []
   Segments:
@@ -58,14 +58,14 @@ MonoBehaviour:
       text: Personally, I don't understand what we're here for, we all know the butler
         did it.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Nop, highely unlikely.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
   - trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
@@ -83,11 +83,11 @@ MonoBehaviour:
       text: Personally, I don't understand what we're here for, we all know the general
         did it.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Nop, highely unlikely.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

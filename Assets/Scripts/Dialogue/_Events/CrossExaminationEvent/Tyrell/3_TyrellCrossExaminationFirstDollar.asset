@@ -21,8 +21,8 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines: []
-  ending: 0
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: a5a73fa77c90a744798533048f613199, type: 2}
   availableAnswers: []
   options: []
   Segments:
@@ -43,7 +43,7 @@ MonoBehaviour:
       text: There must be some reason why you are so obsessed with having more money
         than the Lord
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -51,42 +51,42 @@ MonoBehaviour:
       text: I mean your current wealth is already enough to give every animal in
         the world a good life for 5 years.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: And you spend the money on buying newspaper companies.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: The truth is, I just really like money!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: No, you see, I think there is another, seperate reason for your greed.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I think you wanted to, specifically, be richer than Lord Deddington.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: And why would I want that?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
   - trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
@@ -103,16 +103,16 @@ MonoBehaviour:
       isThought: 0
       text: Honestly, I have no idea.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Moving on.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
   - trigger:
-      activateClueTrigger: 0
+      activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
       knowingCharacters: 02000000
       unknowingCharacters: 
@@ -120,4 +120,118 @@ MonoBehaviour:
       c: 0
       mode: 0
       suspicion: 0
-    content: []
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Because the Lord kept your first ever earned dollar
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: <i>How do you know about that</i>!?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Easy, we found your first dollar
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But the Lord didn't want to return it to you, even when you surpassed
+        him in sheer networth.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 02000000
+      activateSuspicionTrigger: 0
+      c: 2
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...But why this wealth was so important to you, I couldn't figure out.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And the reason for why the Lord did not return the dollar to you is simple
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: <i>And what would that be</i>!?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Your fraud scheme.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: If you stop calling it a fraud I will increase the interest rates for
+        single women detectives by 30%
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Anyway, when Lord Deddington caught wind of your fraud schemes, he refused
+        to return the dollar to you until you earned it through honest means.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Well, at least what the two of you consider "honest means".
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But you couldn't do it.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: So, you felt like there was only one option, murder
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
