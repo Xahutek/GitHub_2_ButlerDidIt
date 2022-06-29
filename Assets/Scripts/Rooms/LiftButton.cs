@@ -16,8 +16,13 @@ public class LiftButton : MonoBehaviour
     public void Toggle(bool on,float time , float delay)
     {
         DOTween.Kill(scaleTween);
-        scaleTween = transform.DOScale(on ? 1 : 0, time).SetDelay(delay).SetEase(on? Ease.OutBack: Ease.InSine);
+        scaleTween = transform.DOScale(on ? 1 : 0, time).SetDelay(delay).SetEase(on? Ease.OutBack: Ease.InSine).OnComplete(()=>Activation());
         isOpen = on;
+        if (on) Activation();
+    }
+    public void Activation()
+    {
+        gameObject.SetActive(isOpen);
     }
 
     private void Awake()
