@@ -21,22 +21,10 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines: []
-  ending: 2
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: f77789655e32e404cb9e5b008e138d56, type: 2}
   availableAnswers: []
-  options:
-  - text: I hated the Lord
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: The Lord hated me
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: We got along well
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []
   Segments:
   - trigger:
       activateClueTrigger: 0
@@ -48,24 +36,38 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: We got along just great.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Hugh, you have worked in this house for quite some time now.
+      text: I imagine these unfortunate events must be so difficult for you.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Right, Hugh?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 1
+      text: (At this point I am convinced she is playing with me)
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 2 years almost
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: Can you tell me what was your relationship to the Lord?
+      text: Yes, a crying shame.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
