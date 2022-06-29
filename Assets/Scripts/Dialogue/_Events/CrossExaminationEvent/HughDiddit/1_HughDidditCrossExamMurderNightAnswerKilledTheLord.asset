@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: 1_HughDidditCrossExamMurderNightAnswerKilledTheLord
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
+  Segments:
+  - trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 0}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I remember vividly what I did the moment he died.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'I cleaned the blood of my hooves '
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: After snapping and murdering Lord Deddington
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: So you confess, alright I guess the Butler really did do it.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
