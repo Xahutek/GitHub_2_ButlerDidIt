@@ -15,7 +15,6 @@ public class OutlineBox : MonoBehaviour
     {
         sRenderer = GetComponent<SpriteRenderer>();
         outline = sRenderer.material;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
         outline.SetColor("Color_cb38644a3f444f6cb498ab0e82528ebb", Color.black);
         outline.SetFloat("Vector1_e2aa71b3209842c5a6eb0b87444d3361", 0);
     }
@@ -24,7 +23,7 @@ public class OutlineBox : MonoBehaviour
     void Update()
     {
 
-        distance = Vector2.Distance(this.transform.position, player.transform.position);
+        distance = Vector2.Distance(this.transform.position, PlayerController.main.transform.position);
      
         if (ItemRadius>distance)
         {

@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
+  ItemRadius: 1
+  OutlineThickness: 0.01
 --- !u!1001 &6097991023629465258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759945647222857485, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_InstanceId
-      value: -734474
+      value: -396852
       objectReference: {fileID: 0}
     - target: {fileID: 8686310726366936778, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_Name
@@ -309,7 +311,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8895488772167368171, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
 --- !u!1 &3182799269089177530 stripped
 GameObject:
@@ -371,6 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
+  ItemRadius: 1
+  OutlineThickness: 0.01
 --- !u!1001 &6703503957950035019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -606,7 +611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759945647222857485, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_InstanceId
-      value: -734654
+      value: -397032
       objectReference: {fileID: 0}
     - target: {fileID: 8686310726366936778, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_Name
@@ -664,7 +669,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8895488772167368171, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
 --- !u!114 &8153496235664093265 stripped
 MonoBehaviour:
@@ -726,6 +732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
+  ItemRadius: 1
+  OutlineThickness: 0.01
 --- !u!1001 &8153496236054258124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1203,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -734876
+      value: -397254
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -1211,7 +1219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -734898
+      value: -397276
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -1219,7 +1227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -734932
+      value: -397310
       objectReference: {fileID: 0}
     - target: {fileID: 6606299100271873206, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_SortingLayer
@@ -1429,7 +1437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759945647222857485, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_InstanceId
-      value: -735088
+      value: -397472
       objectReference: {fileID: 0}
     - target: {fileID: 8686310726366936778, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
       propertyPath: m_Name
@@ -1487,7 +1495,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8895488772167368171, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5c189c1805868840a782d798d1b4d70, type: 3}
 --- !u!4 &697196155320578546 stripped
 Transform:
@@ -1549,3 +1558,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
+  ItemRadius: 1
+  OutlineThickness: 0.01
