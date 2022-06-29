@@ -2501,8 +2501,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHour: 0
   currentMinute: 0
-  CompleteDay: 60
-  SpeedUpMultiplier: 0
+  CompleteDay: 30
+  SpeedUpMultiplier: 2
 --- !u!1 &6112279584943450699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,7 +3659,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81bbcd1a0a9234f46851d32f98759164, type: 2}
   allIntermissions:
   - message: I just murdered the lord... I had to do it! Now suddenly, the door rings!
-    availableTime: {x: 0.01, y: 0}
+    availableTime: {x: 0, y: 0}
     gainedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
   - message: The door rings...again!?
     availableTime: {x: 3, y: 0}

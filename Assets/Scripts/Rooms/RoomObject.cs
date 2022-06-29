@@ -10,15 +10,25 @@ public class RoomObject : MonoBehaviour
 
     private void Start()
     {
+        EventSystem.main.OnRefreshRooms += RoomRefresh;
         EventSystem.main.ChangeRoom(identity,Character.Butler);
         Refresh();
     }
-
+    private void OnDisable()
+    {
+        EventSystem.main.OnRefreshRooms -= RoomRefresh;
+    }
+    public void RoomRefresh()
+    {
+        DeactivateCharacters();
+        Refresh();
+    }
     public void Refresh()
     {
+        Debug.Log("REFRESH "+name);
         foreach (Character c in System.Enum.GetValues(typeof(Character)))
         {
-            if (c == Character.Butler || c == Character.Lord || EventManager.isOpen) continue;
+            if (c == Character.Butler || c == Character.Lord || EventManager.blockRoomRefreshs) continue;
 
             CharacterProfile p = c.Profile();
             CharacterProfile.TimeBox b = p.CurrentTimeBox;
@@ -32,6 +42,7 @@ public class RoomObject : MonoBehaviour
     {
         foreach (CharacterLocus l in Loci)
         {
+            l.active = false;
             l.gameObject.SetActive(false);
         }
     }

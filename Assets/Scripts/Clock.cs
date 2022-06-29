@@ -28,6 +28,7 @@ public class Clock : MonoBehaviour
     {
         Hour += duration;
         Minute += duration * 60;
+        LastHour = Hour;
 
         internalRefresh = true;
     }
