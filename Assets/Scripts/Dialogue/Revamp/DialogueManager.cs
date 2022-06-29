@@ -337,6 +337,7 @@ public class DialogueManager : MonoBehaviour
 
                 Debug.Log(line);
 
+
                 if (dialogue.ending == Dialogue.EndingType.Closed)
                 {
                     isRefreshing = false;
@@ -349,6 +350,9 @@ public class DialogueManager : MonoBehaviour
                     if (dialogue.ResumeFixed != null)
                         SetDialogue(dialogue.ResumeFixed);
                     else Close();
+
+                    height -= B.height * BaseScale + BoxVerticalSpacing;
+
                     yield break;
                 }
                 else if (dialogue.ending == Dialogue.EndingType.SpecificQuestion) //Show Options
@@ -391,6 +395,7 @@ public class DialogueManager : MonoBehaviour
                 }
 
                 height -= B.height * BaseScale + BoxVerticalSpacing;
+
             }
             else if (line >= 0||hasClueQueued) //Positive > Line of this Dialogue
             {
@@ -447,6 +452,8 @@ public class DialogueManager : MonoBehaviour
             else //Negative > Remaining Line from last Dialogue
             {
                 B.Adjust(height);
+                if(!B.isOpen)
+                    height -= B.height * BaseScale + BoxVerticalSpacing;
             }
 
             if (wasIntermitted) line--;
