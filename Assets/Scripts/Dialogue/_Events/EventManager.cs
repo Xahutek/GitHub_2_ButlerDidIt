@@ -74,6 +74,7 @@ public class EventManager : MonoBehaviour
             {
                 if (I.Triggered(out eventSoon))
                 {
+                    Debug.Log("Started Intermission: "+I.message);
                     StartIntermission(I);
                     return;
                 }
