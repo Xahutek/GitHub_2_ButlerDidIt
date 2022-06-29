@@ -15,6 +15,9 @@ MonoBehaviour:
   SceneName: DiningHall
   availableTime: {x: 23.9, y: 24}
   introduction: '"And last but not least...The Butler Hugh Diddit."'
-  StartDialogue: {fileID: 11400000, guid: a586bfcdc1c87d84ba48945812df9a2b, type: 2}
-  EventDialogue: []
+  StartDialogue: {fileID: 11400000, guid: 478b630b80e3c5243868a03eb9232cde, type: 2}
+  EventDialogue:
+  - {fileID: 11400000, guid: 6df276aca0f8e0d4aa264e3dfd9b5dd1, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   NullDialogueReaction: {fileID: 11400000, guid: a586bfcdc1c87d84ba48945812df9a2b, type: 2}

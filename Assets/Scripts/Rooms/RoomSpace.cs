@@ -33,7 +33,7 @@ public class RoomSpace : MonoBehaviour
     private void Start()
     {
         Invoke("Enable",0.1f);
-        EventSystem.main.OnRefreshRooms += Reload;
+        //EventSystem.main.OnRefreshRooms += Reload;
     }
     public void Enable()
     {

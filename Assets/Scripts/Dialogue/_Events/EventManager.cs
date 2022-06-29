@@ -11,11 +11,14 @@ public class EventManager : MonoBehaviour
 
     public EventProfile[] allEvents;
     public Intermission[] allIntermissions;
+    public static bool blockRoomRefreshs;
     [System.Serializable] public class Intermission
     {
         [TextArea] public string message;
         public Vector2 availableTime = new Vector2(0,0f);
         public Clue gainedClue;
+
+        public bool passed;
 
         public float duration
         {
@@ -30,6 +33,8 @@ public class EventManager : MonoBehaviour
 
             if (GameManager.isPaused)
                 t = false;
+
+            if (passed) t = false;
 
             soon = Clock.HourPassed(availableTime.x - (5 / 60));
 
@@ -109,6 +114,7 @@ public class EventManager : MonoBehaviour
     IEnumerator EventLoop()
     {
         isOpen = true;
+        blockRoomRefreshs = true;
 
         //Load Scene and set it up
         GlobalBlackscreen.multiplier = 1;
@@ -182,13 +188,16 @@ public class EventManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         isOpen = false;
+        blockRoomRefreshs = false;
 
         Debug.Log("End Event");
+        EventRoutine = null;
     }
 
     IEnumerator IntermissionLoop(Intermission inter)
     {
         isOpen = true;
+        blockRoomRefreshs = false;
 
         GlobalBlackscreen.multiplier = 2;
         GlobalBlackscreen.on = true;
@@ -215,7 +224,7 @@ public class EventManager : MonoBehaviour
             yield return null;
         }//Wait for intro skip
 
-        Clock.PassHours(inter.duration);
+        Clock.PassHours(Mathf.Max(inter.duration,0.01f));
 
         GlobalBlackscreen.multiplier = 2;
         GlobalBlackscreen.on = false;
@@ -223,6 +232,13 @@ public class EventManager : MonoBehaviour
 
         if(inter.gainedClue!=null)
         inter.gainedClue.MakeKnownTo(Character.Butler);
+
+        inter.passed = true;
+
+        yield return new WaitForSeconds(0.1f);
+
         isOpen = false;
+        blockRoomRefreshs = false;
+        IntermissionRoutine = null;
     }
 }
