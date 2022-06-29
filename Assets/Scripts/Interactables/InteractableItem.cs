@@ -14,7 +14,7 @@ public class InteractableItem : Interactable
     public override void Awake()
     {
         base.Awake();
-        if (Yield.KnownTo(Character.Butler))
+        if (Yield&&Yield.KnownTo(Character.Butler))
         {
             gameObject.SetActive(false);
         }

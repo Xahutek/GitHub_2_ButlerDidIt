@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 6}
   includedCharacters: 0000000004000000
   Lines:
@@ -41,6 +41,35 @@ MonoBehaviour:
     isThought: 1
     text: (Oh no.)
     fixedClue: {fileID: 11400000, guid: fd76556a8a6fa6c48bac15523d735c83, type: 2}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 1
+    otherReactions: []
+    isThought: 0
+    text: General Tuskson! It is an honor to welcome you to Deddington Manor...
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 0
+    speakerEmotion: 2
+    otherReactions: []
+    isThought: 0
+    text: Even at this unconventional hour.
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 3
+    otherReactions: []
+    isThought: 0
+    text: I just arrived from the southern front!
+    fixedClue: {fileID: 0}
+    clueHidden: 0
+  - speaker: 4
+    speakerEmotion: 3
+    otherReactions: []
+    isThought: 0
+    text: I won the battle against an overwhelming force in less than a day. Punctionality
+      is part of the integrity required of a navy general, after all.
+    fixedClue: {fileID: 11400000, guid: edd9f6230d722ca4a86f4b395f1dc128, type: 2}
     clueHidden: 0
   - speaker: 4
     speakerEmotion: 3

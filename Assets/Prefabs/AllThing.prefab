@@ -3659,7 +3659,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81bbcd1a0a9234f46851d32f98759164, type: 2}
   allIntermissions:
   - message: I just murdered the lord... I had to do it! Now suddenly, the door rings!
-    availableTime: {x: 0.1, y: 0}
+    availableTime: {x: 0.01, y: 0}
     gainedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
   - message: The door rings...again!?
     availableTime: {x: 3, y: 0}
@@ -8124,7 +8124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1413358
+      value: -98474
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -8132,7 +8132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1413380
+      value: -98496
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -8140,7 +8140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1413414
+      value: -98530
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w

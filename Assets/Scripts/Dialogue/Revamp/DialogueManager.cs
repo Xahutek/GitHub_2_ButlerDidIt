@@ -176,8 +176,6 @@ public class DialogueManager : MonoBehaviour
         if (!arrivedAtEnd || !Characters.Contains(Character.Butler)||!isOpen) return;
         Dialogue nextDialogue;
 
-        inventoryUI.Close();
-
         switch (dialogue.ending)
         {
             case Dialogue.EndingType.Open:
@@ -186,7 +184,7 @@ public class DialogueManager : MonoBehaviour
                 break;
             case Dialogue.EndingType.OpenQuestion:
                 nextDialogue = dialogue.GetOpenQuestionReaction(C);
-                if (nextDialogue == null) nextDialogue = theOneWhoAsked.Profile().nullDialogueReaction;
+                if (nextDialogue == null) return;
                 SetDialogue(nextDialogue);
                 break;
             case Dialogue.EndingType.SpecificQuestion:
@@ -194,6 +192,8 @@ public class DialogueManager : MonoBehaviour
             default: // Closed
                 break;
         }
+
+        inventoryUI.Close();
     }
     public virtual void OnPickOption(Dialogue.Option option)
     {
@@ -438,9 +438,9 @@ public class DialogueManager : MonoBehaviour
                     if (isNew)
                     {
                         currentlyTyping = B;
-                        lines[line].OnDisplay();
                         if(lines[line].speaker!=Character.Butler) SoundManager.main.OnSpeakCharacter(lines[line].speaker);
                         RefreshAnimations(lines[line]);
+                        lines[line].OnDisplay();
                     }
                 }
             }
