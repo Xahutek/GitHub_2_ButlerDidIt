@@ -25,7 +25,7 @@ public class OptionBubble : SpeechBubble
         }
         else
         {
-            text.text = option.text;
+            text.text = option.text.CustomParse();
         }
 
         Show(Root, heightStack);

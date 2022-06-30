@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -37,6 +37,6 @@ MonoBehaviour:
   - text: 'Butler Hough Diddit The Lord Lord Deddington Deddington Lord Tyrell Tycoon
       Theodore Tyrell General Edna Tuskson Gardener Gertie Potts Detective Eva Dence
       Imposter Slotheleus Sus '
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000}
     trigger: {fileID: 0}
     rewards: []
