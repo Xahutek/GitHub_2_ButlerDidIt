@@ -117,15 +117,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4466714720807543111, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.7725491
       objectReference: {fileID: 0}
     - target: {fileID: 4466714720807543111, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.87843144
       objectReference: {fileID: 0}
     - target: {fileID: 4466714720807543111, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4472918508930450979, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Camera
@@ -169,15 +169,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.b
-      value: 0.8980393
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.g
-      value: 0.8980393
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654153, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_Color.r
-      value: 0.8980393
+      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 5584778884229654155, guid: 3820aca1359a9b74f963fbb0daf18d2d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -320,7 +320,7 @@ MonoBehaviour:
     isThought: 0
     text: 
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   butlerColor: {r: 0, g: 0, b: 0, a: 0}
   evaColor: {r: 0, g: 0, b: 0, a: 0}
   tyrellColor: {r: 0, g: 0, b: 0, a: 0}

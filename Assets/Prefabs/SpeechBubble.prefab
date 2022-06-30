@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.7829, y: 0}
-  m_SizeDelta: {x: 1.5658, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &421610614871714627
 CanvasRenderer:
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.79215693, g: 0.69803923, b: 0.6392157, a: 1}
+  m_Color: {r: 0.56564224, g: 0.5418595, b: 0.6132076, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 5584778884229654155}
+  isOpen: 0
   Root: {x: 0, y: 0}
   animated: 1
   text: {fileID: 5952344331450822156}
@@ -291,14 +292,15 @@ MonoBehaviour:
     speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: 
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  butlerColor: {r: 0.7921569, g: 0.69803923, b: 0.6392157, a: 0}
-  evaColor: {r: 0.7019608, g: 0.34117648, b: 0.38431373, a: 0}
-  tyrellColor: {r: 0.5754717, g: 0.36134025, b: 0.25733355, a: 0}
-  ednaColor: {r: 0.46237093, g: 0.6415094, b: 0.6415094, a: 0}
-  gertieColor: {r: 0.39091334, g: 0.4716981, b: 0.246529, a: 0}
+    spAnimTrigger: 
+  butlerColor: {r: 0.5686275, g: 0.54509807, b: 0.6156863, a: 0}
+  evaColor: {r: 0.7019608, g: 0.34117648, b: 0.38431376, a: 0}
+  tyrellColor: {r: 0.5764706, g: 0.36078432, b: 0.25882354, a: 0}
+  ednaColor: {r: 0.25148332, g: 0.36680928, b: 0.46226418, a: 0}
+  gertieColor: {r: 0.3921569, g: 0.47058827, b: 0.24705884, a: 0}
   susColor: {r: 0.7019608, g: 0.34117648, b: 0.38431376, a: 0}
   isTyping: 0
   images:
@@ -429,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09019608, g: 0.054901965, b: 0.03529412, a: 1}
+  m_Color: {r: 0.9607844, g: 0.86274517, b: 0.75294125, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
