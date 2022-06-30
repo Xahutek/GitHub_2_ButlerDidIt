@@ -17,6 +17,7 @@ namespace Letters
         public Item EmptyLetters;
         public Item FilledLetters;
         public Clue BurntLetters;
+        public AudioClip burning;
 
         private void Awake()
         {
@@ -46,15 +47,19 @@ namespace Letters
 
         public void SetPaperState()
         {
-            if (ReadabilityCheck() >= 0.75f)
+            if(gameState != GameState.Deciphered)
             {
-                gameState = GameState.Deciphered;
-            }
-            else
-            {
-                gameState = GameState.LettersObtained;
-            }
+                if (ReadabilityCheck() >= 0.75f)
+                {
+                    gameState = GameState.Deciphered;
+                }
+                else
+                {
+                    gameState = GameState.LettersObtained;
+                }
+            }         
             CheckState();
+
         }
 
         private float ReadabilityCheck()
@@ -105,9 +110,15 @@ namespace Letters
                 default: //no letters in inventory or burnt                    
                     break;
             }
-            base.Close();
+            base.Close();            
+        }
+
+        public void PaperBurning()
+        {
+            SoundManager.main.PlayOneShot(burning);            
         }
     }
+
     public enum GameState
     {
         noLetters, LettersObtained, Deciphered, Burnt

@@ -24,9 +24,7 @@ namespace Letters
                     {
                         spot.PaperOverFire();
                     }
-
                 }
-
             }
         }
     }

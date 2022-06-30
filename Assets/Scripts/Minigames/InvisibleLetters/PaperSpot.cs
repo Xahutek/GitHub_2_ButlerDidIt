@@ -16,7 +16,7 @@ namespace Letters
         private void Awake()
         {
             text = GetComponentInChildren<TMP_Text>();
-            dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", 0);
+            dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", -0.1f);
         }
 
         public void InkStatus()
@@ -31,8 +31,6 @@ namespace Letters
             time += Time.deltaTime;
             if(GameManager.main.gameState == GameState.Deciphered && (time > (completeTime + minHoldTime)*2))
             {
-                LetterHold.main.transform.GetComponentInChildren<Transform>().position += Vector3.up *2000;
-                LetterHold.main.enabled = false;
                 GameManager.main.gameState = GameState.Burnt;
                 GameManager.main.CheckState();
             }
@@ -45,17 +43,16 @@ namespace Letters
             {
                 text.color = Color.Lerp(Color.clear, inkColor, EaseIn(time/(completeTime+ minHoldTime)));
                 yield return null;
-
             }
             GameManager.main.SetPaperState();
             while (GameManager.main.gameState == GameState.Deciphered && time >= (completeTime + minHoldTime))
             {
                 //Time from 5.5 to 10.9
                 //b1 + (s1-a1)*(b2-b1)/(a2-a1)
-                // time, 5.5, 10.9, 0,2
-                Debug.Log(0+(time-5.5f)*(2-0)/(10.9f-5.5f));
-                dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", 0+(time-5.5f)*(2-0)/(12f-5.5f));
-                text.color = Color.Lerp(inkColor, Color.clear, EaseIn(time / (completeTime + minHoldTime)));
+                // time, 5.5, 10.9, 0,2                
+                GameManager.main.PaperBurning();
+                dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", -0.1f+(time-5.5f)*(2.1f-0.1f)/(12f-5.5f));
+                text.color = Color.Lerp(inkColor, Color.clear, EaseIn(time / (completeTime + minHoldTime*2)));
                 yield return null;
             }
         }
