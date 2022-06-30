@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused
              = manualPaused
+            || PauseUI.isOpen
             || DialogueManager.isOpen
             || InventoryUI.isOpen
             || Mindmap.isOpen

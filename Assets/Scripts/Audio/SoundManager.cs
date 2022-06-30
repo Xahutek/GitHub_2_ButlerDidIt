@@ -11,7 +11,7 @@ public class SoundManager : MonoBehaviour
      SoundSource[] sources;
 
     public float _volume = 1;
-    private float volume = 0;
+    [HideInInspector] public float volume = 0;
 
     private void Awake()
     {
@@ -46,6 +46,7 @@ public class SoundManager : MonoBehaviour
     public void RefreshVolume()
     {
         volume = PlayerPrefs.GetFloat("Master_Volume");
+        _volume = volume;
 
         effectSource.volume = volume;
     }
@@ -58,7 +59,7 @@ public class SoundManager : MonoBehaviour
     {
         foreach (SoundSource S in sources)
         {
-            S.Refresh(volume,r,c);
+            S.Refresh(r,c);
         }
     }
     public void OnSpeakCharacter(Character character)

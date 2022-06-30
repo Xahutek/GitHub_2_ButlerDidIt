@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class SoundSource : MonoBehaviour
 {
+    SoundManager soundManager;
     public List<Character> character;
     public List<Room> room;
 
@@ -13,10 +14,14 @@ public class SoundSource : MonoBehaviour
 
     public bool active;
     public float fadeSpeed=1;
-    private float volume;
+    private float volume
+    {
+        get { return soundManager.volume; }
+    }
 
     private void Awake()
     {
+        soundManager= FindObjectOfType<SoundManager>();
         source = GetComponent<AudioSource>();
     }
     private void Start()
@@ -40,9 +45,8 @@ public class SoundSource : MonoBehaviour
         }
     }
 
-    public void Refresh(float v,Room r, Character c)
+    public void Refresh(Room r, Character c)
     {
-        volume=v;
         active = room.Contains(r) || character.Contains(c);
     }
 

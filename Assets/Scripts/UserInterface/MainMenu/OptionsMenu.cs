@@ -15,11 +15,12 @@ public class OptionsMenu : MonoBehaviour
     public TMP_Text resTxt;
     private int ResIndex = 0;
     [SerializeField] private Slider volumeSlider = null;
-    private AudioSource music;
+    [Header("Either of these can be null")]
+    public AudioSource music;
+    public SoundManager soundManager;
 
     private void Start()
     {
-        music = FindObjectOfType<AudioSource>();
         foreach (Resolution resolution in Screen.resolutions)
             if (resolution.width / resolution.height == 16 / 9)
                 resos.Add(resolution);
@@ -67,7 +68,9 @@ public class OptionsMenu : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Master_Volume", Mathf.Round(volume * 100.0f) * 0.01f);
         PlayerPrefs.Save();
-        music.volume = volume;
+
+        if(music) music.volume = volume;
+        if (soundManager) soundManager.RefreshVolume();
     }
     #endregion
 }
