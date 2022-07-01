@@ -17,16 +17,53 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Nothing at the crime scene suggests that<i> you did it</i>, Hugh Diddit.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Now at the crime scene, we found that there where glass shards all around
+      the Lord
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '!!'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I have to admit, it looks like he was murdered with a wine bottle.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'The kind of wine <i>you</i> served him '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: ed33c34502d95024eb49d6c109fd4144, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 11400000, guid: f0dc33c3ed36fed469a4a722dfbacf65, type: 2}
       knowingCharacters: 00000000
@@ -35,8 +72,16 @@ MonoBehaviour:
       c: 0
       mode: 0
       suspicion: 0
-    content: []
-  - trigger:
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Nothing at the crime scene suggests that<i> you did it</i>, Hugh Diddit.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: f0dc33c3ed36fed469a4a722dfbacf65, type: 2}
       knowingCharacters: 
@@ -72,6 +117,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'The kind of wine you served him '
+      text: 'The kind of wine <i>you</i> served him '
       fixedClue: {fileID: 0}
       spAnimTrigger: 

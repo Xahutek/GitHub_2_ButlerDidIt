@@ -17,16 +17,24 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
-  ending: 0
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Hugh, this was certainly interesting.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -36,24 +44,10 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Hugh, this was certainly interesting.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 0
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: 
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 0
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: 
       fixedClue: {fileID: 0}
       spAnimTrigger: 

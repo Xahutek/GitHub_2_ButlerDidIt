@@ -17,11 +17,25 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
-  ending: 0
-  ResumeFixed: {fileID: 0}
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Are you standing comfortable?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Y-Yes, it's alright.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
   availableAnswers: []
   options: []

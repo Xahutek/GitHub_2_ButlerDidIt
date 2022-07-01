@@ -49,7 +49,7 @@ MonoBehaviour:
     text: But we could not find any weapon suited for your small hands.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 3
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
@@ -63,14 +63,14 @@ MonoBehaviour:
     text: Well, this was certainly enlightening.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 3
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Thank you Lord Tyrell
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 3
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
@@ -82,7 +82,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 11400000, guid: 6c72a445f88a9874c94d683e6bf2fd23, type: 2}
       knowingCharacters: 
@@ -113,7 +114,8 @@ MonoBehaviour:
       text: That's true! There you go! I have the muscle strength of a garden gnome.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 6c72a445f88a9874c94d683e6bf2fd23, type: 2}
       knowingCharacters: 02000000
@@ -179,7 +181,8 @@ MonoBehaviour:
       text: I believe, that killing the Lord have been easy for you with this.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 6c72a445f88a9874c94d683e6bf2fd23, type: 2}
       knowingCharacters: 
@@ -196,14 +199,15 @@ MonoBehaviour:
       text: But we could not find any weapon suited for your small hands.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 3
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Congratulations, Lord Tyrell.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 11400000, guid: 6c72a445f88a9874c94d683e6bf2fd23, type: 2}
       knowingCharacters: 
@@ -220,14 +224,14 @@ MonoBehaviour:
       text: Well, this was certainly enlightening.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 3
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Thank you Lord Tyrell
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 3
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0

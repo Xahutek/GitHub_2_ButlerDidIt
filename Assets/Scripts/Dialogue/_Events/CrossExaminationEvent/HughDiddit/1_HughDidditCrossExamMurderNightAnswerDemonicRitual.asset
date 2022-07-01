@@ -17,16 +17,31 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I was all absorbed into the dark arts of the Baphomet
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That's...slightly strange but alright.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 4
-  ResumeFixed: {fileID: 0}
+  ResumeFixed: {fileID: 11400000, guid: f3543d6b6fe35514d88b3927fa5dcb02, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 

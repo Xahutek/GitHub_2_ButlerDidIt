@@ -21,12 +21,13 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines: []
-  ending: 3
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: f3543d6b6fe35514d88b3927fa5dcb02, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 

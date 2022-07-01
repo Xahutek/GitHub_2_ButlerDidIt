@@ -97,12 +97,13 @@ MonoBehaviour:
       through this?)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 4
+  ending: 3
   ResumeFixed: {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -180,7 +181,8 @@ MonoBehaviour:
       text: (She is really living up this role)
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
       knowingCharacters: 00000000
