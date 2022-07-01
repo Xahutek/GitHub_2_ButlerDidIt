@@ -17,10 +17,95 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Tycoon Theodor Tycell
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: No, wait.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'This says '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'Tycool Tyrre '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Ahh..whatever.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <i>You</i> visited the Lord 5 days ago, is that correct?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: You visited the Lord 5 days ago, is that correct?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes, yes I have!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And why I did that is none of your buisness.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Well if you're going to be this defensive over it, I will give you the
+      benefit of the doubt.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I think your visit has nothing to do with the murder.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Moving on.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: f4c3ce274bcf089498e7e6838a7a07e1, type: 2}
   availableAnswers: []
@@ -50,21 +135,21 @@ MonoBehaviour:
       text: No, wait.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: 'This says '
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: 'Tycool Tyrre '
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0

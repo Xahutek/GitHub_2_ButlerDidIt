@@ -180,7 +180,7 @@ public class EventManager : MonoBehaviour
         //    yield return null;
         //}
 
-        Clock.PassHours(currentProfile.duration);
+        Clock.SetTime(currentProfile.availableTime.y);
         room.RespawnPlayer();
 
         currentProfile = null;
@@ -224,7 +224,7 @@ public class EventManager : MonoBehaviour
             yield return null;
         }//Wait for intro skip
 
-        Clock.PassHours(Mathf.Max(inter.duration,0.01f));
+        Clock.SetTime(inter.availableTime.y);
 
         GlobalBlackscreen.multiplier = 2;
         GlobalBlackscreen.on = false;

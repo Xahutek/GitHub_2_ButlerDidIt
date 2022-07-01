@@ -27,14 +27,77 @@ MonoBehaviour:
     isThought: 0
     text: ...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: ...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: L-let's get right to it then...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <b>Yes Ma'am</b>!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <b>Yes Ma'am</b>!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Let's go through this step by step.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Starting with the calender.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: You met with the Lord 3 days ago
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That is correct
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: In that case the calender does not suggest that he died the day you visited.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I can confirm he was still alive that day!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: f0308a10d29295b4487271660f3368b8, type: 2}
   availableAnswers: []
@@ -56,49 +119,42 @@ MonoBehaviour:
       isThought: 0
       text: ...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: L-let's get right to it then...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: <b>Yes Ma'am</b>!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 4
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: <b>Yes Ma'am</b>!
-      fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Let's go through this step by step.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Starting with the calender.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
   - trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
@@ -115,28 +171,28 @@ MonoBehaviour:
       isThought: 0
       text: You met with the Lord 3 days ago
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
+      spAnimTrigger: 
+    - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: That is correct
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: In that case the calender does not suggest that he died the day you visited.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I can confirm he was still alive that day!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
   - trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
@@ -153,46 +209,46 @@ MonoBehaviour:
       isThought: 0
       text: Now you said you met with Lord Deddington just 3 days ago.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: It is the truth, I have!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Yes, and there is only one small issue with that.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: My investigations show that that's the day Deddington passed away.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: '!?'
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: B-But he was still alive when I left that day!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: The evidence, sadly, does not suggest that, General Tuskson.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

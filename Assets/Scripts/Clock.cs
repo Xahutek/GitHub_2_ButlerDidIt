@@ -24,6 +24,14 @@ public class Clock : MonoBehaviour
     public static float deltaTime, fixedDeltaTime;
 
     static bool internalRefresh;
+    public static void SetTime(float time)
+    {
+        Hour = time;
+        Minute = time * 60;
+        LastHour = Hour;
+
+        internalRefresh = true;
+    }
     public static void PassHours(float duration)
     {
         Hour += duration;
