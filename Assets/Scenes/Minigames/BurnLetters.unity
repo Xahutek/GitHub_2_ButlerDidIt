@@ -1627,8 +1627,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.169, y: 0}
-  m_SizeDelta: {x: 2.338, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939751630
 MonoBehaviour:
@@ -2758,6 +2758,8 @@ MonoBehaviour:
   EmptyLetters: {fileID: 11400000, guid: fe3fc16f60e5c3342ac358b731157e37, type: 2}
   FilledLetters: {fileID: 11400000, guid: cb7c63c5e266323448467e06e8cba8cc, type: 2}
   BurntLetters: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
+  burning: {fileID: 8300000, guid: 3f765e01e806fc746a27229c3280aa0b, type: 3}
+  fire: {fileID: 1551050666}
 --- !u!4 &1999399117
 Transform:
   m_ObjectHideFlags: 0

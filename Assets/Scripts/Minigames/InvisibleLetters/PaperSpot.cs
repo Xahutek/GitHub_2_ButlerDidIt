@@ -29,11 +29,6 @@ namespace Letters
         {
             if (heating == null) { heating = StartCoroutine(HeatUp()); }
             time += Time.deltaTime;
-            if(GameManager.main.gameState == GameState.Deciphered && (time > (completeTime + minHoldTime)*2))
-            {
-                GameManager.main.gameState = GameState.Burnt;
-                GameManager.main.CheckState();
-            }
         }
 
         IEnumerator HeatUp()
@@ -42,19 +37,39 @@ namespace Letters
             while(time < completeTime + minHoldTime)
             {
                 text.color = Color.Lerp(Color.clear, inkColor, EaseIn(time/(completeTime+ minHoldTime)));
-                yield return null;
+                if(GameManager.main.gameState == GameState.Burnt) { time = completeTime + minHoldTime; }
+                    yield return null;
             }
             GameManager.main.SetPaperState();
-            while (GameManager.main.gameState == GameState.Deciphered && time >= (completeTime + minHoldTime))
+            while (GameManager.main.gameState == GameState.LettersObtained) { yield return null; }
+            time = completeTime + minHoldTime;
+            while (dissolve.GetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39") < 0.3f)
             {
-                //Time from 5.5 to 10.9
-                //b1 + (s1-a1)*(b2-b1)/(a2-a1)
-                // time, 5.5, 10.9, 0,2                
-                GameManager.main.PaperBurning();
-                dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", -0.1f+(time-5.5f)*(2.1f-0.1f)/(12f-5.5f));
-                text.color = Color.Lerp(inkColor, Color.clear, EaseIn(time / (completeTime + minHoldTime*2)));
+                Dissolver(time);
                 yield return null;
             }
+            GameManager.main.PaperBurning();
+            while(dissolve.GetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39") >= 0.3f && dissolve.GetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39") < 2f)
+            {
+                time += Time.deltaTime; 
+                Dissolver(time);
+                yield return null;
+            }
+            GameManager.main.RemoveText();
+        }
+
+        float dissolveV;
+        private void Dissolver(float time)
+        {
+            dissolveV = -0.1f + (time - 5.5f) * (2.1f - 0.1f) / (12f - 5.5f);
+            //Time from 5.5 to 10.9
+            //b1 + (s1-a1)*(b2-b1)/(a2-a1)
+            // time, 5.5, 10.9, 0,2    
+            if(dissolveV > dissolve.GetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39"))
+            {
+                dissolve.SetFloat("Vector1_6298484c3b4e4b1fbafd65018b3aba39", dissolveV);
+            }
+            text.color = Color.Lerp(inkColor, Color.clear, EaseIn(time / (completeTime + minHoldTime * 2)));
         }
 
         public static float EaseIn(float t) { return  Mathf.Pow(t,3);}

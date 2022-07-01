@@ -17,6 +17,8 @@ namespace Letters
         public Item EmptyLetters;
         public Item FilledLetters;
         public Clue BurntLetters;
+        public Fire fire;
+
         public AudioClip burning;
 
         private void Awake()
@@ -75,7 +77,12 @@ namespace Letters
         public override void Open()
         {
             base.Open();
-            if (FilledLetters.KnownTo(Character.Butler)) 
+            if (BurntLetters.KnownTo(Character.Butler))
+            {
+                gameState = GameState.Burnt;
+                LetterHold.main.gameObject.SetActive(false);
+            }
+            else if (FilledLetters.KnownTo(Character.Butler)) 
             { 
                 gameState = GameState.Deciphered;
                 EmptyLetters.givenAway = true;
@@ -103,19 +110,36 @@ namespace Letters
                     EmptyLetters.givenAway = true;
                     break;
                 case GameState.Burnt:
-                    BurntLetters.MakeKnownTo(Character.Butler);
                     EmptyLetters.givenAway = true;
+                    FilledLetters.MakeKnownTo(Character.Butler);
                     FilledLetters.givenAway = true;
+                    BurntLetters.MakeKnownTo(Character.Butler);
                     break;
                 default: //no letters in inventory or burnt                    
                     break;
             }
-            base.Close();            
+            base.Close();
         }
 
+        private bool noReturn = false;
         public void PaperBurning()
         {
-            SoundManager.main.PlayOneShot(burning);            
+            if (!noReturn)
+            {
+                noReturn = true;
+                SoundManager.main.PlayOneShot(burning);
+                LetterHold.main.transform.GetChild(0).SetParent(fire.transform);
+                fire.enabled = false;
+                gameState = GameState.Burnt;
+                CheckState();
+            }
+        }
+        public void RemoveText()
+        {
+            foreach (PaperSpot spot in spots)
+            {
+                spot.text.color = Color.clear;
+            }
         }
     }
 
