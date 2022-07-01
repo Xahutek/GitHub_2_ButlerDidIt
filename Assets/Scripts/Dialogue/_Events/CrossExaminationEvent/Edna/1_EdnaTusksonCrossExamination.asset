@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines: []
@@ -26,7 +26,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 7c1ee25c5cf3da942bb2b9700b43b280, type: 2}
       knowingCharacters: 02000000
@@ -42,14 +43,14 @@ MonoBehaviour:
       isThought: 0
       text: Alright, General. let us preceede to the next point.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I am ready for it.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -57,39 +58,77 @@ MonoBehaviour:
       text: This right here, this weapon from a battlefield you fought on with the
         lord, is a keepsake the Lord kept in his bedchambers, correct?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Perhaps, I am not ready.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Hm?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: T-that is Correct.
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 6e851abc97b6b144bb766705118fb3be, type: 2}
-      knowingCharacters: 
+      knowingCharacters: 02000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
       suspicion: 0
-    content: []
-  - trigger:
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: General, here is something we need to address.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: My investigation have shown that you have made a deal with the factions
+        you fought against.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Guns for the opposite side, and cheap too!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'Detective Dence, how does this connect to the murder case of Lord Deddington? '
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Patience, General Edna Tuskson.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e4acefeb3dcf15a42bdbba30efd2a697, type: 2}
       knowingCharacters: 04000000
@@ -105,71 +144,65 @@ MonoBehaviour:
       isThought: 0
       text: Now, if I understand this situation.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: You where selling these weapons to the opposing side during a war, correct?
+      text: Now I have to ask, why where you selling these weapons to the opposing
+        force?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: We supplied both sides, for a fair fight, that is the truth.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: A fair fight, for sure.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: My investigations have let me to the conclusion that this weapon has
-        been tempered with.
+      text: My investigations have let me to the conclusion that <i>this weapon</i>
+        from the faction you fought against, has been tempered with.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ..!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 4
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: ..!
-      fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: And not just this one weapon.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: These all have been build from the ground up to not function properly.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: '!!!'
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
@@ -177,42 +210,42 @@ MonoBehaviour:
       text: W-Well, even if that is true, what does any of that have to do with the
         case?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Lord Deddington didn't know of this, correct?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: '?'
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: However, you thought you did.
+      text: However, you <b>thought</b> he did.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: He...did not know?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: You see, he kept it as a keepsake, but has never fired it.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -220,25 +253,25 @@ MonoBehaviour:
       text: But you couldn't handle the thought that Lord Deddington would find out
         about the real reason for your uncountable honor titles.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: So, perhaps you planned to murder him?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: If you did, you could have done it with you bare hands.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

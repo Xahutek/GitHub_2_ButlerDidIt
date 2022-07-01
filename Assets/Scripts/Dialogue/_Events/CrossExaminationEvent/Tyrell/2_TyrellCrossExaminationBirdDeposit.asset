@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines: []
@@ -241,5 +241,36 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: Proceeding with the next point.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 03000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Honestly I don't know about your buisness ventures
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And I care about them so little that I will just hope it is not relevant
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Moving on.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

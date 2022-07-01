@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
-  m_Name: 1_TyrellCrossExamination
+  m_Name: 1_TyrellCrossExaminationCalendar
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
@@ -56,14 +56,7 @@ MonoBehaviour:
     text: Ahh..whatever.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: <i>You</i> visited the Lord 5 days ago, is that correct?
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
@@ -81,7 +74,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And why I did that is none of your buisness.
+    text: And why I did that is <i>none</i> of your buisness.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -111,7 +104,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -156,14 +150,7 @@ MonoBehaviour:
       text: Ahh..whatever.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 0
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: <i>You</i> visited the Lord 5 days ago, is that correct?
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
@@ -181,10 +168,11 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And why I did that is none of your buisness.
+      text: And why I did that is <i>none</i> of your buisness.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
       knowingCharacters: 02000000
@@ -198,7 +186,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Actually, I think it is some of my buisness.
+      text: Actually, I think it is <i>some</i> of my buisness.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -272,7 +260,8 @@ MonoBehaviour:
       text: ' "Suspicion raised"'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
       knowingCharacters: 
@@ -297,7 +286,8 @@ MonoBehaviour:
       text: I think your visit has nothing to do with the murder.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
       knowingCharacters: 

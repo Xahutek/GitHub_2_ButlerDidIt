@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: 0_ShortIntro
+  m_Name: 0_GertieCrossExaminationBeginning
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -25,21 +25,17 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: NOW FOR THE GRAND REVEAL!
+    text: Are you standing comfortable?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
+  - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler you know what's up?
+    text: Y-Yes, it's alright.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
-  ResumeFixed: {fileID: 11400000, guid: 14d4861b625702a44b13498501bbccb6, type: 2}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: 2dc455405eb4a524e917599465aa625d, type: 2}
   availableAnswers: []
-  options:
-  - text: Sure do!
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []

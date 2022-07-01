@@ -17,16 +17,89 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: There must be some reason why you are so obsessed with having more money
+      than the Lord
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I mean your current wealth is already enough to give every animal in the
+      world a good life for 5 years.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And you spend the money on buying newspaper companies.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The truth is, I just really like money!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: No, you see, I think there is another, seperate reason for your greed.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I think you wanted to, specifically, be richer than Lord Deddington.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And why would I want that?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Honestly, I have no idea.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Moving on.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...But why this wealth was so important to you, I couldn't figure out.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: a5a73fa77c90a744798533048f613199, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
       knowingCharacters: 
@@ -87,7 +160,8 @@ MonoBehaviour:
       text: And why would I want that?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
       knowingCharacters: 
@@ -111,7 +185,8 @@ MonoBehaviour:
       text: Moving on.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
       knowingCharacters: 02000000
@@ -150,7 +225,8 @@ MonoBehaviour:
         him in sheer networth.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
       knowingCharacters: 
@@ -160,14 +236,15 @@ MonoBehaviour:
       mode: 0
       suspicion: 0
     content:
-    - speaker: 0
+    - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ...But why this wealth was so important to you, I couldn't figure out.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
       knowingCharacters: 02000000
