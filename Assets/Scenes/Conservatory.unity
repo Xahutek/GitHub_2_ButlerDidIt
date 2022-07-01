@@ -123,6 +123,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &306169155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1260164789453464094, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+  m_PrefabInstance: {fileID: 918652743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &306169156
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306169155}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 15
 --- !u!1 &411704740
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &509764573
 GameObject:
@@ -1625,6 +1641,75 @@ MonoBehaviour:
   capright: 0
   capleft: 0
   ParallaxEccentricity: 0.2
+--- !u!1001 &918652743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1260164789453464094, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_Name
+      value: TBDIbird (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.21047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.21047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 60.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302994769332867329, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1683352c9eaa224bb65a07e9c49ebe0, type: 3}
 --- !u!43 &993301194
 Mesh:
   m_ObjectHideFlags: 0
