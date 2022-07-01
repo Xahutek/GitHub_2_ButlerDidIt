@@ -16,6 +16,7 @@ public class SegmentedDialogue : Dialogue
     public Segment[] Segments= new Segment[0];
     [System.Serializable] public class Segment
     {
+        public string description;
         [System.Serializable] public class Trigger
         {
             [Header("Clue Knowledge")]

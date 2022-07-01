@@ -12,6 +12,8 @@ public class EventProfile : ScriptableObject
         get { return availableTime.y - availableTime.x; }
     }
 
+    public bool useRoomCam=false;
+
     [Header("Dialogue - All of these should be available all day. 'seen' & 'unqiue' will be overridden for event flow purposes")]
     public string introduction;
     public Dialogue StartDialogue;
