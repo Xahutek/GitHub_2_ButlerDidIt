@@ -23,7 +23,7 @@ namespace Calendar
 
         public void OnPointerClick(PointerEventData pointerEventData)
         {
-            SetCross(!crossed);
+            SetCross(!crossed, true);
             GameManager.main.CheckState();
         }
 
@@ -36,6 +36,20 @@ namespace Calendar
             }
             else
             {
+                image.color = Color.clear;
+            }
+        }
+        public void SetCross(bool cross, bool byButler)
+        {
+            crossed = cross;
+            if (crossed)
+            {
+                SoundManager.main.PlayOneShot(GameManager.main.crossing);
+                image.color = Color.white;
+            }
+            else
+            {
+                SoundManager.main.PlayOneShot(GameManager.main.erasing);
                 image.color = Color.clear;
             }
         }

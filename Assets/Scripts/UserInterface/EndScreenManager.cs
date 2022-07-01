@@ -15,6 +15,7 @@ public class EndScreenManager : MonoBehaviour
         DifficultySelect_Page,
         DifficultySelect_Valet,
         DifficultySelect_Butler;
+    public AudioClip paperDrop;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class EndScreenManager : MonoBehaviour
         DifficultySelect_Valet.localScale = Vector3.one - Vector3.up;
         DifficultySelect_Butler.localScale = Vector3.one - Vector3.up;
 
-
+        SoundManager.main.PlayOneShot(paperDrop);
         DOTween.To(() => currentAlpha, i => currentAlpha = i, 1, 1f)
             .OnUpdate(() => Refresh()).SetEase(Ease.InOutSine).SetDelay(2.5f);
     }

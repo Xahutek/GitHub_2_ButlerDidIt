@@ -20,6 +20,10 @@ namespace Calendar
         public CalendarDays calendar;
         public List<bool> calendarDict;
         [HideInInspector] public int daysCrossed;
+
+        public AudioClip crossing;
+        public AudioClip erasing;
+
         private void Awake()
         {
             main = this;
