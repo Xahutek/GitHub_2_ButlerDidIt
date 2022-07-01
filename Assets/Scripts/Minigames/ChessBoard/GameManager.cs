@@ -17,6 +17,7 @@ namespace ChessBoard
         public List<BoardSlot> slots;
         public List<ChessFigure> figures;
 
+        public AudioClip[] clacks;
 
         private void Awake()
         {
@@ -113,6 +114,18 @@ namespace ChessBoard
         {
             MinigameData.SaveTo(this);
         }
+
+        #region sfx
+        public void MakeClackNoise()
+        {
+            SoundManager.main.PlayOneShot(RandomStep(clacks));
+        }
+
+        private AudioClip RandomStep(AudioClip[] clipList)
+        {
+            return clipList[Random.Range(0, clipList.Length)];
+        }
+        #endregion
     }
 
     public enum GameState

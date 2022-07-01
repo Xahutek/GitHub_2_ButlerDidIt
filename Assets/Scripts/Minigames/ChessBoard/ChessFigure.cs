@@ -64,6 +64,7 @@ namespace ChessBoard
             dragged=false;
             if(draggedFigure==this) draggedFigure = null;
             Debug.Log("End Drag " + name);
+            GameManager.main.MakeClackNoise();
         }
     }
 
