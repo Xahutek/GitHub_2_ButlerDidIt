@@ -2172,8 +2172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.169, y: 0}
-  m_SizeDelta: {x: 2.338, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939751630
 MonoBehaviour:
@@ -4029,6 +4029,8 @@ MonoBehaviour:
   calendar: {fileID: 211866242}
   calendarDict: 
   daysCrossed: 0
+  crossing: {fileID: 8300000, guid: 3232b0cd29ff74e4fada96bc8be103f0, type: 3}
+  erasing: {fileID: 8300000, guid: f0d738a5affde2f4f9160591ff22a474, type: 3}
 --- !u!4 &1999399117
 Transform:
   m_ObjectHideFlags: 0
