@@ -17,6 +17,9 @@ public class ProgressFile
     //Player
     public float[] playerPosition;
 
+    //Intermissions
+    public List<bool> seenIntermission;
+
     //Characters
     [System.Serializable]
     public class Character_ProgressFile
@@ -198,6 +201,12 @@ public class ProgressFile
         clues = new List<Clue_ProgressFile>();
 
         minigames = new Minigames_ProgressFile();
+
+        seenIntermission = new List<bool>();
+        for (int i = 0; i < EventManager.main.allIntermissions.Length; i++)
+        {
+            seenIntermission.Add(false);
+        }
     }
 
     public void Save()
@@ -214,6 +223,13 @@ public class ProgressFile
         foreach (Character c in System.Enum.GetValues(typeof(Character)))
         {
             characters.Add(new Character_ProgressFile(c.Profile()));
+        }
+
+        //Intermissions
+        seenIntermission = new List<bool>();
+        for (int i = 0; i < EventManager.main.allIntermissions.Length; i++)
+        {
+           seenIntermission.Add(EventManager.main.allIntermissions[i].passed);
         }
 
         clues = new List<Clue_ProgressFile>();
@@ -242,6 +258,13 @@ public class ProgressFile
 
         //Player Position
         PlayerController.main.position = playerPosition == null || playerPosition.Length != 2 ? new Vector2(28.5f, 34f) : new Vector2(playerPosition[0], playerPosition[1]);
+
+        //Intermissions
+        for(int i = 0; i< EventManager.main.allIntermissions.Length; i++)
+        {
+            EventManager.main.allIntermissions[i].passed = seenIntermission[i];
+        }
+        EventManager.main.saveFileLoaded = true;
 
         //Characters
         foreach (Character_ProgressFile CP in characters)
