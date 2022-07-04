@@ -32,7 +32,7 @@ public class SuspicionManager : MonoBehaviour
             {
                 foreach (Clue c in necessaryClues)
                 {
-                    if (!c.KnownTo(Character.Detective))
+                    if (!c.KnownAndSuspiciousTo(Character.Detective))
                         return false;
                 }
                 return true;

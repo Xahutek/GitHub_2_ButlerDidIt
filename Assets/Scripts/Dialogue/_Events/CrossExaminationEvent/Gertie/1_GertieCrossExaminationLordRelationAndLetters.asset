@@ -58,15 +58,30 @@ MonoBehaviour:
     text: The letters in your shack prove that strange relationship.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 3
+    otherReactions: []
+    isThought: 1
+    text: Deddignton always was a peculiar man...
+    fixedClue: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
+    spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   availableAnswers: []
   options:
   - text: '[Say Nothing]'
-    reaction: {fileID: 11400000, guid: 7b485d14e53c0704287ecd45ca2cf3e4, type: 2}
+    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
     trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
     rewards: []
-  - text: (I wonder what she will say about the opened window)
+  - text: I am thrilled to see you analyze this, Detective Dence.
+    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
+    trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
+    rewards: []
+  - text: '[Say Nothing]'
+    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
+    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+    rewards: []
+  - text: I noticed an open window.
     reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
     trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
     rewards: []
@@ -187,4 +202,22 @@ MonoBehaviour:
       isThought: 0
       text: I...d-don't think so?
       fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: 
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 00000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 3
+      speakerEmotion: 3
+      otherReactions: []
+      isThought: 1
+      text: Deddignton always was a peculiar man...
+      fixedClue: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
       spAnimTrigger: 
