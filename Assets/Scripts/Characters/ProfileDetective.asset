@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Eva Dence
   Portrait: {fileID: 21300000, guid: 2455ee0451685534f9a12d0345826d07, type: 3}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 1
+  knownToPlayer: 0
   currentRoom: 0
   Timetable:
   - startHour: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     state: 0
     important: 0
   - startHour: 20
-    room: 3
+    room: 15
     state: 0
     important: 0
   connectedClues:
