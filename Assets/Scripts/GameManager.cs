@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static bool isPaused; [SerializeField] private bool _isPaused;
-    public static bool manualPaused;
+    public static bool manualPaused, gameLoaded;
 
     DialogueManager dialogueManager;
     InventoryUI inventoryUI;
@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         manualPaused = true;
+        isPaused = true;
+        _isPaused = isPaused;
+        gameLoaded = false;
     }
     private void Start()
     {
@@ -32,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         SaveSystem.LoadProgress();
         manualPaused = false;
+        gameLoaded = true;
     }
 
     private void Update()

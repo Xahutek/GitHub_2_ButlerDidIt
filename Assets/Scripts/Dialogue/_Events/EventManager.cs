@@ -60,7 +60,7 @@ public class EventManager : MonoBehaviour
     private void Update()
     {
         eventSoon = false;
-        if (!isOpen&&!GameManager.isPaused)
+        if (!isOpen&&!GameManager.isPaused&&GameManager.gameLoaded)
         {
             if (Clock.HourPassed(24f))
             {

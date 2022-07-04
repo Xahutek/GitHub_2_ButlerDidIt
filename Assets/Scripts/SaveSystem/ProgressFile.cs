@@ -12,7 +12,7 @@ public class ProgressFile
     public Difficulty difficulty;
 
     //Time
-    public float currentHour, currentMinute;
+    public float currentHour;
 
     //Player
     public float[] playerPosition;
@@ -186,7 +186,6 @@ public class ProgressFile
         Debug.Log(difficulty);
 
         currentHour = 0;
-        currentMinute = 0;
 
         playerPosition = new float[2] { 28.5f, 34f };
 
@@ -207,7 +206,6 @@ public class ProgressFile
         Debug.Log(difficulty);
 
         currentHour = Clock.Hour;
-        currentMinute = Clock.Minute;
 
         Vector2 playerPos = PlayerController.main.position;
         playerPosition = new float[2] { playerPos.x, playerPos.y };
@@ -240,8 +238,7 @@ public class ProgressFile
 
         //Time
         Debug.Log("Saved Time is"+currentHour);
-        Clock.main.currentHour = currentHour;
-        Clock.main.currentMinute = currentMinute;
+        Clock.SetTime(currentHour);
 
         //Player Position
         PlayerController.main.position = playerPosition == null || playerPosition.Length != 2 ? new Vector2(28.5f, 34f) : new Vector2(playerPosition[0], playerPosition[1]);
