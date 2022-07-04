@@ -35,6 +35,10 @@ public class PlayerController : InteractableCharacter
         col= GetComponent<CapsuleCollider2D>();
         rb= GetComponent<Rigidbody2D>();
         lastpos = transform.position;
+    }
+
+    public void Start()
+    {
         EventSystem.main.OnPickClue += OnPickClue;
     }
 
