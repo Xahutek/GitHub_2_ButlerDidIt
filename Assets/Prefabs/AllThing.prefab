@@ -3671,15 +3671,22 @@ MonoBehaviour:
   - message: I just murdered the lord... I had to do it! Now suddenly, the door rings!
     availableTime: {x: 0, y: 0}
     gainedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
+    sfx:
+    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
     passed: 0
   - message: The door rings...again!?
     availableTime: {x: 3, y: 0}
     gainedClue: {fileID: 0}
+    sfx:
+    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
     passed: 0
   - message: The door rings once more...
     availableTime: {x: 5, y: 0}
     gainedClue: {fileID: 0}
+    sfx:
+    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
     passed: 0
+  hourlyClock: {fileID: 8300000, guid: 04d4c260205232549a947ff364ffe171, type: 3}
   dialogue: {fileID: 5835750674925148920}
   currentProfile: {fileID: 0}
   room: {fileID: 0}
@@ -6977,7 +6984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -52330
+      value: -206938
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -6985,7 +6992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -52352
+      value: -206960
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -6993,7 +7000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -52386
+      value: -206994
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w

@@ -12,12 +12,13 @@ public class EventManager : MonoBehaviour
     public EventProfile[] allEvents;
     public Intermission[] allIntermissions;
     public static bool blockRoomRefreshs;
+    public AudioClip hourlyClock;
     [System.Serializable] public class Intermission
     {
         [TextArea] public string message;
         public Vector2 availableTime = new Vector2(0,0f);
         public Clue gainedClue;
-
+        public AudioClip[] sfx;
         public bool passed;
 
         public float duration
@@ -47,7 +48,7 @@ public class EventManager : MonoBehaviour
     public EventProfile currentProfile;
     public EventObject room;
     public static bool eventSoon;
-
+    private float everyHour;
     private void Awake()
     {
         main = this;
@@ -62,10 +63,16 @@ public class EventManager : MonoBehaviour
         eventSoon = false;
         if (!isOpen&&!GameManager.isPaused&&GameManager.gameLoaded)
         {
-            if (Clock.HourPassed(24f))
+
+            everyHour = Mathf.Floor(Clock.TotalHours);
+            if (Clock.HourPassed(everyHour))
             {
-                revealManager.Reveal();
-                return;
+                if(everyHour == 24f)
+                {
+                    revealManager.Reveal();
+                    return;
+                }
+                SoundManager.main.PlayOneShot(hourlyClock);
             }
             foreach (EventProfile E in allEvents)
             {
@@ -196,7 +203,15 @@ public class EventManager : MonoBehaviour
 
     IEnumerator IntermissionLoop(Intermission inter)
     {
-        isOpen = true;
+        if (inter.sfx.Length > 0)
+        {
+            foreach(AudioClip clip in inter.sfx)
+            {
+                SoundManager.main.PlayOneShot(clip);
+            }
+        }
+
+            isOpen = true;
         blockRoomRefreshs = false;
 
         GlobalBlackscreen.multiplier = 2;
