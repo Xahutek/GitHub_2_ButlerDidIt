@@ -10,8 +10,9 @@ public class EventObject : MonoBehaviour
     public EventProfile profile;
 
     public InteractableCharacter[] eventCharacters;
-    public Transform playerRespawnLocus;
+    public bool tyrellSits, evaSits, ednaSits, gertieSits;
 
+    public Transform playerRespawnLocus;
 
     private void Awake()
     {
@@ -35,9 +36,17 @@ public class EventObject : MonoBehaviour
         {
             c.gameObject.SetActive(true);
             c.enabled = false;
-            if(c.character == Character.Detective && profile.evaIsSus)
+            Animator anim = c.GetComponentInChildren<Animator>();
+            if(c.character != Character.Butler)
             {
-                c.GetComponentInChildren<Animator>().SetTrigger("isSus");
+                anim.SetBool("Sits", c.character == Character.Tycoon ? tyrellSits :
+                    c.character == Character.General ? ednaSits :
+                    c.character == Character.Gardener ? gertieSits :
+                    c.character == Character.Detective ? evaSits : false);
+                if (profile.evaIsSus && c.character == Character.Detective)
+                {
+                    anim.SetTrigger("isSus");
+                }
             }
         }
 
