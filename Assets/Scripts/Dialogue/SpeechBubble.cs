@@ -11,7 +11,7 @@ public class SpeechBubble : Bubble
     public TMP_Text text;
     [HideInInspector]public Dialogue.Line line;
     private Character currentChara;
-    public Color butlerColor, evaColor, tyrellColor, ednaColor, gertieColor, susColor;
+    public Color butlerColor, LordColor, evaColor, tyrellColor, ednaColor, gertieColor, susColor;
     public bool isTyping;
     public virtual void Refresh(DialogueManager manager,Dialogue.Line line, Vector2 Root, float heightStack, bool Typewriter=false)
     {
@@ -90,6 +90,9 @@ public class SpeechBubble : Bubble
             {
                 case Character.Butler:
                     images[1].color = butlerColor;
+                    break;
+                case Character.Lord:
+                    images[1].color = LordColor;
                     break;
                 case Character.Detective:
                     images[1].color = evaColor;

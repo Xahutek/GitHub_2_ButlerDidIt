@@ -6,9 +6,8 @@ public class EventSystem : MonoBehaviour
 {
     public static EventSystem main;
 
-    private void OnEnable()
+    private void Awake()
     {
-        if(main==null)
         main = this;
     }
 

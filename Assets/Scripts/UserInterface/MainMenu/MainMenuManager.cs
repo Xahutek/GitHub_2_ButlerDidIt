@@ -51,12 +51,12 @@ public class MainMenuManager : MonoBehaviour
         ButlerInfo.SetActive(false);
     }
 
-
     public void NewGame()
     {
         GameLoadData.difficulty = SelectedDifficulty;
         SaveSystem.SaveNewGame();
-        LoadGame();
+        StartCoroutine(ExecuteLoadScene("intro"));
+        //LoadGame();
     }
     public void LoadGame()
     {

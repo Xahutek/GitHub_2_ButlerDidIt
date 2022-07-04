@@ -3660,13 +3660,14 @@ MonoBehaviour:
   allEvents:
   - {fileID: 11400000, guid: fd33a4889d0cda7478c9d6bcad70bad2, type: 2}
   - {fileID: 11400000, guid: 7558370294062824180e74293efbe6a6, type: 2}
-  - {fileID: 11400000, guid: f406a4d770670db4e8438b67eab1984d, type: 2}
   - {fileID: 11400000, guid: 9be6bd242d2d3eb4d8faae0eef9628cf, type: 2}
   - {fileID: 11400000, guid: 5f0c30065ad8f0e41aee1a87cafeaf7f, type: 2}
   - {fileID: 11400000, guid: 1fb8f66d5ecdc4e4aa6caafe5269bddc, type: 2}
   - {fileID: 11400000, guid: 725cc4236b881e642be17ad9e26cf9b8, type: 2}
   - {fileID: 11400000, guid: 93916a1ccbf17e34da2b88617989bc4a, type: 2}
   - {fileID: 11400000, guid: 81bbcd1a0a9234f46851d32f98759164, type: 2}
+  - {fileID: 11400000, guid: 81bbcd1a0a9234f46851d32f98759164, type: 2}
+  - {fileID: 11400000, guid: dd16fa70bef7d1944aa20aabf2f21f15, type: 2}
   allIntermissions:
   - message: I just murdered the lord... I had to do it! Now suddenly, the door rings!
     availableTime: {x: 0, y: 0}
@@ -3685,6 +3686,12 @@ MonoBehaviour:
     gainedClue: {fileID: 0}
     sfx:
     - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
+    passed: 0
+  SpecialFirstIntermission:
+    message: 
+    availableTime: {x: 0, y: 0}
+    gainedClue: {fileID: 0}
+    sfx: []
     passed: 0
   hourlyClock: {fileID: 8300000, guid: 04d4c260205232549a947ff364ffe171, type: 3}
   dialogue: {fileID: 5835750674925148920}
@@ -4712,6 +4719,7 @@ MonoBehaviour:
   parser: {fileID: 11400000, guid: 8659c94761339be4fb295b08565446fd, type: 2}
   speed: 0.75
   inventoryUI: {fileID: 5391039277409596976}
+  soundManager: {fileID: 0}
   CharacterObjects: []
   Characters: 
   maxDisplayedContent: 4

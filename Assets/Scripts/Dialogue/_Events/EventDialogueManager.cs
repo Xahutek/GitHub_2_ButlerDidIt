@@ -8,7 +8,6 @@ public class EventDialogueManager : DialogueManager
 
     protected override void Awake()
     {
-        if (eventMain == null)
             eventMain = this;
 
         if(profile)

@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     public InventoryUI inventoryUI;
     private PlayerController playerReference;
+    public SoundManager soundManager;
     [HideInInspector]
     public List<InteractableCharacter> CharacterObjects;
     public List<Character> Characters;
@@ -68,18 +69,16 @@ public class DialogueManager : MonoBehaviour
 
     protected virtual void Awake()
     {
-        if (main == null)
-        {
             main = this;
             normalMain = this;
-        }
         TextParser.main = parser;
     }
-    private void Start()
+    public virtual void Start()
     {
         playerReference = PlayerController.main;
 
         EventSystem.main.OnPickClue += OnPickClue;
+        soundManager = SoundManager.main;
     }
     private void Update()
     {
@@ -102,7 +101,7 @@ public class DialogueManager : MonoBehaviour
         if (!isOpen && !wasCleared)
             Clear();
 
-        if (isOpen && main == this) 
+        if (isOpen && main == this && dialogueCameraLocus) 
             dialogueCameraLocus.position = Locus + Vector2.left * inventoryUI.OpenStateLerp;
     }
 
@@ -131,6 +130,7 @@ public class DialogueManager : MonoBehaviour
             I.isTalking = false;
         }
 
+        if(dialogueCameraLocus)
         dialogueCameraLocus.gameObject.SetActive(eventMain!=this);
 
         if (CharacterObjects.Count == 2)
@@ -139,7 +139,7 @@ public class DialogueManager : MonoBehaviour
         SetDialogue(D);
     }
 
-    bool hardEscape;
+    protected bool hardEscape;
     public virtual void Close()
     {
         if (!isOpen) return;
@@ -158,11 +158,12 @@ public class DialogueManager : MonoBehaviour
             I.isTalking = false;
         }
 
-        dialogueCameraLocus.gameObject.SetActive(false);
-        SoundManager.main.OnSpeakCharacter(Character.Butler);
+        if (dialogueCameraLocus)
+            dialogueCameraLocus.gameObject.SetActive(false);
+        soundManager.OnSpeakCharacter(Character.Butler);
 
         Clear();
-        inventoryUI.Close();
+        if(inventoryUI)inventoryUI.Close();
 
     }
 
@@ -193,7 +194,7 @@ public class DialogueManager : MonoBehaviour
                 break;
         }
 
-        inventoryUI.Close();
+        if (inventoryUI) inventoryUI.Close();
     }
     public virtual void OnPickOption(Dialogue.Option option)
     {
@@ -387,7 +388,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 else //Open or Open Question
                 {
-                    inventoryUI.Open();
+                    if (inventoryUI) inventoryUI.Open();
                     InputBubble.Appear(thisRoot, height);
                     height += InputBubble.height * BaseScale + BoxVerticalSpacing;
 
@@ -443,7 +444,7 @@ public class DialogueManager : MonoBehaviour
                     if (isNew)
                     {
                         currentlyTyping = B;
-                        if(lines[line].speaker!=Character.Butler) SoundManager.main.OnSpeakCharacter(lines[line].speaker);
+                        if(lines[line].speaker!=Character.Butler) soundManager.OnSpeakCharacter(lines[line].speaker);
                         RefreshAnimations(lines[line]);
                         lines[line].OnDisplay();
                     }

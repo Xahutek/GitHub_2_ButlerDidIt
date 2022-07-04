@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.7829, y: 0}
+  m_SizeDelta: {x: 1.5658, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &421610614871714627
 CanvasRenderer:
@@ -297,6 +297,7 @@ MonoBehaviour:
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   butlerColor: {r: 0.5686275, g: 0.54509807, b: 0.6156863, a: 0}
+  LordColor: {r: 0.41960788, g: 0.015686275, b: 0.12941177, a: 0}
   evaColor: {r: 0.7019608, g: 0.34117648, b: 0.38431376, a: 0}
   tyrellColor: {r: 0.5764706, g: 0.36078432, b: 0.25882354, a: 0}
   ednaColor: {r: 0.25148332, g: 0.36680928, b: 0.46226418, a: 0}

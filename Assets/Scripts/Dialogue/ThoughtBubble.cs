@@ -7,7 +7,9 @@ public class ThoughtBubble : SpeechBubble
 {
     protected void Start()
     {
-        EventSystem.main.OnGetClue += PopUp;
+        EventSystem events = EventSystem.main;
+        if (events)
+            events.OnGetClue += PopUp;
     }
     public void PopUp(Clue C)
     {

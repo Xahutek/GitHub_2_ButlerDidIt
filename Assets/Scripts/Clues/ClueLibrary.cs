@@ -14,8 +14,6 @@ public class ClueLibrary : ScriptableObject
     public void SetUp()
     {
         main = this;
-        EventSystem.main.OnNoteDown += OnMakeNote;
-        AllNotes= new List<Note>(); //REMOVE WHEN SAVE SYSTEM EXISTS
 
         foreach (Clue c in AllClues)
         {
@@ -26,14 +24,5 @@ public class ClueLibrary : ScriptableObject
             i.FullReset();
             i.FullGivenReset();
         }
-    }
-
-    public void OnMakeNote(Note N)
-    {
-        foreach (Note n in AllNotes)
-        {
-            if (n.line == N.line) return;
-        }
-        AllNotes.Add(N);
     }
 }

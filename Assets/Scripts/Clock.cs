@@ -28,7 +28,7 @@ public class Clock : MonoBehaviour
     {
         Hour = time;
         Minute = time * 60;
-        LastHour = Hour;
+        LastHour = Hour-0.01f;
 
         internalRefresh = true;
     }
@@ -36,7 +36,7 @@ public class Clock : MonoBehaviour
     {
         Hour += duration;
         Minute += duration * 60;
-        LastHour = Hour;
+        LastHour = Hour-0.01f;
 
         internalRefresh = true;
     }
@@ -61,6 +61,13 @@ public class Clock : MonoBehaviour
     }
     private void Update()
     {
+        if (GameManager.isPaused)
+        {
+            deltaTime = 0;
+            fixedDeltaTime = 0;
+            return;
+        }
+
         float dayFactor = CompleteDay;
         if (Input.GetKey(KeyCode.T))
             dayFactor = CompleteDay/SpeedUpMultiplier;
@@ -70,12 +77,6 @@ public class Clock : MonoBehaviour
             internalRefresh = false;
             currentHour = Hour;
             currentMinute = currentHour * 60;
-        }
-        if (GameManager.isPaused)
-        {
-            deltaTime = 0;
-            fixedDeltaTime = 0;
-            return;
         }
 
         if (lastCurrentHour != currentHour)//On ExternalChange

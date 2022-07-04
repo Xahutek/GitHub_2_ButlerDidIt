@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
 
     public EventProfile[] allEvents;
     public Intermission[] allIntermissions;
+    public Intermission SpecialFirstIntermission;
     public static bool blockRoomRefreshs;
     public AudioClip hourlyClock;
     [System.Serializable] public class Intermission
@@ -61,7 +62,7 @@ public class EventManager : MonoBehaviour
     private void Update()
     {
         eventSoon = false;
-        if (!isOpen&&!GameManager.isPaused&&GameManager.gameLoaded)
+        if (!isOpen && !GameManager.isPaused)
         {
 
             everyHour = Mathf.Floor(Clock.TotalHours);
@@ -94,6 +95,17 @@ public class EventManager : MonoBehaviour
             }
         }
     }
+    //public void CheckFirstIntemrission()
+    //{
+    //    Intermission I = SpecialFirstIntermission;
+    //    if (I.Triggered(out eventSoon))
+    //    {
+    //        Debug.Log("Started Intermission: " + I.message);
+    //        StartIntermission(I);
+    //    }
+    //    else
+    //        GlobalBlackscreen.on = false;
+    //}
 
     public void StartIntermission(Intermission inter)
     {

@@ -4,7 +4,7 @@ using TMPro;
 
 public class GlobalBlackscreen : MonoBehaviour
 {
-    public static bool on = false;
+    public static bool on;
 
     [HideInInspector]public Image screen;
     TMP_Text Narrative;
@@ -16,6 +16,8 @@ public class GlobalBlackscreen : MonoBehaviour
     {
         screen = GetComponent<Image>();
         Narrative = GetComponentInChildren<TMP_Text>();
+
+        GlobalBlackscreen.on = false;
 
         i = 1;
         Color color = screen.color;

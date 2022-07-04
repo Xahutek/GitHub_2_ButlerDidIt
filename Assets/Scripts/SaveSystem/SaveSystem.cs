@@ -30,7 +30,7 @@ public static class SaveSystem
     {
         if (!SceneManager.GetSceneByName("_MainManor").isLoaded)
         {
-            Debug.LogError("Load Unsuccessful outside of Main Manor");
+            Debug.LogWarning("Load Unsuccessful outside of Main Manor");
             return;
         }
         ProgressFile lastSave = GetSavedProgress();

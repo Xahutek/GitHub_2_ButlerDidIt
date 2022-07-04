@@ -131,7 +131,7 @@ public class CharacterProfile : ScriptableObject
         bool knowntoplayer = identity == Character.Butler || identity == Character.Lord || identity == Character.Gardener;
 
         EventSystem events = EventSystem.main;
-        events.OnChangeRoom += OnChangeRoom;
+        if (events) events.OnChangeRoom += OnChangeRoom;
     }
 
     public void OnChangeRoom(Room room, Character character)

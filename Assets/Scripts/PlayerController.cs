@@ -48,7 +48,7 @@ public class PlayerController : InteractableCharacter
         currentVerticalSpeed = 0;
         RunCollisionChecks();
 
-        if (!isControlled && !Portal.isTravelling && !GameManager.isPaused)
+        if (!isControlled && !Portal.isTravelling && !GameManager.isPaused && Clock.Hour<23.5f)
         {
             GatherInput();
 

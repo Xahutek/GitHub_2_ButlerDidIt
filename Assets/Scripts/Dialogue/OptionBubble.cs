@@ -7,7 +7,7 @@ using DG.Tweening;
 public class OptionBubble : SpeechBubble
 {
     [HideInInspector] public Dialogue.Option option;
-    private Collider2D colli;
+    protected Collider2D colli;
 
     private void Start()
     {
@@ -35,7 +35,7 @@ public class OptionBubble : SpeechBubble
         if (Input.GetMouseButtonDown(0)) { Answer(); }
     }
 
-    private void Answer()
+    public virtual void Answer()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 

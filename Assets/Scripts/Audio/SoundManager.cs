@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         EventSystem events = EventSystem.main;
-        events.OnChangeRoom += OnChangeRoom;
+        if(events)events.OnChangeRoom += OnChangeRoom;
 
         List<SoundSource> sourceCollect = new List<SoundSource>();
         for (int i = 0; i < transform.childCount; i++)
