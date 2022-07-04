@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
-  m_Name: 2_GertieCrossExaminationWindowOpportunity
+  m_Name: 2_GertieCrossExaminationWindowOpportunityClosed
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   NecessaryCluesKnown: []
-  NecessaryCluesUnknown: []
+  NecessaryCluesUnknown:
+  - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
   nullDialogue: 0
   unique: 0
   seen: 1
@@ -71,7 +72,7 @@ MonoBehaviour:
     text: ' Alright, let''s move on.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
+  ending: 4
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
   options:

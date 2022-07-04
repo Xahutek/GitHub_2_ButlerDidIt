@@ -28,7 +28,7 @@ MonoBehaviour:
     text: Gertie Potts, you've had a unique relationship with the Lord, you said
       that you never actually met the man.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
@@ -36,38 +36,43 @@ MonoBehaviour:
     text: Yes! Lord Deddington would always send me letters written in invisible
       ink!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: They would have instructions on them on what to do with the garden.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: ' Lord Deddington was a mysterious man.'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: The letters in your shack prove that strange relationship.
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  ending: 4
+    spAnimTrigger: 
+  ending: 2
   ResumeFixed: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   availableAnswers: []
   options:
-  - text: Wild
-    reaction: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
-    trigger: {fileID: 0}
+  - text: '[Say Nothing]'
+    reaction: {fileID: 11400000, guid: 7b485d14e53c0704287ecd45ca2cf3e4, type: 2}
+    trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
+    rewards: []
+  - text: (I wonder what she will say about the opened window)
+    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
+    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
     rewards: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -84,7 +89,7 @@ MonoBehaviour:
       text: Gertie Potts, you've had a unique relationship with the Lord, you said
         that you never actually met the man.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
@@ -92,22 +97,23 @@ MonoBehaviour:
       text: Yes! Lord Deddington would always send me letters written in invisible
         ink!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: They would have instructions on them on what to do with the garden.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ' Lord Deddington was a mysterious man.'
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
       knowingCharacters: 
@@ -123,8 +129,9 @@ MonoBehaviour:
       isThought: 0
       text: The letters in your shack prove that strange relationship.
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
       knowingCharacters: 02000000
@@ -141,7 +148,7 @@ MonoBehaviour:
       text: Gertie Potts, you've had a strange relationship with the Lord, you said
         that you never actually met the man.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -149,7 +156,7 @@ MonoBehaviour:
       text: Now, I really don't know why anyone would believe you that, you've worked
         here for so many years you must have met him at some point.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
@@ -157,7 +164,7 @@ MonoBehaviour:
       text: (Thank god I burned those letters, otherwise she would have believed
         that unbelievable story)
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
@@ -166,18 +173,18 @@ MonoBehaviour:
 
 '
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Do you have proof?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I...d-don't think so?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

@@ -32,7 +32,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler you know what's up?
+    text: Butler...do you already know...who did it?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
@@ -40,6 +40,6 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: Sure do!
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 14d4861b625702a44b13498501bbccb6, type: 2}
     trigger: {fileID: 0}
     rewards: []
