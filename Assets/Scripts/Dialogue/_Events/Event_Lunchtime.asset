@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Event_Lunchtime
   m_EditorClassIdentifier: 
   SceneName: DiningHall
-  availableTime: {x: 12.5, y: 13}
-  introduction: 
+  availableTime: {x: 13.5, y: 13}
+  useRoomCam: 0
+  introduction: It is time to rejuvinate with food.
   StartDialogue: {fileID: 11400000, guid: d46da814d5335334382f104f69700fba, type: 2}
   EventDialogue:
   - {fileID: 11400000, guid: 4db4e590628a4454584e57c4f8acd582, type: 2}
