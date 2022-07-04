@@ -19,6 +19,7 @@ public class EventProfile : ScriptableObject
     public Dialogue StartDialogue;
     public Dialogue[] EventDialogue;
     public Dialogue NullDialogueReaction;
+    public bool evaIsSus = false; 
 
     public bool Triggered(out bool soon)
     {

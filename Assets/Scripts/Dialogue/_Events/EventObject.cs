@@ -35,6 +35,10 @@ public class EventObject : MonoBehaviour
         {
             c.gameObject.SetActive(true);
             c.enabled = false;
+            if(c.character == Character.Detective && profile.evaIsSus)
+            {
+                c.GetComponentInChildren<Animator>().SetTrigger("isSus");
+            }
         }
 
         PlayerController.main.position=playerRespawnLocus.position;
