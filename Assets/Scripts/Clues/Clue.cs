@@ -119,6 +119,23 @@ public class Clue : ScriptableObject
                 return false;
         }
     }
+    public bool KnownAndSuspiciousTo(Character ch = Character.Detective)
+    {
+        if (!KnownTo(ch))
+            return false;
+
+        foreach (Clue c in required)
+        {
+            if (!c.KnownTo(ch))
+                return false;
+        }
+        foreach (Clue c in nullify)
+        {
+            if (c.KnownTo(ch))
+                return false;
+        }
+        return true;
+    }
     //public float Weight(Character C)
     //{
     //    if (!KnownTo(C))

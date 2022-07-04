@@ -11,7 +11,6 @@ public class EventManager : MonoBehaviour
 
     public EventProfile[] allEvents;
     public Intermission[] allIntermissions;
-    public Intermission SpecialFirstIntermission;
     public static bool blockRoomRefreshs;
     public AudioClip hourlyClock;
     public bool saveFileLoaded = false;
@@ -65,8 +64,7 @@ public class EventManager : MonoBehaviour
         eventSoon = false;
         if (!isOpen && !GameManager.isPaused && saveFileLoaded)
         {
-            everyHour = Mathf.Floor(Clock.TotalHours);
-            if (everyHour >= 24f)
+            if (Clock.Hour >= 24f)
             {
                 Debug.Log("Revealing");
                 revealManager.Reveal();

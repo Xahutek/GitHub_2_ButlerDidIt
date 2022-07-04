@@ -348,11 +348,12 @@ public class DialogueManager : MonoBehaviour
                 else if (dialogue.ending == Dialogue.EndingType.Fixed)
                 {
                     isRefreshing = false;
+
+                    height -= B.height * BaseScale + BoxVerticalSpacing;
+
                     if (dialogue.ResumeFixed != null)
                         SetDialogue(dialogue.ResumeFixed);
                     else Close();
-
-                    height -= B.height * BaseScale + BoxVerticalSpacing;
 
                     yield break;
                 }
@@ -370,6 +371,7 @@ public class DialogueManager : MonoBehaviour
                             break;
                         }
                     }
+                    int activeOptions=0;
                     for (int o = 0; o < OptionsBubbles.Length; o++)
                     {
                         Dialogue.Option option = o < options.Length ? options[o] : null;
@@ -380,10 +382,25 @@ public class DialogueManager : MonoBehaviour
 
                         if (option != null)
                         {
+                            activeOptions++;
+
                             yield return new WaitForFixedUpdate();
 
                             height += o < options.Length ? O.height * BaseScale + BoxVerticalSpacing : 0;
                         }
+                    }
+
+                    Debug.Log(activeOptions);
+
+                    if (activeOptions == 0)
+                    {
+                        height -= B.height * BaseScale + BoxVerticalSpacing;
+
+                        if (dialogue.ResumeFixed != null)
+                            SetDialogue(dialogue.ResumeFixed);
+                        else Close();
+
+                        yield break;
                     }
                 }
                 else //Open or Open Question

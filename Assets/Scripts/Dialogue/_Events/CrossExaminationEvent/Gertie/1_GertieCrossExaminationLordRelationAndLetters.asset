@@ -62,10 +62,6 @@ MonoBehaviour:
   ResumeFixed: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   availableAnswers: []
   options:
-  - text: '[Say Nothing]'
-    reaction: {fileID: 11400000, guid: 7b485d14e53c0704287ecd45ca2cf3e4, type: 2}
-    trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
-    rewards: []
   - text: (I wonder what she will say about the opened window)
     reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
     trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
@@ -186,5 +182,23 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: I...d-don't think so?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: 
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+      knowingCharacters: 00000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 1
+      text: (I wonder what she will say about the open window...)
       fixedClue: {fileID: 0}
       spAnimTrigger: 

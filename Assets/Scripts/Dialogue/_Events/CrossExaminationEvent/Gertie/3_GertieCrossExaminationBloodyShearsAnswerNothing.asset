@@ -27,21 +27,9 @@ MonoBehaviour:
     isThought: 0
     text: '[...]'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: e7a7225aec1643143b9bed67b1376003, type: 2}
   availableAnswers: []
-  options:
-  - text: I saw him cut beetroots
-    reaction: {fileID: 11400000, guid: fb5764c194a7cc34296aa77d41da481e, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: Say Nothing
-    reaction: {fileID: 11400000}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: We don't even grow beetroots.
-    reaction: {fileID: 11400000, guid: e7a7225aec1643143b9bed67b1376003, type: 2}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []
   Segments: []

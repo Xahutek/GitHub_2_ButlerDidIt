@@ -78,7 +78,8 @@ MonoBehaviour:
   - text: The window can be opened from the outside
     reaction: {fileID: 11400000, guid: 73c7411d2129ac3459d913220e5e638d, type: 2}
     trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
-    rewards: []
+    rewards:
+    - {fileID: 11400000, guid: f9fc52967da901d47b225a8ebc337a3a, type: 2}
   - text: Say nothing
     reaction: {fileID: 11400000, guid: 5ce64a8abd65b2545ae224c728f3856b, type: 2}
     trigger: {fileID: 0}
@@ -86,7 +87,8 @@ MonoBehaviour:
   - text: The Lord actually <b>wants</b> windows open during storms.
     reaction: {fileID: 11400000, guid: 8f3d3cdbec77e7940a4f3c669d6832ba, type: 2}
     trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
-    rewards: []
+    rewards:
+    - {fileID: 11400000, guid: 26e455d04afd6d74298bdd0e0f8b197b, type: 2}
   Segments:
   - description: 
     trigger:
