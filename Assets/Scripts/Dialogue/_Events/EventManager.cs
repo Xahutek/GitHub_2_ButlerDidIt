@@ -14,6 +14,7 @@ public class EventManager : MonoBehaviour
     public Intermission SpecialFirstIntermission;
     public static bool blockRoomRefreshs;
     public AudioClip hourlyClock;
+    public bool saveFileLoaded = false;
     [System.Serializable] public class Intermission
     {
         [TextArea] public string message;
@@ -62,9 +63,8 @@ public class EventManager : MonoBehaviour
     private void Update()
     {
         eventSoon = false;
-        if (!isOpen && !GameManager.isPaused)
+        if (!isOpen && !GameManager.isPaused && saveFileLoaded)
         {
-
             everyHour = Mathf.Floor(Clock.TotalHours);
             if (everyHour >= 24f)
             {
