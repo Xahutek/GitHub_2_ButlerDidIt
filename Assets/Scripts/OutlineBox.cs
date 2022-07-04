@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class OutlineBox : MonoBehaviour
 {
-    [SerializeField] Material outline;
+    Material outline;
     private SpriteRenderer sRenderer;
     // Start is called before the first frame update
     Transform player;
     [SerializeField] float ItemRadius = 1;
     private float distance;
     [SerializeField] float OutlineThickness = 0.01f;
+
+    [ColorUsageAttribute(true, true)]
+    [SerializeField] Color color = new Vector4(255,255,255,3);
     void Start()
     {
+        
         sRenderer = GetComponent<SpriteRenderer>();
         outline = sRenderer.material;
         outline.SetColor("Color_cb38644a3f444f6cb498ab0e82528ebb", Color.black);
@@ -27,7 +31,7 @@ public class OutlineBox : MonoBehaviour
      
         if (ItemRadius>distance)
         {
-            outline.SetColor("Color_cb38644a3f444f6cb498ab0e82528ebb", Color.white);
+            outline.SetColor("Color_cb38644a3f444f6cb498ab0e82528ebb", color);
             outline.SetFloat("Vector1_e2aa71b3209842c5a6eb0b87444d3361", OutlineThickness);
         }
         if (ItemRadius < distance)
