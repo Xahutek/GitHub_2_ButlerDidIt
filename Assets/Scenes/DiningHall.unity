@@ -1055,9 +1055,9 @@ Transform:
   m_Children:
   - {fileID: 2069557072}
   - {fileID: 1131115823}
+  - {fileID: 1058307718}
   - {fileID: 982352623}
   - {fileID: 1228064676}
-  - {fileID: 1058307718}
   - {fileID: 166041908}
   m_Father: {fileID: 1598266176}
   m_RootOrder: 1
@@ -3528,11 +3528,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022747059428341525, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.643
+      value: 48.58
       objectReference: {fileID: 0}
     - target: {fileID: 7022747059428341525, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.735
+      value: 44.445
       objectReference: {fileID: 0}
     - target: {fileID: 7022747060089866345, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalScale.x
@@ -3588,11 +3588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.425
+      value: 45.82
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.314
+      value: 44.33
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060253, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_IsActive
@@ -4089,11 +4089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022747060089866345, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.452
+      value: 48.34
       objectReference: {fileID: 0}
     - target: {fileID: 7022747060089866345, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.934
+      value: 44.56
       objectReference: {fileID: 0}
     - target: {fileID: 7022747060089866350, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_IsActive
@@ -6483,23 +6483,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.638
+      value: 48.58
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44.787
+      value: 44.458
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9984468
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.055713624
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060250, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 6.388
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7022747061100060253, guid: 312721dd728c7ca40bbd8d7874dfacc2, type: 3}
       propertyPath: m_IsActive
@@ -7472,7 +7480,7 @@ MonoBehaviour:
   - {fileID: 1085726836}
   - {fileID: 1085726835}
   - {fileID: 1085726834}
-  tyrellSits: 0
+  tyrellSits: 1
   evaSits: 0
   ednaSits: 0
   gertieSits: 0
@@ -7498,7 +7506,7 @@ MonoBehaviour:
   - {fileID: 1538179344}
   tyrellSits: 0
   evaSits: 0
-  ednaSits: 0
+  ednaSits: 1
   gertieSits: 0
   playerRespawnLocus: {fileID: 1538179348}
 --- !u!114 &1598266182
@@ -7523,7 +7531,7 @@ MonoBehaviour:
   tyrellSits: 0
   evaSits: 0
   ednaSits: 0
-  gertieSits: 0
+  gertieSits: 1
   playerRespawnLocus: {fileID: 1094445527}
 --- !u!43 &1706198701
 Mesh:
