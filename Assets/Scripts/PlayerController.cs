@@ -35,6 +35,17 @@ public class PlayerController : InteractableCharacter
         col= GetComponent<CapsuleCollider2D>();
         rb= GetComponent<Rigidbody2D>();
         lastpos = transform.position;
+        EventSystem.main.OnPickClue += OnPickClue;
+    }
+
+    public SpriteRenderer presentedItem;
+    public void OnPickClue(Clue C)
+    {
+        if (C is Item)
+        {
+            presentedItem.sprite = C.picture;
+            animator.SetTrigger("PresentItem");
+        }
     }
 
     private void FixedUpdate()
