@@ -17,10 +17,73 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
-  Lines: []
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Figured as much.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Lets go!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Hugh, It has become increasingly obvious...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Hugh, I can deny it no longer...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Hugh, it is glaring for all to see.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: THE BUTLER DID IT!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: THE GARDENER DID IT!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: THE GENERAL DID IT!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: THE TYCOON DID IT!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
@@ -220,7 +283,7 @@ MonoBehaviour:
       knowingCharacters: 
       unknowingCharacters: 
       activateSuspicionTrigger: 1
-      c: 0
+      c: 5
       mode: 4
       suspicion: 0
     content:
@@ -292,7 +355,7 @@ MonoBehaviour:
       knowingCharacters: 
       unknowingCharacters: 
       activateSuspicionTrigger: 1
-      c: 0
+      c: 4
       mode: 4
       suspicion: 0
     content:
@@ -364,7 +427,7 @@ MonoBehaviour:
       knowingCharacters: 
       unknowingCharacters: 
       activateSuspicionTrigger: 1
-      c: 0
+      c: 3
       mode: 4
       suspicion: 0
     content:
