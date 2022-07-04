@@ -8,6 +8,7 @@ public class SoundSource : MonoBehaviour
     SoundManager soundManager;
     public List<Character> character;
     public List<Room> room;
+    public List<EventProfile> eventProfile;
 
     public AudioClip clip;
     AudioSource source;
@@ -45,9 +46,16 @@ public class SoundSource : MonoBehaviour
         }
     }
 
-    public void Refresh(Room r, Character c)
+    public void Refresh(Room r, Character c, EventProfile e)
     {
-        active = room.Contains(r) || character.Contains(c);
+        if(e == null)
+        {
+            active = room.Contains(r) || character.Contains(c);
+        }
+        else
+        {
+            active = eventProfile.Contains(e);
+        }
     }
 
     //IEnumerator fadeSource(AudioSource sourceToFade, float startVolume, float endVolume, float duration)

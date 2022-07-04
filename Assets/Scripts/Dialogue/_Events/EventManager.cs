@@ -65,13 +65,14 @@ public class EventManager : MonoBehaviour
         {
 
             everyHour = Mathf.Floor(Clock.TotalHours);
-            if (Clock.HourPassed(everyHour))
+            if (everyHour >= 24f)
             {
-                if(everyHour == 24f)
-                {
-                    revealManager.Reveal();
-                    return;
-                }
+                Debug.Log("Revealing");
+                revealManager.Reveal();
+                return;
+            }
+            if (Clock.HourPassed(everyHour))
+            {                
                 SoundManager.main.PlayOneShot(hourlyClock);
             }
             foreach (EventProfile E in allEvents)
@@ -115,6 +116,7 @@ public class EventManager : MonoBehaviour
         this.currentProfile = profile;
         if (EventRoutine != null) StopCoroutine(EventRoutine);
         EventRoutine = StartCoroutine(EventLoop());
+        SoundManager.main.OnEventStart(profile);
     }
 
     Coroutine EventRoutine=null, IntermissionRoutine=null;
@@ -198,6 +200,7 @@ public class EventManager : MonoBehaviour
         blockRoomRefreshs = false;
 
         Debug.Log("End Event");
+        SoundManager.main.OnEventStop();
         EventRoutine = null;
     }
 

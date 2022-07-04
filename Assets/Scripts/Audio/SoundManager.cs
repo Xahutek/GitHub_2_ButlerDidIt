@@ -55,11 +55,12 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField]private Room r;
     [SerializeField]private Character c;
+    [SerializeField]private EventProfile e;
     public void Refresh()
     {
         foreach (SoundSource S in sources)
         {
-            S.Refresh(r,c);
+            S.Refresh(r,c,e);
         }
     }
     public void OnSpeakCharacter(Character character)
@@ -72,6 +73,17 @@ public class SoundManager : MonoBehaviour
         if (character != Character.Butler) return;
 
         r = room;
+        Refresh();
+    }
+
+    public void OnEventStart(EventProfile profile)
+    {
+        e = profile;
+        Refresh();
+    }
+    public void OnEventStop()
+    {
+        e = null;
         Refresh();
     }
 
