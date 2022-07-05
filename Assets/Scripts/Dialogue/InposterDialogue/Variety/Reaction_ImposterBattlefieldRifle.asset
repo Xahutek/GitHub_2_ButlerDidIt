@@ -10,70 +10,66 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellAboutEdna
+  m_Name: Reaction_ImposterBattlefieldRifle
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
+  Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0300000000000000
+  includedCharacters: 0000000006000000
   Lines:
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The Lord's trophy rifle..?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: How very interesting *cough*
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: General Edna Tuskson is quite succesful, given her amount of titles, isn't
-      she?
+    text: It is very dusty, I am sorry. The Lord forbid me to touch some of his artifacts.
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
+    spAnimTrigger: 
+  - speaker: 6
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well, I honestly don't get all the fuss about her.
+    text: '*cough* I see *cough cough*'
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: She doesn't nearly have as much money as me or Lord Deddington.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Those medals are not worth that much!
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: I told her she should try to deposit her wealth into a bank instead of
-      pinning it onto her jacket!
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: In fact, I have asked her to join my charity deposit for women of modest
-      means  but she claimed she didn't understand what I was talking about.
-    fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: (A charity deposit for women of modest means? I didn't take Tyrell for
-      the type to give money <i>away.</i>)
-    fixedClue: {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
-    clueHidden: 0
+    isThought: 0
+    text: Are you in need of a glass of water.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'No, *cough* thank you butler. '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Just call me if you need anything Sir Sus.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []

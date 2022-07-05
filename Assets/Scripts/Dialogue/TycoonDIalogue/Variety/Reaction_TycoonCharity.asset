@@ -10,51 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellNotExitedAboutEdnaStart
+  m_Name: Reaction_TycoonCharity
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
-  seen: 1
+  unique: 0
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000003000000
   Lines:
   - speaker: 0
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: I was informed that she won a battle on the southern front in a mere day,
-      Lord Tyrell.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 3
-    otherReactions: []
-    isThought: 1
-    text: Presumably to be on time for the party.
+    isThought: 0
+    text: You mentioned you run a charity, Lord Tyrell?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: I see... Yet another quick victory for our grand general...
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 3
-    speakerEmotion: 3
-    otherReactions: []
-    isThought: 1
-    text: I'm sure she won't spare us any detail in the hours to come.
+    isThought: 0
+    text: Yes, dear butler. It is the greatest gift to give my hard earned money
+      to people in need!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: So am I, Lord Tyrell.
+    text: (he would never give money away without an investment...)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It is nice to see a philantrophist at work, Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3

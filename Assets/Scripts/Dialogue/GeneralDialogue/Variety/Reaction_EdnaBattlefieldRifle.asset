@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: Reaction_EdnaBattlefieldRifle
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000004000000
+  Lines:
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Butler, now what is this?!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It is Lord Deddingtons Trophy Rifle!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He wanted me to show it to you, given your expertiese with weapons.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I believe it was malfunctioning...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Well, it is a weapon of local making...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But he must have taken it from the natives on his visit to the southern
+      frontier.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Say, Butler, did he ever try to use it?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I believe it was malfunctioning.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Malfunctioning... I see. Well I am sure that this rifles time spend in
+      the hands of the enemy must have damaged it.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But yes, General Tuskson, that must be it!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []

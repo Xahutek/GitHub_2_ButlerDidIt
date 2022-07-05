@@ -203,10 +203,6 @@ public class ProgressFile
         minigames = new Minigames_ProgressFile();
 
         seenIntermission = new List<bool>();
-        for (int i = 0; i < EventManager.main.allIntermissions.Length; i++)
-        {
-            seenIntermission.Add(false);
-        }
     }
 
     public void Save()
@@ -262,7 +258,7 @@ public class ProgressFile
         //Intermissions
         for(int i = 0; i< EventManager.main.allIntermissions.Length; i++)
         {
-            EventManager.main.allIntermissions[i].passed = seenIntermission[i];
+            EventManager.main.allIntermissions[i].passed = i<seenIntermission.Count? seenIntermission[i]:false;
         }
         EventManager.main.saveFileLoaded = true;
 

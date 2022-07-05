@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: Reaction_ImposterEdnasBattle_NoPride
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000006000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The Lord always says...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "\u201CWhat praise is more valuable than the praise of an intelligent servant?\u201D"
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '*cough* Does he now...'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Well I am happy to see that he values your peson.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But what truth is to be expected from the mouth... *cough*
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ... from the mouth that you feed.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Have a nice day, Sir Sus. This is shaping up to be an entertaining day.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Oh, I know Hugh Diddit...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '*cough* ...I know.'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (There is something wrong with this sloth... I don't know if I want to
+      find out what it is.)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []

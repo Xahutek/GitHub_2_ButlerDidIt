@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: Reaction_ImposterCharity
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000006000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: What do you think about Lord Tyrell's charity endeavour.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That he is an unempathic liar, and not a very good one at that! Thats what
+      I think.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Sir.. Sir Sus?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (His voice just pitched... What was that?!)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Ehdm... *cough* forgive my directness.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 6
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I am sure my worries are *cough* unfounded.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: As you say... Sir Sus.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
