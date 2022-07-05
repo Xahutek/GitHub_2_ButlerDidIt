@@ -25,7 +25,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: BUTLER
+    text: Go ahead.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'Make your move, butler. '
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -39,14 +46,99 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I need more wine!
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "Bring me more wine, butler.\r"
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Of course, My Lord.
+    text: Yes, My Lord.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "Hah. You don\u2019t think you can beat me this time, do you? Not with
+      your rook placed like that.\r"
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Checkmate, My Lord.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "You pigeon-livered hornswoggler!\r"
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "Today\u2019s the day you want to end me?!"
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: "Well, butler, I\u2019m two steps ahead!"
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '!!'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '*thud*'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
