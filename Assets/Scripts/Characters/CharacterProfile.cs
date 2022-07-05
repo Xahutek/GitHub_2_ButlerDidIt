@@ -21,7 +21,7 @@ public class CharacterProfile : ScriptableObject
 
     public Character identity;
     public new string name;
-    public Sprite Portrait;
+    public GameObject Portrait, PortraitObject;
     public Color Color;
     public bool knownToPlayer;
     public Room currentRoom;
@@ -132,6 +132,9 @@ public class CharacterProfile : ScriptableObject
 
         EventSystem events = EventSystem.main;
         if (events) events.OnChangeRoom += OnChangeRoom;
+
+        PortraitObject = Instantiate(Portrait);
+        PortraitObject.SetActive(false);
     }
 
     public void OnChangeRoom(Room room, Character character)

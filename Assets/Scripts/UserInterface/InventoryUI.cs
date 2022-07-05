@@ -26,7 +26,7 @@ public class InventoryUI : MonoBehaviour
         nextC,previousC;
     public List<ClueDisplay> ClueDisplays = new List<ClueDisplay>();
     public List<ClueDisplay> ItemDisplays = new List<ClueDisplay>();
-    public Image
+    public Transform
         PortraitMain,
         PortraitLeft,
         PortraitRight;
@@ -137,9 +137,9 @@ public class InventoryUI : MonoBehaviour
         else
         {
             // Should remove the Portraits
-            PortraitMain.transform.parent.gameObject.SetActive(showCharas);
-            PortraitLeft.transform.parent.gameObject.SetActive(showCharas);
-            PortraitRight.transform.parent.gameObject.SetActive(showCharas);
+            PortraitMain.transform.gameObject.SetActive(showCharas);
+            PortraitLeft.transform.gameObject.SetActive(showCharas);
+            PortraitRight.transform.gameObject.SetActive(showCharas);
             Name.gameObject.SetActive(showCharas);
             ItemsHeader.gameObject.SetActive(!showCharas);
 
@@ -253,9 +253,21 @@ public class InventoryUI : MonoBehaviour
         //    checksOut = !hideUnknownCharacters || nextC.Profile().knownToPlayer;
         //}
 
-        PortraitMain.sprite = currentCharacter.Profile().Portrait;
-        PortraitLeft.sprite = previousC.Profile().Portrait;
-        PortraitRight.sprite = nextC.Profile().Portrait;
+        foreach (Character C in System.Enum.GetValues(typeof(Character)))
+        {
+            bool n = C.Profile() == currentCharacter.Profile() ? true : C.Profile() == previousC.Profile() ? true
+                : C.Profile() == nextC.Profile() ? true : false;
+            C.Profile().PortraitObject.SetActive(n);
+        }
+
+        currentCharacter.Profile().PortraitObject.transform.SetParent(PortraitMain, false);
+        currentCharacter.Profile().PortraitObject.transform.SetSiblingIndex(0);
+        previousC.Profile().PortraitObject.SetActive(true);
+        previousC.Profile().PortraitObject.transform.SetParent(PortraitLeft, false);
+        previousC.Profile().PortraitObject.transform.SetSiblingIndex(0);
+        nextC.Profile().PortraitObject.SetActive(true);
+        nextC.Profile().PortraitObject.transform.SetParent(PortraitRight, false);
+        nextC.Profile().PortraitObject.transform.SetSiblingIndex(0);
 
         Name.text = currentCharacter.Profile().name;
         SoundManager.main.PlayOneShot(paperTurn);
