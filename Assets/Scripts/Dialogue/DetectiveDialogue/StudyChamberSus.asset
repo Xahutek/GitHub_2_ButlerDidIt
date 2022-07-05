@@ -27,118 +27,119 @@ MonoBehaviour:
     isThought: 0
     text: If you allow me to ask...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Go on.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Who do you currently consider most suspicious?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Ahh, Hugh...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Can I call you Hugh?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: 'Currently, it is too early to say anything. '
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But...this Tyrell fella seems to have visited on the day the Lord died.
+    text: But... this Tyrell fella seems to have visited on the day the Lord died.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (She believes it, that's good.)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: If you allow me to ask...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Go on.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Who do you currently consider most suspicious?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Ahh, Hugh...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Can I call you Hugh?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: 'Currently, it is too early to say anything. '
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But...General Tuskson seems to have visited on the day the Lord died.
+    text: But... General Tuskson seems to have visited on the day the Lord died.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (She believes it, that's good.)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: bd29c52d149ed214ba38d8cdc0238b7e, type: 2}
       knowingCharacters: 00000000
@@ -154,57 +155,58 @@ MonoBehaviour:
       isThought: 0
       text: If you allow me to ask...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Go on.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Who do you currently consider most suspicious?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Ahh, Hugh...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Can I call you Hugh?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: 'Currently, it is too early to say anything. '
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: But...this Tyrell fella seems to have visited on the day the Lord died.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
       text: (She believes it, that's good.)
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
       knowingCharacters: 00000000
@@ -220,57 +222,58 @@ MonoBehaviour:
       isThought: 0
       text: If you allow me to ask...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Go on.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Who do you currently consider most suspicious?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Ahh, Hugh...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Can I call you Hugh?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: 'Currently, it is too early to say anything. '
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: But...General Tuskson seems to have visited on the day the Lord died.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
       text: (She believes it, that's good.)
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 78382f132f28dc245b6982d52f7c20d8, type: 2}
       knowingCharacters: 00000000
@@ -286,74 +289,74 @@ MonoBehaviour:
       isThought: 0
       text: If you allow me to ask...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Go on.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Who do you currently consider most suspicious?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Ahh, Hugh...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Can I call you Hugh?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: 'Currently, it is too early to say anything. '
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: The calender suggests that the Lord died today...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
       text: If he died before General Tuskson and Tyrell arrived...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Then he died while only you where in the house.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: The great detective is hot on your trail, Hugh!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I'm just messing with you, you don't have anything to worry about.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
