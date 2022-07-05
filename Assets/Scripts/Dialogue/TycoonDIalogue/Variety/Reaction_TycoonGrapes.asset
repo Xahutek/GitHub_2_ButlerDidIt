@@ -10,51 +10,64 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellNotExitedAboutEdnaStart
+  m_Name: Reaction_TycoonGrapes
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: c2396e0031fab154a89444c426742377, type: 2}
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 1
-  seen: 1
+  unique: 0
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000003000000
   Lines:
   - speaker: 0
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: I was informed that she won a battle on the southern front in a mere day,
-      Lord Tyrell.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 3
-    otherReactions: []
-    isThought: 1
-    text: Presumably to be on time for the party.
+    isThought: 0
+    text: A snack, Lord Tyrell?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: I see... Yet another quick victory for our grand general...
+    isThought: 0
+    text: Thank you but I am not in the mood for green food.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: I'm sure she won't spare us any detail in the hours to come.
+    isThought: 0
+    text: Tho, I did hear General Tusksons belly rumbeling...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
-    speakerEmotion: 3
+    speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: So am I, Lord Tyrell.
+    isThought: 0
+    text: Surely she must be hungry and exhausted from her recent battle?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Surely! Just... don't say that too lound in her presence, will you Butler.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I am sure I't wont hurt to offer her a snack.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Thank you, Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3

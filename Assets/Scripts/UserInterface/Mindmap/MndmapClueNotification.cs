@@ -16,5 +16,11 @@ public class MndmapClueNotification : MonoBehaviour
 
         DOTween.Kill(popUpTween);
         popUpTween = transform.DOScaleX(1, 0.2f).SetEase(Ease.InOutSine).SetLoops(6, LoopType.Yoyo);
+        Invoke("HardStop",0.2f*6f);
+    }
+    public void HardStop()
+    {
+        DOTween.Kill(popUpTween);
+        transform.localScale = new Vector3(0,1,1);
     }
 }

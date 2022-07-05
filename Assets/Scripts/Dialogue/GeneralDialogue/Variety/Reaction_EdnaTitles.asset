@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EdnaTitles
+  m_Name: Reaction_EdnaTitles
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
   NecessaryCluesKnown: []
@@ -27,84 +27,84 @@ MonoBehaviour:
     isThought: 0
     text: Could you tell me more about your <color=#add8e6ff> titles </color=#add8e6ff>?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Over the years, I've aquired many titles and even more medals, Diddit.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Through hard work and dedication, I achived it all by myself.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Something <b><i>you</b></i> would know very little about!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: 'My titles, in chronological order of aquisition are:'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: High General Marshal Sergeant, Lady Colonel Major Centurion...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Rear Forward Brigadier Admiral, Miss Major, Lieutenant Sergeant Commodore...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: High Major Commodore of the First Navy-
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (What have I done?)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (No wait...why have I done this <i><b>again</b>, a second time</i>?)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: -Third Multiplication Double Admiral Artillery Vanguard Company.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: My...Congratulations to all those titles.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
@@ -112,7 +112,7 @@ MonoBehaviour:
     text: (A walrus so consumed by her pride...perhaps I can use this against her
       today?)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
