@@ -27,14 +27,14 @@ MonoBehaviour:
     isThought: 0
     text: Y-Yes, Lord Deddington is fast asleep in his chamber.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
     text: ...Very well.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
@@ -42,7 +42,7 @@ MonoBehaviour:
     text: Very well then Butler, I will simply wait <b>right here</b> until he wakes
       up!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 4
     otherReactions: []
@@ -52,7 +52,7 @@ MonoBehaviour:
 
 '
     fixedClue: {fileID: 11400000, guid: a724cea2f55e3394dac3c568832bbb6c, type: 2}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 4
     otherReactions: []
@@ -60,29 +60,14 @@ MonoBehaviour:
     text: "There's even a <b><color=#ff0000ff>great detective</color></b> visiting
       us! \nThe Lord will love it! I am positive!"
     fixedClue: {fileID: 11400000, guid: 8a5de085217886a40bc853c73e782cf9, type: 2}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
     text: That sounds...thrilling.
     fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 0
-    speakerEmotion: 4
-    otherReactions: []
-    isThought: 0
-    text: Is there anything I can help you with?
-    fixedClue: {fileID: 0}
-    clueHidden: 0
-  - speaker: 4
-    speakerEmotion: 4
-    otherReactions: []
-    isThought: 0
-    text: I was about to ask you this question, do you have anything to discuss,
-      Butler?
-    fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 4
     otherReactions: []
@@ -90,14 +75,29 @@ MonoBehaviour:
     text: I am willing to give Lord Deddington until 9 o clock sharp today, then
       I will wake him up
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 2
     otherReactions: []
     isThought: 1
     text: (This is isn't good)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 4
+    otherReactions: []
+    isThought: 0
+    text: Until then, is there anything I can help you with?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 4
+    otherReactions: []
+    isThought: 0
+    text: I was about to ask you this question, do you have anything to discuss,
+      Butler?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []

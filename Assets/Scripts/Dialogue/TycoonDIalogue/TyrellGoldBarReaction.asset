@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EdnaNextPosition
+  m_Name: TyrellGoldBarReaction
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
-  NecessaryCluesKnown:
-  - {fileID: 11400000, guid: 8d30eec8a0660f04682baa26b7d30a12, type: 2}
+  Trigger_Optional: {fileID: 11400000, guid: ea1e031bac3080e49a8c8a7ee6b4ea77, type: 2}
+  NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
@@ -22,28 +21,26 @@ MonoBehaviour:
   AvailabilityHours: {x: 3, y: 5}
   includedCharacters: 
   Lines:
-  - speaker: 4
+  - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well, your Atrium is just as lovely as ever, these new plants really tie
-      the room together, are they imported?
+    text: <i>OoOouuuh!!</i> you found my beautiful gold bar!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes they are, thank you, General Tuskson.
+    text: Quitei <i>heavy</i>, yes?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 4
+  - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: "But I had a long journey after me, so I will go into the living room to
-      recollect myself at round 05:00. \nAfterwards, I'd be happy to wake the Lord
-      up."
+    text: Perhaps you would like to <color=green>show it around</color> the guests
+      some more?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3

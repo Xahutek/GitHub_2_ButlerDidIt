@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000003000000
   Lines:
@@ -27,88 +27,88 @@ MonoBehaviour:
     isThought: 1
     text: ...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: ...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
     text: '...Ahem!
 
-      <color=#ffa500ff>Tycoon Theodore Theodoros T. Tyrell The
-      Third (senior) has arrived!'
+      Tycoon Theodore Theodoros T. Tyrell The Third (senior)
+      has arrived!'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: "I am here for lunch at a party. \nAnd a party.\n"
     fixedClue: {fileID: 11400000, guid: 747760185156d954285b9045362c9962, type: 2}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: But mostly lunch, one less meal paid for.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
     text: Good, late evening, <color=#00ffffff>General Tuskson! </color=#00ffffff>
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Evening, <i> Butler </i>.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (I didn't think the evening could get any worse after murdering Lord Deddington.)
     fixedClue: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
     text: (Do I really have to keep talking to him?)
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: ...Good Evening, Lord Tyrell.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 1
     otherReactions: []
     isThought: 0
     text: Looks like Tuskson beat me to the party... again.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: I thought she was stationed oversees! Between us butler... Did she mention
-      how she managed to arrive here this early?
+    text: I thought she was stationed oversees! Between us butler...just how early
+      did she manage to arrive?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 1
   ResumeFixed: {fileID: 0}
   availableAnswers:
