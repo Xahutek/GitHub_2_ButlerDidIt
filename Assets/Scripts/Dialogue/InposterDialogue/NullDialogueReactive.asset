@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: NullDialogueReactive
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 1
   unique: 0
   seen: 0
@@ -20,10 +22,13 @@ MonoBehaviour:
   includedCharacters: 0000000006000000
   Lines:
   - speaker: 6
-    emotion: 0
-    text: fascinating *cough* thank you for telling me this.
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Fascinating. *cough* Thank you for telling me this.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 0
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
