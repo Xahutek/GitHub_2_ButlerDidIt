@@ -133,8 +133,8 @@ public class CharacterProfile : ScriptableObject
         EventSystem events = EventSystem.main;
         if (events) events.OnChangeRoom += OnChangeRoom;
 
-        //PortraitObject = Instantiate(Portrait);
-        //PortraitObject.SetActive(false);
+        PortraitObject = Instantiate(Portrait, InventoryUI.main.transform);
+        PortraitObject.SetActive(false);
     }
 
     public void OnChangeRoom(Room room, Character character)
