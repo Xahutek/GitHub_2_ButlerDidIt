@@ -181,11 +181,19 @@ public class DialogueManager : MonoBehaviour
         {
             case Dialogue.EndingType.Open:
                 nextDialogue = GetClueDialogue(C);
+                foreach (Character c in Characters)
+                {
+                    C.MakeKnownTo(c);
+                }
                 SetDialogue(nextDialogue);
                 break;
             case Dialogue.EndingType.OpenQuestion:
                 nextDialogue = dialogue.GetOpenQuestionReaction(C);
                 if (nextDialogue == null) return;
+                foreach (Character c in Characters)
+                {
+                    C.MakeKnownTo(c);
+                }
                 SetDialogue(nextDialogue);
                 break;
             case Dialogue.EndingType.SpecificQuestion:

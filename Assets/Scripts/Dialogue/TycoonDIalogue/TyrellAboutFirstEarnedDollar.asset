@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: TyrellAboutFirstEarnedDollar
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 14, y: 24}
+  includedCharacters: 0000000003000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Lord Tyrell, how are you holding up? You seem frustrated.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It must be here somewhere...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Are you looking for something? I know my way around the house, I could
+      be of assistance!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It's a matter of money.. nothing a Butler like you would know about...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Lord Tyrell... you are aware that I am a payed workforce, aren't you?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Oh!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes, of course I am...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: When I say money I am usually not talking about insigificant sums... like
+      your salary.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I mean big money! The stuff you can vote with!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (These Americans and their weird customs...)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 1
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I was set out to surpass the Lord in wealth during the next quater!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (he can't be seriously thinking about that now...)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It looks like his untimely death resulted in the same outcome... prematurely.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Given my recent ventures it was inevetable, but that is not my point...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: What do you mean?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I once lost my First Dollar at a peticularly heated poker match at my fifth
+      mansion.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Naturally...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...And I lost it to Lord Deddington... that cheating old bastard, may god
+      rest his soul.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...And I lost it to Lord Deddington... that cheating old bastard, may god
+      rest his soul.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: When I sobered up and asked him to give it back he refused!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That is the way of the game, I'm afraid.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Ah... of course you don't understand what this dollar means to me.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I earned it by selling Lemonade when I was half this size...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I only sold one glass to my father, but he was so impressed that he invested
+      into my future ventures ever since...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ... I'm sure it tasted delicious.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: However, Lord Deddington told me that he would only give it back once I
+      surpassed him in wealth...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And well... now that I did, even under these circumstances, I would like
+      to have it back.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Do you know where he kept it?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He must have hidden it here somewhere...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Probably displayed it somewhere important...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: to boast about it at parties behind my back...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I miss him.
+    fixedClue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I would have probably overlooked it so far, but I'll be sure to keep an
+      eye out!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []

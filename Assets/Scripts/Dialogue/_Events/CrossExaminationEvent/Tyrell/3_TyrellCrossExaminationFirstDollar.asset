@@ -76,21 +76,36 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Honestly, I have no idea.
+    text: Because the Lord kept your first ever earned dollar
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <i>How do you know about that</i>!?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Moving on.
+    text: Easy, we found your first dollar
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...But why this wealth was so important to you, I couldn't figure out.
+    text: But the Lord didn't want to return it to you, even when you surpassed him
+      in sheer networth.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This alone is suspicious, but is it reason enough to kill Lord Deddington.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -240,7 +255,22 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ...But why this wealth was so important to you, I couldn't figure out.
+      text: This alone is suspicious, but is it reason enough to kill Lord Deddington?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: As far as I know you would have reached that goal within the next quater.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: E..Exactly! There would have been no reason for me to kill a dear friend
+        of mine!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 

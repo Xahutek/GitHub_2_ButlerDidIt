@@ -28,11 +28,26 @@ MonoBehaviour:
     text: I have an idea who the owner of this dollar is...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Great.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Would you be so kind and tell me?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 1
   ResumeFixed: {fileID: 0}
   availableAnswers:
-  - text: It is Tyrells dollars
+  - text: 
     reaction: {fileID: 11400000, guid: 7cfdca918d9f135408ea0bf050aa74e4, type: 2}
-    trigger: {fileID: 11400000, guid: 3e34820fe41227b43963c4f96cacf468, type: 2}
-    rewards: []
+    trigger: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
+    rewards:
+    - {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
   options: []

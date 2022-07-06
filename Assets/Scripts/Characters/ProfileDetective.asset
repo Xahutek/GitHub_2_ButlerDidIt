@@ -15,6 +15,7 @@ MonoBehaviour:
   identity: 2
   name: Eva Dence
   Portrait: {fileID: 5223635564414417333, guid: 820cd76e209c9ba48abad905ec6a153c, type: 3}
+  PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
   knownToPlayer: 0
   currentRoom: 0
@@ -80,7 +81,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
   - {fileID: 11400000, guid: 640405ed4ebb5544780ca12ccde3f0e4, type: 2}
   dialogues:
-  - {fileID: 11400000, guid: 38f23e4e2f5f216448fa7e9ef0161a4b, type: 2}
   - {fileID: 11400000, guid: b8aea03101cd1ca46b07897fc98ec88f, type: 2}
   - {fileID: 11400000, guid: 478939be1b629af45b45757643db74e7, type: 2}
   - {fileID: 11400000, guid: 4b048b3f241abd54091ffe2ed3af9975, type: 2}
@@ -90,5 +90,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74d20eb8330695149a0d0395f0559c3b, type: 2}
   - {fileID: 11400000, guid: 44ded19f7eef8984796c309955f68ce2, type: 2}
   - {fileID: 11400000, guid: ae01a033d10c4314d95d1c76517dc911, type: 2}
+  - {fileID: 11400000, guid: b7383f335406b2148b9ad1cde303da76, type: 2}
   nullDialogue: {fileID: 11400000, guid: b5f45aae7caa01b4c9771978fcdd8a94, type: 2}
   nullDialogueReaction: {fileID: 11400000, guid: edd735a29c71a224982b49d2b8a52bd0, type: 2}
