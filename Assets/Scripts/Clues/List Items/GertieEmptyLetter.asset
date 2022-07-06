@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c601663db51864e96f8547e2451984, type: 3}
   m_Name: GertieEmptyLetter
   m_EditorClassIdentifier: 
-  name: Empty Letters
+  name: Empty letters
   picture: {fileID: 21300000, guid: d511b1af59d5c7040a20f0626c2469f0, type: 3}
   required: []
   nullify: []
-  DisplayThoughtBubbleOnGain: 1
-  _ButlerKnows: 0
-  _DetectiveKnows: 0
-  _InposterKnows: 0
-  _TycoonKnows: 0
-  _GeneralKnows: 0
-  _GardenerKnows: 0
+  seenInInventory: 0
+  isInventoryClue: 1
+  isMindmapClue: 0
+  presetButlerKnows: 0
+  presetDetectiveKnows: 0
+  presetInposterKnows: 0
+  presetTycoonKnows: 0
+  presetGeneralKnows: 0
+  presetGardenerKnows: 0
   ButlerKnows: 0
   DetectiveKnows: 0
   ImposterKnows: 0
@@ -30,3 +32,4 @@ MonoBehaviour:
   GeneralKnows: 0
   GardenerKnows: 0
   givenAway: 0
+  _givenAway: 0
