@@ -24,16 +24,23 @@ public class CharacterInfoKnot : InfoKnot, IPointerEnterHandler, IPointerExitHan
     {
         get
         {
+            if(character == Character.Imposter.Profile() && Character.Detective.Profile().knownToPlayer)
+            {
+                return true;
+            }
             return character != null && character.knownToPlayer;
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        RoomComment.SetActive(true);
-        RoomComment.GetComponentInChildren<TMP_Text>().text = character == CharacterProfile.Butler ? "I'm just standing here." 
-            : character.CurrentTimeBox.room.ToString() == "Null" ? "Probably asleep currently" 
-            : "Current Location: " + CorrectRoomName(character.CurrentTimeBox.room);
+        if(character != Character.Imposter.Profile() || character == (Character.Imposter.Profile() && !Character.Detective.Profile().knownToPlayer))
+        {
+            RoomComment.SetActive(true);
+            RoomComment.GetComponentInChildren<TMP_Text>().text = character == CharacterProfile.Butler ? "I'm just standing here."
+                : character.CurrentTimeBox.room.ToString() == "Null" ? "Probably asleep currently"
+                : "Current Location: " + CorrectRoomName(character.CurrentTimeBox.room);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
