@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: SoSad4
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
@@ -22,9 +24,11 @@ MonoBehaviour:
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
-    text: Soooo...Saaaad.
+    isThought: 0
+    text: Soooo... saaaad.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 3
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
