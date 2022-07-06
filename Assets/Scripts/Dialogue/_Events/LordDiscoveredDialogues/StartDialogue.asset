@@ -232,4 +232,5 @@ MonoBehaviour:
   - text: '[Put down flowers for the dead lord]'
     reaction: {fileID: 11400000, guid: 1e7df28b8e6899c4b9a7f6409b340bce, type: 2}
     trigger: {fileID: 11400000, guid: 7eec7896f356b8642bf2c426227f8986, type: 2}
-    rewards: []
+    rewards:
+    - {fileID: 11400000, guid: 4ea75cb4ff2cbe14cb8d1cc69c92ed9a, type: 2}

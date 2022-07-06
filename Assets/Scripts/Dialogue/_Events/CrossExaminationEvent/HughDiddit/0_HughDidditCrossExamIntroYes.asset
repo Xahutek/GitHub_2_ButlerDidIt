@@ -19,14 +19,15 @@ MonoBehaviour:
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
+  includedCharacters: 0000000002000000030000000400000005000000
   Lines: []
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: b0fe6688e2ca65e4f9299865e7d76499, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 

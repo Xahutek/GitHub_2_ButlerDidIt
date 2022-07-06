@@ -51,7 +51,7 @@ public class Dialogue : ScriptableObject
         foreach (Character c in includedCharacters)
         {
             c.Profile().knownToPlayer = true;
-            Trigger_Optional.MakeKnownTo(c);
+            if(Trigger_Optional)Trigger_Optional.MakeKnownTo(c);
         }
     }
 

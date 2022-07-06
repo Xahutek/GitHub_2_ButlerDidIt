@@ -17,10 +17,31 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
-  Lines: []
+  includedCharacters: 0000000002000000030000000400000005000000
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Well and so we can come to the end of the cross exam.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Now I don't think this one will be important, but as I would like to thorough...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Hugh Diddit, are you ready to be questioned?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
@@ -38,7 +59,8 @@ MonoBehaviour:
     trigger: {fileID: 0}
     rewards: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 

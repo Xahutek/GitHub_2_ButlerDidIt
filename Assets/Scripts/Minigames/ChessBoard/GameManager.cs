@@ -19,6 +19,8 @@ namespace ChessBoard
 
         public AudioClip[] clacks;
 
+        public float DetectiveSeeTime = 18;
+
         private void Awake()
         {
             main = this;
@@ -107,7 +109,16 @@ namespace ChessBoard
         {
             CheckState();
             if (gameState == GameState.BlackWins)
+            {
                 LordWinsClue.MakeKnownTo(Character.Butler);
+                if(Clock.Hour<DetectiveSeeTime) LordWinsClue.MakeKnownTo(Character.Detective);
+            }
+            else
+            {
+                LordWinsClue.MakeUnknownTo(Character.Butler);
+                if (Clock.Hour < DetectiveSeeTime) LordWinsClue.MakeUnknownTo(Character.Detective);
+            }
+
             base.Close();
         }
         public override void Save()

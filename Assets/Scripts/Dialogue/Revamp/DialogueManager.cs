@@ -198,11 +198,9 @@ public class DialogueManager : MonoBehaviour
     }
     public virtual void OnPickOption(Dialogue.Option option)
     {
-        if (option == null || (!option.reaction && !dialogue.ResumeFixed)) 
-        {
-            OnPickClue(null);
+        if (option == null) 
             return;
-        }
+
         foreach (Dialogue.Option o in dialogue.options)
         {
             if (o == option) dialogue.OnPickOption(o);

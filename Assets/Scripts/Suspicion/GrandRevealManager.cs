@@ -22,10 +22,17 @@ public class GrandRevealManager : MonoBehaviour
         TheDetectiveDidIt,
         TheImposterDidIt;
 
+    public Clue confessionClue;
+
     private void Start()
     {
         suspicionManager = SuspicionManager.main;
         isOpen = false;
+    }
+    private void FixedUpdate()
+    {
+        if (!isOpen&&confessionClue.KnownTo(Character.Detective))
+            Reveal(Character.Butler);
     }
 
     public void Reveal()
@@ -40,6 +47,9 @@ public class GrandRevealManager : MonoBehaviour
     }
     public void Reveal(Character highest)
     {
+        isOpen = true;
+        GameManager.manualPaused = true;
+
         Sprite WhoDidIt;
 
         switch (highest)

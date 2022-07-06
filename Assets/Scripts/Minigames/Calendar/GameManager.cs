@@ -24,6 +24,8 @@ namespace Calendar
         public AudioClip crossing;
         public AudioClip erasing;
 
+        public float DetectiveSeeTime = 9;
+
         private void Awake()
         {
             main = this;
@@ -115,17 +117,35 @@ namespace Calendar
                 {
                     EdnaLastVisitor.MakeKnownTo(Character.Butler);
                     TyrellLastVisitor.MakeUnknownTo(Character.Butler);
+
+                    if (Clock.Hour<DetectiveSeeTime)
+                    {
+                        EdnaLastVisitor.MakeKnownTo(Character.Detective);
+                        TyrellLastVisitor.MakeUnknownTo(Character.Detective);
+                    }
                 }
                 else if (gameState == GameState.TyrellSus)
                 {
                     TyrellLastVisitor.MakeKnownTo(Character.Butler);
                     EdnaLastVisitor.MakeUnknownTo(Character.Butler);
+
+                    if (Clock.Hour < DetectiveSeeTime)
+                    {
+                        TyrellLastVisitor.MakeKnownTo(Character.Detective);
+                        EdnaLastVisitor.MakeUnknownTo(Character.Detective);
+                    }
                 }
                 else
                 {
                     NoChange.MakeKnownTo(Character.Butler);
                     TyrellLastVisitor.MakeUnknownTo(Character.Butler);
                     EdnaLastVisitor.MakeUnknownTo(Character.Butler);
+
+                    if (Clock.Hour < DetectiveSeeTime)
+                    {
+                        EdnaLastVisitor.MakeUnknownTo(Character.Detective);
+                        TyrellLastVisitor.MakeUnknownTo(Character.Detective);
+                    }
                 }
             }            
             Save();

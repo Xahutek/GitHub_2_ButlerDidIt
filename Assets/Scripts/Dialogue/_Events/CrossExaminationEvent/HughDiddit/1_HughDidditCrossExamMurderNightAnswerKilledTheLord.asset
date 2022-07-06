@@ -17,14 +17,96 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
-  Lines: []
-  ending: 4
-  ResumeFixed: {fileID: 11400000, guid: f3543d6b6fe35514d88b3927fa5dcb02, type: 2}
+  includedCharacters: 0000000002000000030000000400000005000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I remember vividly what I did the moment he died.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'I cleaned the blood of my hooves '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: After snapping and murdering Lord Deddington
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: So you confess!?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Are you... sure?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Absolutely, why would I want to live with this guilt?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I don't know but you managed this entire day.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '*Sigh* Alright then as you wish... say it with me...'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The Butler did it..!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 2
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: I, Hugh Diddit, did it! The Butler killed the Lord...
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards:
+    - {fileID: 11400000, guid: bbd49db1871b11b429228116f779f745, type: 2}
   Segments:
   - description: 
     trigger:
@@ -62,6 +144,55 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So you confess, alright I guess the Butler really did do it.
+      text: So you confess!?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Yes.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Are you... sure?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Absolutely, why would I want to live with this guilt?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I don't know but you managed this entire day.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '*Sigh* Alright then as you wish... say it with me...'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The Butler did it..!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
