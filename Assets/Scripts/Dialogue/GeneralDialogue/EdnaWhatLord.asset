@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: EdnaWhatLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
@@ -22,57 +24,68 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 3
     otherReactions: []
+    isThought: 0
     text: ...What Lord?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 1
     otherReactions: []
+    isThought: 0
     text: ...!?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: Now now, <i> Butler </i>.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
-    text: Why, I am talking about Lord Deddington of course.
+    isThought: 0
+    text: Why, I am talking about Lord Deddington, of course.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 3
     otherReactions: []
-    text: As in...House Deddington?
+    isThought: 0
+    text: As in... House Deddington?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 2
     otherReactions: []
+    isThought: 0
     text: YES, as in House Deddington, our current location!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...Ah! ...Now I get you!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
+    isThought: 0
     text: ...So?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 2
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
   - text: Yes, the Lord is asleep.
     reaction: {fileID: 11400000, guid: 63177224dd58b1a48a4e4dffe998a1be, type: 2}
     trigger: {fileID: 0}
+    rewards: []
   - text: Who are you?
     reaction: {fileID: 11400000, guid: cfddd95a86c0f4f4891d4f8e896c76f1, type: 2}
     trigger: {fileID: 0}
+    rewards: []

@@ -25,11 +25,12 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '"I can''t believe you beat me with only half the board"
+    text: '"I can''t believe you beat me with only half the board."
 
-      Haa...Deddington.'
+      Haa...
+      Deddington.'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
@@ -38,14 +39,14 @@ MonoBehaviour:
 
       It''s you, the Butler, Diddit...'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I'm sorry, I'm still in thoughts...can I help you somehow?
+    text: I'm sorry, I'm still in thoughts... can I help you somehow?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []

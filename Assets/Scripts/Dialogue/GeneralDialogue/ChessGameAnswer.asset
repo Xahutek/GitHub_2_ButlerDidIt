@@ -28,7 +28,7 @@ MonoBehaviour:
     text: Please apologize my intrusion, General, what where you pondering about
       just now?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
@@ -36,16 +36,15 @@ MonoBehaviour:
     text: No need to apologize, I was thinking about the last time myself and the
       Lord played chess, in the library.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: <color=grey>(That's right, this Walrus liked playing chess with the Lord,
-      and never lost...perhaps</color><color=#00ff00ff> I should look into this chess
-      game</color>.)
+    text: (That's right, this Walrus liked playing chess with the Lord, and never
+      lost...perhaps<color=#7a9047ff> I should look into this chess game</color>.)
     fixedClue: {fileID: 11400000, guid: 33cf64ff6183bb14aaa2561d344a6832, type: 2}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
@@ -53,21 +52,21 @@ MonoBehaviour:
     text: "I beat him, as always. \nEven when I only played with half the board.\nI
       will never forget the last words he said to me."
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '"Next time, you only get pawns, to balance it out"'
+    text: '"Next time, you only get pawns, to balance it out."'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Hmmm, Deddington...I would have loved to see the day.
+    text: Hmmm, Deddington... I would have loved to see the day.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
@@ -77,7 +76,7 @@ MonoBehaviour:
       Surely, the match would have gone
       down in history.'
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
