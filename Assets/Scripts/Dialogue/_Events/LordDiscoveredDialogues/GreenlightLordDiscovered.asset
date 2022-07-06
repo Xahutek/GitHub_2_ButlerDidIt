@@ -39,15 +39,15 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: To find the murderer, <color=#7a9047>I will search the house for clues</color>
-      and <color=#7a9047>question each of you.
+    text: To find the murderer, <color=#7a9047ff>I will search the house for clues</color>
+      and <color=#7a9047ff>question each of you.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I trust no one of you will <color=#7a9047>tamper</color> with the <color=#7a9047>evidence.
+    text: I trust no one of you will <color=#7a9047ff>tamper</color> with the <color=#7a9047ff>evidence.
       if you do see someone acting strange, report back to me.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -62,7 +62,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Gentlemen and Ladies, <color=#987a6c>on midnight sharp</color>, I promise
+    text: Gentlemen and Ladies, <color=#987a6cff>on midnight sharp</color>, I promise
       to have untangled this enigma.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -94,21 +94,21 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (I need to<color=#a14744> cover all my traces</color> until then...)
+    text: (I need to<color=#a14744ff> cover all my traces</color> until then...)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (...<color=#a14744>manipulate</color> the evidence...)
+    text: (...<color=#a14744ff>manipulate</color> the evidence...)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (...construct a <color=#a14744>false motive</color>, <color=#a14744>incriminate</color>
+    text: (...construct a <color=#a14744ff>false motive</color>, <color=#a14744ff>incriminate</color>
       someone else.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -116,14 +116,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Just don't be suspicious and <color=#a14744>don't get caught.</color>)
+    text: (Just don't be suspicious and <color=#a14744ff>don't get caught.</color>)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I will <color=#a14744>catch the killer</color>.
+    text: 'I will <color=#a14744ff>catch the killer</color>.
 
       The meeting is
       officially disbanded.
