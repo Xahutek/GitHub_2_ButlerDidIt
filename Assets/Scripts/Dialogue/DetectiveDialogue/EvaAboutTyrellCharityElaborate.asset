@@ -1,0 +1,674 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: EvaAboutTyrellCharityElaborate
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 1
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000
+  Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: No please elaborate, I also had a similar huch!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He seems to like money a bit too much...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ... to host a charity! Exactly!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This might indeed have nothing to do with the current situation...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'Please, great detective. In your own words:'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '"Every information could be valuable!"'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Yes your right, of course!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: So dear butler, what do we know about Lord Tyrell!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He is quite rich.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Exactly, almost as rich as late Lord Deddington himself...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Really, I thought the Lord was the undisputed richest animal on this earth?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He was, yes but Tyrells networth went to the moon during the last quater.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He is expected to take that crown throughout the next!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: A suprising developement for someone who is recently giving his all to
+      charity.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: My thought exactly!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Which leads us to deduct that his charity endeavour is somehow generating
+      more money at a shockingly fast rate!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It must be... how did you phrase it?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Humbug!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Humbug indeed!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The poor women that deposited their money into this.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: They will likely never see it again...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He must lure them in with gigantic profits...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: which he simply pays of with the deposits of more recent investors!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Precisely!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Butler Hugh, I am impressed.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I knew there was a sharp mind hiding behind your humble facade!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I do have my moments.
+    fixedClue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Do you think late Lord Deddington knew of this?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He was a master of economics, he must have figured that out.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This might also be the reason he threw away Tyrells First Dollar in the
+      basement.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Do you think he had no intention of giving it back?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Presumably, if he knew that tyrell was exploiting widows and unmarried
+      women to surpass him.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (As if he would shy away from this if the tables were turned...)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I'm sure his moral consciousness would be in conflict with his honor.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Quite the interesting developement...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It does not proove anything on its own...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: but we might be onto something!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
+  Segments:
+  - description: 
+    trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 0}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: No please elaborate, I also had a similar huch!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He seems to like money a bit too much...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ... to host a charity! Exactly!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This might indeed have nothing to do with the current situation...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: 'Please, great detective. In your own words:'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '"Every information could be valuable!"'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Yes your right, of course!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: So dear butler, what do we know about Lord Tyrell!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He is quite rich.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Exactly, almost as rich as late Lord Deddington himself...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Really, I thought the Lord was the undisputed richest animal on this
+        earth?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He was, yes but Tyrells networth went to the moon during the last quater.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He is expected to take that crown throughout the next!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: A suprising developement for someone who is recently giving his all to
+        charity.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: My thought exactly!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Which leads us to deduct that his charity endeavour is somehow generating
+        more money at a shockingly fast rate!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It must be... how did you phrase it?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Humbug!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Humbug indeed!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The poor women that deposited their money into this.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: They will likely never see it again...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He must lure them in with gigantic profits...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: which he simply pays of with the deposits of more recent investors!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Precisely!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Butler Hugh, I am impressed.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I knew there was a sharp mind hiding behind your humble facade!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I do have my moments.
+      fixedClue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+      spAnimTrigger: 
+  - description: Dollar Addition
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Do you think late Lord Deddington knew of this?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: He was a master of economics, he must have figured that out.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This might also be the reason he threw away Tyrells First Dollar in the
+        basement.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Do you think he had no intention of giving it back?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Presumably, if he knew that tyrell was exploiting widows and unmarried
+        women to surpass him.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 1
+      text: (As if he would shy away from this if the tables were turned...)
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I'm sure his moral consciousness would be in conflict with his honor.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Quite the interesting developement...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It does not proove anything on its own...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: but we might be onto something!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: Dollar Addition
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a257bc334362bb14fa1f4bfdaa17bf2a, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 1
+      c: 3
+      mode: 4
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Together with thr revolver I found in his luggage...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '*gasp*'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Let's just say that, if nothing unsuspected happens during the cross
+        examination, this might already be enough to hand this case over to Frogland
+        Yard.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I seems like the great Eva Dence successfully completed another case!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I wonder how they will title the book?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '"The Tycoon did it"'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But that would give everything away!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: What a stupid title!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
