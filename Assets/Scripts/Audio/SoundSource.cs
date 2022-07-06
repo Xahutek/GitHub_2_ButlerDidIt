@@ -54,7 +54,14 @@ public class SoundSource : MonoBehaviour
         }
         else
         {
-            active = eventProfile.Contains(e);
+            if (character.Count == 0)
+            {
+                active = eventProfile.Contains(e);
+            }
+            else
+            {
+                active = character.Contains(c);
+            }
         }
     }
 
