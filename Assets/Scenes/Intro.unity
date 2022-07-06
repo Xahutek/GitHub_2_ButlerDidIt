@@ -1774,12 +1774,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2869323827288701983, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
       propertyPath: m_text
-      value: Start The Day >
+      value: Start the day
       objectReference: {fileID: 0}
     - target: {fileID: 2869323827288701983, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ae530b622a6e2b41a8331951ada6afc, type: 2}
+    - target: {fileID: 2869323827288701983, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
       propertyPath: m_fontStyle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869323827288701983, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6519413430122735888, guid: 6ae530b622a6e2b41a8331951ada6afc, type: 2}
     - target: {fileID: 2869323827288701983, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
@@ -1827,18 +1835,6 @@ PrefabInstance:
     - target: {fileID: 4092089525967828120, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4092089525967828122, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
-      propertyPath: m_Color.b
-      value: 0.7529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 4092089525967828122, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8627451
-      objectReference: {fileID: 0}
-    - target: {fileID: 4092089525967828122, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9607843
       objectReference: {fileID: 0}
     - target: {fileID: 4443357146899903434, guid: 76ea70828ba7b504990995ee5786340c, type: 3}
       propertyPath: m_SizeDelta.y
