@@ -9,6 +9,17 @@ public class CharacterInfoKnot : InfoKnot, IPointerEnterHandler, IPointerExitHan
 {
     public CharacterProfile character;
     public GameObject RoomComment;
+    public GameObject portrait;
+
+    private void Start()
+    {
+        portrait = Instantiate(character.Portrait, Content.transform);
+        portrait.transform.SetAsFirstSibling();
+    }
+    private void FixedUpdate()
+    {
+        portrait.GetComponent<RectTransform>().sizeDelta = Content.GetComponent<RectTransform>().sizeDelta;
+    }
     public override bool isRevealed
     {
         get
