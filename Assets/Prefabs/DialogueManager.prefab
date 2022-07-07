@@ -156,6 +156,7 @@ MonoBehaviour:
   parser: {fileID: 11400000, guid: 8659c94761339be4fb295b08565446fd, type: 2}
   speed: 0.75
   inventoryUI: {fileID: 0}
+  soundManager: {fileID: 0}
   CharacterObjects: []
   Characters: 
   maxDisplayedContent: 6
@@ -594,6 +595,7 @@ MonoBehaviour:
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   butlerColor: {r: 0.79215693, g: 0.69803923, b: 0.6392157, a: 0}
+  LordColor: {r: 0, g: 0, b: 0, a: 0}
   evaColor: {r: 0.7019608, g: 0.34117648, b: 0.38431376, a: 0}
   tyrellColor: {r: 0.5764706, g: 0.36078432, b: 0.25882354, a: 0}
   ednaColor: {r: 0.46274513, g: 0.6431373, b: 0.6431373, a: 0}
@@ -603,6 +605,7 @@ MonoBehaviour:
   images:
   - {fileID: 4934143690854724050}
   - {fileID: 3748246247434155548}
+  reactToPopUps: 1
 --- !u!1001 &732892841408338286
 PrefabInstance:
   m_ObjectHideFlags: 0
