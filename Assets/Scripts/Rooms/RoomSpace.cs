@@ -46,7 +46,6 @@ public class RoomSpace : MonoBehaviour
         if (isLoaded) loadWasQueued = false;
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (LMPlayer.Contains(collision.gameObject))
@@ -111,10 +110,10 @@ public class RoomSpace : MonoBehaviour
         SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
         loadWasQueued = true;
     }
-    public void Load(bool on)
+    public void Load(bool on, bool orderedbyMotherSpace=false)
     {
         isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
-        if(on&&isLoaded&&isOpen&&!unloadHandeledByMotherSpace)
+        if(on&&isLoaded&&isOpen&&(orderedbyMotherSpace|| !unloadHandeledByMotherSpace))
         {
             Reload();
         }
@@ -123,7 +122,7 @@ public class RoomSpace : MonoBehaviour
             SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             loadWasQueued=true;
         }
-        else if (!on&&isLoaded&&!isOpen&&!unloadHandeledByMotherSpace)
+        else if (!on&&isLoaded&&!isOpen&&(orderedbyMotherSpace || !unloadHandeledByMotherSpace))
         {
             SceneManager.UnloadSceneAsync(SceneName);
         }
@@ -134,7 +133,7 @@ public class RoomSpace : MonoBehaviour
             Debug.Log("Onto Subspace " + subspace.name + ". active " + on);
             //subspace.HeadSpace = this;
             subspace.currentAlpha = 1;
-            subspace.Load(on);
+            subspace.Load(on,true);
         }
 
         RefreshOverlay();
