@@ -118,7 +118,7 @@ MonoBehaviour:
     trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: a257bc334362bb14fa1f4bfdaa17bf2a, type: 2}
-      knowingCharacters: 02000000
+      knowingCharacters: 00000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
@@ -171,14 +171,30 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: How did t-that get in there?
+      text: Be careful, that is a collectors edition!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It is for display purposes only!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I believe, that killing the Lord have been easy for you with this.
+      text: The Gunpowder at its hilt tells a different story. This gun definetly
+        shot a bullet in the past!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I believe, that killing the Lord would have been easy with this tool
+        at your disposal?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -186,7 +202,7 @@ MonoBehaviour:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: a257bc334362bb14fa1f4bfdaa17bf2a, type: 2}
       knowingCharacters: 
-      unknowingCharacters: 02000000
+      unknowingCharacters: 00000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
