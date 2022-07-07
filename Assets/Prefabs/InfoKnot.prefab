@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 7221812996126663933}
   - component: {fileID: 670156239440757540}
   - component: {fileID: 5509018625147804318}
-  - component: {fileID: 4028079436482625187}
   m_Layer: 5
   m_Name: InfoKnot
   m_TagString: Untagged
@@ -215,19 +214,3 @@ MonoBehaviour:
   ButlerComment: 
   ConnectedKnots: []
   relevance: 0
---- !u!58 &4028079436482625187
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8449761986672687648}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 50
