@@ -31,5 +31,10 @@ namespace Phone
 
             MinigameManager.blocked = false;
         }
+
+        public void Leave()
+        {
+            MinigameManager.main.Close();
+        }
     }
 }
