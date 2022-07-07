@@ -17,7 +17,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 10, y: 12}
   includedCharacters: 
   Lines:
@@ -32,8 +32,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Perhaps... this means I will never regain my <color=7a9047ff><b>first earned
-      dollar</b></color>...
+    text: He held onto a few of my belongings... I will take a look around if you
+      don't mind!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -78,10 +78,6 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Lord Deddington keeps your first earned dollar?
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
   - text: I have something to tell you
     reaction: {fileID: 11400000, guid: 49dfe6b6aeded09498f14cc29906caa6, type: 2}
     trigger: {fileID: 0}

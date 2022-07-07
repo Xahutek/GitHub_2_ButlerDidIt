@@ -16,9 +16,9 @@ MonoBehaviour:
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
-  unique: 0
-  seen: 0
-  AvailabilityHours: {x: 14, y: 24}
+  unique: 1
+  seen: 1
+  AvailabilityHours: {x: 10.5, y: 24}
   includedCharacters: 0000000003000000
   Lines:
   - speaker: 0
@@ -141,14 +141,6 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: Naturally...
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: ...And I lost it to Lord Deddington... that cheating old bastard, may god
-      rest his soul.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
