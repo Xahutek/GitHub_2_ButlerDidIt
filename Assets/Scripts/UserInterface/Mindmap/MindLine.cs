@@ -52,7 +52,6 @@ public class MindLine : MonoBehaviour
     public virtual void ToggleEvent(bool on, float duration, Vector3 mid)
     {
         float delay = on ? Mathf.Clamp01((transform.position - mid).magnitude / 3) : 0;
-        Debug.Log(delay);
 
         DOTween.Kill(tween);
         currentAlpha = (!on ? 1 : 0);

@@ -14,11 +14,11 @@ public class TimetableDisplay : ClueInfoKnot
     {
         base.Refresh();
 
-        int children=layoutParent.childCount;
-        for (int i = 0; i < children; i++)
+        for (int i = 0; i < entries.Count; i++)
         {
-            Destroy(layoutParent.GetChild(0).gameObject);
+            Destroy(entries[i].gameObject);
         }
+        entries.Clear();
 
         if (characterProfile.Timetable.Length > 1)
             for (int i = 1; i < characterProfile.Timetable.Length; i++)
@@ -28,6 +28,7 @@ public class TimetableDisplay : ClueInfoKnot
                 {
                     TimetableEntry newEntry = Instantiate(entryPrefab, layoutParent);
                     newEntry.Refresh(box);
+                    entries.Add(newEntry);
                 }
             }
     }
