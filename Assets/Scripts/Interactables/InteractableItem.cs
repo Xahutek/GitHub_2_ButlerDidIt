@@ -21,6 +21,12 @@ public class InteractableItem : Interactable
        GetComponent<Image>().sprite = Yield.picture;        
     }
 
+    public override void Availability()
+    {
+        gameObject.SetActive(!deactivated && Clock.Hour > AvailableTime.x && Clock.Hour < AvailableTime.y
+                && (!deactivateIfKnown || !Yield || (Yield && !Yield.KnownTo(Character.Butler))));
+    }
+
     public override void ClickInteract()
     {
         GetComponentInParent<Canvas>().sortingLayerID = SortingLayer.NameToID("UI");

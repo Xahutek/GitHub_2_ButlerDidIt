@@ -38,7 +38,12 @@ public class Interactable : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (visuals!=null)
+        Availability();
+    }
+
+    public virtual void Availability()
+    {
+        if (visuals != null)
             visuals.SetActive(!deactivated && Clock.Hour > AvailableTime.x && Clock.Hour < AvailableTime.y
                 && (!deactivateIfKnown || !Yield || (Yield && !Yield.KnownTo(Character.Butler))));
     }
