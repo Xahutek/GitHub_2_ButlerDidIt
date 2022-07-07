@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class ThoughtBubble : SpeechBubble
 {
+    public bool reactToPopUps;
     protected void Start()
     {
         EventSystem events = EventSystem.main;
@@ -13,7 +14,7 @@ public class ThoughtBubble : SpeechBubble
     }
     public void PopUp(Clue C)
     {
-        if (DialogueManager.isOpen || !C.isInventoryClue) return;
+        if (DialogueManager.isOpen || !C.isInventoryClue ||!reactToPopUps) return;
 
         if (popUpRoutine!=null) StopCoroutine(popUpRoutine);
         StartCoroutine(ExecuteScenePopUp(C));
