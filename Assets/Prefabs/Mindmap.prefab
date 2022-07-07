@@ -560,8 +560,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hint: {fileID: 3177128249923201249}
   Content: {fileID: 3081115629096304093}
-  ButlerComment: Manipulating evidence in rooms she already visited won't be of much
-    use to me... I need to be quick!
+  ButlerComment: 'Manipulating evidence in rooms she already visited won''t be of
+    much use to me...
+
+    I need to be quick!'
   ConnectedKnots: []
   relevance: 2
   clue: {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
@@ -927,6 +929,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2978653956524333172, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 2520541040355546511, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1097,10 +1103,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7087402754236985491, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2652327829572825525, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 4276711986534961886}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0003892451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295142734653126609, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5091632772731886903, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1218,6 +1248,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TyrellKnot
       objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.08084698
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9967266
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
 --- !u!224 &5171169427285618114 stripped
@@ -1254,10 +1296,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8744577732034572936, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 4478535809734874568}
+    - target: {fileID: 4295142734653126609, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5091632772731886903, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1312,7 +1362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.9999945
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1324,7 +1374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0033078934
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1556,6 +1606,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4956809556694966118, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -1713,6 +1767,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3357360333254942192, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -1815,7 +1873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: 'If I want to get away with the murder, I need to manage my time.
+      value: 'If I want to get away with murder, I need to manage my time.
 
         I
         can check the time on my pocket watch, at the top-left of the screen.'
@@ -1872,6 +1930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4297203505398261690, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -1974,7 +2036,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: No going back. I need to be done by then.
+      value: 'Cross-examination at 23:30.
+
+        No going back. I need to be done
+        by then.'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -2028,6 +2093,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -299690340437171572, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -2130,7 +2199,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: I should help prepare lunch in the kitchen, to not seem suspicious today.
+      value: I should help prepare lunch in the kitchen - to not seem suspicious
+        today.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -2184,10 +2254,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5091632772731886903, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1414468336072662494, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 3278506192720327048}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1542187
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99998546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0053962995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.618
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295142734653126609, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7087402754236985491, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2286,8 +2392,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: Gertie Potts, the Gardener. Not strictly a guest, he works here. Will
-        be around all day like everyone else.
+      value: "Gertie Potts, the Gardener. \nNot strictly a guest, he works here.
+        \nHe will be around all day like everyone else."
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -2304,6 +2410,34 @@ PrefabInstance:
     - target: {fileID: 6231773743944275472, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Name
       value: GertieKnot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968544788929308857, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1542187
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7997791
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.60029435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -73.782
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -2341,6 +2475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2189712646507832853, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -2443,7 +2581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: 'A lunch was scheduled at 12:30.
+      value: 'Lunch is scheduled at 12:30.
 
         Murder case or not, the guests
         will want to eat.'
@@ -2500,10 +2638,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2652327829572825525, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1289469711534852031}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.99996096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.008838002
+      objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2558,7 +2712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9997871
+      value: -0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2570,7 +2724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.020633487
+      value: -0.000464465
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2656,10 +2810,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4297203505398261690, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1231520312510129978}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9996621
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.025993852
+      objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2714,7 +2888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9997871
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2726,7 +2900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.020633487
+      value: 0.00018951298
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2758,9 +2932,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: "That's bad. Rumor has it a detective will show up at todays suprise
-        party.\nThose are really good at solving murder cases. \nAnd I just commited
-        one.\nI need to identify who it is, I can't allow him to catch me..."
+      value: "Rumor has it a detective will show up at today's surprise party.\nThose
+        are really good at solving murder cases. \nAnd I just committed one.\nI need
+        to identify who it is, I can't allow him to catch me..."
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -2977,7 +3151,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1423161ff09136f41b9b3a9c659263a0, type: 3}
+      objectReference: {fileID: -6655748596958401158, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7462667946365023831, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -3092,8 +3270,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: The Lords calender clearly shows that he died today...perhaps I can
-        do something about that?
+      value: 'The Lord''s calender clearly shows that he died today.
+
+        ...Perhaps
+        I can do something about that?'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -3339,10 +3519,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2652327829572825525, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 633166839048643998}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99975777
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.022009412
+      objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3397,7 +3597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9997871
+      value: -0.9999736
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3409,7 +3609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.020633487
+      value: 0.0072699706
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3442,7 +3642,7 @@ PrefabInstance:
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
       value: Tyrell brought presents for the Lord, one of them a seemingly really
-        heavy Gold bar.
+        heavy gold bar.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -3670,7 +3870,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ed06eb504aa8b034f9a305c46e03d861, type: 3}
+      objectReference: {fileID: -5091632772731886903, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4956809556694966118, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -3786,7 +3990,7 @@ PrefabInstance:
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
       value: I made it look like Lord Deddington died on the day General Edna Tuskson
-        visited
+        visited.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -3875,7 +4079,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fdf36c19cd6342a4c86b17f53e8cac2c, type: 3}
+      objectReference: {fileID: -9137195777322959681, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2978653956524333172, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 2520541040355546511, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4073,6 +4281,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7462667946365023831, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -4175,7 +4387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: Before the guests force the Lords study room open I can still tamper
+      value: Before the guests force the Lord's study room open I can still tamper
         with the crime scene.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -4750,6 +4962,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2248273014285675650, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -4933,7 +5149,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ed06eb504aa8b034f9a305c46e03d861, type: 3}
+      objectReference: {fileID: -5091632772731886903, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2652327829572825525, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5048,8 +5268,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: I made it look like Lord Deddington died on the day the tycoon, Tyrell,
-        visited.
+      value: I made it look like Lord Deddington died on the day the tycoon, Lord
+        Tyrell, visited.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5135,6 +5355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3876512272233767631, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5237,7 +5461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: It was scheduled and the guests insist.
+      value: Tea was scheduled and the guests insist.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5291,6 +5515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2248273014285675650, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5393,10 +5621,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: 'Slotheleus...Sus? I haven''t heard of him.
+      value: 'Slotheleus... Sus? I have never heard of him.
 
-        A guest tonight
-        but invited indirectly through a great detective who has yet to appear.'
+        A guest tonight,
+        but invited indirectly through the great detective - who has yet to appear.'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5450,6 +5678,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4956809556694966118, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5508,7 +5740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9997871
+      value: -0.9999044
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5520,7 +5752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.020633487
+      value: 0.013828055
       objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5552,8 +5784,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: I need to prove my physical strength to her before she will converse
-        with me again...but didn't she talk to me before?
+      value: 'I need to prove my physical strength to her before she will converse
+        with me again.
+
+        ... but didn''t she talk to me before?'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5570,6 +5804,10 @@ PrefabInstance:
     - target: {fileID: 6231773743944275472, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Name
       value: PhysicalStrenghtKnot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968544788929308857, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5610,7 +5848,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ed06eb504aa8b034f9a305c46e03d861, type: 3}
+      objectReference: {fileID: 7087402754236985491, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2978653956524333172, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5726,7 +5968,7 @@ PrefabInstance:
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
       value: I didn't do anything and now Eva Dence knows the Lord died when no one
-        else was here...this will have consequences for me.
+        else was here... this will have consequences for me.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5812,10 +6054,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4956809556694966118, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 5846886684043984390}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9989028
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.04683173
+      objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5914,8 +6176,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: After showing her the goldbar, Edna considers me a worthy dialogue partner
-        again.
+      value: After showing her the gold bar, Edna considers me a worthy conversation
+        partner again.
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -5932,6 +6194,10 @@ PrefabInstance:
     - target: {fileID: 6231773743944275472, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Name
       value: PhysicalStrengthProvenKnot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968544788929308857, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
@@ -5972,7 +6238,11 @@ PrefabInstance:
     - target: {fileID: 806655845921205441, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ed06eb504aa8b034f9a305c46e03d861, type: 3}
+      objectReference: {fileID: 7087402754236985491, guid: feab31a642656f544ac7ce5f64fa5316, type: 3}
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6621252853494989987, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -6087,7 +6357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: 'Tycoon is running a new charity event.
+      value: 'Tyrell is running a new charity event.
 
         Something is fishy,
         Tyrell would never give money away.'
@@ -6176,6 +6446,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7964782853993182525}
     m_Modifications:
+    - target: {fileID: 820825015725378549, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4297203505398261690, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
     - target: {fileID: 1687398471548781351, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -6337,6 +6611,34 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 5054804555634320300}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4392412
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2937
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2937
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9995492
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.030026091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927705145800995148, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -3.441
+      objectReference: {fileID: 0}
     - target: {fileID: 5116415017611364557, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6435,13 +6737,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ButlerComment
-      value: 'Old Deddington''s friends have planned a suprise party for the Lord...
+      value: 'Old Deddington''s friends have planned a surprise party for the Lord...
 
         Why
-        wasn''t I informed about this...
-
-        I need to find out who those guests
-        are!'
+        wasn''t I informed about this? I need to find out who those guests are.'
       objectReference: {fileID: 0}
     - target: {fileID: 5184765985213402008, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: ConnectedKnots.Array.size
@@ -6458,6 +6757,18 @@ PrefabInstance:
     - target: {fileID: 6231773743944275472, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
       propertyPath: m_Name
       value: GuestsKnot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4392412
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2937
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993106966457288358, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2937
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073fef7f89bb05f429a3a140a0df8e45, type: 3}
