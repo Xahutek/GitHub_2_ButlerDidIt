@@ -17,7 +17,7 @@ MonoBehaviour:
   Portrait: {fileID: 5223635564414417333, guid: 4c2214943fd57ed4fb07f03362af51a4, type: 3}
   PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 1
+  knownToPlayer: 0
   currentRoom: 0
   Timetable:
   - startHour: 0
@@ -55,6 +55,7 @@ MonoBehaviour:
   connectedClues:
   - {fileID: 11400000, guid: 40d25572fcd51dd4e88faddd4a3a0447, type: 2}
   - {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
+  - {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
   - {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 14f5c5f74f8f5914da644e5641d73e17, type: 2}

@@ -50,6 +50,10 @@ public class InfoKnot : MonoBehaviour
         if (isRevealed)
             Mindmap.main.ShowComment(this);
     }
+    public void Hide()
+    {
+        Mindmap.main.HideComment();
+    }
 
     public virtual void Refresh()
     {
