@@ -381,7 +381,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Tyrell, It has become increasingly obvious...
+      text: The opportunity was there...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The alibi was missing...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Tyrell Evidence 2 - Rivalry
@@ -399,7 +406,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Tyrell, it has become icnreasingly obvious.
+      text: Looking at your rivalry with the lord...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Tyrell Evidence 3 - Revolver
@@ -417,7 +424,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: tyrell, it is glaring for all to see.
+      text: And the murder weapon retrieved...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 'END: The Tycoon did it!'

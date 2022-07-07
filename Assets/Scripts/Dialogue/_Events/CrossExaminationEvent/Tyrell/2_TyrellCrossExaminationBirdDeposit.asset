@@ -26,7 +26,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
       knowingCharacters: 02000000
@@ -141,7 +142,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: <i>HOWCOULD A WOMAN EVER FIGURE THAT OUT</i>!?
+      text: <i>HOW COULD A WOMAN EVER FIGURE THAT OUT</i>!?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -243,11 +244,12 @@ MonoBehaviour:
       text: Proceeding with the next point.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
       knowingCharacters: 
-      unknowingCharacters: 03000000
+      unknowingCharacters: 02000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
