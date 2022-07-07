@@ -13,7 +13,7 @@ public class OutlineBox : MonoBehaviour
     [SerializeField] float OutlineThickness = 0.01f;
 
     [ColorUsageAttribute(true, true)]
-    [SerializeField] Color color = new Vector4(255,255,255,3);
+    [SerializeField] Color color = Color.white;
     void Start()
     {
         
