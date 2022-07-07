@@ -113,7 +113,7 @@ public class RoomSpace : MonoBehaviour
     public void Load(bool on, bool orderedbyMotherSpace=false)
     {
         isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
-        if(on&&isLoaded&&isOpen&&(orderedbyMotherSpace|| !unloadHandeledByMotherSpace))
+        if(on&&isLoaded)
         {
             Reload();
         }
