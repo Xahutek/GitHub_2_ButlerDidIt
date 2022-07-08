@@ -13,7 +13,7 @@ public class ClueGiver : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (time >= Clock.Hour && !Yield.KnownTo(Character))
+        if (time <= Clock.Hour && !Yield.KnownTo(Character))
         {
             foreach (Clue c in ButlerKnowsCondition)
             {
