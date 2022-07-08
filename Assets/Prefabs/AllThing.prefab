@@ -3623,9 +3623,6 @@ MonoBehaviour:
   localBlackScreen: {fileID: 8624111588390663234}
   ButtonAgain: {fileID: 1809037427026238174}
   ButtonQuit: {fileID: 7626212075052294378}
-  DifficultySelect_Page: {fileID: 3031501026137490842}
-  DifficultySelect_Valet: {fileID: 2022489421163258991}
-  DifficultySelect_Butler: {fileID: 4968774778635662504}
   paperDrop: {fileID: 8300000, guid: 0749943823f94d14881398b19c5afb2b, type: 3}
 --- !u!114 &4150703742973810805
 MonoBehaviour:
@@ -4839,7 +4836,7 @@ MonoBehaviour:
   parser: {fileID: 11400000, guid: 8659c94761339be4fb295b08565446fd, type: 2}
   speed: 0.75
   inventoryUI: {fileID: 5391039277409596976}
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 2171898024230034108}
   CharacterObjects: []
   Characters: 
   maxDisplayedContent: 4
@@ -5456,6 +5453,10 @@ PrefabInstance:
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 5391039277409596976}
+    - target: {fileID: 6236387179556029588, guid: 9f579b9b3a0ba684cb068f178237a0e4, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 2171898024230034108}
     - target: {fileID: 6236387179556029589, guid: 9f579b9b3a0ba684cb068f178237a0e4, type: 3}
       propertyPath: m_RootOrder
       value: 9

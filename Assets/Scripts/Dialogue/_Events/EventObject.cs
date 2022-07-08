@@ -53,7 +53,13 @@ public class EventObject : MonoBehaviour
         PlayerController.main.position=playerRespawnLocus.position;
         PlayerController.main.Invisible = true;
     }
-
+    public void DeactivateCharacters()
+    {
+        foreach (InteractableCharacter c in eventCharacters)
+        {
+            c.gameObject.SetActive(false);
+        }
+    }
     public void RespawnPlayer()
     {
         foreach (InteractableCharacter c in eventCharacters)

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
   m_Name: EvaGetsLetters_Deciphered
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 11400000, guid: fe3fc16f60e5c3342ac358b731157e37, type: 2}
+  Trigger_Optional: {fileID: 11400000, guid: cb7c63c5e266323448467e06e8cba8cc, type: 2}
   TakeTriggerItemAway: 1
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
@@ -26,18 +26,26 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Could I see what you have there, Hugh?
+    text: These letters look interesting.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Should I take a closer look?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Empty letters from Gerties Shack.
+  - text: Here you go!
     reaction: {fileID: 11400000, guid: edd735a29c71a224982b49d2b8a52bd0, type: 2}
     trigger: {fileID: 0}
     rewards:
     - {fileID: 11400000, guid: e8dafb0cde4a92a49a3f9c08d097e54e, type: 2}
+    - {fileID: 11400000, guid: cb7c63c5e266323448467e06e8cba8cc, type: 2}
   - text: Oh its nothing!
     reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
     trigger: {fileID: 0}

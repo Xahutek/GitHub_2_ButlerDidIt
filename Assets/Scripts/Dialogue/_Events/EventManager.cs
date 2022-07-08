@@ -187,28 +187,24 @@ public class EventManager : MonoBehaviour
         }
 
         //End Event
-
-        yield return new WaitForSeconds(0.1f);
-
-        //while (true) //Just a manual leave thing
-        //{
-        //    if (Input.GetKeyDown(KeyCode.Escape))
-        //    {
-        //        break;
-        //    }
-        //    yield return null;
-        //}
+        GlobalBlackscreen.multiplier = 1;
+        GlobalBlackscreen.on = true;
+        yield return new WaitForSeconds(1);
 
         Clock.SetTime(currentProfile.availableTime.y);
         room.RespawnPlayer();
+        room.DeactivateCharacters();
 
         currentProfile = null;
         room = null;
 
-        yield return new WaitForSeconds(0.1f);
         isOpen = false;
         blockRoomRefreshs = false;
+        EventSystem.main.RefreshRooms();
 
+        GlobalBlackscreen.multiplier = 1;
+        GlobalBlackscreen.on = false;
+        yield return new WaitForSeconds(1);
         Debug.Log("End Event");
         SoundManager.main.OnEventStop();
         EventRoutine = null;

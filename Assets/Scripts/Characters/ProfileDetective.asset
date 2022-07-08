@@ -17,7 +17,7 @@ MonoBehaviour:
   Portrait: {fileID: 5223635564414417333, guid: 820cd76e209c9ba48abad905ec6a153c, type: 3}
   PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 0
+  knownToPlayer: 1
   currentRoom: 0
   Timetable:
   - startHour: 0
@@ -97,5 +97,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b7383f335406b2148b9ad1cde303da76, type: 2}
   - {fileID: 11400000, guid: 3f4dc05e2427ac9459225e0e0edf3783, type: 2}
   - {fileID: 11400000, guid: 89572de1350dee24793e357ad73d46d7, type: 2}
+  - {fileID: 11400000, guid: 9561133e62aeaa04ab3b08a6edb66bb3, type: 2}
+  - {fileID: 11400000, guid: f3e3bff12aad3044dba4d85e1d6e87c9, type: 2}
   nullDialogue: {fileID: 11400000, guid: b5f45aae7caa01b4c9771978fcdd8a94, type: 2}
   nullDialogueReaction: {fileID: 11400000, guid: edd735a29c71a224982b49d2b8a52bd0, type: 2}
