@@ -58,7 +58,7 @@ public class SoundSource : MonoBehaviour
             {
                 active = eventProfile.Contains(e);
             }
-            else
+            else if(eventProfile.Contains(e))
             {
                 active = character.Contains(c);
             }

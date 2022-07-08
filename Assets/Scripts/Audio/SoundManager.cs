@@ -87,8 +87,14 @@ public class SoundManager : MonoBehaviour
         Refresh();
     }
 
+    public void PlayOneShot(AudioClip clip, bool randomPitch)
+    {
+        effectSource.pitch = Random.Range(0.5f, 1.5f);
+        effectSource.PlayOneShot(clip);
+    }
     public void PlayOneShot(AudioClip clip)
     {
+        effectSource.pitch = 1;
         effectSource.PlayOneShot(clip);
     }
 

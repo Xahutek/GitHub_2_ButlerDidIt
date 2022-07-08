@@ -29,6 +29,8 @@ public class DialogueManager : MonoBehaviour
         BoxHorizontalSpacing;
     float BoxHorizontalSign;
 
+    public AudioClip bubbleSound;
+
     public Vector2 Locus
     {
         get
@@ -297,6 +299,7 @@ public class DialogueManager : MonoBehaviour
             isRefreshing=false;
             yield break;
         }
+        soundManager.PlayOneShot(bubbleSound, true);
 
         //Get Lines
         List<Dialogue.Line> lines = new List<Dialogue.Line>();
