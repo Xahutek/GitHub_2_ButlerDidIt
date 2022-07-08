@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: EvaGetsLetters_Empty
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: fe3fc16f60e5c3342ac358b731157e37, type: 2}
+  TakeTriggerItemAway: 1
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Could I see what you have there, Hugh?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 2
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options:
+  - text: Empty letters from Gerties Shack.
+    reaction: {fileID: 11400000, guid: edd735a29c71a224982b49d2b8a52bd0, type: 2}
+    trigger: {fileID: 0}
+    rewards:
+    - {fileID: 11400000, guid: e8dafb0cde4a92a49a3f9c08d097e54e, type: 2}
+  - text: Oh its nothing!
+    reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
+    trigger: {fileID: 0}
+    rewards: []

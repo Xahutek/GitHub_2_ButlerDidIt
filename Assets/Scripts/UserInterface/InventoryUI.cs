@@ -164,7 +164,7 @@ public class InventoryUI : MonoBehaviour
                 for (int i = 0; i < Mathf.Max(itemList.Length, ClueDisplays.Count); i++)
                 {
                     Item I = i < itemList.Length ? itemList[i] : null;
-                    if (I != null && !I.KnownTo(Character.Butler) && !I.givenAway) I = null;
+                    if (I != null && (!I.KnownTo(Character.Butler) || I.givenAway)) I = null;
                     if (i >= ItemDisplays.Count)
                         ItemDisplays.Add(Instantiate(ItemDisplayPrefab, ItemDisplays[i - 1].transform.parent));
                     ItemDisplays[i].transform.SetSiblingIndex(i);

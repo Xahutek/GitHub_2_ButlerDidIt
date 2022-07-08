@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_EdnaBattlefieldRifle
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -85,6 +86,21 @@ MonoBehaviour:
     text: Malfunctioning... I see. Well, I am sure that this rifle's time spent in
       the hands of the enemy must have damaged it.
     fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The factories of my motherland produce only the finest of goods, after
+      all!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (I have never seen her this insecure... She is obviously lying!)
+    fixedClue: {fileID: 11400000, guid: 7c1ee25c5cf3da942bb2b9700b43b280, type: 2}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0

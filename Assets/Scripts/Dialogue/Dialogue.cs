@@ -6,6 +6,7 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public Clue Trigger_Optional;
+    public bool TakeTriggerItemAway = false;
     public Clue[] 
         NecessaryCluesKnown = new Clue[0],
         NecessaryCluesUnknown = new Clue[0];
@@ -53,6 +54,13 @@ public class Dialogue : ScriptableObject
             c.Profile().knownToPlayer = true;
             if(Trigger_Optional)Trigger_Optional.MakeKnownTo(c);
         }
+    }
+    public virtual void End()
+    {
+        seen = true;
+
+        if (TakeTriggerItemAway && Trigger_Optional && (Trigger_Optional is Item))
+            (Trigger_Optional as Item).givenAway = true;
     }
 
     [System.Serializable]

@@ -145,11 +145,12 @@ public class DialogueManager : MonoBehaviour
         if (!isOpen) return;
         isOpen = false;
 
-        if (!hardEscape)
+        if (!hardEscape&&dialogue)
         {
             bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
-            if (!isQuestion) dialogue.seen = true;
+            if (!isQuestion) dialogue.End();
         }
+
 
         foreach (InteractableCharacter I in CharacterObjects)
         {
@@ -226,7 +227,7 @@ public class DialogueManager : MonoBehaviour
         if (dialogue != null)
         {
             bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
-            if (!isQuestion||!D.nullDialogue) dialogue.seen = true;
+            if (!isQuestion || !D.nullDialogue) dialogue.End();
         }
 
         Debug.Log("Start Dialogue " + D.name);

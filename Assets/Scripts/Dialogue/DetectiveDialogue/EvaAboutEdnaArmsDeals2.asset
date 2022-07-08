@@ -1,0 +1,415 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
+  m_Name: EvaAboutEdnaArmsDeals2
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
+  TakeTriggerItemAway: 1
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 1
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 0000000002000000
+  Lines:
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Let me see...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: A 704 calibre muzzle-loading percussion rifle, slightly outdated production
+      pattern...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Manufactured in the northenr part of Ednas homeland, yes...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The old Kaiserreichsschmiede to be exact, family buisness founded before
+      the unification of the northern realms...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: clearly showing signs of use to nobodies suprise...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Heureka! Hugh you were completely right!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The mechanism has been tampered with! After less than a dozen of shots
+      a predetermined breaking point breaks it entirely!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I knew I could trust your expertise!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Although I am glad that my intuition still serves me well, the implications
+      of this are grave!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: That is true, It leads me to believe that someone was selling faulty equipment
+      to the enemy to sabotage their war efforts...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: And given that she was aware of the situation...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It can only mean...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: '*gasp*'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The General did Warcrimes!
+    fixedClue: {fileID: 11400000, guid: e4acefeb3dcf15a42bdbba30efd2a697, type: 2}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: On my... to think that all of her glorious victories are based on a cruel
+      lie...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This is certanly relevant for the case! Thank you for telling me this Butler
+      Hugh Diddit!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This is certanly relevant for the case! Thank you for telling me this Butler
+      Hugh Diddit!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Together with the unusual chess outcome this paints an interesting picture...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But why would General Tuskson... kill our dear Lord Deddington?!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: She must have presumed that he found out, which would explain her panic
+      when she saw that thr rifle was already in your hands.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: The plot truly thickens!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Indeed... I will need to go over the details to confirm this theory but
+      it does not look good for our dear general!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I will trust the rest of this procedure to your capable hooves, Detective
+      Dence.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Thank you for your help, Hugh!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Always a pleasure to be of service!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 3
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options: []
+  Segments:
+  - description: Eva inspects rifle
+    trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 0}
+      knowingCharacters: 
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Let me see...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: A 704 calibre muzzle-loading percussion rifle, slightly outdated production
+        pattern...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Manufactured in the northenr part of Ednas homeland, yes...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The old Kaiserreichsschmiede to be exact, family buisness founded before
+        the unification of the northern realms...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: clearly showing signs of use to nobodies suprise...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Heureka! Hugh you were completely right!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The mechanism has been tampered with! After less than a dozen of shots
+        a predetermined breaking point breaks it entirely!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I knew I could trust your expertise!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Although I am glad that my intuition still serves me well, the implications
+        of this are grave!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: That is true, It leads me to believe that someone was selling faulty
+        equipment to the enemy to sabotage their war efforts...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And given that she was aware of the situation...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It can only mean...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: '*gasp*'
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The General did Warcrimes!
+      fixedClue: {fileID: 11400000, guid: e4acefeb3dcf15a42bdbba30efd2a697, type: 2}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: On my... to think that all of her glorious victories are based on a cruel
+        lie...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This is certanly relevant for the case! Thank you for telling me this
+        Butler Hugh Diddit!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: Eva chess
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Together with the unusual chess outcome this paints an interesting picture...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: But why would General Tuskson... kill our dear Lord Deddington?!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: She must have presumed that he found out, which would explain her panic
+        when she saw that thr rifle was already in your hands.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The plot truly thickens!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Indeed... I will need to go over the details to confirm this theory but
+        it does not look good for our dear general!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I will trust the rest of this procedure to your capable hooves, Detective
+        Dence.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Thank you for your help, Hugh!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Always a pleasure to be of service!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
