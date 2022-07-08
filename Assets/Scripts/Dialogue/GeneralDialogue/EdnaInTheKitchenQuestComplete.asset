@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
   m_Name: EdnaInTheKitchenQuestComplete
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 11400000, guid: 32c6b9b4e900bf848a06f41d7ed9bafc, type: 2}
-  TakeTriggerItemAway: 0
-  NecessaryCluesKnown:
-  - {fileID: 11400000, guid: bbf4d46e64e83924596bb7dee91dd4d0, type: 2}
+  Trigger_Optional: {fileID: 11400000, guid: 6d1d6e57c16d1cb4b81a66da5be05892, type: 2}
+  TakeTriggerItemAway: 1
+  NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
@@ -23,6 +22,13 @@ MonoBehaviour:
   AvailabilityHours: {x: 11, y: 12.5}
   includedCharacters: 
   Lines:
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: <b>EXCELLENT WORK, BUTLER!</b>
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
@@ -49,9 +55,9 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: <b>EXCELLENT WORK, BUTLER!</b>
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
     spAnimTrigger: 
   ending: 4
-  ResumeFixed: {fileID: 11400000, guid: 0fc877e9cb5dd2540adfbc36bae5ab97, type: 2}
+  ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []

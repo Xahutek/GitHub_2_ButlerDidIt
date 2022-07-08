@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaInTheKitchenNo
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -82,7 +83,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: And bread.
-    fixedClue: {fileID: 11400000, guid: aa2a079d7e8ef644f9a9db25ca77d477, type: 2}
+    fixedClue: {fileID: 11400000, guid: 4681a0028921ec449b13dd0675a69b48, type: 2}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
