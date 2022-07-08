@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_GrandReveal_Accusation
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -32,14 +33,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Let's go!
+    text: Lets go!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Hugh, it has become increasingly obvious...
+    text: Hugh, It has become increasingly obvious...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -61,27 +62,6 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: THE BUTLER DID IT!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: THE GARDENER DID IT!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: THE GENERAL DID IT!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: THE TYCOON DID IT!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3
@@ -114,7 +94,7 @@ MonoBehaviour:
       text: Lets go!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: Hugh Evidence 1
+  - description: Hugh Evidence
     trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
@@ -129,43 +109,22 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Hugh, It has become increasingly obvious...
+      text: I must say that most cases are not solved like they are in the books.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: Hugh Evidence 2
-    trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
-      knowingCharacters: 
-      unknowingCharacters: 
-      activateSuspicionTrigger: 1
-      c: 0
-      mode: 4
-      suspicion: 0
-    content:
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Hugh, I can deny it no longer...
+      text: "But in this case my conclusion leads me to belive that it is, in fact,
+        quite the clich\xE9..."
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: Hugh Evidence 3
-    trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
-      knowingCharacters: 
-      unknowingCharacters: 
-      activateSuspicionTrigger: 1
-      c: 0
-      mode: 4
-      suspicion: 0
-    content:
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Hugh, it is glaring for all to see.
+      text: 'I am sure the papers will make a meal of this:'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 'END: The Butler did it!'
@@ -201,7 +160,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Gertie, It has become increasingly obvious...
+      text: The alibi has been pathetic...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Gertie Evidence 2 - Shears
@@ -219,7 +178,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Gertie, it has become icnreasingly obvious.
+      text: The murder weapon was retrieved.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It was almost too easy...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Gertie Evidence 3 - Window
@@ -237,43 +203,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Gertie, it is glaring for all to see.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-  - description: Gertie Evidence 4
-    trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
-      knowingCharacters: 
-      unknowingCharacters: 
-      activateSuspicionTrigger: 1
-      c: 5
-      mode: 4
-      suspicion: 0
-    content:
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: Gertie, there is no way to talk around it.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-  - description: Gertie Evidence 5
-    trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 0}
-      knowingCharacters: 
-      unknowingCharacters: 
-      activateSuspicionTrigger: 1
-      c: 5
-      mode: 4
-      suspicion: 0
-    content:
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: Gertie, I must say it as it is.
+      text: 'And all clues point at this conclusion:'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 'END: The Gardener did it!'
@@ -287,6 +217,13 @@ MonoBehaviour:
       mode: 4
       suspicion: 0
     content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And to think that such an innocent exterior could hide a vicious criminal...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -309,7 +246,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Edna, It has become increasingly obvious...
+      text: The opportunity was there...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: The alibi was missing...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Enda Evidence 2 - Weapons
@@ -327,7 +271,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Edna, it has become icnreasingly obvious.
+      text: Every possibility for murder has been there...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: And a motive has been more than established!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Edna Evidence 3 - Childhood Grudge
@@ -345,7 +296,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Edna, it is glaring for all to see.
+      text: And all of this backed up by a petty childhood grudge!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 'END: The General did it!'
