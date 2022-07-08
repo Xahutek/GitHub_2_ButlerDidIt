@@ -114,7 +114,13 @@ public class LiftPortal : Portal
 
         yield return new WaitForSeconds(0.25f);
         LiftUI.on = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
+
+        if (doorSounds != null)
+        {
+            SoundManager.main.PlayOneShot(doorSounds[Random.Range(0, doorSounds.Length)]);
+        }
+        yield return new WaitForSeconds(0.25f);
 
         CloseGrid();
         (Locus as LiftPortal).CloseGrid();

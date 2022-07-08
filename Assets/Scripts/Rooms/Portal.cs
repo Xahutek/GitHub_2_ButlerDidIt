@@ -61,14 +61,15 @@ public class Portal : MonoBehaviour
     public virtual void Interact()
     {
         offset = PlayerController.main.position - (Vector2)transform.position;
-        if(doorSounds != null)
-        {
-            SoundManager.main.PlayOneShot(doorSounds[Random.Range(0, doorSounds.Length)]);
-        }
         StartCoroutine(TravelRoutine(PlayerController.main));
     }
     protected virtual IEnumerator TravelRoutine(PlayerController player)
     {
+        if (doorSounds != null)
+        {
+            SoundManager.main.PlayOneShot(doorSounds[Random.Range(0, doorSounds.Length)]);
+        }
+
         isTravelling = true;
         GameManager.manualPaused = true;
 

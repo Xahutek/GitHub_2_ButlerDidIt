@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2804509571176169101}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d7c345ca950ce14cba4b9980e2e49e6, type: 3}
   m_Name: 
@@ -1309,7 +1309,8 @@ MonoBehaviour:
   Yield: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
   Character: 2
   time: 9
-  ButlerKnowsCondition: []
+  ButlerKnowsCondition:
+  - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
   ButlerNotKnowsCondition: []
 --- !u!114 &6037527017731854720
 MonoBehaviour:
@@ -4845,6 +4846,7 @@ MonoBehaviour:
   VerticalBaseHeight: 1.4
   BoxVerticalSpacing: 0.1
   BoxHorizontalSpacing: 0.5
+  bubbleSound: {fileID: 8300000, guid: f10704de73ed2e443b3a31558f0b8048, type: 3}
   dialogue: {fileID: 0}
   line: 0
   dialogueCameraLocus: {fileID: 2929670842707200178}
@@ -7113,7 +7115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1822454
+      value: -1060748
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -7121,7 +7123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1822476
+      value: -1060770
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -7129,7 +7131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -1822510
+      value: -1060804
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w

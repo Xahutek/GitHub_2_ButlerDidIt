@@ -29,6 +29,7 @@ public class LockedObject : MonoBehaviour
 
     private void FixedUpdate()
     {
+        available = true;
         if (checkTime)
         {
             bool checkTime = Clock.Hour > AvailableHours.x && Clock.Hour < AvailableHours.y;
