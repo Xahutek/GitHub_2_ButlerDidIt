@@ -8,6 +8,7 @@ public class ClueGiver : MonoBehaviour
     public Character Character = Character.Detective;
     public float time;
 
+    public bool exchangeItems;
     public Clue[] ButlerKnowsCondition, ButlerNotKnowsCondition;
 
     private void FixedUpdate()
@@ -27,7 +28,13 @@ public class ClueGiver : MonoBehaviour
             }
 
             Yield.MakeKnownTo(Character);
-            Debug.Log(Character+" found out about "+ Yield.name +" because it is past "+time);
+            if (exchangeItems)
+                foreach (Clue c in ButlerKnowsCondition)
+                {
+                    if(c is Item)
+                        (c as Item).givenAway = true;
+                }
+            Debug.Log(Character + " found out about " + Yield.name + " because it is past " + time);
         }
     }
 }

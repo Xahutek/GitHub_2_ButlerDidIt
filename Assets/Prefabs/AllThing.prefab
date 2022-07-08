@@ -1194,10 +1194,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8058828921440514678}
   - component: {fileID: 8222761881911567626}
-  - component: {fileID: 5997590979611863902}
   - component: {fileID: 6037527017731854720}
   - component: {fileID: 9124999781516485356}
   - component: {fileID: 6079084145927721786}
+  - component: {fileID: 3811181939252496567}
   m_Layer: 0
   m_Name: SuspicionManager
   m_TagString: Untagged
@@ -1294,24 +1294,6 @@ MonoBehaviour:
   - necessaryClues:
     - {fileID: 11400000, guid: a257bc334362bb14fa1f4bfdaa17bf2a, type: 2}
     suspicion: 1
---- !u!114 &5997590979611863902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804509571176169101}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7c345ca950ce14cba4b9980e2e49e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Yield: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
-  Character: 2
-  time: 9
-  ButlerKnowsCondition:
-  - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
-  ButlerNotKnowsCondition: []
 --- !u!114 &6037527017731854720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,6 +1309,7 @@ MonoBehaviour:
   Yield: {fileID: 11400000, guid: e93f77af8d740584f85687ea4dca82fb, type: 2}
   Character: 2
   time: 18.5
+  exchangeItems: 0
   ButlerKnowsCondition:
   - {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
   ButlerNotKnowsCondition: []
@@ -1345,6 +1328,7 @@ MonoBehaviour:
   Yield: {fileID: 11400000, guid: e93f77af8d740584f85687ea4dca82fb, type: 2}
   Character: 2
   time: 18.5
+  exchangeItems: 0
   ButlerKnowsCondition:
   - {fileID: 11400000, guid: fe3fc16f60e5c3342ac358b731157e37, type: 2}
   ButlerNotKnowsCondition: []
@@ -1363,8 +1347,32 @@ MonoBehaviour:
   Yield: {fileID: 11400000, guid: e93f77af8d740584f85687ea4dca82fb, type: 2}
   Character: 2
   time: 18.5
+  exchangeItems: 0
   ButlerKnowsCondition:
   - {fileID: 11400000, guid: cb7c63c5e266323448467e06e8cba8cc, type: 2}
+  ButlerNotKnowsCondition: []
+--- !u!114 &3811181939252496567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804509571176169101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7c345ca950ce14cba4b9980e2e49e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yield: {fileID: 11400000, guid: 6d1d6e57c16d1cb4b81a66da5be05892, type: 2}
+  Character: 0
+  time: 11
+  exchangeItems: 1
+  ButlerKnowsCondition:
+  - {fileID: 11400000, guid: 32c6b9b4e900bf848a06f41d7ed9bafc, type: 2}
+  - {fileID: 11400000, guid: 0274a5b3596bc3745908a64132e97696, type: 2}
+  - {fileID: 11400000, guid: aa2a079d7e8ef644f9a9db25ca77d477, type: 2}
+  - {fileID: 11400000, guid: 0f632c8acf931ea41a71bf4f54a2db9b, type: 2}
+  - {fileID: 11400000, guid: e616aa74a7f44554cb1a5695dbe7ef35, type: 2}
   ButlerNotKnowsCondition: []
 --- !u!1 &2973654288286460368
 GameObject:
