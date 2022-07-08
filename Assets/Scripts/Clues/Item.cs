@@ -12,4 +12,14 @@ public class Item : Clue
     {
         givenAway = _givenAway;
     }
+
+    public override void ApplyAlsoAffected()
+    {
+        base.ApplyAlsoAffected();
+        foreach (Clue c in AlsoAffected)
+        {
+            if (c is Item)
+                (c as Item).givenAway = givenAway;
+        }
+    }
 }
