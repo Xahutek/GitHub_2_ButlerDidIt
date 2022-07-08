@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.5647059, g: 0.28627452, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.83201855, b: 0.4292453, a: 1}
+  m_Color: {r: 0.9960785, g: 0.882353, b: 0.7725491, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.83201855, b: 0.4292453, a: 1}
+  m_Color: {r: 1, g: 0.8862746, b: 0.77647066, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3712,7 +3712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.5647059, g: 0.28627452, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3790,21 +3790,21 @@ MonoBehaviour:
     availableTime: {x: 0.01, y: 0.01}
     gainedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     sfx:
-    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
+    - {fileID: 8300000, guid: e15b7d60b8b715a4db50f6820f7cd9da, type: 3}
     passed: 0
   - message: The door rings...again!?
     availableTime: {x: 3, y: 3}
     gainedClue: {fileID: 0}
     sfx:
-    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
+    - {fileID: 8300000, guid: e15b7d60b8b715a4db50f6820f7cd9da, type: 3}
     passed: 0
   - message: The door rings once more...
     availableTime: {x: 5, y: 5}
     gainedClue: {fileID: 0}
     sfx:
-    - {fileID: 8300000, guid: aa2571f0cedbc5443b1fc496cbe9c87f, type: 3}
+    - {fileID: 8300000, guid: e15b7d60b8b715a4db50f6820f7cd9da, type: 3}
     passed: 0
-  hourlyClock: {fileID: 8300000, guid: 04d4c260205232549a947ff364ffe171, type: 3}
+  hourlyClock: {fileID: 8300000, guid: bc798c7f39354f04680cac99e79a4c73, type: 3}
   saveFileLoaded: 0
   dialogue: {fileID: 5835750674925148920}
   currentProfile: {fileID: 0}
@@ -7113,7 +7113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951581247553, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -141828
+      value: -1822454
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -7121,7 +7121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312951685165117, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -141850
+      value: -1822476
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_Mesh
@@ -7129,7 +7129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558312952180957091, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_InstanceId
-      value: -141884
+      value: -1822510
       objectReference: {fileID: 0}
     - target: {fileID: 6694298203779521039, guid: 1d44e5b5e859c8946b3770bff7d98989, type: 3}
       propertyPath: m_LocalRotation.w

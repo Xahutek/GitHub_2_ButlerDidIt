@@ -10,6 +10,7 @@ public class EventObject : MonoBehaviour
     public EventProfile profile;
 
     public InteractableCharacter[] eventCharacters;
+    public GameObject EventCamera;
     public bool tyrellSits, evaSits, ednaSits, gertieSits;
 
     public Transform playerRespawnLocus;
@@ -30,6 +31,8 @@ public class EventObject : MonoBehaviour
     {
         manager.room = this;
         profile = manager.currentProfile;
+
+        EventCamera.SetActive(true);
 
         roomObject.DeactivateCharacters();
         foreach (InteractableCharacter c in eventCharacters)
@@ -62,6 +65,7 @@ public class EventObject : MonoBehaviour
     }
     public void RespawnPlayer()
     {
+        EventCamera.SetActive(false);
         foreach (InteractableCharacter c in eventCharacters)
         {
             if (c.character==Character.Butler)
