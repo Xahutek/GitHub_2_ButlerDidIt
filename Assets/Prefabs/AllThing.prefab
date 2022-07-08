@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2804509571176169101}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d7c345ca950ce14cba4b9980e2e49e6, type: 3}
   m_Name: 
@@ -1309,7 +1309,8 @@ MonoBehaviour:
   Yield: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
   Character: 2
   time: 9
-  ButlerKnowsCondition: []
+  ButlerKnowsCondition:
+  - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
   ButlerNotKnowsCondition: []
 --- !u!114 &6037527017731854720
 MonoBehaviour:
@@ -4845,6 +4846,7 @@ MonoBehaviour:
   VerticalBaseHeight: 1.4
   BoxVerticalSpacing: 0.1
   BoxHorizontalSpacing: 0.5
+  bubbleSound: {fileID: 0}
   dialogue: {fileID: 0}
   line: 0
   dialogueCameraLocus: {fileID: 2929670842707200178}
