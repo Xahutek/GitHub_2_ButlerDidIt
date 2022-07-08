@@ -26,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He held a talk about how much he hates butlers
+    text: He held a talk about how much he <color=B01B18>hates butlers</color>.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -47,18 +47,18 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Because he...
+    text: He hated butlers because he...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 0
+  ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
   - text: Because he believed Butlers to be class traitors.
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 4255e7de7bca6804f97e1451c997fe87, type: 2}
     trigger: {fileID: 0}
     rewards: []
   - text: Because he suspected Butlers to be <b>his end
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: da3fe261d06de96439bbe01eef10cca2, type: 2}
     trigger: {fileID: 0}
     rewards: []

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ButlerStory2Answer3
+  m_Name: ButlerStory2Answer3Branch2
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   TakeTriggerItemAway: 0
@@ -26,46 +26,45 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He bought <i>the most expensive gloves</i> in all of Britanimal.
+    text: To give the gloves to a sick child
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: How did he get his hands on those?
+    text: 'That''s so thoughtful of him! '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: He had such a large heart!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Enormous sums of money, obviously.
+    text: ...So what did the sick child get from the gloves?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Sharp observation, Detective Dence.
+    text: Nothing, but The Lord was in the newspaper for his kind deeds.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And he bought those gloves because he...
+    text: Thank you Hugh. In a sense, I feel like the day has just become less tragic.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
+  ending: 4
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options:
-  - text: He liked the fabric
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: He gave it to a sick child
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []

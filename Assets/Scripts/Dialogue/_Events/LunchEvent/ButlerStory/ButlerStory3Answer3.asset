@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ButlerStory2Answer3
+  m_Name: ButlerStory3Answer3
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   TakeTriggerItemAway: 0
@@ -26,46 +26,52 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He bought <i>the most expensive gloves</i> in all of Britanimal.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: How did he get his hands on those?
+    text: Insanely rich!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Enormous sums of money, obviously.
+    text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Sharp observation, Detective Dence.
+    text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And he bought those gloves because he...
+    text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
+  - speaker: 5
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: 'ALRIGHT, we have had food. '
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Time for a solid 12 hours of mystery solving.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options:
-  - text: He liked the fabric
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
-  - text: He gave it to a sick child
-    reaction: {fileID: 0}
-    trigger: {fileID: 0}
-    rewards: []
+  options: []

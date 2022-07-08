@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ButlerStory2Answer3
+  m_Name: ButlerStory3
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   TakeTriggerItemAway: 0
@@ -26,46 +26,29 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He bought <i>the most expensive gloves</i> in all of Britanimal.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: How did he get his hands on those?
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Enormous sums of money, obviously.
+    text: So...Yes...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Sharp observation, Detective Dence.
+    text: The Lord truly was...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: And he bought those gloves because he...
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  ending: 2
+  ending: 4
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: He liked the fabric
-    reaction: {fileID: 0}
+  - text: A fan of adventure.
+    reaction: {fileID: 11400000, guid: 37fdefd432df4614b94774217d51c158, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: He gave it to a sick child
-    reaction: {fileID: 0}
+  - text: A kind man.
+    reaction: {fileID: 11400000, guid: 7bf51bfa1c2849c438131471e343ce8d, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: A rich man.
+    reaction: {fileID: 11400000, guid: aaf62a6c582c8c04db1eb99702b98808, type: 2}
     trigger: {fileID: 0}
     rewards: []
