@@ -9,6 +9,7 @@ public class RoomSpace : MonoBehaviour
     private Collider2D col;
     [SerializeField] private LayerMask LMPlayer;
     [SerializeField] private string SceneName;
+    public Room identity;
 
     [SerializeField] private SpriteRenderer[] Overlay;
     [SerializeField] private float fadeDuration;
@@ -135,6 +136,9 @@ public class RoomSpace : MonoBehaviour
             subspace.currentAlpha = 1;
             subspace.Load(on,true);
         }
+
+        if (on && (isOpen || !unloadHandeledByMotherSpace)) 
+            EventSystem.main.ChangeRoom(identity, Character.Butler);
 
         RefreshOverlay();
     }
