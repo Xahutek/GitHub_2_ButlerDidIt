@@ -12,17 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
   m_Name: EdnaInTheKitchenFixedAlItem
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
-  TakeTriggerItemAway: 0
+  Trigger_Optional: {fileID: 11400000, guid: 23d47cee99b15ef4aaa1354d34cbdf1f, type: 2}
+  TakeTriggerItemAway: 1
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
-  Lines: []
-  ending: 0
+  AvailabilityHours: {x: 11, y: 12.5}
+  includedCharacters: 0000000004000000
+  Lines:
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: WE WILL COOK A NUTRITIOUS MEAL WITH THESE.
+    fixedClue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
+    spAnimTrigger: 
+  ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options: []
