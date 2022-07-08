@@ -64,7 +64,7 @@ public class EventManager : MonoBehaviour
         eventSoon = false;
         if (!isOpen && !GameManager.isPaused && saveFileLoaded)
         {        
-            if(everyHour == 0) { everyHour = Clock.main.currentHour; Debug.Log(everyHour); }
+            if(everyHour == 0) { everyHour = Mathf.Ceil(Clock.TotalHours); Debug.Log(everyHour); }
             if (Clock.Hour >= 24f)
             {
                 Debug.Log("Revealing");
