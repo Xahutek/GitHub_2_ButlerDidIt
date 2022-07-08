@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
+  m_Name: ButlerStory2
+  m_EditorClassIdentifier: 
+  Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
+  NecessaryCluesKnown: []
+  NecessaryCluesUnknown: []
+  nullDialogue: 0
+  unique: 0
+  seen: 0
+  AvailabilityHours: {x: 0, y: 24}
+  includedCharacters: 
+  Lines: []
+  ending: 0
+  ResumeFixed: {fileID: 0}
+  availableAnswers: []
+  options:
+  - text: Sent Gertie across continents
+    reaction: {fileID: 11400000, guid: 13be918b21bc65641bda6a35d747a9b4, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: Held a talk about his hatred for Butlers
+    reaction: {fileID: 11400000, guid: 17114a75a272e224696b00f9a46a213a, type: 2}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: Bought the most expensive gloves in all of britanimal.
+    reaction: {fileID: 11400000, guid: 61c0bc1a036c77e4d9ab68e5a442aa0b, type: 2}
+    trigger: {fileID: 0}
+    rewards: []

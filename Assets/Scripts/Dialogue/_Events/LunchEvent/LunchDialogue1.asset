@@ -22,14 +22,15 @@ MonoBehaviour:
   includedCharacters: 0000000002000000030000000400000005000000
   Lines: []
   ending: 4
-  ResumeFixed: {fileID: 0}
+  ResumeFixed: {fileID: 11400000, guid: 4db4e590628a4454584e57c4f8acd582, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
-      activateClueTrigger: 0
+  - description: 
+    trigger:
+      activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
-      knowingCharacters: 
+      knowingCharacters: 00000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
@@ -42,12 +43,13 @@ MonoBehaviour:
       isThought: 0
       text: This food looks great!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 11400000, guid: 2c7d3075915b76247b79e9d88f70ac37, type: 2}
+      spAnimTrigger: 
+  - description: 
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
       knowingCharacters: 
-      unknowingCharacters: 
+      unknowingCharacters: 00000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
@@ -57,7 +59,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Ok friends but this really is the end of the user test, did we get here
-        without too many big issues? If yes, great. if no, that's good too.
+      text: I always knew you can not trust british cuisine.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

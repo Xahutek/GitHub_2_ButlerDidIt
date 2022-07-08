@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: LunchDialogue2
+  m_Name: ButlerStory2Answer2
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -21,50 +22,43 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 2
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Anyway, let's start eating!
+    text: He held a talk about how much he hates butlers
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Anyway, let's start eating!
+    text: Oh no!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
+  - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...
+    text: Entirely understandable.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: H-Has everyone been enjoying their stay at house Deddington today?
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Fantastic! Just great!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: I've been investigating this case for 3 hours now and the puzzle is coming
-      together.
+    text: Because he...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 0
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: Because he believed Butlers to be class traitors.
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: Because he suspected Butlers to be <b>his end
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
