@@ -11,7 +11,6 @@ public class RoomObject : MonoBehaviour
     private void Start()
     {
         EventSystem.main.OnRefreshRooms += RoomRefresh;
-        EventSystem.main.ChangeRoom(identity,Character.Butler);
         Refresh();
     }
     private void OnDisable()
