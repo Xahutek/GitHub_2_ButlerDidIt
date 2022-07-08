@@ -217,69 +217,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 205310799066460699, guid: b721ea398253af04fa1185f2cc246047, type: 3}
   m_PrefabInstance: {fileID: 2704239124317533437}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6759945647222857485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243186038819513517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 1
-  m_ApplyToSortingLayers: 630ca0a1610d58b00000000073bfa7b7697204d83be14eb9b38069d2d30fe62a73bada400f33fad0
-  m_ShapePath:
-  - {x: -1.4600878, y: -0.7984295, z: 0}
-  - {x: 1.4512749, y: -0.8072438, z: 0}
-  - {x: 1.2618179, y: 0.3105018, z: 0}
-  - {x: 0.55223656, y: 0.76317286, z: 0}
-  - {x: -0.4288404, y: 0.78080153, z: 0}
-  - {x: -1.1179905, y: 0.3545723, z: 0}
-  m_ShapePathHash: -470027107
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 196014
---- !u!114 &1047622010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8686310725037909039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 11
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 40
-    OrthographicSize: 1
-    NearClipPlane: 0.1
-    FarClipPlane: 5000
-    Dutch: 0
-    LensShift: {x: 0, y: 0}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 0}
 --- !u!61 &2107960583701913148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -325,7 +262,7 @@ MonoBehaviour:
   Locus: {fileID: 0}
   lastInput: 0
   doorSounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b28e0f51396906e45828a788c0079e7e, type: 3}
   OutsideLiftCamera: {fileID: 8686310725037909039}
   InsideLiftCamera: {fileID: 0}
   lift: {fileID: 0}
@@ -344,9 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8586c8196d9b80e4cbe9b8c6ee69b5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outline: {fileID: 2100000, guid: abc9be7a7cbdee94fb9b31e8b945a0a3, type: 2}
   ItemRadius: 1
   OutlineThickness: 0.01
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &4070201560697731789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -373,3 +310,66 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.77, y: 8.28}
   m_EdgeRadius: 0
+--- !u!114 &1047622010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686310725037909039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 11
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 1
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 0}
+--- !u!114 &6759945647222857485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243186038819513517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 630ca0a1610d58b00000000073bfa7b7697204d83be14eb9b38069d2d30fe62a73bada400f33fad0
+  m_ShapePath:
+  - {x: -1.4600878, y: -0.7984295, z: 0}
+  - {x: 1.4512749, y: -0.8072438, z: 0}
+  - {x: 1.2618179, y: 0.3105018, z: 0}
+  - {x: 0.55223656, y: 0.76317286, z: 0}
+  - {x: -0.4288404, y: 0.78080153, z: 0}
+  - {x: -1.1179905, y: 0.3545723, z: 0}
+  m_ShapePathHash: -470027107
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 511174
