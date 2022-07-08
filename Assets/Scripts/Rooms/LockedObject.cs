@@ -50,7 +50,6 @@ public class LockedObject : MonoBehaviour
             }
         }
 
-        Debug.Log(available);
         foreach (GameObject o in objects)
         {
             o.gameObject.SetActive(available);

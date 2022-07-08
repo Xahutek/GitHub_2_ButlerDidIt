@@ -113,6 +113,7 @@ public class Clue : ScriptableObject
     {
         foreach (Clue c in AlsoAffected)
         {
+            if(c)
             foreach (Character character in System.Enum.GetValues(typeof(Character)))
             {
                 c.AlterKnown(character, KnownTo(character));

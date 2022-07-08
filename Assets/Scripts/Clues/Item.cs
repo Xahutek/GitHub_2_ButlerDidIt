@@ -18,7 +18,7 @@ public class Item : Clue
         base.ApplyAlsoAffected();
         foreach (Clue c in AlsoAffected)
         {
-            if (c is Item)
+            if (c &&(c is Item))
                 (c as Item).givenAway = givenAway;
         }
     }
