@@ -109,7 +109,7 @@ public class Clue : ScriptableObject
         InventoryUI.main.NewClue();
     }
 
-    public void ApplyAlsoAffected()
+    public virtual void ApplyAlsoAffected()
     {
         foreach (Clue c in AlsoAffected)
         {
