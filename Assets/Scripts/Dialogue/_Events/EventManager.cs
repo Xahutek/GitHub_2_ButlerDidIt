@@ -63,7 +63,8 @@ public class EventManager : MonoBehaviour
     {
         eventSoon = false;
         if (!isOpen && !GameManager.isPaused && saveFileLoaded)
-        {
+        {        
+            if(everyHour == 0) { everyHour = Clock.main.currentHour; Debug.Log(everyHour); }
             if (Clock.Hour >= 24f)
             {
                 Debug.Log("Revealing");
@@ -73,6 +74,7 @@ public class EventManager : MonoBehaviour
             if (Clock.HourPassed(everyHour))
             {                
                 SoundManager.main.PlayOneShot(hourlyClock);
+                everyHour++;
             }
             foreach (EventProfile E in allEvents)
             {
