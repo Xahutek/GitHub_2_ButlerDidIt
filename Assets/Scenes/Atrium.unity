@@ -879,7 +879,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1336406687
   m_SortingLayer: -1
-  m_SortingOrder: -8
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 9ad667f644d30d148aa25b67d4079ad9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -899,7 +899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547280110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3520832, y: 0.27333325, z: 0}
+  m_LocalPosition: {x: 0.21130005, y: 0.27333325, z: 0}
   m_LocalScale: {x: -0.021530025, y: 0.0904261, z: 0.2583603}
   m_Children: []
   m_Father: {fileID: 1598266175}
@@ -1178,7 +1178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686060823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.064, y: -0.32733345, z: 0}
+  m_LocalPosition: {x: 0.3886, y: -0.32733345, z: 0}
   m_LocalScale: {x: 0.0125343185, y: 0.050137274, z: 0.15041181}
   m_Children:
   - {fileID: 1170254207}
@@ -1349,7 +1349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828106931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2235, y: -0.34333357, z: 0}
+  m_LocalPosition: {x: 0.102, y: -0.34333357, z: 0}
   m_LocalScale: {x: 0.013915364, y: 0.055661455, z: 0.16698436}
   m_Children:
   - {fileID: 1957817657}
@@ -2111,7 +2111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172661345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17158318, y: -0.114066444, z: 0}
+  m_LocalPosition: {x: 0.0308, y: -0.114066444, z: 0}
   m_LocalScale: {x: 0.020534806, y: 0.0829084, z: 0.24641767}
   m_Children: []
   m_Father: {fileID: 1598266175}
@@ -3325,7 +3325,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   available: 1
+  checkTime: 1
   AvailableHours: {x: 5, y: 24}
+  checkClues: 0
+  ButlerKnownClues: []
+  ButlerUnknownClues: []
 --- !u!1 &1975554604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,7 +3457,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   available: 1
+  checkTime: 1
   AvailableHours: {x: 3, y: 24}
+  checkClues: 0
+  ButlerKnownClues: []
+  ButlerUnknownClues: []
 --- !u!1 &283265378792552269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2835619339110884784, guid: d587c62731d761541835f415dfdfaaf4, type: 3}

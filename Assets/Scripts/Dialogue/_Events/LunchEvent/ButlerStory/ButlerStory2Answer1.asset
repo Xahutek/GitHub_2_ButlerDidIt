@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: LunchEventStart
+  m_Name: ButlerStory2Answer1
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -21,29 +22,29 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 5
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: H-Has everyone been enjoying their stay at house Deddington today?
+    text: I remember when he send Gertie across the continents.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Fantastic! Just great!
+    text: In order to...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: I've been investigating this case for 3 hours now and the puzzle is starting
-      to form.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  ending: 3
+  ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
-  options: []
+  options:
+  - text: Find a rare animal
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
+  - text: Find a rare flower
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    rewards: []
