@@ -35,22 +35,30 @@ public class Clue : ScriptableObject
         TycoonKnows,
         GeneralKnows,
         GardenerKnows;
+    public Clue[] AlsoAffected;
 
     public void AlterKnown(Character C, bool k, bool editor = false)
     {
-        switch (C)
+        if (KnownTo(C) != k)
         {
-            case Character.Butler: ButlerKnows = k; break;
-            case Character.Detective: DetectiveKnows = k; break;
-            case Character.Tycoon: TycoonKnows = k; break;
-            case Character.General: GeneralKnows = k; break;
-            case Character.Gardener: GardenerKnows = k; break;
-            case Character.Imposter:
-                DetectiveKnows = k;
-                ImposterKnows = k;
-                break;
-            default:
-                return;
+            switch (C)
+            {
+                case Character.Butler:
+                    ButlerKnows = k; 
+                    if (k) EventSystem.main.GetClue(this);
+                    break;
+                case Character.Detective: DetectiveKnows = k; break;
+                case Character.Tycoon: TycoonKnows = k; break;
+                case Character.General: GeneralKnows = k; break;
+                case Character.Gardener: GardenerKnows = k; break;
+                case Character.Imposter:
+                    DetectiveKnows = k;
+                    ImposterKnows = k;
+                    break;
+                default:
+                    return;
+            }
+            ApplyAlsoAffected();
         }
     }
     public void MakeKnownTo(Character C)
@@ -74,6 +82,7 @@ public class Clue : ScriptableObject
                 default:
                     return;
             }
+            ApplyAlsoAffected();
         }
         InventoryUI.main.NewClue();
     }
@@ -95,8 +104,20 @@ public class Clue : ScriptableObject
                 default:
                     return;
             }
+            ApplyAlsoAffected();
         }
         InventoryUI.main.NewClue();
+    }
+
+    public void ApplyAlsoAffected()
+    {
+        foreach (Clue c in AlsoAffected)
+        {
+            foreach (Character character in System.Enum.GetValues(typeof(Character)))
+            {
+                c.AlterKnown(character, KnownTo(character));
+            }
+        }
     }
 
     public bool KnownTo(Character C)

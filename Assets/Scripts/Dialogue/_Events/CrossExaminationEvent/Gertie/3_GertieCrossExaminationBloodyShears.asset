@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_GertieCrossExaminationBloodyShears
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -122,8 +123,8 @@ MonoBehaviour:
   Segments:
   - description: 
     trigger:
-      activateClueTrigger: 0
-      clue: {fileID: 11400000, guid: 20283b3f02ad93e428d517f66566b3a9, type: 2}
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: a985ba7234446484daed986666d1a6e0, type: 2}
       knowingCharacters: 02000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0

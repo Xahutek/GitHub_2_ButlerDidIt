@@ -17,6 +17,7 @@ public class Interactable : MonoBehaviour
     public Vector2 AvailableTime = new Vector2(0, 24);
 
     public Clue Yield;
+    public Item itemPrice;
     public bool deactivateOnInteraction, deactivateIfKnown;
 
     private Collider2D colli;
@@ -50,7 +51,7 @@ public class Interactable : MonoBehaviour
 
     public bool canInteract
     {
-        get { return interactTimer<Time.time; }
+        get { return interactTimer<Time.time && (!itemPrice || (itemPrice.KnownTo(Character.Butler) && !itemPrice.givenAway)); }
     }
 
     public void Interaction()
@@ -69,7 +70,9 @@ public class Interactable : MonoBehaviour
 
             EventSystem.main.Interact(this);
 
-            if (Yield) Yield.MakeKnownTo(Character.Butler);
+            if (Yield)
+                Yield.MakeKnownTo(Character.Butler);
+            if (itemPrice) itemPrice.givenAway = true;
 
             interactTimer = Time.time + interactCooldown;
         }

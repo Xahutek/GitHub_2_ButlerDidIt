@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_GertieCrossExaminationBloodyShearsAnswerIsawHim
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -55,7 +56,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Actually
+      text: Actually...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -63,5 +64,12 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: I saw him cut beetroots with these garden scissors.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 0
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I merely forgot about it before!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
