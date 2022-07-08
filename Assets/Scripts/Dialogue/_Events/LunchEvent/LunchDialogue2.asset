@@ -13,21 +13,15 @@ MonoBehaviour:
   m_Name: LunchDialogue2
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: ...Anyway, let's start eating!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
@@ -64,7 +58,7 @@ MonoBehaviour:
       together.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 0
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: e2681d4d0b9d5874e8a3b3a40901e929, type: 2}
   availableAnswers: []
   options: []
