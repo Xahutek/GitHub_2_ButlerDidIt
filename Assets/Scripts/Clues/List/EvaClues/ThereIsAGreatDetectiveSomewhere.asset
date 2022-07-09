@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: There will be a genius-level detective at this surprise party!!?
   picture: {fileID: 0}
-  required: []
+  required:
+  - {fileID: 0}
   nullify: []
   seenInInventory: 0
   isInventoryClue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
   presetTycoonKnows: 0
   presetGeneralKnows: 0
   presetGardenerKnows: 0
-  ButlerKnows: 1
+  ButlerKnows: 0
   DetectiveKnows: 0
   ImposterKnows: 0
   TycoonKnows: 0
