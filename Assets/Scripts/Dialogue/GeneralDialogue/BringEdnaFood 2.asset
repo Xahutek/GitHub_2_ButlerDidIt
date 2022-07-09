@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BringEdnaFood 2
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: c2396e0031fab154a89444c426742377, type: 2}
   NecessaryCluesUnknown: []
@@ -25,7 +26,7 @@ MonoBehaviour:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
-    isThought: 0
+    isThought: 1
     text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -34,6 +35,14 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (Maybe she'll talk to me again once I give her these stupid grapes.)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 1
+    text: (The <color=green>grapes</color> should be in my <color=green>inventory</color>.
+      I can find my inventory behind the <color=purple> purple bookmark</color>)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 1
