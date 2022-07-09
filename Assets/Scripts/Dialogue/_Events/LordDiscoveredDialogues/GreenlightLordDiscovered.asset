@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GreenlightLordDiscovered
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -142,7 +143,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Ehm... A-Are we still having lunch at 12:30...?
+    text: ...Ehm... A-Are we still having lunch at 13:30...?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
