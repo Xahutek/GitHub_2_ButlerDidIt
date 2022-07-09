@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: TyrellIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 0000000003000000
   Lines:
@@ -107,6 +108,35 @@ MonoBehaviour:
     isThought: 0
     text: I thought she was stationed oversees! Between us butler... just how early
       did she manage to arrive?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 2
+    otherReactions: []
+    isThought: 1
+    text: (Time for me to present Tyrell with a <color=#627537ff>statement</color>.)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 2
+    otherReactions: []
+    isThought: 1
+    text: (Every clue I have collected, I will write down in my <color=#627537ff>notebook</color>,
+      which can be found under my yellow bookmark)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 2
+    otherReactions: []
+    isThought: 1
+    text: (Clues can be presented to people the same way items are presented)
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 2
+    otherReactions: []
+    isThought: 0
+    text: So Butler, <color=#627537ff>how early did General Tuskson arrive</color>?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 1

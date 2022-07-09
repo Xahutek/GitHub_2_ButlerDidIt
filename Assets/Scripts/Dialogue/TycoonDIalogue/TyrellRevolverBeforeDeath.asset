@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: TyrellRevolver
+  m_Name: TyrellRevolverBeforeDeath
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 7704e4ded58867042acde24c4c258493, type: 2}
   TakeTriggerItemAway: 0
@@ -19,7 +19,7 @@ MonoBehaviour:
   nullDialogue: 0
   unique: 0
   seen: 1
-  AvailabilityHours: {x: 9.5, y: 24}
+  AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
   - speaker: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He was such a kind man. Perhaps you want to show your newly acquired antique
+    text: He is such a kind man. Perhaps you want to show your newly acquired antique
       revolver around to some of our guests?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -77,8 +77,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Why don't you go ahead and just tell the detective that you off'd the
-      Lord? Makes my job easier.)
+    text: (Why don't you go ahead and tell everyone that you off'd the Lord? Makes
+      my job easier.)
     fixedClue: {fileID: 11400000, guid: a257bc334362bb14fa1f4bfdaa17bf2a, type: 2}
     spAnimTrigger: 
   ending: 3

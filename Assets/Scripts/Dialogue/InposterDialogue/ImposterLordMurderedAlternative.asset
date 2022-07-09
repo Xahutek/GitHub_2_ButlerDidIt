@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: ImposterLordMurdered
+  m_Name: ImposterLordMurderedAlternative
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   TakeTriggerItemAway: 0
-  NecessaryCluesKnown: []
-  NecessaryCluesUnknown:
+  NecessaryCluesKnown:
   - {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
@@ -66,52 +66,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'Happy to have you.
-
-      Now, before you go...'
+    text: Happy to have you, Sir Sus.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Who... are you?
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 6
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: "Who am I? *cough* *cough* \nWhy, dear Butler, I am..."
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 6
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Slotheleus.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 6
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Slotheleus... Sus.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: (I have never heard of this man, I wonder if the other guests know anything
-      about him?)
-    fixedClue: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Very well then! Enjoy your stay at Manor Deddington.
+    text: Enjoy your stay at Manor Deddington.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3
