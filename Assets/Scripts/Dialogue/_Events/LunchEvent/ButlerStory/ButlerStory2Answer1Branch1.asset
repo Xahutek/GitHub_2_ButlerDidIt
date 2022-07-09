@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -89,13 +89,6 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It was <b>big</b> and <b>hairy</b> and had <b>tons of muscles</b>
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
     text: Kind of like a <b>monkey</b>! But with <b>muscles</b>!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -134,13 +127,6 @@ MonoBehaviour:
     text: 'What a fascinating tale, Gardener! '
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 4
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Could you tell me...where is that Gorilla now?
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
@@ -163,6 +149,6 @@ MonoBehaviour:
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
-  ResumeFixed: {fileID: 0}
+  ResumeFixed: {fileID: 11400000, guid: 0f87daa6ac26950419e1ab1c6ca2a491, type: 2}
   availableAnswers: []
   options: []
