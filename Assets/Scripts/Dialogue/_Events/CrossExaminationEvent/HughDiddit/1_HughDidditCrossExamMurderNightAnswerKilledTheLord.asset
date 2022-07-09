@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_HughDidditCrossExamMurderNightAnswerKilledTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -32,21 +33,21 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I cleaned the blood of my hooves '
+    text: I cleaned the blood off my hooves...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: After snapping and murdering Lord Deddington
+    text: ... after snapping and murdering Lord Deddington.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: So you confess!?
+    text: So you confess?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -74,7 +75,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I don't know but you managed this entire day.
+    text: I don't know, you managed this entire day.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -88,21 +89,21 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '*Sigh* Alright then as you wish... say it with me...'
+    text: '*sigh* Alright then, as you wish. Say it with me...'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The Butler did it..!
+    text: The butler did it..!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: I, Hugh Diddit, did it! The Butler killed the Lord...
+  - text: I, Hugh Diddit, did it! The butler killed his lord...
     reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards:
@@ -130,21 +131,21 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'I cleaned the blood of my hooves '
+      text: I cleaned the blood off my hooves...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: After snapping and murdering Lord Deddington
+      text: ... after snapping and murdering Lord Deddington.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So you confess!?
+      text: So you confess?!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I don't know but you managed this entire day.
+      text: I don't know, you managed this entire day.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -186,13 +187,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: '*Sigh* Alright then as you wish... say it with me...'
+      text: '*sigh* Alright then, as you wish. Say it with me...'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The Butler did it..!
+      text: The butler did it..!
       fixedClue: {fileID: 0}
       spAnimTrigger: 

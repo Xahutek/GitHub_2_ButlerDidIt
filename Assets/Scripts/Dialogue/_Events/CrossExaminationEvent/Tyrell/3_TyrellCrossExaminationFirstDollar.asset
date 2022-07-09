@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_TyrellCrossExaminationFirstDollar
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -26,15 +27,15 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: There must be some reason why you are so obsessed with having more money
-      than the Lord
+      than the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I mean your current wealth is already enough to give every animal in the
-      world a good life for 5 years.
+    text: I mean, your current wealth is already enough to give every animal in the
+      world a good life for five years.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -55,7 +56,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No, you see, I think there is another, seperate reason for your greed.
+    text: No, you see, I think there is another, separate reason for your greed.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -76,7 +77,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Because the Lord kept your first ever earned dollar
+    text: Because the Lord kept your first ever earned dollar.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -90,14 +91,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Easy, we found your first dollar
+    text: 'Easy: I found your first dollar.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But the Lord didn't want to return it to you, even when you surpassed him
+    text: But the lord didn't want to return it to you, even when you surpassed him
       in sheer networth.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -105,7 +106,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: This alone is suspicious, but is it reason enough to kill Lord Deddington.
+    text: This alone is suspicious, but is it reason enough to kill Lord Deddington?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -129,15 +130,15 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: There must be some reason why you are so obsessed with having more money
-        than the Lord
+        than the lord.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I mean your current wealth is already enough to give every animal in
-        the world a good life for 5 years.
+      text: I mean, your current wealth is already enough to give every animal in
+        the world a good life for five years.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -158,7 +159,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: No, you see, I think there is another, seperate reason for your greed.
+      text: No, you see, I think there is another, separate reason for your greed.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -215,7 +216,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Because the Lord kept your first ever earned dollar
+      text: Because the Lord kept your first ever earned dollar.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -229,14 +230,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Easy, we found your first dollar
+      text: 'Easy: I found your first dollar.'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: But the Lord didn't want to return it to you, even when you surpassed
+      text: But the lord didn't want to return it to you, even when you surpassed
         him in sheer networth.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -262,14 +263,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: As far as I know you would have reached that goal within the next quater.
+      text: As far as I know, you would have reached that goal within the next quarter.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: E..Exactly! There would have been no reason for me to kill a dear friend
+      text: E...Exactly! There would have been no reason for me to kill a dear friend
         of mine!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -288,7 +289,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And the reason for why the Lord did not return the dollar to you is simple
+      text: And the reason for why the Lord did not return the dollar to you is simple...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -310,15 +311,15 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: If you stop calling it a fraud I will increase the interest rates for
-        single women detectives by 30%
+        single female detectives by 30%!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Anyway, when Lord Deddington caught wind of your fraud schemes, he refused
-        to return the dollar to you until you earned it through honest means.
+      text: When Lord Deddington caught wind of your fraud schemes, he refused to
+        return the dollar to you until you earned it through honest means.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -339,6 +340,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So, you felt like there was only one option, murder
+      text: 'So, you felt like there was only one option: murder.'
       fixedClue: {fileID: 0}
       spAnimTrigger: 

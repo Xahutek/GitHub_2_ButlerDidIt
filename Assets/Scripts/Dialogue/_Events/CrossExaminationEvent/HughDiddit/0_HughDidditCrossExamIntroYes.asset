@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_HughDidditCrossExamIntroYes
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -41,7 +42,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I am prepared to tell you everything I know, Ms.Dence
+      text: I am prepared to tell you everything I know, Ms Dence.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

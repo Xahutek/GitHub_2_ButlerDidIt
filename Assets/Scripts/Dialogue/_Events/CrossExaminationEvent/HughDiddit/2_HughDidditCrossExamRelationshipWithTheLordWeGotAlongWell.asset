@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_HughDidditCrossExamRelationshipWithTheLordWeGotAlongWell
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -62,7 +63,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
-      text: (At this point I am convinced she is playing with me)
+      text: (At this point, I am convinced she is playing with me...)
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0

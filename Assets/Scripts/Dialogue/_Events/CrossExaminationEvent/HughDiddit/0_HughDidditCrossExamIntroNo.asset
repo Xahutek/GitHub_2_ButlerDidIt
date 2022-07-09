@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_HughDidditCrossExamIntroNo
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -48,7 +49,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Ok, I am double-ready for the both of us.
+      text: Alright, I am twice as ready for the both of us.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0

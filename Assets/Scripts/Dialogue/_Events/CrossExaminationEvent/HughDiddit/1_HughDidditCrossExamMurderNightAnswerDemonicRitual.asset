@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_HughDidditCrossExamMurderNightAnswerDemonicRitual
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I was all absorbed into the dark arts of the Baphomet
+    text: I was all absorbed into the dark arts of Baphomet.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That's...slightly strange but alright.
+    text: That's... slightly strange, but alright.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -55,13 +56,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I was all absorbed into the dark arts of the Baphomet
+      text: I was all absorbed into the dark arts of Baphomet.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That's...slightly strange but alright.
+      text: That's... slightly strange, but alright.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

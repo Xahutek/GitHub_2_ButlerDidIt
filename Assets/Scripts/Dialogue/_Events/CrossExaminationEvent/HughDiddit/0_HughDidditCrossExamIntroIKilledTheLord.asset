@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_HughDidditCrossExamIntroIKilledTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I did murder the Lord...
+    text: I did murder the lord...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But I believe to be sufficiently prepared for this.
+    text: ... but I believe to be sufficiently prepared for this.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Let's get going then
+    text: Let's get going then!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -69,14 +70,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I did murder the Lord...
+      text: I did murder the lord...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: But I believe to be sufficiently prepared for this.
+      text: ... but I believe to be sufficiently prepared for this.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -90,6 +91,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Let's get going then
+      text: Let's get going then!
       fixedClue: {fileID: 0}
       spAnimTrigger: 

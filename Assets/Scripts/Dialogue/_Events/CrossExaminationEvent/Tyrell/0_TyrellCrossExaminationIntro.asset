@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_TyrellCrossExaminationIntro
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -33,7 +34,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Nop, highely unlikely.
+    text: Highly unlikely.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -41,7 +42,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -63,10 +65,11 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Nop, highely unlikely.
+      text: Highly unlikely.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -88,6 +91,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Nop, highely unlikely.
+      text: Highly unlikely.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

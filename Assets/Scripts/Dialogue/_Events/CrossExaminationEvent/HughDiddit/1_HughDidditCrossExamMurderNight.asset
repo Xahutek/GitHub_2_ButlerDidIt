@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_HughDidditCrossExamMurderNight
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: My investigation suggest that you...
+    text: My investigation suggests that you...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...have been at this house 7 days a week for last months
+    text: ...have been at this house seven days a week for the past months.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -46,14 +47,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I was and still am dedicated to my Butler craft.
+    text: I was and still am dedicated to my craft.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Would you mind sharing what you did the day the Lord died?
+    text: Would you mind sharing what you did the day the lord died?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -67,7 +68,7 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: I murdered the Lord on that evening
+  - text: I murdered the lord that evening.
     reaction: {fileID: 11400000, guid: c6a64e739aca19d44a7b38e5a7361068, type: 2}
     trigger: {fileID: 0}
     rewards: []
@@ -75,7 +76,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: 289de0e66dcf89f4191caf3e475ada9c, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: I was reading Karl Quarks "Das Quakital"
+  - text: I was reading Karl Quarks' "Das Quakital".
     reaction: {fileID: 11400000, guid: 062a55560ec910e40ae41ff2e0771bc2, type: 2}
     trigger: {fileID: 0}
     rewards: []
@@ -95,14 +96,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: My investigation suggest that you...
+      text: My investigation suggests that you...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ...have been at this house 7 days a week for last months
+      text: ...have been at this house seven days a week for the past months.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -116,14 +117,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I was and still am dedicated to my Butler craft.
+      text: I was and still am dedicated to my craft.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Would you mind sharing what you did the day the Lord died?
+      text: Would you mind sharing what you did the day the lord died?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0

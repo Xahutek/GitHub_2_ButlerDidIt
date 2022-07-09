@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_HughDidditCrossExamMurderWeapon
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -32,8 +33,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Now at the crime scene, we found that there where glass shards all around
-      the Lord
+    text: At the crime scene, we found that there were glass shards all around the
+      lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -54,7 +55,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'The kind of wine <i>you</i> served him '
+    text: The kind of wine <i>you</i> served him.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -95,8 +96,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now at the crime scene, we found that there where glass shards all around
-        the Lord
+      text: At the crime scene, we found that there were glass shards all around
+        the lord.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -117,6 +118,6 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'The kind of wine <i>you</i> served him '
+      text: The kind of wine <i>you</i> served him.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

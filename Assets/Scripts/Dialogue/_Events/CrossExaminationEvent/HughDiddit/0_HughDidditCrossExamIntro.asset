@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_HughDidditCrossExamIntro
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well and so we can come to the end of the cross exam.
+    text: And so we can come to the end of the cross-examination.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Now I don't think this one will be important, but as I would like to thorough...
+    text: I don't think this one will be important, but as I would like to be thorough...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -54,7 +55,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: 1970fefc5f6372e4dac4b6ee32c35d92, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: I did kill the Lord, but I think I am prepared.
+  - text: I did kill the lord, but I think I am prepared.
     reaction: {fileID: 11400000, guid: 6df276aca0f8e0d4aa264e3dfd9b5dd1, type: 2}
     trigger: {fileID: 0}
     rewards: []
@@ -74,15 +75,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Well and so we can come to the end of the cross exam.
+      text: And so we can come to the end of the cross-examination.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now I don't think this one will be important, but as I would like to
-        thorough...
+      text: I don't think this one will be important, but as I would like to be thorough...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

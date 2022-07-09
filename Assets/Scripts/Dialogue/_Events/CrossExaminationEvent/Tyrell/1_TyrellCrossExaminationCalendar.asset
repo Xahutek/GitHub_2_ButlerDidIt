@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_TyrellCrossExaminationCalendar
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Tycoon Theodor Tycell
+    text: Tycoon Theodor Tycell-
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -39,49 +40,49 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'This says '
+    text: This says...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'Tycool Tyrre '
+    text: Tycool Tyrre-
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Ahh..whatever.
+    text: Ahh... whatever.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: You visited the Lord 5 days ago, is that correct?
+    text: You visited the lord five days ago, is that correct?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes, yes I have!
+    text: Yes, yes, I did!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And why I did that is <i>none</i> of your buisness.
+    text: And why I did that is <i>none</i> of your business.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well if you're going to be this defensive over it, I will give you the
+    text: Well, if you're going to be this defensive over it, I will give you the
       benefit of the doubt.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -119,7 +120,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Tycoon Theodor Tycell
+      text: Tycoon Theodor Tycell-
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -133,42 +134,42 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'This says '
+      text: This says...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'Tycool Tyrre '
+      text: Tycool Tyrre-
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Ahh..whatever.
+      text: Ahh... whatever.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: You visited the Lord 5 days ago, is that correct?
+      text: You visited the lord five days ago, is that correct?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Yes, yes I have!
+      text: Yes, yes, I did!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And why I did that is <i>none</i> of your buisness.
+      text: And why I did that is <i>none</i> of your business.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -186,7 +187,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Actually, I think it is <i>some</i> of my buisness.
+      text: Actually, I think it is <i>some</i> of my business.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -208,7 +209,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Lord Deddington died 5 days ago!?
+      text: Lord Deddington died five days ago?!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -222,7 +223,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: '"Goodbye Tyrell, please leave now..."'
+      text: '"Goodbye, Theodore, please leave now..."'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -257,7 +258,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ' "Suspicion raised"'
+      text: ' "Suspicion raised".'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -275,7 +276,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Well if you're going to be this defensive over it, I will give you the
+      text: Well, if you're going to be this defensive over it, I will give you the
         benefit of the doubt.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

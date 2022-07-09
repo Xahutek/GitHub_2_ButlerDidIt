@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_HughDidditCrossExamRelationshipWithTheLordIHatedTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I hated that old man
+    text: I hated that old man...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Which is why I murdered him.
+    text: ... which is why I murdered him.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -55,13 +56,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I hated that old man
+      text: I hated that old man...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Which is why I murdered him.
+      text: ... which is why I murdered him.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

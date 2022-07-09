@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1_HughDidditCrossExamMurderNightAnswerTheQuakital
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I was reading Das Quakital by Karl Quarks. '
+    text: 'I was reading "Das Quakital" by Karl Quarks. '
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: <i>Gasp</i> Now THAT is suspicious!
+    text: <i>*gasp*</i> Now THAT is suspicious!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -62,14 +63,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'I was reading Das Quakital by Karl Quarks. '
+      text: 'I was reading "Das Quakital" by Karl Quarks. '
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: <i>Gasp</i> Now THAT is suspicious!
+      text: <i>*gasp*</i> Now THAT is suspicious!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

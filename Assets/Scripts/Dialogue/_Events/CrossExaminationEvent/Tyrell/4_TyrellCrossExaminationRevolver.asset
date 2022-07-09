@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 4_TyrellCrossExaminationRevolver
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: One last we have to discuss, Lord Tyrell.
+    text: One last thing we have to discuss, Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Your tiny owl arms could never kill the Lord.
+    text: Your tiny owl wings could never kill the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -67,7 +68,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Thank you Lord Tyrell
+    text: Thank you, Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -97,14 +98,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: One last we have to discuss, Lord Tyrell.
+      text: One last thing we have to discuss, Lord Tyrell.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Your tiny owl arms could never kill the Lord.
+      text: Your tiny owl wings could never kill the lord.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -129,14 +130,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Know, if you had, say, a tiny revolver.
+      text: So if you had, say, a tiny revolver.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: For your exorbitantly small hands.
+      text: For your exorbitantly small hands. Wings.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -164,14 +165,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Are you sure you don't? As we found this revolver in luggage.
+      text: Are you sure you don't? We found this revolver in your luggage.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Be careful, that is a collectors edition!
+      text: Be careful, that is a collectors' edition!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -185,7 +186,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The Gunpowder at its hilt tells a different story. This gun definetly
+      text: The gunpowder at its butt tells a different story. This gun definitely
         shot a bullet in the past!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -193,8 +194,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I believe, that killing the Lord would have been easy with this tool
-        at your disposal?
+      text: I believe that killing the lord would have been easy with this tool at
+        your disposal?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -212,7 +213,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: But we could not find any weapon suited for your small hands.
+      text: But we could not find any weapon suited for your small hands. I mean
+        wings.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -244,7 +246,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Thank you Lord Tyrell
+      text: Thank you, Lord Tyrell.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

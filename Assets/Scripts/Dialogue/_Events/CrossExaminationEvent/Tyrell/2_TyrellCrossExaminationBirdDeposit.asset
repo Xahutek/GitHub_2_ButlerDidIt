@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_TyrellCrossExaminationBirdDeposit
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -41,28 +42,28 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Let's talk about something else
+      text: Let's talk about something else...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Your newest buisness venture
+      text: Your newest business venture!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Would you like to deposit some money, Ms.Dence?
+      text: Would you like to deposit some money, Ms Dence?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Certainly, it's hard without a husband
+      text: Certainly, it's hard without a husband...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -77,14 +78,14 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: However, do you mind telling us <i>how</i> this money for the women of
-        modest means is accumelated?
+        modest means is accumulated?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Uhm...well...
+      text: Uhm... well...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -112,7 +113,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Well honestly, I am beginning to think the money the depositors accumulated
+      text: Honestly, I am beginning to think the money the depositors accumulated
         had to come from somewhere.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -156,7 +157,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Back to the murder case
+      text: Back to the murder case.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -170,7 +171,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The Lord knew of this scheme but didn't approve of it!
+      text: The lord knew of this scheme but didn't approve of it!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -191,7 +192,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Let's talk about something else
+      text: Let's talk about something else.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -212,15 +213,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Everyone at the Bird Deposit is heartbroken about the news.
+      text: Everyone at Bird Deposit is heartbroken about the news.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The news that the public has discovered that we have been running a complete
-        scam.
+      text: The news that the public has discovered that we have been running a fraud.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -241,7 +241,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Proceeding with the next point.
+      text: Proceeding with the next point...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -259,14 +259,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Honestly I don't know about your buisness ventures
+      text: Honestly, I don't know about your business ventures
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And I care about them so little that I will just hope it is not relevant
+      text: And I care about them so little that I will just hope it is not relevant.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
