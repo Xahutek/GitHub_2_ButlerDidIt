@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_EdnaTusksonCrossExamination_ChessGame
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,22 +26,23 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I...guess you actually didn't.
+    text: I... guess you actually didn't.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: Impressive.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: 3c9c1a1c171ff694dba080bd6901ec67, type: 2}
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
       knowingCharacters: 02000000
@@ -56,57 +58,59 @@ MonoBehaviour:
       isThought: 0
       text: Recently, you've lost to him too.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: '!?'
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: In fact, I believe you lost to him 3 days ago!.
+      text: In fact, I believe you lost to him three days ago!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
+      spAnimTrigger: 
+    - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Wh-what? When? How?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: The chessboard in the library clearly shows it!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The Lord broke your long lasting chess streak, when you played with him.
+      text: The lord broke your long lasting chess winning streak when you played
+        with him.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: No, he did not win!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Don't know what to tell you, the chess board clearly showed it.
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
       knowingCharacters: 
@@ -120,13 +124,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I...guess you actually didn't.
+      text: I... guess you actually didn't.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Impressive.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

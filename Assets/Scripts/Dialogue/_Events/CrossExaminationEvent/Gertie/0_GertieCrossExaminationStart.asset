@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_GertieCrossExaminationStart
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -32,7 +33,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And after this cross examination, we will know who is responsible for the
+    text: And after this cross-examination, we will know who is responsible for the
       murder of Lord Deddington.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -48,7 +49,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Each of the guests and each of the house staff will be questioned, afterwards
+    text: Each of the guests and each of the house staff will be questioned. Afterwards,
       everything will have cleared up.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -56,45 +57,45 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Now, I will call each of you onto the stand, during this I will be asking
-      most of the questions.
+    text: I will call each of you onto the stand and I will be asking most of the
+      questions.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But if the gathering has something to say, feel free to speak up! Every
-      input can be valuable.
+    text: But if anyone here has something to say, feel free to speak up! Every input
+      can be valuable.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: This trail will decide your fate.
+    text: This trial will decide your fate.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The persecution calls Gardener Gertie Potts to the stand.
+    text: The prosecution calls Gardener Gertie Potts to the stand!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (She is really living up this role)
+    text: (She is really growing into this role.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (I have murdered the Lord, but perhaps I did a good job and will make it
-      through this?)
+    text: (I have murdered the Lord, but hopefully I destroyed enough evidence to
+      make it through this...)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3
@@ -124,7 +125,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And after this cross examination, we will know who is responsible for
+      text: And after this cross-examination, we will know who is responsible for
         the murder of Lord Deddington.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -140,7 +141,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Each of the guests and each of the house staff will be questioned, afterwards
+      text: Each of the guests and each of the house staff will be questioned. Afterwards,
         everything will have cleared up.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -148,15 +149,15 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, I will call each of you onto the stand, during this I will be asking
-        most of the questions.
+      text: I will call each of you onto the stand and I will be asking most of the
+        questions.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: But if the gathering has something to say, feel free to speak up! Every
+      text: But if anyone here has something to say, feel free to speak up! Every
         input can be valuable.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -164,21 +165,21 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: This trail will decide your fate.
+      text: This trial will decide your fate.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: The persecution calls Gardener Gertie Potts to the stand.
+      text: The prosecution calls Gardener Gertie Potts to the stand!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
-      text: (She is really living up this role)
+      text: (She is really growing into this role.)
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: 
@@ -196,7 +197,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
-      text: (I have murdered the Lord, but perhaps I did a good job and will make
-        it through this?)
+      text: (I have murdered the Lord, but hopefully I destroyed enough evidence
+        to make it through this...)
       fixedClue: {fileID: 0}
       spAnimTrigger: 

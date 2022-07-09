@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 4_GertieCrossExaminationEnd
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ..Alright this was certainly interesting
+    text: ... Alright, this was certainly interesting.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Let's call the next person into the stand
+    text: Let's call the next person into the stand!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3
@@ -40,7 +41,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -54,13 +56,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ..Alright this was certainly interesting
+      text: ... Alright, this was certainly interesting.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Let's call the next person into the stand
+      text: Let's call the next person into the stand!
       fixedClue: {fileID: 0}
       spAnimTrigger: 

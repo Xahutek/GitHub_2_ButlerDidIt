@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_GertieCrossExaminationBloodyShearsAnswerThatsNotPossible
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No one cuts beedroots with a garden shear.
+    text: No one cuts beetroots with garden shears.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: We don't even grow beetroots.
+    text: In fact, we don't even grow beetroots in the garden.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
@@ -55,13 +56,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: No one cuts beedroots with a garden shear.
+      text: No one cuts beetroots with garden shears.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: In fact, we don't even have beetroots in the garden.
+      text: In fact, we don't even grow beetroots in the garden.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

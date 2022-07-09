@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_GertieCrossExaminationWindowOpportunityClosed
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown:
   - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
@@ -26,8 +27,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Mr.Potts, you take care of the garden, the frontyard and anything else
-      important that comes up, correct?
+    text: Mr Potts, you take care of the garden, the frontyard and anything else
+      that comes up, correct?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -41,7 +42,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: So you had a perfect understanding of the mansions floor plans!
+    text: So you had a perfect understanding of the mansion's floor plans!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -76,16 +77,16 @@ MonoBehaviour:
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
   options:
-  - text: The window can be opened from the outside
+  - text: The window can be opened from the outside.
     reaction: {fileID: 11400000, guid: 73c7411d2129ac3459d913220e5e638d, type: 2}
     trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
     rewards:
     - {fileID: 11400000, guid: 08b08bfc9a7734944b79d7c84c6baff1, type: 2}
-  - text: Say nothing
+  - text: '[Say nothing]'
     reaction: {fileID: 11400000, guid: 5ce64a8abd65b2545ae224c728f3856b, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: The Lord actually <b>wants</b> windows open during storms.
+  - text: The lord actually <b>wants</b> windows open during storms.
     reaction: {fileID: 11400000, guid: 8f3d3cdbec77e7940a4f3c669d6832ba, type: 2}
     trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
     rewards:
@@ -106,8 +107,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Mr.Potts, you take care of the garden, the frontyard and anything else
-        important that comes up, correct?
+      text: Mr Potts, you take care of the garden, the frontyard and anything else
+        that comes up, correct?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
@@ -121,7 +122,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So you had a perfect understanding of the mansions floor plans!
+      text: So you had a perfect understanding of the mansion's floor plans!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
@@ -146,14 +147,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ' That''s besides the point.'
+      text: That's beside the point.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, this noon you where working outside, ontop of a tree in the frontyard.
+      text: Now, this noon you were working outside, on top of a tree in the frontyard.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -161,7 +162,7 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: If you can climb up there so easily, you could have climbed into the
-        house through the window, no problem.
+        house through the window without a problem.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -175,7 +176,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: <b>...THE MURDER LOCATION!</b>.
+      text: <b>...THE CRIME SCENE!</b>.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

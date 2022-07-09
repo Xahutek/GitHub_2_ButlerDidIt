@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_GertieCrossExaminationWindowOpportunityAnswer3
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,9 +26,9 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Lord Deddington insists on feeling the rain on his skin during storms
+    text: Lord Deddington insists on feeling the rain on his skin during storms.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
     otherReactions: []
@@ -35,15 +36,15 @@ MonoBehaviour:
     text: ...Are you saying it's plausible that the window was opened <i>because</i>
       of the storm?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well...in that case, this entire situation is less suspicious then I originally
+    text: Well... in that case, this entire situation is less suspicious than I originally
       assumed.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []

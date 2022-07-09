@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_EdnaTusksonCrossExamination_WinningPhoto
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -26,7 +27,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -42,29 +44,30 @@ MonoBehaviour:
       isThought: 0
       text: Let us continue onwards.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: General I believe you've known the Lord since childhood, is that correct?
+      text: General, I believe you've known the lord since childhood, is that correct?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'Yes, we where inseperable! '
+      text: 'Yes, we were inseparable! '
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Rivals in mind and body! I can't believe he is dead.
+      text: Rivals in mind and body! I still can't believe he is dead.
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 1b0a103238e2791418099d3c65b08654, type: 2}
       knowingCharacters: 02000000
@@ -78,55 +81,57 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Most certainly you where.
+      text: Most certainly you were.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, even though you where rivals, you of course always won against him.
+      text: Now, even though you were rivals, you, of course, always won against
+        him.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'I must admit, it fills me with glee to say yes, I have, every single
+      text: 'I must admit - it fills me with glee to say yes, I have. Every single
         time since we met.
 
         I stand undefeated.'
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Every single time?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Every single time.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Could you explain this photograph, of you and the Lord then?
+      text: Could you explain this photograph then, of you and the lord?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: ...!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-  - trigger:
+      spAnimTrigger: 
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 1b0a103238e2791418099d3c65b08654, type: 2}
       knowingCharacters: 02000000
@@ -140,77 +145,71 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: w...<b>WHERE DID YOU FIND THIS</b>!?
+      text: w... <b>WHERE DID YOU FIND THIS</b>!?
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Confidential information.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 1
-      text: (If she looks any more obvious into my direction, General Tuskson is
-        gonna murder me before Frogland Yard arrives)
+      text: (If she glances any more obvious in my direction, General Tuskson is
+        gonna murder me before Frogland Yard arrives!)
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: This photo is from when you two where 3 years old, I assume?
+      text: This photo is from when you two were 3 years old, I assume?
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: This photo is from when you two where 3 years old, I assume?
-      fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: I...
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Perhaps Lord Deddington had to die for you to finally settle the score.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
       text: Unbelievable!
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Don't worry Theodore, we will get to you.
+      text: Don't worry, Theodore, we will get to you.
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
+      spAnimTrigger: 
+    - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ...It is true, I lost back than, that one time. But never again!
+      text: ...It is true, I lost back then, that one time. But never again! It was
+        only because of that dress they put me in!
       fixedClue: {fileID: 0}
-      clueHidden: 0
-    - speaker: 2
+      spAnimTrigger: 
+    - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I've sworn to triumph over him every single other time.
+      text: I've sworn to triumph over him every single time to follow.
       fixedClue: {fileID: 0}
-      clueHidden: 0
+      spAnimTrigger: 

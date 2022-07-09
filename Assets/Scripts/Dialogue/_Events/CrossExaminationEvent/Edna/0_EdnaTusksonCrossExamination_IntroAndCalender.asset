@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_EdnaTusksonCrossExamination_IntroAndCalender
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -46,14 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: <b>Yes Ma'am</b>!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 4
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: <b>Yes Ma'am</b>!
+    text: <b>Yes, Ma'am</b>!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -67,28 +61,28 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Starting with the calender.
+    text: Starting with the day the lord died.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: You met with the Lord 3 days ago
+    text: You met with the Lord 3 days ago, is that correct?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That is correct
+    text: That is correct.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: In that case the calender does not suggest that he died the day you visited.
+    text: In that case, the calendar does not suggest that he died the day you visited.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -103,7 +97,8 @@ MonoBehaviour:
   availableAnswers: []
   options: []
   Segments:
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
       knowingCharacters: 
@@ -138,7 +133,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: <b>Yes Ma'am</b>!
+      text: <b>Yes, Ma'am</b>!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -152,10 +147,11 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Starting with the calender.
+      text: Starting with the day the lord died.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
       knowingCharacters: 
@@ -169,21 +165,22 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: You met with the Lord 3 days ago
+      text: You met with the Lord 3 days ago, is that correct?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That is correct
+      text: That is correct.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: In that case the calender does not suggest that he died the day you visited.
+      text: In that case, the calendar does not suggest that he died the day you
+        visited.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 4
@@ -193,7 +190,8 @@ MonoBehaviour:
       text: I can confirm he was still alive that day!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - trigger:
+  - description: 
+    trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: e82326e52b1fd6146a410528c1c40d97, type: 2}
       knowingCharacters: 02000000
@@ -221,7 +219,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Yes, and there is only one small issue with that.
+      text: Yes, there is only one small issue with that.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

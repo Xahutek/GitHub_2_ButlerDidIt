@@ -26,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes that will be all for you but-
+    text: Yes, that will be all for you, but-
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -47,35 +47,29 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Now Gertie, inside your shack we found some bloodied garden shears.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (how american of her)
+    text: "Gertie, I mean, Mr Potts- \nInside your shed we found some bloodied garden
+      shears."
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I don't know anything about these ;_;
+    text: I-I don't know anything about these!!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Maybe you used them for something else than killing
+    text: Maybe you used them for something else than killing...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'maybe you where cutting some beetroots with them, anything could have
+    text: '... maybe you were cutting some beetroots with them - anything could have
       happened!
 
 '
@@ -106,12 +100,12 @@ MonoBehaviour:
   ResumeFixed: {fileID: 11400000, guid: e7a7225aec1643143b9bed67b1376003, type: 2}
   availableAnswers: []
   options:
-  - text: I saw him cut beetroots
+  - text: I saw him cut beetroots.
     reaction: {fileID: 11400000, guid: fb5764c194a7cc34296aa77d41da481e, type: 2}
     trigger: {fileID: 0}
     rewards:
     - {fileID: 11400000, guid: 5bec96f16ee22444bbe9a184032acd96, type: 2}
-  - text: Say Nothing
+  - text: '[Say nothing]'
     reaction: {fileID: 11400000, guid: 1be5cc8b5765e1d4580dde9de23d6d5d, type: 2}
     trigger: {fileID: 0}
     rewards: []
@@ -136,7 +130,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Yes that will be all for you but-
+      text: Yes, that will be all for you, but-
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -157,38 +151,30 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now Gertie, inside your shack we found some bloodied garden shears.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 0
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 1
-      text: (how american of her)
+      text: "Gertie, I mean, Mr Potts- \nInside your shed we found some bloodied
+        garden shears."
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I don't know anything about these ;_;
+      text: I-I don't know anything about these!!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Maybe you used them for something else than killing
+      text: Maybe you used them for something else than killing...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: 'maybe you where cutting some beetroots with them, anything could have
-        happened!
-
-'
+      text: ... maybe you were cutting some beetroots with them - anything could
+        have happened!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5

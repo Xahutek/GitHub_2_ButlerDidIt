@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3_GertieCrossExaminationBloodyShearsAnswerNothing
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '[...]'
+    text: ...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4

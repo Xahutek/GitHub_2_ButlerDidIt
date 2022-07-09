@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2_GertieCrossExaminationWindowOpportunityAnswer1
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The window can easily be opened from the outside
+    text: The window can easily be opened from the outside.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Doesn't make you look innocent, Mr. Potts!
+    text: It doesn't exactly make you look innocent, Mr Potts!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
