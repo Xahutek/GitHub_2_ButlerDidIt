@@ -36,12 +36,18 @@ public class DialogueManager : MonoBehaviour
         get
         {
             Vector2 pos = transform.position;
-            if (CharacterObjects.Count >= 0)
+            if (CharacterObjects.Count > 0)
             {
                 float totalX = 0f;
                 float totalY = 0f;
                 foreach (var C in CharacterObjects)
                 {
+                    if(C == null) //fix for Character destroyed on room change
+                    {
+                        hardEscape = true;
+                        Close();
+                        return pos;
+                    }
                     totalX += C.transform.position.x;
                     totalY += C.transform.position.y;
                 }
@@ -49,7 +55,7 @@ public class DialogueManager : MonoBehaviour
                 float centerY = totalY / CharacterObjects.Count;
 
                 pos = new Vector2(centerX, centerY);
-            }
+            }            
 
             if (CharacterObjects.Contains(playerReference))
                 pos.y = playerReference.groundPosition.y;
@@ -156,9 +162,12 @@ public class DialogueManager : MonoBehaviour
 
         foreach (InteractableCharacter I in CharacterObjects)
         {
-            I.RefreshLocus();
-            I.inDialogue = false;
-            I.isTalking = false;
+            if (I != null) //fix for Character destroyed on room change
+            {
+                I.RefreshLocus();
+                I.inDialogue = false;
+                I.isTalking = false;
+            }                
         }
 
         if (dialogueCameraLocus)
