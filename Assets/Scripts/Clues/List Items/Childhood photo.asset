@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c601663db51864e96f8547e2451984, type: 3}
   m_Name: Childhood photo
   m_EditorClassIdentifier: 
-  name: A childhood photo
+  name: A childhood photo of Edna and the lord.
   picture: {fileID: 21300000, guid: a5389562f6432864d9f4797ba7695b74, type: 3}
   required: []
   nullify: []
   seenInInventory: 1
-  isInventoryClue: 1
-  isMindmapClue: 0
+  isInventoryClue: 0
+  isMindmapClue: 1
   presetButlerKnows: 0
   presetDetectiveKnows: 0
   presetInposterKnows: 0
@@ -31,5 +31,6 @@ MonoBehaviour:
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
+  AlsoAffected: []
   givenAway: 0
   _givenAway: 0
