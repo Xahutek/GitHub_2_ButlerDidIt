@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -74,7 +75,7 @@ MonoBehaviour:
     speakerEmotion: 1
     otherReactions: []
     isThought: 0
-    text: HE'S DEAD!?
+    text: HE'S DEAD?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -88,7 +89,7 @@ MonoBehaviour:
     speakerEmotion: 3
     otherReactions: []
     isThought: 0
-    text: How could this happen!?
+    text: How could this happen?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -144,14 +145,14 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: <b>!?</b>
+    text: <b>?!</b>
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: <i>Is Slotheleus dying as well now???</i>
+    text: <i>Is Slotheleus dying as well now?!</i>
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -172,7 +173,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: "It's so stuffy in here, \na pleasure to <i>see</i> all of you."
+    text: It's so stuffy in here, a pleasure to <i>see</i> all of you.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -207,21 +208,21 @@ MonoBehaviour:
     speakerEmotion: 1
     otherReactions: []
     isThought: 0
-    text: A DISGUISE!?
+    text: A DISGUISE?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 1
     otherReactions: []
     isThought: 0
-    text: A <i>WOMAN</i>!?
+    text: A <i>WOMAN</i>?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Ms. Dence, Shall I change your name in the visitors' book?
+  - text: Ms Dence, shall I change your name in the visitors' book?
     reaction: {fileID: 11400000, guid: b5ff7d187598b8e4c8f97e322af9c12f, type: 2}
     trigger: {fileID: 0}
     rewards: []
@@ -229,7 +230,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: '[Put down flowers for the dead lord]'
+  - text: '[Put down flowers for the dead lord.]'
     reaction: {fileID: 11400000, guid: 1e7df28b8e6899c4b9a7f6409b340bce, type: 2}
     trigger: {fileID: 11400000, guid: 7eec7896f356b8642bf2c426227f8986, type: 2}
     rewards:
