@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -39,14 +40,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Good Morning to you, Hugh!
+    text: Good morning to you, Hugh!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Does the Lord have any special instructions about the garden for me?
+    text: Does the lord have any special instructions about the garden for me?
     fixedClue: {fileID: 11400000, guid: be53509cb4f374446889787dda4e9826, type: 2}
     spAnimTrigger: 
   - speaker: 5
@@ -62,15 +63,15 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: The Lord is dead and I killed him
+  - text: The lord is dead and I killed him.
     reaction: {fileID: 11400000, guid: e2beda21d1436e443971d024a90aa498, type: 2}
     trigger: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     rewards: []
-  - text: No
+  - text: No.
     reaction: {fileID: 11400000, guid: c97a87a5712a1174497defe7e2608c0f, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Yes
+  - text: Yes.
     reaction: {fileID: 11400000, guid: 338d1ebdd22e4bc4e8b3438836e4d9f1, type: 2}
     trigger: {fileID: 0}
     rewards: []

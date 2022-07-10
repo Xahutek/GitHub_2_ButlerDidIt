@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieIntroAnythingElse
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -27,7 +28,7 @@ MonoBehaviour:
     isThought: 0
     text: ...Aaaanything else?
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
@@ -36,7 +37,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: 9c780c630b3770a48bc97db6b1e12a1a, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: ' General Tuskson and Lord Tyrell are already here.'
+  - text: General Tuskson and Lord Tyrell are already here.
     reaction: {fileID: 11400000, guid: 9d729c43c36a5b542a9ef78c7c40ae20, type: 2}
     trigger: {fileID: 11400000, guid: b78e9dcd14d896946a79791036171eeb, type: 2}
     rewards: []

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieSlotheleusIsTheDetective
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -43,7 +44,7 @@ MonoBehaviour:
     reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []
-  - text: I think Edna might be a detective
+  - text: I think Edna might be a detective...
     reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []

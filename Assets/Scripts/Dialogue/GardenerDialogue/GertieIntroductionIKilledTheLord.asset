@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieIntroductionIKilledTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -49,7 +50,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Come back at 7:30, I will set out some flowers we can put down for him.
+    text: Come back later, I will set out some flowers we can put down for him.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -64,7 +65,7 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: What about Slotheleus
+  - text: What about Slotheleus?
     reaction: {fileID: 11400000, guid: f65146037397ba14681f0b6145410445, type: 2}
     trigger: {fileID: 0}
     rewards: []
