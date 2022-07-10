@@ -52,26 +52,39 @@ MonoBehaviour:
     text: ' Lord Deddington was a mysterious man.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: As unbelievable this weird relation might sound like... it matches with
+      my findings!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I actually tatooed myself with invisible ink once!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Invisible ink?! Now I get why Lord Deddington was sending me empty letters...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Lets continue...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
   ResumeFixed: {fileID: 11400000, guid: 508372cc28cd5454890d458dd113404f, type: 2}
   availableAnswers: []
-  options:
-  - text: '[Say nothing]'
-    reaction: {fileID: 11400000, guid: 7b485d14e53c0704287ecd45ca2cf3e4, type: 2}
-    trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
-    rewards: []
-  - text: I am thrilled to see you analyze this, Detective Dence.
-    reaction: {fileID: 11400000, guid: 7b485d14e53c0704287ecd45ca2cf3e4, type: 2}
-    trigger: {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
-    rewards: []
-  - text: '[Say nothing]'
-    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
-    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
-    rewards: []
-  - text: I noticed an open window.
-    reaction: {fileID: 11400000, guid: a810e789bec08964dbc1c96e957ea234, type: 2}
-    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
-    rewards: []
+  options: []
   Segments:
   - description: Start
     trigger:
@@ -114,25 +127,17 @@ MonoBehaviour:
       text: ' Lord Deddington was a mysterious man.'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: 
+  - description: Eva does not know of letters
     trigger:
       activateClueTrigger: 1
-      clue: {fileID: 11400000, guid: 852cfdf7a640b1a4384bad168659b36f, type: 2}
-      knowingCharacters: 00000000
+      clue: {fileID: 11400000, guid: e93f77af8d740584f85687ea4dca82fb, type: 2}
+      knowingCharacters: 02000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
       suspicion: 0
     content:
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: Gertie Potts, you had a unique relationship with the lord - you said
-        that you never actually met the man.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
@@ -145,8 +150,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: (Thank god I burnt those letters. Otherwise she would have believed that
-        unbelievable story.)
+      text: (Thank god I got rid of those letters. Otherwise she would have believed
+        that unbelievable story.)
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
@@ -170,5 +175,52 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: I... d-don't think so?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: A pity. Let's continue then...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: Eva knows of letters
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: e8dafb0cde4a92a49a3f9c08d097e54e, type: 2}
+      knowingCharacters: 02000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: As unbelievable this weird relation might sound like... it matches with
+        my findings!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: I actually tatooed myself with invisible ink once!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Invisible ink?! Now I get why Lord Deddington was sending me empty letters...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Lets continue...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
