@@ -15,6 +15,7 @@ MonoBehaviour:
   identity: 5
   name: Gertie Potts
   Portrait: {fileID: 5223635564414417333, guid: 15bb59d1474d1cb4ca15bf13fa35b59b, type: 3}
+  PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
   knownToPlayer: 1
   currentRoom: 0
@@ -52,8 +53,8 @@ MonoBehaviour:
     state: 0
     important: 0
   - startHour: 20
-    room: 2
-    state: 1
+    room: 3
+    state: 0
     important: 0
   - startHour: 23
     room: 2
