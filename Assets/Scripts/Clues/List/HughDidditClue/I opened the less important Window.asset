@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
   m_Name: I opened the less important Window
   m_EditorClassIdentifier: 
-  name: The window in the Lords study seems to have been open while he died...
+  name: The window in the lord's study seems to have been open while he died...
   picture: {fileID: 0}
   required: []
   nullify:
   - {fileID: 11400000, guid: 3da2721a2865e2d49b1050ec055a5e33, type: 2}
   seenInInventory: 1
-  isInventoryClue: 1
+  isInventoryClue: 0
   isMindmapClue: 0
   presetButlerKnows: 0
   presetDetectiveKnows: 0
