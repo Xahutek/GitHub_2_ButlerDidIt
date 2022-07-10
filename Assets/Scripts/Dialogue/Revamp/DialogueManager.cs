@@ -373,7 +373,7 @@ public class DialogueManager : MonoBehaviour
                 isExcused = true;
                 Vector2 thisRoot = Locus + Vector2.left * BoxHorizontalSpacing * BoxHorizontalSign;
 
-                Dialogue.Line L = new Dialogue.Line(Character.Butler, "If you would excuse me! My vow to good service requires me to be elswhere...");
+                Dialogue.Line L = new Dialogue.Line(Character.Butler, "If you would excuse me! My vow to good service requires me to be elsewhere...");
                 B.Refresh(this, L, thisRoot, height, true);
 
                 currentlyTyping = B;
