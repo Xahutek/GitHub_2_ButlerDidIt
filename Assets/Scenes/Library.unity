@@ -718,6 +718,7 @@ MonoBehaviour:
   deactivated: 0
   AvailableTime: {x: 0, y: 24}
   Yield: {fileID: 0}
+  itemPrice: {fileID: 0}
   deactivateOnInteraction: 0
   deactivateIfKnown: 0
   minigameName: ChessBoard
@@ -3266,6 +3267,10 @@ PrefabInstance:
     - target: {fileID: 1788838244474302971, guid: 8030fb11173a01448b53048d5af35dfc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2184
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129603528932472419, guid: 8030fb11173a01448b53048d5af35dfc, type: 3}
+      propertyPath: facingRight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3811544856654604350, guid: 8030fb11173a01448b53048d5af35dfc, type: 3}
       propertyPath: m_LocalScale.x
