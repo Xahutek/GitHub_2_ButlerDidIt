@@ -40,7 +40,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'We are doing 5 courses, and each lacks one ingredient:'
+    text: 'We are preparing five courses, and each lacks one ingredient:'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -117,11 +117,11 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Yes
+  - text: Yes.
     reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []
-  - text: No
+  - text: No.
     reaction: {fileID: 0}
     trigger: {fileID: 0}
     rewards: []

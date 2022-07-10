@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaWontTalk 1
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: d678a0797bc93ed4c92c8c781050b4f9, type: 2}
   NecessaryCluesUnknown:
@@ -52,8 +53,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Until I found a <color=#7a9047ff>solution</color>, I can go and <color=#7a9047ff>do
-      something else</color>, only a matter of <color=#7a9047ff>time</color> until
+    text: (Until I found a <color=#627537ff>solution</color>, I can go and <color=#627537ff>do
+      something else</color>, only a matter of <color=#627537ff>time</color> until
       the next guests show up.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 

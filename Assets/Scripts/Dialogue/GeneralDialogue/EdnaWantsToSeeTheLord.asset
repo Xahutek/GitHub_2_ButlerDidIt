@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaWantsToSeeTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I''ll just keep calling you "The Butler, Diddit".
+    text: 'I''ll just keep calling you "The butler, Diddit".
 
 '
     fixedClue: {fileID: 0}
@@ -48,14 +49,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Give it your best shot, your wake-up-calls won't help.)
+    text: (Give it your best shot, your wake-up calls won't help.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I would advise against that. The Lord is very... particular about his sleep.
+    text: I would advise against that. The lord is very... particular about his sleep.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4

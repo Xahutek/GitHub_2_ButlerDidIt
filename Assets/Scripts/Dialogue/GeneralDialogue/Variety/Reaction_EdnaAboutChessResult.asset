@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_EdnaAboutChessResult
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: General Tuskson, the Lord always spoke fondly of his chess matches with
+    text: General Tuskson, the lord always spoke fondly of his chess matches with
       you after you visited in the past.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -33,14 +34,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'Ha, really? Well, in a way I agree, they were always interesting. '
+    text: 'Ha, really? Well, in a way, I agree, they were always interesting. '
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I imposed many constrains and challenges on myself. In order to give him
+    text: I imposed many constraints and challenges on myself. In order to give him
       hope.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -55,14 +56,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Really..? Did you never loose a single chess match?
+    text: Really..? Did you never lose a single chess match?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No, Butler. That is not what I meant.
+    text: No, butler. That is not what I meant.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -111,7 +112,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Then, I am glad to hear that such a competent woman is leading out forces,
+    text: Then, I am glad to hear that such a competent woman is leading our forces,
       General Tuskson.
     fixedClue: {fileID: 0}
     spAnimTrigger: 

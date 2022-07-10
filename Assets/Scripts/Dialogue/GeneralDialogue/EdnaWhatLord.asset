@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaWhatLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -39,7 +40,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: Now now, <i> Butler </i>.
+    text: Now now, <i> butler </i>.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4

@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: EdnaLordDead
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
-  AvailabilityHours: {x: 9, y: 12}
+  seen: 0
+  AvailabilityHours: {x: 9, y: 11}
   includedCharacters: 
   Lines:
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Lord Deddington, he... passed away?
+    text: Lord Deddington, he... passed away...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4

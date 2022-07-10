@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: EdnaIMurderedTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I killed the Lord.
+    text: I killed the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well, I resurrected the Lord.
+    text: Well, I resurrected the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4

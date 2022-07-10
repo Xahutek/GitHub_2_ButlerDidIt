@@ -22,13 +22,6 @@ MonoBehaviour:
   AvailabilityHours: {x: 11, y: 13.5}
   includedCharacters: 
   Lines:
-  - speaker: 4
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: <b>EXCELLENT WORK, BUTLER!</b>
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
@@ -55,6 +48,20 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: <b>EXCELLENT WORK, BUTLER!</b>
+    fixedClue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: We will prepare a FANTASTIC meal with these ingredients!
+    fixedClue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
+    spAnimTrigger: 
+  - speaker: 4
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I will see you at lunch, butler.
     fixedClue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
     spAnimTrigger: 
   ending: 4

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: EdnaSuprised
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: ea1e031bac3080e49a8c8a7ee6b4ea77, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000004000000
   Lines:
@@ -39,8 +40,8 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: Well, Butler, you have certainly proven your strength to this High General
-      Marshal Sergeant.
+    text: Butler, you have certainly proven your strength to this High General Marshal
+      Sergeant.
     fixedClue: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
     spAnimTrigger: 
   - speaker: 4
@@ -61,7 +62,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (She should know this... was she not here 3 days ago?)
+    text: (She should know this... was she not here three days ago?)
     fixedClue: {fileID: 11400000, guid: 440426e73105c8d49baa83a8da742955, type: 2}
     spAnimTrigger: 
   - speaker: 4

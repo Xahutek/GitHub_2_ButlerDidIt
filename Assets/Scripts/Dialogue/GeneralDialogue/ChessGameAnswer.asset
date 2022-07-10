@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChessGameAnswer
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,24 +26,24 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Please apologize my intrusion, General, what where you pondering about
-      just now?
+    text: Please apologize my intrusion, general, what were you pondering about just
+      now?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No need to apologize, I was thinking about the last time myself and the
-      Lord played chess, in the library.
+    text: No need to apologize. I was thinking about the last time myself and the
+      lord played chess, in the library.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: (That's right, this Walrus liked playing chess with the Lord, and never
-      lost...perhaps<color=#7a9047ff> I should look into this chess game</color>.)
+    text: (That's right, this walrus liked playing chess with the lord, and never
+      lost... perhaps<color=#627537ff> I should look into this chess game</color>.)
     fixedClue: {fileID: 11400000, guid: 33cf64ff6183bb14aaa2561d344a6832, type: 2}
     spAnimTrigger: 
   - speaker: 4

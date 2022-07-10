@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaNextPosition
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: 8d30eec8a0660f04682baa26b7d30a12, type: 2}
   NecessaryCluesUnknown: []
@@ -26,8 +27,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well, your Atrium is just as lovely as ever, these new plants really tie
-      the room together. Are they imported?
+    text: Well, your entrance hall is just as lovely as ever, these new plants really
+      tie the room together. Are they imported?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -42,7 +43,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: "But I had a long journey tonight, so I will go into the living room to
-      recollect myself at around 05:00. \nAfterwards, I'd be happy to wake the Lord
+      recollect myself at around 05:00. \nAfterwards, I'd be happy to wake the lord
       up."
     fixedClue: {fileID: 0}
     spAnimTrigger: 

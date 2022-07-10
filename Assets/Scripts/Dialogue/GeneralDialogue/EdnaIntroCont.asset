@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EdnaIntroCont
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Butler, don't take it to heart but after eating this mighty grape...
+    text: Butler, don't take it to heart, but after eating this mighty grape...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -68,8 +69,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Now, if you would have a <color=#7a9047ff>heavy object </color>with you
-      that you could <color=#7a9047ff>present</color> to me, I might consider a chat
+    text: Now, if you would have a <color=#627537ff>heavy object </color>with you
+      that you could <color=#627537ff>present</color> to me, I might consider a chat
       with you.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -78,17 +79,17 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: If you fail to do so, I am looking forward to talk with individuals on
-      my level, such as the Lord.
+      my level, such as the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'I shall give him until 9 o''clock sharp.
+    text: 'I shall give him <color=#627537ff>until 9 o''clock sharp</color>.
 
-      After that, I will wake
-      him up by force.'
+      After
+      that, I will wake him up by force.'
     fixedClue: {fileID: 11400000, guid: 691762f1bae97fc45bdedb243ff55622, type: 2}
     spAnimTrigger: 
   - speaker: 0

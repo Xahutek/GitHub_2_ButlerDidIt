@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_EdnaEdnaLordChildhoodPhoto
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 206f80b3915489b4c9961db8694207d2, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: As I understood, you and the Lord grew up as friends since childhood?
+    text: As I understood, you and the lord grew up as friends since childhood?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Indeed, Butler.
+    text: Indeed, butler.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ... Is that so, General?
+    text: ... Is that so, general?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -68,7 +69,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: From the moment I left my mothers womb, I knew that it was my destiny,
+    text: From the moment I left my mother's womb, I knew that it was my destiny,
       my responsibility to serve my country.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -76,7 +77,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Excuse the question... But you once mentioned that you and the Lord were
+    text: Excuse the question... But you once mentioned that you and the lord were
       "rivals in both mind and body"?
     fixedClue: {fileID: 0}
     spAnimTrigger: 

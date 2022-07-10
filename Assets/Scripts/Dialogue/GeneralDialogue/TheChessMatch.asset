@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TheChessMatch
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -51,11 +52,11 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Nothing, apologies
+  - text: Nothing, apologies.
     reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: What where you talking about?
+  - text: What were you talking about?
     reaction: {fileID: 11400000, guid: 404f2ee78c8935c498a0caffaaffd67b, type: 2}
     trigger: {fileID: 0}
     rewards: []

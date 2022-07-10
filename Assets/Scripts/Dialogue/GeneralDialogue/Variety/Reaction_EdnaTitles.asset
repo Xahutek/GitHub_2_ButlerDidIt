@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_EdnaTitles
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Could you tell me more about your <color=#7a9047ff>titles</color=#7a9047ff>?
+    text: Could you tell me more about your <color=#627537ff>titles</color=#627537ff>?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
@@ -82,13 +83,6 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (What have I done?)
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (No wait...why have I done this <i><b>again</b>, a second time</i>?)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: BringEdnaFood
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
@@ -39,8 +40,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Ah! That's right! I am a Butler! I should bring her something to eat from
-      the <color=#7a9047ff>living room</color>.)
+    text: (Ah! That's right! I am a butler! I should bring her something to eat from
+      the <color=#627537ff>living room</color>.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
