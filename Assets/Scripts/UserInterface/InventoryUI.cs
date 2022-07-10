@@ -297,7 +297,7 @@ public class InventoryUI : MonoBehaviour
     }
     public void Open()
     {
-        if (PlayerController.main.grounded)
+        if (PlayerController.main.grounded||GameManager.isPaused)
         {
             isOpen = true;
             GameManager.isPaused = true;
