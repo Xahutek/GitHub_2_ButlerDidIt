@@ -18,16 +18,17 @@ MonoBehaviour:
   nullify: []
   seenInInventory: 1
   isInventoryClue: 1
-  isMindmapClue: 0
+  isMindmapClue: 1
   presetButlerKnows: 0
   presetDetectiveKnows: 0
   presetInposterKnows: 0
   presetTycoonKnows: 0
   presetGeneralKnows: 0
   presetGardenerKnows: 0
-  ButlerKnows: 0
-  DetectiveKnows: 0
+  ButlerKnows: 1
+  DetectiveKnows: 1
   ImposterKnows: 0
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
+  AlsoAffected: []

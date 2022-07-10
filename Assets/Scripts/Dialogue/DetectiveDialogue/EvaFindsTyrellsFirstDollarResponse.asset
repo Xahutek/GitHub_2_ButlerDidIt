@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: EvaFindsTyrellsFirstDollarResponse
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
+  includedCharacters: 0000000002000000
   Lines:
   - speaker: 0
     speakerEmotion: 0

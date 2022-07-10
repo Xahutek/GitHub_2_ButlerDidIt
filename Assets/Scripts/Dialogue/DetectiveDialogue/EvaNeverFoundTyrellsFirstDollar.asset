@@ -10,37 +10,67 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EvaFindsTyrellsFirstDollarResponseElaborate
+  m_Name: EvaNeverFoundTyrellsFirstDollar
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
   TakeTriggerItemAway: 0
-  NecessaryCluesKnown: []
+  NecessaryCluesKnown:
+  - {fileID: 11400000, guid: ae04410db71d7a143b97fb1a4cd73275, type: 2}
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 1
-  AvailabilityHours: {x: 0, y: 24}
+  seen: 0
+  AvailabilityHours: {x: 20, y: 24}
   includedCharacters: 0000000002000000
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: This might be Tyrells first earned dollar...
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: ...kept by the Lord.
+    text: Detective Dence, I came across a quite peculiar story concering Lord Deddingtons
+      relation to Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Tyrells first earned dollar? Well, now things are getting interesting.
+    text: I'm listening!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: It seels like Lord Deddington kept Lord Tyrells beloved First Dollar hostage!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Furthermore...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I found this dollar note in the basement!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This must be Tyrells first earned dollar kept by the Lord.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' Well, now things are getting interesting.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0

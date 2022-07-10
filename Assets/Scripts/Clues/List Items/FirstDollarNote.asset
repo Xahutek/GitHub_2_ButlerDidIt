@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c601663db51864e96f8547e2451984, type: 3}
   m_Name: FirstDollarNote
   m_EditorClassIdentifier: 
-  name: Tyrell's beloved First Dollar.
+  name: An old dollar note.
   picture: {fileID: 21300000, guid: 6991b4e2686099f4f986a5b2f2b43fc1, type: 3}
   required: []
   nullify: []
@@ -25,11 +25,12 @@ MonoBehaviour:
   presetTycoonKnows: 0
   presetGeneralKnows: 0
   presetGardenerKnows: 0
-  ButlerKnows: 0
+  ButlerKnows: 1
   DetectiveKnows: 0
   ImposterKnows: 0
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
+  AlsoAffected: []
   givenAway: 0
   _givenAway: 0
