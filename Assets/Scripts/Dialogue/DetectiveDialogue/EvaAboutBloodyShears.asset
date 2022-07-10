@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000002000000
   Lines:
@@ -104,7 +104,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: You go and rest now! All pale and shaky...
-    fixedClue: {fileID: 0}
+    fixedClue: {fileID: 11400000, guid: b7ee1e99a572f40499ef5499e8c66ed4, type: 2}
     spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
