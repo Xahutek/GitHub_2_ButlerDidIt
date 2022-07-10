@@ -19,6 +19,7 @@ public class PlayerController : InteractableCharacter
     private CapsuleCollider2D col;
     private Rigidbody2D rb;
     public Transform body;
+    public GameObject LickingCam;
     public FrameInput Input { get; private set; }
     public Vector2 position { get { return transform.position; } set { transform.position = value; lastpos = value; } }
     public Vector2 groundPosition;
@@ -62,16 +63,24 @@ public class PlayerController : InteractableCharacter
         {
             GatherInput();
 
-            CalculateGravity();
+            isLicking = Input.Licking;
+            if (!isLicking)
+            {
+                CalculateGravity();
 
-            CalculateWalk();
-            CalculateJump();
+                CalculateWalk();
+                CalculateJump();
+            }
         }
+        else isLicking = false;
+
         ApplyMovement();
 
         ManageVisuals();
 
     }
+
+    public static bool isLicking;
 
     private void GatherInput()
     {
@@ -83,13 +92,14 @@ public class PlayerController : InteractableCharacter
             JumpDown = UnityEngine.Input.GetKeyDown(KeyCode.Space),
             JumpUp = UnityEngine.Input.GetKeyUp(KeyCode.Space),
             Jumping = UnityEngine.Input.GetKey(KeyCode.Space),
+            Licking = UnityEngine.Input.GetKey(KeyCode.T),
 
             X = UnityEngine.Input.GetAxisRaw("Horizontal"),
             Y = UnityEngine.Input.GetAxisRaw("Vertical")
         };
         if (Input.JumpDown)
             lastJumpPressedTime = Time.time;
-        if (Input.JumpUp&&isJumping)
+        if (Input.JumpUp && isJumping)
             lastJumpReleaseTime = Time.time;
         if (Input.SprintDown)
             lastSprintPressedTime = Time.time;
@@ -270,6 +280,8 @@ public class PlayerController : InteractableCharacter
     {
         if(currentHorizontalSpeed!=0)
         body.localScale = new Vector3(Mathf.Abs(body.localScale.x)*Mathf.Sign(currentHorizontalSpeed), body.localScale.y, body.localScale.z);
+        animator.SetBool("IsLicking",isLicking);
+        LickingCam.SetActive(isLicking);
     }
     public void RefreshCollider()
     {
@@ -288,5 +300,6 @@ public struct FrameInput
     public bool 
         JumpDown,
         JumpUp,
-        Jumping;
+        Jumping,
+        Licking;
 }

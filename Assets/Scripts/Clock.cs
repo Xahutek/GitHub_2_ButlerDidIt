@@ -69,7 +69,7 @@ public class Clock : MonoBehaviour
         }
 
         float dayFactor = CompleteDay;
-        if (Input.GetKey(KeyCode.T))
+        if (PlayerController.isLicking)
             dayFactor = CompleteDay/SpeedUpMultiplier;
 
         if (internalRefresh)
