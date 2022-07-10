@@ -26,13 +26,6 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: This food looks great!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 3
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
     text: I always knew you can not trust british cuisine.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -75,5 +68,23 @@ MonoBehaviour:
       otherReactions: []
       isThought: 0
       text: I always knew you can not trust british cuisine.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+  - description: 
+    trigger:
+      activateClueTrigger: 0
+      clue: {fileID: 11400000, guid: 7fca2bd5e9446c84a830e2d75d31e5d6, type: 2}
+      knowingCharacters: 
+      unknowingCharacters: 00000000
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 4
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Everyone needs a good meal now!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
