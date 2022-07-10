@@ -385,11 +385,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420652839971397295}
   m_LocalRotation: {x: -0, y: -0, z: -0.20198417, w: 0.97938883}
-  m_LocalPosition: {x: 1.0690498, y: -1.3454113, z: 3.088333}
-  m_LocalScale: {x: 0.93429005, y: 1.0840701, z: 1}
+  m_LocalPosition: {x: 0.629995, y: -5.7539997, z: 5.3116174}
+  m_LocalScale: {x: 0.7561162, y: 1.0386487, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 5
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &5317489456323448716
 MonoBehaviour:
@@ -835,7 +835,12 @@ Transform:
   - {fileID: 254733323851760494}
   - {fileID: 1525800252686713507}
   - {fileID: 8277205718302024496}
-  - {fileID: 1739407669430091640}
+  - {fileID: 5071023448656753164}
+  - {fileID: 486073049592365402}
+  - {fileID: 8938666048946054873}
+  - {fileID: 3628711611156122185}
+  - {fileID: 4757852254848036231}
+  - {fileID: 1401685048310606918}
   m_Father: {fileID: 4449627829309893487}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1012,11 +1017,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3490047420787506032}
   m_LocalRotation: {x: -0, y: -0, z: -0.28647372, w: 0.9580881}
-  m_LocalPosition: {x: 1.808, y: 0.877, z: 3.088333}
-  m_LocalScale: {x: 0.93429005, y: 1.0840701, z: 1}
+  m_LocalPosition: {x: 1.2075808, y: -3.5315895, z: 5.3116174}
+  m_LocalScale: {x: 0.7817075, y: 0.9998953, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 1
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &3955100802743201710
 MonoBehaviour:
@@ -2123,11 +2128,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6498719276166579150}
   m_LocalRotation: {x: -0, y: -0, z: -0.20198417, w: 0.97938883}
-  m_LocalPosition: {x: -1.86, y: 0.886, z: 3.088333}
-  m_LocalScale: {x: 0.93429005, y: 1.0840701, z: 1}
+  m_LocalPosition: {x: -1.6594437, y: -3.5225906, z: 5.3116174}
+  m_LocalScale: {x: 0.7561162, y: 1.0386487, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 3
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &6130701949960762222
 MonoBehaviour:
@@ -2555,11 +2560,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7146336646607435007}
   m_LocalRotation: {x: -0, y: -0, z: 0.0037721961, w: 0.9999929}
-  m_LocalPosition: {x: 1.1010513, y: -1.6054115, z: 3.088333}
-  m_LocalScale: {x: 0.93429, y: 1.08407, z: 1}
+  m_LocalPosition: {x: 0.6550084, y: -6.014, z: 5.3116174}
+  m_LocalScale: {x: 0.7302797, y: 1.0840526, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 4
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &7795851617754038088
 MonoBehaviour:
@@ -2771,11 +2776,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7657002388565037717}
   m_LocalRotation: {x: -0, y: -0, z: 0.0037721961, w: 0.9999929}
-  m_LocalPosition: {x: 1.8610535, y: 0.7475891, z: 3.088333}
-  m_LocalScale: {x: 0.93429, y: 1.08407, z: 1}
+  m_LocalPosition: {x: 1.2490501, y: -3.6609993, z: 5.3116174}
+  m_LocalScale: {x: 0.7302797, y: 1.0840526, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 0
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &8931777148842018351
 MonoBehaviour:
@@ -3034,61 +3039,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &8001874754308206094
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739407669430091640}
-  - component: {fileID: 3642382820075379489}
-  m_Layer: 0
-  m_Name: LowerLivingRoomLights
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1739407669430091640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8001874754308206094}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.20560828, y: -4.4085884, z: 2.2232845}
-  m_LocalScale: {x: 0.7816317, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5071023448656753164}
-  - {fileID: 486073049592365402}
-  - {fileID: 8938666048946054873}
-  - {fileID: 3628711611156122185}
-  - {fileID: 4757852254848036231}
-  - {fileID: 1401685048310606918}
-  m_Father: {fileID: 7737209518016602681}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3642382820075379489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8001874754308206094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0fc87798e23162489569ee885ff2765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  available: 0
-  checkTime: 1
-  AvailableHours: {x: 1, y: 24}
-  checkClues: 0
-  ButlerKnownClues: []
-  ButlerUnknownClues: []
 --- !u!1 &8004942425392564944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,11 +3064,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8004942425392564944}
   m_LocalRotation: {x: -0, y: -0, z: 0.0037721961, w: 0.9999929}
-  m_LocalPosition: {x: -1.757946, y: 0.7475891, z: 3.088333}
-  m_LocalScale: {x: 0.93429, y: 1.08407, z: 1}
+  m_LocalPosition: {x: -1.5796746, y: -3.6609993, z: 5.3116174}
+  m_LocalScale: {x: 0.7302797, y: 1.0840526, z: 1}
   m_Children: []
-  m_Father: {fileID: 1739407669430091640}
-  m_RootOrder: 2
+  m_Father: {fileID: 7737209518016602681}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &4657155517604422730
 MonoBehaviour:
