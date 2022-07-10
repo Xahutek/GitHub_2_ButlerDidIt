@@ -76,22 +76,25 @@ MonoBehaviour:
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
   options:
-  - text: The window can be opened from the outside.
+  - text: The window can be opened from the outside!
     reaction: {fileID: 11400000, guid: 73c7411d2129ac3459d913220e5e638d, type: 2}
-    trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
+    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+    knownToCharacter: 2
     rewards:
     - {fileID: 11400000, guid: 08b08bfc9a7734944b79d7c84c6baff1, type: 2}
-  - text: '[Say nothing]'
+  - text: '[say nothing]'
     reaction: {fileID: 11400000, guid: 5ce64a8abd65b2545ae224c728f3856b, type: 2}
-    trigger: {fileID: 0}
+    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+    knownToCharacter: 2
     rewards: []
-  - text: The lord actually <b>wants</b> windows open during storms.
+  - text: The lord likes it that way.
     reaction: {fileID: 11400000, guid: 8f3d3cdbec77e7940a4f3c669d6832ba, type: 2}
-    trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
+    trigger: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+    knownToCharacter: 2
     rewards:
     - {fileID: 11400000, guid: 26e455d04afd6d74298bdd0e0f8b197b, type: 2}
   Segments:
-  - description: 
+  - description: intro
     trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
@@ -106,32 +109,32 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Mr Potts, you take care of the garden, the frontyard and anything else
-        that comes up, correct?
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 5
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: Yes, Ma'am!
+      text: It was a rethorical question...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So you had perfect understanding of the mansion's floor plans!
+      text: But thank you for answering.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Now Gertie, this noon you were working outside, on top of a tree in the
+        frontyard.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: A-As does everyone else who works here!
+      text: 'y..yes. '
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: 
+  - description: Window Open
     trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
@@ -146,46 +149,25 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That's beside the point.
+      text: As it so happens the three in the Driveway is located directly in front
+        of Lord Deddingtons study...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, this noon you were working outside, on top of a tree in the frontyard.
+      text: ... whos window was open when we first found the body!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 2
+    - speaker: 3
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: If you can climb up there so easily, you could have climbed into the
-        house through the window without a problem.
+      text: '*Gasp* She''s right! It was awfully cold in there...'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: And what is behind that window?
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 4
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: <b>...THE CRIME SCENE!</b>.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: That's correct, General!
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-  - description: 
+  - description: Window Closed
     trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
@@ -200,20 +182,27 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That's true, and you're doing a really good job on those trees.
+      text: And you are taking excellent care of those trees, I must admit it.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 4
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: He is taking excellent care of those plants, I saw it myself!
+      text: He does indeed, I have seen it myself!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ' Alright, let''s move on.'
+      text: Great! Good Job Gertie.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Moving on.
       fixedClue: {fileID: 0}
       spAnimTrigger: 

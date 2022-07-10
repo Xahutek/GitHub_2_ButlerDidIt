@@ -393,7 +393,7 @@ public class DialogueManager : MonoBehaviour
             {
                 B.Disappear();
             }
-            else if (line >= lines.Count&&!hasClueQueued) //End
+            else if (line >= lines.Count && !hasClueQueued) //End
             {
                 Debug.Log("Arrive at End");
 
@@ -408,37 +408,26 @@ public class DialogueManager : MonoBehaviour
                     Close();
                     yield break;
                 }
-                else if (dialogue.ending == Dialogue.EndingType.Fixed)
-                {
-                    isRefreshing = false;
 
-                    height -= B.height * BaseScale + BoxVerticalSpacing;
-
-                    if (dialogue.ResumeFixed != null)
-                        SetDialogue(dialogue.ResumeFixed);
-                    else Close();
-
-                    yield break;
-                }
-                else if (dialogue.ending == Dialogue.EndingType.SpecificQuestion) //Show Options
+                int activeOptions = 0;
+                if (dialogue.ending == Dialogue.EndingType.SpecificQuestion) //Show Options
                 {
                     Dialogue.Option[] options = dialogue.options;
                     ClearAnimations();
-                    if (this==eventMain)
-                    foreach (InteractableCharacter c in CharacterObjects)
-                    {
-                        if (c.character == Character.Butler)
+                    if (this == eventMain)
+                        foreach (InteractableCharacter c in CharacterObjects)
                         {
-                            thisRoot = c.transform.position;
+                            if (c.character == Character.Butler)
+                            {
+                                thisRoot = c.transform.position;
 
-                            break;
+                                break;
+                            }
                         }
-                    }
-                    int activeOptions=0;
                     for (int o = 0; o < OptionsBubbles.Length; o++)
                     {
                         Dialogue.Option option = o < options.Length ? options[o] : null;
-                        if (option != null && option.trigger != null && !option.trigger.KnownTo(Character.Butler)) option = null;
+                        if (option != null && option.trigger != null && !option.trigger.KnownTo(option.knownToCharacter)) option = null;
 
                         OptionBubble O = OptionsBubbles[o];
                         O.Refresh(option, thisRoot, height);
@@ -454,19 +443,20 @@ public class DialogueManager : MonoBehaviour
                     }
 
                     Debug.Log(activeOptions);
-
-                    if (activeOptions == 0)
-                    {
-                        height -= B.height * BaseScale + BoxVerticalSpacing;
-
-                        if (dialogue.ResumeFixed != null)
-                            SetDialogue(dialogue.ResumeFixed);
-                        else Close();
-
-                        yield break;
-                    }
                 }
-                else //Open or Open Question
+                if (dialogue.ending == Dialogue.EndingType.Fixed || (dialogue.ending == Dialogue.EndingType.SpecificQuestion && activeOptions <= 0))
+                {
+                    isRefreshing = false;
+
+                    height -= B.height * BaseScale + BoxVerticalSpacing;
+
+                    if (dialogue.ResumeFixed != null)
+                        SetDialogue(dialogue.ResumeFixed);
+                    else Close();
+
+                    yield break;
+                }
+                if (dialogue.ending == Dialogue.EndingType.Open || dialogue.ending == Dialogue.EndingType.OpenQuestion) //Open or Open Question
                 {
                     if (inventoryUI) inventoryUI.Open();
                     InputBubble.Appear(thisRoot, height);

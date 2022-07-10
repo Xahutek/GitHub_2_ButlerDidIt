@@ -143,6 +143,7 @@ public class Dialogue : ScriptableObject
         public string text;
         public Dialogue reaction;
         public Clue trigger;
+        public Character knownToCharacter= Character.Butler;
 
         [Header("Rewards - makes known clue to all conversation partners")]
         public Clue[] rewards= new Clue[0];

@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 509269f09f7d9ce4c95f4392fc8b4593, type: 3}
-  m_Name: 2_GertieCrossExaminationWindowOpportunityClosed
+  m_Name: 2_GertieCrossExaminationTreeOpportunity
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
   TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
-  NecessaryCluesUnknown:
-  - {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 1
@@ -42,7 +41,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: So you had a perfect understanding of the mansion's floor plans!
+    text: So you had perfect understanding of the mansion's floor plans!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -56,43 +55,39 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That's true, and you're doing a really good job on those trees.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 4
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: He is taking excellent care of those plants, I saw it myself!
+    text: Glad you mentioned it...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ' Alright, let''s move on.'
+    text: Hugh, you also work here, don't you?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 4
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: You must know the layout of this building as well.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 2
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
   options:
-  - text: The window can be opened from the outside.
-    reaction: {fileID: 11400000, guid: 73c7411d2129ac3459d913220e5e638d, type: 2}
-    trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
-    rewards:
-    - {fileID: 11400000, guid: 08b08bfc9a7734944b79d7c84c6baff1, type: 2}
-  - text: '[Say nothing]'
-    reaction: {fileID: 11400000, guid: 5ce64a8abd65b2545ae224c728f3856b, type: 2}
-    trigger: {fileID: 0}
+  - text: Obviously I do.
+    reaction: {fileID: 11400000, guid: 3a3b6d5bc8c24cf468402ce0fa15b2b0, type: 2}
+    trigger: {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
+    knownToCharacter: 0
     rewards: []
-  - text: The lord actually <b>wants</b> windows open during storms.
-    reaction: {fileID: 11400000, guid: 8f3d3cdbec77e7940a4f3c669d6832ba, type: 2}
-    trigger: {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
-    rewards:
-    - {fileID: 11400000, guid: 26e455d04afd6d74298bdd0e0f8b197b, type: 2}
+  - text: More so than Gertie.
+    reaction: {fileID: 11400000, guid: 3a3b6d5bc8c24cf468402ce0fa15b2b0, type: 2}
+    trigger: {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
+    knownToCharacter: 0
+    rewards: []
   Segments:
-  - description: 
+  - description: intro
     trigger:
       activateClueTrigger: 0
       clue: {fileID: 0}
@@ -122,7 +117,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So you had a perfect understanding of the mansion's floor plans!
+      text: So you had perfect understanding of the mansion's floor plans!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 5
@@ -132,11 +127,11 @@ MonoBehaviour:
       text: A-As does everyone else who works here!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: 
+  - description: OnTreeKnown
     trigger:
       activateClueTrigger: 1
-      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
-      knowingCharacters: 02000000
+      clue: {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
+      knowingCharacters: 00000000
       unknowingCharacters: 
       activateSuspicionTrigger: 0
       c: 0
@@ -147,51 +142,29 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That's beside the point.
+      text: Glad you mentioned it...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Now, this noon you were working outside, on top of a tree in the frontyard.
+      text: Hugh, you also work here, don't you?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: If you can climb up there so easily, you could have climbed into the
-        house through the window without a problem.
+      text: You must know the layout of this building as well.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: And what is behind that window?
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 4
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: <b>...THE CRIME SCENE!</b>.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 2
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: That's correct, General!
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-  - description: 
+  - description: OnTreeUnknown
     trigger:
       activateClueTrigger: 1
-      clue: {fileID: 11400000, guid: a4eebb26a29a09149a006545977a7327, type: 2}
+      clue: {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
       knowingCharacters: 
-      unknowingCharacters: 02000000
+      unknowingCharacters: 00000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
@@ -201,20 +174,13 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: That's true, and you're doing a really good job on those trees.
-      fixedClue: {fileID: 0}
-      spAnimTrigger: 
-    - speaker: 4
-      speakerEmotion: 0
-      otherReactions: []
-      isThought: 0
-      text: He is taking excellent care of those plants, I saw it myself!
+      text: However, I don't see any way you could have exploited this knowledge...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: ' Alright, let''s move on.'
+      text: Moving on.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
