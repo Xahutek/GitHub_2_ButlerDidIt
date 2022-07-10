@@ -102,7 +102,7 @@ public class DialogueManager : MonoBehaviour
             else NextQueued = true;
         }
         
-        if (isOpen && main == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
+        if (isOpen && normalMain == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
         {
             if (!isExcused)
             {
