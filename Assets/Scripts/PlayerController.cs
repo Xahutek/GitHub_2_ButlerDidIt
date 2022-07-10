@@ -37,13 +37,8 @@ public class PlayerController : InteractableCharacter
         lastpos = transform.position;
     }
 
-    public void Start()
-    {
-        EventSystem.main.OnPickClue += OnPickClue;
-    }
-
     public SpriteRenderer presentedItem;
-    public void OnPickClue(Clue C)
+    public void OnPickClueValid(Clue C)
     {
         if (C is Item)
         {

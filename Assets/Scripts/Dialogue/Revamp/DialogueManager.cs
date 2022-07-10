@@ -198,6 +198,7 @@ public class DialogueManager : MonoBehaviour
                     C.MakeKnownTo(c);
                 }
                 SetDialogue(nextDialogue);
+                PlayerController.main.OnPickClueValid(C);
                 break;
             case Dialogue.EndingType.OpenQuestion:
                 nextDialogue = dialogue.GetOpenQuestionReaction(C);
@@ -207,6 +208,7 @@ public class DialogueManager : MonoBehaviour
                     C.MakeKnownTo(c);
                 }
                 SetDialogue(nextDialogue);
+                PlayerController.main.OnPickClueValid(C);
                 break;
             case Dialogue.EndingType.SpecificQuestion:
                 break;
