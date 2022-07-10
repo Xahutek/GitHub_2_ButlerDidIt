@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ImposterInLibrary
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
-    text: The Lord's library.
+    text: The lord's library.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6

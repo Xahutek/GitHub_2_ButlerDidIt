@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_ImposterEdnasBattle
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: edd9f6230d722ca4a86f4b395f1dc128, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: So, have you heard of General Tusksons latest victory?
+    text: So, have you heard of General Tuskson's latest victory?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6
@@ -71,14 +72,14 @@ MonoBehaviour:
     text: What are you referring to, Sir Sus?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 6
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '*cough* It''s nothing, Butler.'
+    text: '*cough* It''s nothing, butler.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 6
     speakerEmotion: 0
     otherReactions: []
     isThought: 0

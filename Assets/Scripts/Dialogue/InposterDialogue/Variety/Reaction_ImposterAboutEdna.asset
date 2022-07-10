@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_ImposterAboutEdna
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 0411c862220bf5243857a0bf27a32e1b, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -26,7 +27,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: Sir Sus, have you ever been in the presence of such a highly decorated
-      Navy General such as Edna Tuskson?
+      navy general such as Edna Tuskson?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6

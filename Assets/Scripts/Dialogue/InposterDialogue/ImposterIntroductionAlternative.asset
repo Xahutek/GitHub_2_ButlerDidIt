@@ -19,7 +19,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 0000000006000000
   Lines:
@@ -27,21 +27,21 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Top of the morning to you, Butler Diddit!
+    text: ...Top of the morning to you, Mr Diddit!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: How is the the old Lord Deddigton *cough* holding up?
+    text: How is the the old Lord Deddington *cough* holding up?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: I killed him this midnight
+  - text: I killed him this midnight.
     reaction: {fileID: 11400000, guid: db73f47ead1d1a04985bde12745528c7, type: 2}
     trigger: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     rewards: []

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_ImposterEdnasBattle_NoPride
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The Lord always says...
+    text: The lord always says...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Well, I am happy to see that he values your peson.
+    text: Well, I am happy to see that he values your person.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6

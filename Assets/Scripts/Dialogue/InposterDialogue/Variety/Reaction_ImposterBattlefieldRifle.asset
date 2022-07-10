@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_ImposterBattlefieldRifle
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The Lord's trophy rifle..?
+    text: The lord's trophy rifle..?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6
@@ -39,7 +40,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It is very dusty, I am sorry. The Lord forbid me to touch some of his artifacts.
+    text: It is very dusty, I am sorry. The lord forbid me to touch some of his artifacts.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 6
