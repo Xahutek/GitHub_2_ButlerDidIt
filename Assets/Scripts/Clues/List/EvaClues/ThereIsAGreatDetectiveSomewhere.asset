@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
   m_Name: ThereIsAGreatDetectiveSomewhere
   m_EditorClassIdentifier: 
-  name: There will be a genius-level detective at this surprise party!!?
+  name: There will be a genius-level detective at this surprise party.
   picture: {fileID: 0}
   required:
   - {fileID: 0}
@@ -26,7 +26,7 @@ MonoBehaviour:
   presetTycoonKnows: 0
   presetGeneralKnows: 0
   presetGardenerKnows: 0
-  ButlerKnows: 0
+  ButlerKnows: 1
   DetectiveKnows: 0
   ImposterKnows: 0
   TycoonKnows: 0
