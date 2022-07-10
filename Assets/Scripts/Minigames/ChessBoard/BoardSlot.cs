@@ -9,12 +9,12 @@ namespace ChessBoard
     {
         public ChessColor EdnaWinColor;
         public FigureType[] ValidEdnaWin;
-        public ChessColor EdnaWinColorFlipped;
-        public FigureType[] ValidEdnaWinFlipped;
+        //public ChessColor EdnaWinColorFlipped;
+        //public FigureType[] ValidEdnaWinFlipped;
         public ChessColor LordWinColor;
         public FigureType[] ValidLordWin;
-        public ChessColor LordWinColorFlipped;
-        public FigureType[] ValidLordWinFlipped;
+        //public ChessColor LordWinColorFlipped;
+        //public FigureType[] ValidLordWinFlipped;
 
         public ChessFigure figure;
 
@@ -31,29 +31,29 @@ namespace ChessBoard
 
             if (winner==ChessColor.White)
             {
-                if (!flipped)
-                {
-                    requiredColor = EdnaWinColor;
-                    AllowedTypes.AddRange(ValidEdnaWin);
-                }
-                else
-                {
-                    requiredColor = EdnaWinColorFlipped;
-                    AllowedTypes.AddRange(ValidEdnaWinFlipped);
-                }
+                //if (!flipped)
+                //{
+                requiredColor = EdnaWinColor;
+                AllowedTypes.AddRange(ValidEdnaWin);
+                //}
+                //else
+                //{
+                //    requiredColor = EdnaWinColorFlipped;
+                //    AllowedTypes.AddRange(ValidEdnaWinFlipped);
+                //}
             }
             else
             {
-                if (!flipped)
-                {
-                    requiredColor = LordWinColor;
-                    AllowedTypes.AddRange(ValidLordWin);
-                }
-                else
-                {
-                    requiredColor = LordWinColorFlipped;
-                    AllowedTypes.AddRange(ValidLordWinFlipped);
-                }
+                //if (!flipped)
+                //{
+                requiredColor = LordWinColor;
+                AllowedTypes.AddRange(ValidLordWin);
+                //}
+                //else
+                //{
+                //    requiredColor = LordWinColorFlipped;
+                //    AllowedTypes.AddRange(ValidLordWinFlipped);
+                //}
             }
 
             bool valid = true;
