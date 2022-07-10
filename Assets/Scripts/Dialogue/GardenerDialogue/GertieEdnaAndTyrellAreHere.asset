@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieEdnaAndTyrellAreHere
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -27,14 +28,14 @@ MonoBehaviour:
     isThought: 0
     text: Edna and Tyrell are already here.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Splendid, I will say hello as soon as I'm done here.
+    text: Splendid, I will say 'hello' as soon as I'm done here.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
@@ -43,14 +44,14 @@ MonoBehaviour:
 
 '
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It's been a whole 10 days since they last saw each other!
+    text: It's been a whole ten days since they last saw each other!
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 3
   ResumeFixed: {fileID: 0}
   availableAnswers: []

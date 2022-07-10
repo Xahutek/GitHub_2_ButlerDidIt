@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieIntroductionYes
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -60,7 +61,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: If you come back at 7:30, I'll have them set out!
+    text: ' I''ll have them set out here!'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3
