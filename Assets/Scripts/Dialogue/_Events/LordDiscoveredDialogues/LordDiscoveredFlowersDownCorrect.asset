@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: LordDiscoveredFlowersDown
+  m_Name: LordDiscoveredFlowersDownCorrect
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
-  TakeTriggerItemAway: 0
+  TakeTriggerItemAway: 1
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -22,18 +22,25 @@ MonoBehaviour:
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
-  - speaker: 0
+  - speaker: 4
     speakerEmotion: 0
     otherReactions: []
-    isThought: 1
-    text: (I could put down the flowers the look nice and innocent)
+    isThought: 0
+    text: <b>WHAT A TOUCHING GESTURE</b>.
+    fixedClue: {fileID: 11400000, guid: 4ea75cb4ff2cbe14cb8d1cc69c92ed9a, type: 2}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Well isn't that something?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 1
+  ending: 4
   ResumeFixed: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
   availableAnswers:
   - text: 
-    reaction: {fileID: 11400000, guid: 7839240176153804eb97cf1295884c3f, type: 2}
-    trigger: {fileID: 11400000, guid: 7eec7896f356b8642bf2c426227f8986, type: 2}
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
     rewards: []
   options: []
