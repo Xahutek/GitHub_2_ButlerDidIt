@@ -19,7 +19,6 @@ public class PlayerController : InteractableCharacter
     private CapsuleCollider2D col;
     private Rigidbody2D rb;
     public Transform body;
-    public GameObject LickingCam;
     public FrameInput Input { get; private set; }
     public Vector2 position { get { return transform.position; } set { transform.position = value; lastpos = value; } }
     public Vector2 groundPosition;
@@ -38,7 +37,10 @@ public class PlayerController : InteractableCharacter
         lastpos = transform.position;
     }
 
+    public GameObject LickingCam;
+    public Item SaltStone;
     public SpriteRenderer presentedItem;
+    private float LickDuration;
     public void OnPickClueValid(Clue C)
     {
         if (C is Item)
@@ -59,20 +61,28 @@ public class PlayerController : InteractableCharacter
         currentVerticalSpeed = 0;
         RunCollisionChecks();
 
-        if (!isControlled && !Portal.isTravelling && !GameManager.isPaused && Clock.Hour<23.5f)
+        if (!isControlled && !Portal.isTravelling && !GameManager.isPaused && Clock.Hour < 23.5f)
         {
             GatherInput();
 
-            isLicking = Input.Licking;
+            isLicking = Input.Licking && SaltStone.KnownTo(Character.Butler) && !SaltStone.givenAway;
             if (!isLicking)
             {
+                if (LickDuration > 2.5f)
+                    EventSystem.main.RefreshRooms();
+                LickDuration = 0;
                 CalculateGravity();
 
                 CalculateWalk();
                 CalculateJump();
             }
+            else LickDuration += Clock.deltaTime;
         }
-        else isLicking = false;
+        else
+        {
+            LickDuration = 0;
+            isLicking = false;
+        }
 
         ApplyMovement();
 

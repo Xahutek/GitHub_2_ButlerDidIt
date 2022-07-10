@@ -11,6 +11,8 @@ public class ClockDisplay : MonoBehaviour
     //just for testing    
     const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
 
+    public Item PocketWatchItem;
+
 
     void FixedUpdate()
     {
@@ -19,7 +21,7 @@ public class ClockDisplay : MonoBehaviour
 
         UpdateMarkers();
 
-        if (GameLoadData.difficulty != Difficulty.Page)
+        if (!PocketWatchItem.KnownTo(Character.Butler)||PocketWatchItem.givenAway)
             gameObject.SetActive(false);
     }
 

@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public Clue SaveClue, SaveDeletedClue;
 
+    public Item PocketWatchObject;
+
     private void Awake()
     {
         manualPaused = true;
@@ -33,6 +35,8 @@ public class GameManager : MonoBehaviour
     {
         SaveSystem.LoadProgress();
         manualPaused = false;
+        if(GameLoadData.difficulty != Difficulty.Page)
+        PocketWatchObject.givenAway = true;
         //eventManager.CheckFirstIntemrission();
     }
 

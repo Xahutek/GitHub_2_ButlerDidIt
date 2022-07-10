@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minuteHand: {fileID: 4543134503532074364}
   hourHand: {fileID: 2468288243889988043}
+  PocketWatchItem: {fileID: 11400000, guid: cf7a81982f68cf34d8b549d2b3e5cd81, type: 2}
   markers:
   - name: Lord's Deadline by Edna
     date: {fileID: 11400000, guid: fd33a4889d0cda7478c9d6bcad70bad2, type: 2}
@@ -242,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minuteHand: {fileID: 4543134503532074364}
   hourHand: {fileID: 2468288243889988043}
+  PocketWatchItem: {fileID: 0}
   markers: []
 --- !u!1 &3164644927970476640
 GameObject:
