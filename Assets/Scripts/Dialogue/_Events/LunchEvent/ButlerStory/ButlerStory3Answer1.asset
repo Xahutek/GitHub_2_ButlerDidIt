@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -61,7 +61,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: 'ALRIGHT, we have had food. '
+    text: 'Alright, we have had food. '
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2

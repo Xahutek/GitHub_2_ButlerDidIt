@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 
   Lines:
@@ -26,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Find a rare, white, flower.
+    text: ... in order to find a rare, white, flower.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: A white ghost orchid
+    text: A white ghost orchid.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That does sound thrilling! Mr. Potts, did you manage to find the flower?
+    text: That does sound thrilling! Mr Potts, did you manage to find the flower?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
@@ -61,42 +61,35 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I had to beat 3 old zebras with a shovel.
+    text: I had to beat three old zebras with a shovel.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: For you see, the flower is in high demand!
+    text: For, you see, the flower is in high demand!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But I could secure the orchid for House Deddington!
+    text: But I was able to secure the orchid for House Deddington!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: A fascinating tale, where is the flower now?
+    text: A fascinating tale. Where is the flower now?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...The Lord was <i>very clear<i> about.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 5
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: ...The Lord was <i>very clear<i> about.
+    text: ...The lord was <i>very clear<i> about it.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -110,21 +103,21 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '"<color=B01B18>No one shall ever see the ghost orchid</color>."'
+    text: <color=#627537ff>"No one shall ever see the ghost orchid."</color>
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Is what he told me.
+    text: ... is what he told me.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It is for the pleasure of collecting itself.
+    text: It is for the pleasure of collecting it.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -138,7 +131,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Next to solved crime.
+    text: Next to a solved crime.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 4
