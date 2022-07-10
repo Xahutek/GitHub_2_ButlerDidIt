@@ -1204,6 +1204,8 @@ MonoBehaviour:
   fullScreenCross: {fileID: 2613639718875743418}
   resTxt: {fileID: 2613639719017670273}
   volumeSlider: {fileID: 2613639720038807198}
+  music: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!1 &2613639720023561342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,8 +2242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.2899933, y: 1.0139999}
-  m_SizeDelta: {x: 11.9, y: -4.295}
+  m_AnchoredPosition: {x: -0.24000168, y: 0.2789998}
+  m_SizeDelta: {x: 14.97, y: -2.824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2613639720778580350
 CanvasRenderer:
@@ -2271,7 +2273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6962696294181110049, guid: a2af2614464859d47bbdc96f8fb79502, type: 3}
+  m_Sprite: {fileID: -2696506250795634678, guid: e233ff997c03d154294160d25aa0ed00, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
