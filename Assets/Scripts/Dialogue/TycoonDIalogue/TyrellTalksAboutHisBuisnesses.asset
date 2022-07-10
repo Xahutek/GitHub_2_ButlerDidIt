@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: TyrellTalksAboutHisBuisnesses
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 4, y: 9}
   includedCharacters: 
   Lines:
@@ -48,6 +49,21 @@ MonoBehaviour:
     isThought: 0
     text: And I work hard for all the money I make, I have 25 businesses to run.
     fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: But not all of them are about money for me, one buisness I am running is
+      a charity for women of modest means.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: (Tyrell would never give money away, something is fishy)
+    fixedClue: {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 0
