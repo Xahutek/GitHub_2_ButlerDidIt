@@ -17,7 +17,7 @@ MonoBehaviour:
   Portrait: {fileID: 5223635564414417333, guid: 4c2214943fd57ed4fb07f03362af51a4, type: 3}
   PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  knownToPlayer: 1
+  knownToPlayer: 0
   currentRoom: 0
   Timetable:
   - startHour: 0
@@ -50,6 +50,18 @@ MonoBehaviour:
     important: 0
   - startHour: 12
     room: 12
+    state: 0
+    important: 0
+  - startHour: 12
+    room: 12
+    state: 0
+    important: 0
+  - startHour: 15
+    room: 6
+    state: 0
+    important: 0
+  - startHour: 18
+    room: 2
     state: 0
     important: 0
   connectedClues:
