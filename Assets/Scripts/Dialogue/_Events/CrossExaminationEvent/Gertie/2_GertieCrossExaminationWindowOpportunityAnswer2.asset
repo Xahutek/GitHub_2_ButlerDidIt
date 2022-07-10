@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 2_GertieCrossExaminationWindowOpportunityAnswer2
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
+  includedCharacters: 0000000002000000030000000400000005000000
   Lines:
   - speaker: 0
     speakerEmotion: 0
@@ -27,14 +28,14 @@ MonoBehaviour:
     isThought: 0
     text: ...
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
     text: No comments from the crowd? Great, let's move on.
     fixedClue: {fileID: 0}
-    clueHidden: 0
+    spAnimTrigger: 
   ending: 4
   ResumeFixed: {fileID: 11400000, guid: 6020a2d29ecd9a748bf3934c7302835a, type: 2}
   availableAnswers: []
