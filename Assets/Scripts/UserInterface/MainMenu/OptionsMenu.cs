@@ -25,7 +25,7 @@ public class OptionsMenu : MonoBehaviour
             if (resolution.width / resolution.height == 16 / 9)
                 resos.Add(resolution);
         ResIndex = PlayerPrefs.GetInt(RESOLUTION_PRED_KEY, 0);
-        SetResText(Screen.currentResolution);
+        SetResText(Screen.width, Screen.height);
         PlayerPrefs.SetFloat("Master_Volume", 0.5f);
         PlayerPrefs.Save();
     }
@@ -59,6 +59,10 @@ public class OptionsMenu : MonoBehaviour
     private void SetResText(Resolution res)
     {
         resTxt.text = res.width + " x " + res.height;
+    }
+    private void SetResText(int x, int y)
+    {
+        resTxt.text = x + " x " + y;
     }
 
     #endregion
