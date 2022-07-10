@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EvaIKilledTheLord
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,14 +26,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I killed the Lord.
+    text: I killed the lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No no, don't cloud my judgement of the case with those attempts.
+    text: No, no, don't cloud my judgment of the case with those attempts.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2

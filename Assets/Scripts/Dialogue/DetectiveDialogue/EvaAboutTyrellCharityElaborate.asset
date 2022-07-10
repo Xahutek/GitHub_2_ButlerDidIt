@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EvaAboutTyrellCharityElaborate
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: No please elaborate, I also had a similar huch!
+    text: No, please elaborate, I also had a similar huch!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -67,14 +68,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes your right, of course!
+    text: Yes, you're right, of course!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: So dear butler, what do we know about Lord Tyrell!
+    text: So dear butler, what do we know about Lord Tyrell?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -95,14 +96,15 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Really, I thought the Lord was the undisputed richest animal on this earth?
+    text: Really, I thought the lord was undisputably the richest animal on this
+      earth?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: He was, yes but Tyrells networth went to the moon during the last quater.
+    text: He was, yes, but Tyrell's net worth went to the moon during the last quarter.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -116,7 +118,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: A suprising developement for someone who is recently giving his all to
+    text: A surprising development for someone who is recently giving his all to
       charity.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -131,8 +133,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Which leads us to deduct that his charity endeavour is somehow generating
-      more money at a shockingly fast rate!
+    text: Which leads us to the assumption that his charity endeavour is somehow
+      generating more money at a shockingly fast rate!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -181,7 +183,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: which he simply pays of with the deposits of more recent investors!
+    text: ...which he simply pays off with the deposits of more recent investors!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -318,7 +320,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: No please elaborate, I also had a similar huch!
+      text: No, please elaborate, I also had a similar hunch!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -360,14 +362,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Yes your right, of course!
+      text: Yes, you're right, of course!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: So dear butler, what do we know about Lord Tyrell!
+      text: So dear butler, what do we know about Lord Tyrell?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -388,7 +390,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Really, I thought the Lord was the undisputed richest animal on this
+      text: Really, I thought the lord was undisputably the richest animal on this
         earth?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -396,7 +398,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: He was, yes but Tyrells networth went to the moon during the last quater.
+      text: He was, yes, but Tyrell's net worth went to the moon during the last
+        quarter.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -410,8 +413,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: A suprising developement for someone who is recently giving his all to
-        charity.
+      text: A surprising development for someone who has recently been giving his
+        all to charity.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -425,8 +428,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Which leads us to deduct that his charity endeavour is somehow generating
-        more money at a shockingly fast rate!
+      text: Which leads us to the assumption that his charity endeavour is somehow
+        generating more money at a shockingly fast rate!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -475,7 +478,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: which he simply pays of with the deposits of more recent investors!
+      text: ... which he simply pays off with the deposits of more recent investors!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -542,8 +545,8 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: This might also be the reason he threw away Tyrells First Dollar in the
-        basement.
+      text: This might also be the reason he threw away Tyrell's First Dollar in
+        the basement.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -557,7 +560,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Presumably, if he knew that tyrell was exploiting widows and unmarried
+      text: Presumably, if he knew that Tyrell was exploiting widows and unmarried
         women to surpass him.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
@@ -586,21 +589,21 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Quite the interesting developement...
+      text: Quite the interesting development...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: It does not proove anything on its own...
+      text: It does not prove anything on its own...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: but we might be onto something!
+      text: ... but we might be onto something!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
   - description: Dollar Addition
@@ -618,7 +621,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Together with thr revolver I found in his luggage...
+      text: Together with the revolver I found in his luggage...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
@@ -632,16 +635,15 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: Let's just say that, if nothing unsuspected happens during the cross
-        examination, this might already be enough to hand this case over to Frogland
-        Yard.
+      text: Let's just say that if nothing unsuspected happens during the cross-examination,
+        this might already be enough to hand this case over to Frogland Yard.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 0
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: I seems like the great Eva Dence successfully completed another case!
+      text: I seems like the great Eva Dence successfully solved another case!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
@@ -655,7 +657,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: '"The Tycoon did it"'
+      text: '"The Tycoon did it".'
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2

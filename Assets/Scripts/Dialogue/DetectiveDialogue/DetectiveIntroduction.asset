@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DetectiveIntroduction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -43,7 +44,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: 24989956b0a2a024483df4a9c80695ce, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: '[Say Nothing]'
+  - text: '[Say nothing]'
     reaction: {fileID: 11400000, guid: 478939be1b629af45b45757643db74e7, type: 2}
     trigger: {fileID: 0}
     rewards: []

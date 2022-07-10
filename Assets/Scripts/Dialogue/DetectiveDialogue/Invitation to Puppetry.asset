@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Invitation to Puppetry
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: 2ee8fe8c041f5304bad96a3af3796033, type: 2}
   - {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
@@ -55,7 +56,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Meet me in the Puppetry at 2 o'clock <color=#a14744ff>p</color>ost <color=#a14744ff>m</color>eridiem.
+    text: Meet me in the puppetry at 2 <color=#a14744ff>p</color>ost <color=#a14744ff>m</color>eridiem.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2

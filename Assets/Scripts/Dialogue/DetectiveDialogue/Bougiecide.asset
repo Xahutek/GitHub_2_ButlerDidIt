@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Bougiecide
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -46,7 +47,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: In all seriousness, Mr. Diddit, my opinion on the house isn't that important
+    text: In all seriousness, Mr Diddit, my opinion on the house isn't that important
       right now. Someone died and I'd like to solve the case.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -66,7 +67,7 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: 24989956b0a2a024483df4a9c80695ce, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Perhaps not
+  - text: Perhaps not...
     reaction: {fileID: 11400000, guid: 24989956b0a2a024483df4a9c80695ce, type: 2}
     trigger: {fileID: 0}
     rewards: []
