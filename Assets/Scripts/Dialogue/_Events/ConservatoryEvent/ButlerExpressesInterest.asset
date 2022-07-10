@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ButlerExpressesInterest
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Naturally! I have been working here for almost 2 years now.
+    text: Naturally! I have been working here for almost two years now.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2

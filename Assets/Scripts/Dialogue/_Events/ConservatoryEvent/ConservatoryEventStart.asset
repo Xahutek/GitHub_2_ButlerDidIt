@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ConservatoryEventStart
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The day is slowly coming to a close.
+    text: The day is slowly coming to an end.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -74,7 +75,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Including you... Butler?
+    text: Including you... butler?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -88,7 +89,7 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: Of course!
+  - text: Of course.
     reaction: {fileID: 11400000, guid: 474e5c7d209decb4f800114ca216f823, type: 2}
     trigger: {fileID: 0}
     rewards: []

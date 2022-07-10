@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DetectiveGivesInfo
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -54,8 +55,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I am positive that we are all confident to leave the matter to your capable
-      mind.
+    text: 'I assume we all agree on this: we are confident to leave the matter to
+      your capable mind.'
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -90,7 +91,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It would be unfair to cloud the great detectives judgement prematurely.
+    text: It would be unfair to cloud the great detective's judgement prematurely.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -119,7 +120,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: I will collect my final thoughts and call you in for cross examination
-      30 minutes before midnight!
+      30 minutes to midnight!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2

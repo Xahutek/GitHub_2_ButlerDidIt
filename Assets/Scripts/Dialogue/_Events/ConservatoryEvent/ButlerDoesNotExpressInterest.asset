@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ButlerDoesNotExpressInterest
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -75,7 +76,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I believe that the dining room and the battlefield are very different to
+    text: I believe that the dining room and the battlefield are very similar to
       each other.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -91,7 +92,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Really, that must make downsizing such a hassle.
+    text: Really? That must make downsizing such a hassle.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 4
