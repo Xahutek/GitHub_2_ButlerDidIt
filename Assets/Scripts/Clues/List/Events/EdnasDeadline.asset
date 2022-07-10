@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
   m_Name: EdnasDeadline
   m_EditorClassIdentifier: 
-  name: Edna will kick in the Lord's door if he doesen't show himself until 9:00.
+  name: Edna will kick in the door to the lord's study if he doesn't show himself
+    until 9 o'clock.
   picture: {fileID: 0}
   required: []
   nullify: []
@@ -31,3 +32,4 @@ MonoBehaviour:
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
+  AlsoAffected: []

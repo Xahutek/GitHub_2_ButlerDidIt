@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3a104f77fce2c4587b3e5d06700f0b, type: 3}
   m_Name: GertieKnowsTheLordWasBad
   m_EditorClassIdentifier: 
-  name: Gertie knows of the Lord's terrible behaviour.
+  name: Gertie knows of the lord's terrible behaviour.
   picture: {fileID: 0}
   required: []
   nullify: []
   seenInInventory: 0
-  isInventoryClue: 0
+  isInventoryClue: 1
   isMindmapClue: 0
   presetButlerKnows: 0
   presetDetectiveKnows: 0
@@ -31,3 +31,4 @@ MonoBehaviour:
   TycoonKnows: 0
   GeneralKnows: 0
   GardenerKnows: 0
+  AlsoAffected: []
