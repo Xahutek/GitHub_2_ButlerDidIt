@@ -13,7 +13,6 @@ public class ClockDisplay : MonoBehaviour
 
     public Item PocketWatchItem;
 
-
     void FixedUpdate()
     {
         hourHand.localRotation = Quaternion.Euler(0, 0, -Clock.Hour * hoursToDegrees);
@@ -21,7 +20,7 @@ public class ClockDisplay : MonoBehaviour
 
         UpdateMarkers();
 
-        if (!PocketWatchItem.KnownTo(Character.Butler)||PocketWatchItem.givenAway)
+        if (PocketWatchItem != null && (!PocketWatchItem.KnownTo(Character.Butler)||PocketWatchItem.givenAway))
             gameObject.SetActive(false);
     }
 
