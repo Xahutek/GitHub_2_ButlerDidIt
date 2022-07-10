@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_TycoonGrapes
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: c2396e0031fab154a89444c426742377, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -53,14 +54,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Surely! Just... don't say that too lound in her presence, will you, butler?
+    text: Surely! Just... don't say that too loud in her presence, will you, butler?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I am sure it wont hurt to offer her a snack.
+    text: I am sure it won't hurt to offer her a snack.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
