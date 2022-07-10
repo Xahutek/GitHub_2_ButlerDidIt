@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_TycoonEdnaLordChildhoodPhoto
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 206f80b3915489b4c9961db8694207d2, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -39,7 +40,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: How delightful! She always was a sore looser!
+    text: How delightful! She always was a sore loser!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0

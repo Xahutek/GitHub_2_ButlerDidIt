@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Tyrell Goldbar
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: Ah! If it isn't the <i>Butler</i>.
+    text: Ah! If it isn't the <i>butler</i>.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -68,7 +69,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: Now I had to get <i>elephants</i> to carry it, but I'm sure Lord Deddington
+    text: I had to get <i>elephants</i> to carry it, but I'm sure Lord Deddington
       will appreciate the efforts.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -80,11 +81,11 @@ MonoBehaviour:
     reaction: {fileID: 11400000, guid: df7f6848cd47dcb459f01e581a4af71f, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Where is that Goldbar now?
+  - text: Where is that gold bar now?
     reaction: {fileID: 11400000, guid: 30d504048d3d09f4fb003cbcb6c5200e, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: I already have the gold bar
+  - text: I already have the gold bar.
     reaction: {fileID: 11400000, guid: 2b6658a8294c7434b8993f2b957aa698, type: 2}
     trigger: {fileID: 11400000, guid: ea1e031bac3080e49a8c8a7ee6b4ea77, type: 2}
     rewards: []

@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: DetectiveFrontyard
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: 1b09e430e90ef9f47958fab35a061130, type: 2}
   NecessaryCluesUnknown:
   - {fileID: 11400000, guid: e38e22fbcdde04e4a832aad2e1c20d24, type: 2}
   nullDialogue: 0
   unique: 0
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 15, y: 16}
   includedCharacters: 
   Lines:
@@ -70,11 +71,11 @@ MonoBehaviour:
   ResumeFixed: {fileID: 0}
   availableAnswers: []
   options:
-  - text: I would like to show you something
+  - text: I would like to show you something.
     reaction: {fileID: 11400000, guid: 49dfe6b6aeded09498f14cc29906caa6, type: 2}
     trigger: {fileID: 0}
     rewards: []
-  - text: Butler work is especially hard around 3 to 4 o'clock pm.
+  - text: Butler work is especially hard around 3 to 4 o'clock.
     reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
     trigger: {fileID: 0}
     rewards: []

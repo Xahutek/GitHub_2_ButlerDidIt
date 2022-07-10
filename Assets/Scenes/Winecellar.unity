@@ -941,7 +941,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: ae04410db71d7a143b97fb1a4cd73275, type: 2}
     - target: {fileID: 3475640701236340246, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
       propertyPath: AvailableTime.x
-      value: 21
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475640701236340246, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
+      propertyPath: AvailableTime.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3475640701236340246, guid: c7971e4a1bc975d4a886c083da79135d, type: 3}
       propertyPath: deactivateIfKnown

@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 5, y: 6.5}
   includedCharacters: 
   Lines:
@@ -33,15 +33,23 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: A great friend of the great detective that will arrive here veeery soon,
-      I'm sure.
+    text: A great friend of the great detective - who will also arrive here veeery
+      soon, I'm sure.
     fixedClue: {fileID: 11400000, guid: ef0a3fb94376fd14fa51300e2d76fa96, type: 2}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I've been looking forward to talk shop about detective business. I hope
+      he can match my level of intellect.
+    fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (Two crazy guests, one guest I have never heard of and one genius level
+    text: (Two crazy guests, one guest I have never heard of and one genius-level
       detective... just my luck.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 

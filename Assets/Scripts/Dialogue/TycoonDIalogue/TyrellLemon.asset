@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TyrellLemon
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown:
   - {fileID: 11400000, guid: d25bac856b6d6e142b038ebe5c67ecc7, type: 2}
   NecessaryCluesUnknown: []
@@ -26,14 +27,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: The Lord's passing is so tragic.
+    text: The lord's passing is so tragic.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: There was another gift I wanted Lord Deddington to recieve, may god rest
+    text: There was another gift I wanted Lord Deddington to receive, may God rest
       his soul.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -62,7 +63,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Personally, I can not get much out of it, but I heard the Lord was fond
+    text: Personally, I can not get much out of it, but I heard the lord was fond
       of them. May God rest his soul.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -137,7 +138,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: My grandfather, Theodor Theodoros T. Tyrell the first, always used to say
+    text: My grandfather, Theodor Theodoros T. Tyrell the First, always used to say
       "When life gives you lemons, make lemon ice."
     fixedClue: {fileID: 0}
     spAnimTrigger: 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: StudyChamberSus
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -67,7 +68,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But... this Tyrell fella seems to have visited on the day the Lord died.
+    text: But... this Tyrell fella seems to have visited on the day the lord died.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0

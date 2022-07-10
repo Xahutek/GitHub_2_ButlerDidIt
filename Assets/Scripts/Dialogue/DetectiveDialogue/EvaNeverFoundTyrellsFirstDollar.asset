@@ -10,67 +10,82 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: Invitation to Puppetry
+  m_Name: EvaNeverFoundTyrellsFirstDollar
   m_EditorClassIdentifier: 
-  Trigger_Optional: {fileID: 0}
+  Trigger_Optional: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
   TakeTriggerItemAway: 0
   NecessaryCluesKnown:
-  - {fileID: 11400000, guid: 2ee8fe8c041f5304bad96a3af3796033, type: 2}
-  - {fileID: 11400000, guid: b99314a40e4818f43b8747a74d1b9824, type: 2}
+  - {fileID: 11400000, guid: ae04410db71d7a143b97fb1a4cd73275, type: 2}
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
-  AvailabilityHours: {x: 12, y: 14}
-  includedCharacters: 
+  AvailabilityHours: {x: 20, y: 24}
+  includedCharacters: 0000000002000000
   Lines:
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Detective Dence, I came across a quite peculiar story concerning Lord Deddington's
+      relation to Lord Tyrell.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
   - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: STOP RIGHT THERE, CRIMINAL!
+    text: I'm listening!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: '!!!'
+    text: It looks like Lord Deddington kept Lord Tyrell's beloved first dollar hostage!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: (H-how did she figure it out so quickly!?)
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: You are being charged with working too much around the house!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Meet me in the puppetry at 2 <color=#a14744ff>p</color>ost <color=#a14744ff>m</color>eridiem.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 1
-    text: (There, I will explain the poisoned scone and disguise to you.)
+    text: Furthermore...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...S-see you then.
+    text: I found this dollar note in the basement!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This must be Tyrell's first earned dollar kept by the lord.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: ' Well, well, well. Now things are getting interesting.'
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Lord Deddington would only give it back once the Tycoon surpassed him in
+      wealth.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 2
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: This might be crucial information. Thank you for telling me this!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3

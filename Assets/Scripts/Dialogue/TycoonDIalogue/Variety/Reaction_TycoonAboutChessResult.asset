@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_TycoonAboutChessResult
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -118,14 +119,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Even if the Lord saw an opening... he would have never dared...
+    text: Even if the lord saw an opening... he would have never dared...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I agree, Lord Tyrell. Losing is is highly unusual behaviour for the General.
+    text: I agree, Lord Tyrell. Losing is is highly unusual behaviour for the general.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -149,7 +150,7 @@ MonoBehaviour:
     text: We would not want her ego to be bruised like that.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 3
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0

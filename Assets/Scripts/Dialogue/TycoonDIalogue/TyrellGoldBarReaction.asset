@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TyrellGoldBarReaction
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: ea1e031bac3080e49a8c8a7ee6b4ea77, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -39,8 +40,15 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Perhaps you would like to <color=#7a9047ff>show it around</color> the guests
+    text: Perhaps you would like to <color=#627537ff>show it around</color> the guests
       some more?
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Don't forget to mention that I was the one who brought this present.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 3

@@ -25,25 +25,15 @@ MonoBehaviour:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
-    isThought: 0
-    text: '[I have put the flowers next to Lord Deddington.]'
+    isThought: 1
+    text: (I could put down the flowers the look nice and innocent)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 4
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: <b>WHAT A TOUCHING GESTURE.</b>
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: Well, isn't that something nice.
-    fixedClue: {fileID: 11400000, guid: 4ea75cb4ff2cbe14cb8d1cc69c92ed9a, type: 2}
-    spAnimTrigger: 
-  ending: 4
+  ending: 1
   ResumeFixed: {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
-  availableAnswers: []
+  availableAnswers:
+  - text: 
+    reaction: {fileID: 11400000, guid: 7839240176153804eb97cf1295884c3f, type: 2}
+    trigger: {fileID: 11400000, guid: 7eec7896f356b8642bf2c426227f8986, type: 2}
+    rewards: []
   options: []

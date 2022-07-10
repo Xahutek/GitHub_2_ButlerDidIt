@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChessHint
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: 22abf79233f20db479d98427d0e94827, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I saw Lord Deddington prevail against the General in a game of chess before
+    text: I saw Lord Deddington prevail against the general in a game of chess before
       his unfortunate passing.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -34,7 +35,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: General Edna Tuskson herself <color=#987a6cff><i>lost </i></color>against
-      Lord Deddington!?
+      Lord Deddington?!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -65,7 +66,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Seems like the Lord could have <color=#987a6cff>one last great achievement</color>
+    text: Seems like the lord could have <color=#987a6cff>one last great achievement</color>
       before his passing.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -89,7 +90,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Yes, perhaps...<color=#7a9047ff>this loss</color> has something to do with
+    text: Yes, perhaps...<color=#627537ff>this loss</color> has something to do with
       the murder case!
     fixedClue: {fileID: 0}
     spAnimTrigger: 

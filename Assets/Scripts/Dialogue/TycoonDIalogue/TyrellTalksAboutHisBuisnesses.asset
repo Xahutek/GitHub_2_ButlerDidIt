@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 4, y: 9}
   includedCharacters: 
   Lines:
@@ -54,7 +54,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: But not all of them are about money for me, one buisness I am running is
+    text: But not all of them are about money for me, one business I am running is
       a charity for women of modest means.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -62,7 +62,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: (Tyrell would never give money away, something is fishy)
+    text: (Tyrell would never give money away, something is fishy...)
     fixedClue: {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
     spAnimTrigger: 
   - speaker: 3

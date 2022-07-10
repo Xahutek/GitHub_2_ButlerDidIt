@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: TyrellAboutFirstEarnedDollar
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 10.5, y: 24}
   includedCharacters: 0000000003000000
   Lines:
@@ -47,7 +48,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It's a matter of money.. nothing a Butler like you would know about...
+    text: It's a matter of money... nothing a butler like you would know about...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -75,8 +76,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: When I say money I am usually not talking about insigificant sums... like
-      your salary.
+    text: When I say 'money' I am usually not talking about insigificant sums...
+      like your salary.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -97,14 +98,14 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I was set out to surpass the Lord in wealth during the next quater!
+    text: I was set out to surpass the lord in wealth within the next quarter!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (he can't be seriously thinking about that now...)
+    text: (He can't seriously be thinking about that now...)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -118,7 +119,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Given my recent ventures it was inevetable, but that is not my point...
+    text: Given my recent ventures it was inevitable, but that is not my point...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -132,8 +133,8 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I once lost my First Dollar at a peticularly heated poker match at my fifth
-      mansion.
+    text: I once lost my first dollar at a particularly heated poker match at my
+      fifth mansion.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -147,7 +148,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...And I lost it to Lord Deddington... that cheating old bastard, may god
+    text: ...And I lost it to Lord Deddington... that cheating old bastard, may God
       rest his soul.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -155,7 +156,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: When I sobered up and asked him to give it back he refused!
+    text: When I sobered up and asked him to give it back, he refused!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -176,7 +177,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I earned it by selling Lemonade when I was half this size...
+    text: I earned it by selling lemonade when I was half this size...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -184,7 +185,7 @@ MonoBehaviour:
     otherReactions: []
     isThought: 0
     text: I only sold one glass to my father, but he was so impressed that he invested
-      into my future ventures ever since...
+      into my future ventures ever since.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -235,7 +236,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: to boast about it at parties behind my back...
+    text: To boast about it at parties behind my back...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3

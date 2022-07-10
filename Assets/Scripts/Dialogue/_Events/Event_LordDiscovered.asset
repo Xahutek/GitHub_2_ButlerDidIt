@@ -15,11 +15,13 @@ MonoBehaviour:
   SceneName: LordsStudy
   availableTime: {x: 9, y: 10}
   useRoomCam: 0
-  introduction: It's 09:00 Edna is kicking in Deddingtons door and all the guests
-    are gathering to wake the Lord.
+  introduction: It's 09:00. Edna is kicking in Deddingtons door and all the guests
+    are gathering to wake the lord.
   StartDialogue: {fileID: 11400000, guid: f8147d3f8af1c1849886bcdbe85d5a57, type: 2}
   EventDialogue:
   - {fileID: 11400000, guid: f8147d3f8af1c1849886bcdbe85d5a57, type: 2}
   - {fileID: 11400000, guid: e15a02a8405a9c847af3087849d28ef5, type: 2}
+  - {fileID: 11400000, guid: 1e7df28b8e6899c4b9a7f6409b340bce, type: 2}
+  - {fileID: 11400000, guid: 7839240176153804eb97cf1295884c3f, type: 2}
   NullDialogueReaction: {fileID: 11400000, guid: a586bfcdc1c87d84ba48945812df9a2b, type: 2}
   evaIsSus: 1

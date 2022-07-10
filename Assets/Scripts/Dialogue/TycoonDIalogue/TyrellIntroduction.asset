@@ -18,7 +18,7 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 1
+  seen: 0
   AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 0000000003000000
   Lines:
@@ -64,7 +64,7 @@ MonoBehaviour:
     speakerEmotion: 4
     otherReactions: []
     isThought: 0
-    text: Good, late evening, General Tuskson!
+    text: Good late evening, General Tuskson!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -92,7 +92,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...Good Evening, Lord Tyrell.
+    text: ...Good evening, Lord Tyrell.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -106,7 +106,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: I thought she was stationed oversees! Between us butler... just how early
+    text: I thought she was stationed oversees! Between us, butler... just how early
       did she manage to arrive?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -114,7 +114,7 @@ MonoBehaviour:
     speakerEmotion: 2
     otherReactions: []
     isThought: 1
-    text: (Time for me to present Tyrell with a <color=#627537ff>statement</color>.)
+    text: (Clues can be presented to people the same way items are presented.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
@@ -122,21 +122,14 @@ MonoBehaviour:
     otherReactions: []
     isThought: 1
     text: (Every clue I have collected, I will write down in my <color=#627537ff>notebook</color>,
-      which can be found under my yellow bookmark)
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 2
-    otherReactions: []
-    isThought: 1
-    text: (Clues can be presented to people the same way items are presented)
+      which can be found with my yellow bookmark.)
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
     speakerEmotion: 2
     otherReactions: []
     isThought: 0
-    text: So Butler, <color=#627537ff>how early did General Tuskson arrive</color>?
+    text: So butler, <color=#627537ff>how early did General Tuskson arrive</color>?
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 1

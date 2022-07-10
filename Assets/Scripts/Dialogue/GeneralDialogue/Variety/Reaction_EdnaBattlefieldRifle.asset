@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Reaction_EdnaBattlefieldRifle
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
-  TakeTriggerItemAway: 0
+  TakeTriggerItemAway: 1
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000004000000
   Lines:

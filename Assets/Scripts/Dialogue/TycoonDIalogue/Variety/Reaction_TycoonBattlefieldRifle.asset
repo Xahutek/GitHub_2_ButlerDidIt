@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reaction_TycoonBattlefieldRifle
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: f67cb301432830c48a4ef498bc9be355, type: 2}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -25,7 +26,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Ah, if this isn't the Lord's trophy rifle!
+    text: Ah, if this isn't the lord's trophy rifle!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3
@@ -83,7 +84,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: That's funny... After he boasted with it on one of his parties I immedeately
+    text: That's funny... After he boasted with it on one of his parties I immediately
       sent someone I trust to retrieve one for me as well.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
@@ -91,7 +92,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: And with trust I mean I payed them a ludicrous sum of money.
+    text: And with 'trust' I mean I payed them a ludicrous sum of money.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 3

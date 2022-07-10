@@ -13,26 +13,27 @@ MonoBehaviour:
   m_Name: EvaFindsTyrellsFirstDollarResponseElaborate
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 
+  includedCharacters: 0000000002000000
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: This might be Tyrells first earned dollar...
+    text: This might be Tyrell's first earned dollar...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: ...kept by the Lord.
+    text: ... kept by the Lord.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 2
@@ -50,7 +51,7 @@ MonoBehaviour:
       wealth.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 2
     speakerEmotion: 0
     otherReactions: []
     isThought: 0

@@ -104,10 +104,17 @@ public class DialogueManager : MonoBehaviour
         
         if (isOpen && normalMain == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
         {
+            if (arrivedAtEnd)
+            {
+                hardEscape = true;
+                Close();
+                return;
+            }
             if (!isExcused)
             {
                 hardEscape = true;
                 NextBubble();
+                return;
             }
         }
         if (!isOpen && !wasCleared)
