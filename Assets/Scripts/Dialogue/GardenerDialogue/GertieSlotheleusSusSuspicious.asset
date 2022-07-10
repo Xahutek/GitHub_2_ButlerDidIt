@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GertieSlotheleusSusSuspicious
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
@@ -28,7 +29,7 @@ MonoBehaviour:
     text: He replaced the Lords very own, very specific morning scone.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 0
+  - speaker: 5
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
@@ -40,8 +41,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 1
-    text: (A different breakfast for the Lord? If this wasn't a User Testing build
-      I'm sure i could investigate this.)
+    text: (A different breakfast for the Lord? What was the idea behind that?)
     fixedClue: {fileID: 11400000, guid: 35a338698c6387e4fa81dc9593a12334, type: 2}
     spAnimTrigger: 
   ending: 3
