@@ -35,6 +35,12 @@ public class EventDialogueManager : DialogueManager
 
     public override void Close()
     {
+        if (hardEscape)
+        {
+            hardEscape = false;
+            return;
+        }
+
         main = normalMain;
         base.Close();
     }

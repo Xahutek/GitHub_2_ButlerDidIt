@@ -45,6 +45,7 @@ public class DialogueManager : MonoBehaviour
                     if(C == null) //fix for Character destroyed on room change
                     {
                         hardEscape = true;
+                        Debug.LogError("Missing Character Object in Dialogue Manager! Locus could not be found.");
                         Close();
                         return pos;
                     }
@@ -103,11 +104,17 @@ public class DialogueManager : MonoBehaviour
         
         if (isOpen && main == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
         {
-            hardEscape = true;
-            Close();
+            if (!isExcused)
+            {
+                hardEscape = true;
+                NextBubble();
+            }
         }
         if (!isOpen && !wasCleared)
+        {
+            Debug.Log("Emergency Clear");
             Clear();
+        }
 
         if (isOpen && main == this && dialogueCameraLocus) 
             dialogueCameraLocus.position = Locus + Vector2.left * inventoryUI.OpenStateLerp;
@@ -123,6 +130,7 @@ public class DialogueManager : MonoBehaviour
         isOpen = true;
         wasCleared = false;
         hardEscape = false;
+        isExcused = false;
 
         CharacterObjects = new List<InteractableCharacter>();
         Characters = new List<Character>();
@@ -147,7 +155,7 @@ public class DialogueManager : MonoBehaviour
         SetDialogue(D);
     }
 
-    protected bool hardEscape;
+    protected bool hardEscape, isExcused;
     public virtual void Close()
     {
         if (!isOpen) return;
@@ -158,7 +166,6 @@ public class DialogueManager : MonoBehaviour
             bool isQuestion = dialogue.ending != Dialogue.EndingType.Open && dialogue.ending != Dialogue.EndingType.Closed && dialogue.ending != Dialogue.EndingType.Fixed;
             if (!isQuestion) dialogue.End();
         }
-
 
         foreach (InteractableCharacter I in CharacterObjects)
         {
@@ -234,6 +241,7 @@ public class DialogueManager : MonoBehaviour
     {
         if(D==null)
         {
+            Debug.Log("Dialogue Missing");
             Close();
             return;
         }
@@ -304,10 +312,16 @@ public class DialogueManager : MonoBehaviour
         if (isRefreshing) yield break;
         isRefreshing = true;
 
+        if (isExcused)
+        {
+            Close();
+            isRefreshing=false;
+            yield break;
+        }
         if (dialogue == null)
         {
             Clear();
-            isRefreshing=false;
+            isRefreshing = false;
             yield break;
         }
         soundManager.PlayOneShot(bubbleSound, true);
@@ -339,7 +353,7 @@ public class DialogueManager : MonoBehaviour
 
         wasIntermitted = false;
 
-        //Refresh
+        //REFRESH
         for (int i = 0; i < bubbles.Count; i++)
         {
             SpeechBubble B = bubbles[i];
@@ -347,6 +361,27 @@ public class DialogueManager : MonoBehaviour
             int line = this.line - i;
             bool isNew = i == 0;
 
+            if (isNew && hardEscape)
+            {
+                isExcused = true;
+                Vector2 thisRoot = Locus + Vector2.left * BoxHorizontalSpacing * BoxHorizontalSign;
+
+                Dialogue.Line L = new Dialogue.Line(Character.Butler, "If you would excuse me! My vow to good service requires me to be elswhere...");
+                B.Refresh(this, L, thisRoot, height, true);
+
+                currentlyTyping = B;
+
+                gainedClue = null;
+                wasIntermitted = true;
+
+                ClearAnimations();
+
+                yield return new WaitForFixedUpdate();
+
+                height += B.height * BaseScale + BoxVerticalSpacing;
+
+                continue;
+            }
             if (i >= Mathf.Min(maxDisplayedContent, bubbles.Count - 1)) //Above Limit
             {
                 B.Disappear();
