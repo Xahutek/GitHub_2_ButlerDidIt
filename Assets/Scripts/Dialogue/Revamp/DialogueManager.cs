@@ -93,7 +93,7 @@ public class DialogueManager : MonoBehaviour
     {
         bool NextAction = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return);
 
-        if ((NextAction || NextQueued) && isOpen && !arrivedAtEnd)
+        if ((NextAction || NextQueued) && isOpen && !Mindmap.isOpen && !arrivedAtEnd)
         {
             if (!NextQueued && currentlyTyping != null && currentlyTyping.isTyping)
                 SkipTypewriter();
@@ -102,7 +102,7 @@ public class DialogueManager : MonoBehaviour
             else NextQueued = true;
         }
         
-        if (isOpen && normalMain == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
+        if (isOpen && !Mindmap.isOpen && normalMain == this && (!isRefreshing && Input.GetKeyDown(KeyCode.Escape)))
         {
             if (arrivedAtEnd)
             {
