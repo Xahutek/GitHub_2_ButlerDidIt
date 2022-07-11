@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Conservatory
   availableTime: {x: 18.5, y: 19}
-  introduction: You all gather for dinner in the conservatory.
+  useRoomCam: 0
+  introduction: You all gather for tea in the conservatory.
   StartDialogue: {fileID: 11400000, guid: 06d4897aadbc10146a25e0a6ea56b580, type: 2}
   EventDialogue: []
   NullDialogueReaction: {fileID: 11400000, guid: a586bfcdc1c87d84ba48945812df9a2b, type: 2}
+  evaIsSus: 0
