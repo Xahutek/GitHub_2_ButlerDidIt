@@ -22,6 +22,8 @@ public class Mindmap : MonoBehaviour
 
     Tween tween;
 
+    float ToggleTime=0;
+
     public delegate void MindmapToggleDelegate(bool on,float duration, Vector3 mid);
     public event MindmapToggleDelegate OnMindmapToggle;
     public void ToggleEvent(bool on, float duration)
@@ -60,14 +62,15 @@ public class Mindmap : MonoBehaviour
 
     private void Update()
     {
-
         if (GameLoadData.difficulty != Difficulty.Butler && (Input.GetKeyUp(KeyCode.Tab) || (isOpen && Input.GetKeyUp(KeyCode.Escape))))
             Toggle();
     }
 
     public void Toggle()
     {
-        Debug.Log(GameLoadData.difficulty);
+        if ( Time.time-ToggleTime < fadeDuration * 3f) return;
+
+        ToggleTime = Time.time;
 
         if (isOpen)
             Close();

@@ -105,7 +105,7 @@ public class RoomSpace : MonoBehaviour
     public void Reload()
     {
         isLoaded = SceneManager.GetSceneByName(SceneName).isLoaded;
-        if (!isOpen||!isLoaded||loadWasQueued) return;
+        if (!isLoaded||loadWasQueued) return;
 
         SceneManager.UnloadSceneAsync(SceneName);
         SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
