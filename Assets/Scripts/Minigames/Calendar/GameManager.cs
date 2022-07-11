@@ -69,7 +69,7 @@ namespace Calendar
 
             if(Clock.main.currentHour >= 9) 
             {
-                resultText.text = "Eva already inspected this room, changing the calendar now won't change anything.";
+                resultText.text = "Eva already inspected this room, altering the calendar now won't change anything.";
             }
             else
             {
@@ -79,13 +79,13 @@ namespace Calendar
                         resultText.text = "How the Lord left it, a cross each day.";
                         break;
                     case GameState.EdnaSus:
-                        resultText.text = "The General visited last that day.";
+                        resultText.text = "The general visited last that day.";
                         break;
                     case GameState.TyrellSus:
-                        resultText.text = "The Tycoon came for a visit to this date.";
+                        resultText.text = "The tycoon came for a visit to this date.";
                         break;
                     default: //not getting anywhere
-                        resultText.text = "Who am I trying to fool with this.";
+                        resultText.text = "Who am I trying to fool with this?";
                         break;
                 }
             }            
