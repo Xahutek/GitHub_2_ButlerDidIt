@@ -77,7 +77,7 @@ public class LiftPortal : Portal
                 LiftInterior.Locus = null;
                 Locus=null;
                 cancel = true;
-                Comment.main.ShowComment("Floor Unavailable. It is still to dark down there!", 3f, 0.75f);
+                Comment.main.ShowComment("Floor unavailable. It is still too dark down there!", 3f, 0.75f);
             }
             if (cancel)
             {
