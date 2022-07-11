@@ -111,13 +111,14 @@ public class Clue : ScriptableObject
 
     public virtual void ApplyAlsoAffected()
     {
+        if (AlsoAffected.Length == 0) return;
         foreach (Clue c in AlsoAffected)
         {
-            if(c)
-            foreach (Character character in System.Enum.GetValues(typeof(Character)))
-            {
-                c.AlterKnown(character, KnownTo(character));
-            }
+            if (c)
+                foreach (Character character in System.Enum.GetValues(typeof(Character)))
+                {
+                    c.AlterKnown(character, KnownTo(character));
+                }
         }
     }
 
