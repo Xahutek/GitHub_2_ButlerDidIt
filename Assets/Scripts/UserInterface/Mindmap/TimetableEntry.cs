@@ -22,6 +22,24 @@ public class TimetableEntry : MonoBehaviour
 
         TimeText.text = string.Format("{0:00}:{1:00}", hours, minutes);
 
-        PlaceText.text = entry.room.ToString();
+        PlaceText.text = RoomName(entry.room);
     }
-}
+    private string RoomName(Room room)
+    {
+        string result = room.ToString().Replace("_", " ");
+
+        switch (result.Substring(0, 4))
+        {
+            case "Lord":
+                result = result.Insert(4, "'");
+                break;
+            case "Gert":
+                result = result.Insert(6, "'");
+                break;
+            default:
+                break;
+        }
+        return result;
+    }
+
+    }
