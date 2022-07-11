@@ -300,10 +300,22 @@ MonoBehaviour:
     text: but we might be onto something!
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 3
-  ResumeFixed: {fileID: 0}
+  ending: 2
+  ResumeFixed: {fileID: 11400000, guid: b5f45aae7caa01b4c9771978fcdd8a94, type: 2}
   availableAnswers: []
-  options: []
+  options:
+  - text: The plot is thickening indeed
+    reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
+    trigger: {fileID: 0}
+    knownToCharacter: 0
+    rewards:
+    - {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
+  - text: I have some more info...
+    reaction: {fileID: 11400000, guid: b5f45aae7caa01b4c9771978fcdd8a94, type: 2}
+    trigger: {fileID: 0}
+    knownToCharacter: 0
+    rewards:
+    - {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
   Segments:
   - description: 
     trigger:

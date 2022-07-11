@@ -80,14 +80,16 @@ MonoBehaviour:
   - text: Tell me more about Tyrell's business.
     reaction: {fileID: 11400000, guid: 7ecb17abf4234d94c85c518dd3e3bb29, type: 2}
     trigger: {fileID: 0}
+    knownToCharacter: 0
     rewards:
     - {fileID: 11400000, guid: 473d9b0852ce2f84aaf441b7ecd3a5f1, type: 2}
-    - {fileID: 11400000, guid: df3cdd124d6759c46a683e0fd11a0a89, type: 2}
   - text: I would like to tell you something...
     reaction: {fileID: 11400000, guid: 49dfe6b6aeded09498f14cc29906caa6, type: 2}
     trigger: {fileID: 0}
+    knownToCharacter: 0
     rewards: []
   - text: What is your current suspicion?
     reaction: {fileID: 11400000, guid: ab82347dedf1c894a9a29904e282fb19, type: 2}
     trigger: {fileID: 0}
+    knownToCharacter: 0
     rewards: []
