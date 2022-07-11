@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ImposterSwitch : MonoBehaviour
 {   
-    void Start()
+    void OnEnable()
     {
         InteractableCharacter cha = GetComponentInParent<InteractableCharacter>();
         if (cha != null)
