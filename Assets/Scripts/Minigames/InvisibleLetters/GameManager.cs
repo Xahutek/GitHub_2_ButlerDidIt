@@ -35,13 +35,13 @@ namespace Letters
                     resultText.text = "I could burn those useless letters from Gertie.";
                     break;
                 case GameState.Deciphered:
-                    resultText.text = "The Lord had some impressive ways of communicating.";
+                    resultText.text = "The lord had some impressive ways of communicating.";
                     break;
                 case GameState.Burnt:
-                    resultText.text = "Those letters are gone forever";
+                    resultText.text = "Those letters are gone forever.";
                     break;
                 default: //not getting anywhere
-                    resultText.text = "Fire... source of warmth and absolute destruction..";
+                    resultText.text = "Fire... source of warmth and absolute destruction...";
                     LetterHold.main.gameObject.SetActive(false);
                     break;
             }

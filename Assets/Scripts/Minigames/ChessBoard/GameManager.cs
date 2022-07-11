@@ -38,16 +38,16 @@ namespace ChessBoard
             switch (gameState)
             {
                 case GameState.Playing:
-                    resultText.text = "Who am I trying to fool with this..?";
+                    resultText.text = "Who am I trying to fool with this?";
                     break;
                 case GameState.Draw:
                     resultText.text = "This looks inconclusive.";
                     break;
                 case GameState.BlackWins:
-                    resultText.text = "One would almost believe the Lord finally won...";
+                    resultText.text = "One would almost believe the lord finally won...";
                     break;
                 case GameState.WhiteWins:
-                    resultText.text = "Looks like White won... Edna presumably";
+                    resultText.text = "Looks like white won... Edna presumably.";
                     break;
                 default:
                     break;
