@@ -363,9 +363,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5184765985213402008}
-          m_TargetAssemblyTypeName: InfoKnot, Assembly-CSharp
-          m_MethodName: Pick
+        - m_Target: {fileID: 1687398471548781351}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: Select
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
