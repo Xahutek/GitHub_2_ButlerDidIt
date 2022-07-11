@@ -3839,19 +3839,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81bbcd1a0a9234f46851d32f98759164, type: 2}
   - {fileID: 11400000, guid: dd16fa70bef7d1944aa20aabf2f21f15, type: 2}
   allIntermissions:
-  - message: I just murdered the lord... I had to do it! Now suddenly, the door rings!
+  - message: "I just murdered the lord... I had to do it! \nSuddenly, the doorbell
+      rings..."
     availableTime: {x: 0.01, y: 0.01}
     gainedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     sfx:
     - {fileID: 8300000, guid: e15b7d60b8b715a4db50f6820f7cd9da, type: 3}
     passed: 0
-  - message: The door rings...again!?
+  - message: The doorbell rings... again?!
     availableTime: {x: 3, y: 3}
     gainedClue: {fileID: 0}
     sfx:
     - {fileID: 8300000, guid: e15b7d60b8b715a4db50f6820f7cd9da, type: 3}
     passed: 0
-  - message: The door rings once more...
+  - message: The doorbell rings once more...
     availableTime: {x: 5, y: 5}
     gainedClue: {fileID: 0}
     sfx:
