@@ -111,7 +111,7 @@ public class Clue : ScriptableObject
 
     public virtual void ApplyAlsoAffected()
     {
-        if (AlsoAffected.Length == 0) return;
+        if (AlsoAffected == null || AlsoAffected.Length == 0) return;
         foreach (Clue c in AlsoAffected)
         {
             if (c)
