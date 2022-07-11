@@ -18,7 +18,7 @@ public class LiftInterior : MonoBehaviour
     private Vector3 originRot;
     private float addangle = 75;
     private Tween rotTween, squashTween;
-    private int currentLevel;
+    public int currentLevel;
     private bool travelState;
         
     private void Start()

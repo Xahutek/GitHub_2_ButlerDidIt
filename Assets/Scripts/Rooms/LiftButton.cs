@@ -10,6 +10,8 @@ public class LiftButton : MonoBehaviour
     Collider2D col;
     public int floor;
 
+    public GameObject Highlight;
+
     public Tween scaleTween;
     bool isOpen;
 
@@ -23,6 +25,7 @@ public class LiftButton : MonoBehaviour
     public void Activation()
     {
         gameObject.SetActive(isOpen);
+        Highlight.SetActive(interior.currentLevel==floor);
     }
 
     private void Awake()
