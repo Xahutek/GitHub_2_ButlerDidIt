@@ -207,20 +207,22 @@ public class DialogueManager : MonoBehaviour
         {
             case Dialogue.EndingType.Open:
                 nextDialogue = GetClueDialogue(C);
-                foreach (Character c in Characters)
-                {
-                    C.MakeKnownTo(c);
-                }
+                if (!nextDialogue.nullDialogue)
+                    foreach (Character c in Characters)
+                    {
+                        C.MakeKnownTo(c);
+                    }
                 SetDialogue(nextDialogue);
                 PlayerController.main.OnPickClueValid(C);
                 break;
             case Dialogue.EndingType.OpenQuestion:
                 nextDialogue = dialogue.GetOpenQuestionReaction(C);
                 if (nextDialogue == null) return;
-                foreach (Character c in Characters)
-                {
-                    C.MakeKnownTo(c);
-                }
+                if (!nextDialogue.nullDialogue)
+                    foreach (Character c in Characters)
+                    {
+                        C.MakeKnownTo(c);
+                    }
                 SetDialogue(nextDialogue);
                 PlayerController.main.OnPickClueValid(C);
                 break;

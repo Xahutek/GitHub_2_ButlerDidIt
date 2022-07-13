@@ -10,72 +10,61 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6217398b78321704eb9df0abaa127138, type: 3}
-  m_Name: EvaAboutTyrellsFirstDollar
+  m_Name: Reaction_TycoonFirstDollarTruth
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 11400000, guid: ae04410db71d7a143b97fb1a4cd73275, type: 2}
-  TakeTriggerItemAway: 0
+  TakeTriggerItemAway: 1
   NecessaryCluesKnown: []
-  NecessaryCluesUnknown:
-  - {fileID: 11400000, guid: 4c6e168c50352f948acddb294d1e72c6, type: 2}
+  NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
   seen: 0
   AvailabilityHours: {x: 0, y: 24}
-  includedCharacters: 0000000002000000
+  includedCharacters: 0000000003000000
   Lines:
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: I found this in the basement.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: A single old <i>dollar</i>!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: We can't even use these!
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 2
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: But perhaps... this dollar has a meaning to it?
+    text: I am afraid not...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: It was just behind some unopened wine bottles.
+    text: I found it behind some unopened Winebottles...
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  - speaker: 2
+  - speaker: 0
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: Do you have a suspicion?
+    text: On the winecellar floor.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
-  ending: 2
-  ResumeFixed: {fileID: 0}
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Do you mean he just...
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 3
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: Threw it away?!
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  - speaker: 0
+    speakerEmotion: 0
+    otherReactions: []
+    isThought: 0
+    text: I am afraid he did.
+    fixedClue: {fileID: 0}
+    spAnimTrigger: 
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: 6b8b7f3e5634f8e45a14bb6bed988362, type: 2}
   availableAnswers: []
-  options:
-  - text: As it happens, I do...
-    reaction: {fileID: 11400000, guid: f64f11dbbb398cb449775f51f50fb6ec, type: 2}
-    trigger: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
-    knownToCharacter: 0
-    rewards: []
-  - text: Sadly, no.
-    reaction: {fileID: 11400000, guid: 6f575b6ba79fe6f43bd1ad703d849012, type: 2}
-    trigger: {fileID: 0}
-    knownToCharacter: 0
-    rewards: []
+  options: []
