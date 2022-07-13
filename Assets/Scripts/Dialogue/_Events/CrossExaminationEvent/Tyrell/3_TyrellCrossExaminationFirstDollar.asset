@@ -176,7 +176,7 @@ MonoBehaviour:
       text: And why would I want that?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: 
+  - description: Eva has no idea about Dollar
     trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
@@ -201,12 +201,12 @@ MonoBehaviour:
       text: Moving on.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
-  - description: 
+  - description: Eva has and knows about Dollar
     trigger:
       activateClueTrigger: 1
       clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
       knowingCharacters: 02000000
-      unknowingCharacters: 
+      unknowingCharacters: 03000000
       activateSuspicionTrigger: 0
       c: 0
       mode: 0
@@ -241,6 +241,67 @@ MonoBehaviour:
         him in sheer networth.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
+  - description: Eva knows about but doesent have Dollar
+    trigger:
+      activateClueTrigger: 1
+      clue: {fileID: 11400000, guid: 45c58d202af72d241801d692141310a2, type: 2}
+      knowingCharacters: 0200000003000000
+      unknowingCharacters: 
+      activateSuspicionTrigger: 0
+      c: 0
+      mode: 0
+      suspicion: 0
+    content:
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Because the Lord kept your first ever earned dollar.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: What an interesting theory...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: It is quite the story indeed.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: This is the first time I've heared of it!
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 3
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Do you have any proof?
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: no... but I do know that Lord Deddington kept said dollar hostage until
+        you surpassed him in wealth.
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: Which never happened...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
   - description: 
     trigger:
       activateClueTrigger: 1
@@ -256,14 +317,14 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: This alone is suspicious, but is it reason enough to kill Lord Deddington?
+      text: Is any of this reason enough to kill Lord Deddington?
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: As far as I know, you would have reached that goal within the next quarter.
+      text: As far as I know, you would have surpassed him within the next quarter.
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -289,7 +350,7 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: And the reason for why the Lord did not return the dollar to you is simple...
+      text: And the reason for the conflict between you and the is simple...
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 3
@@ -318,8 +379,21 @@ MonoBehaviour:
       speakerEmotion: 0
       otherReactions: []
       isThought: 0
-      text: When Lord Deddington caught wind of your fraud schemes, he refused to
-        return the dollar to you until you earned it through honest means.
+      text: When Lord Deddington caught wind of your fraud schemes...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...he refused to acknowledge any profits earned with them...
+      fixedClue: {fileID: 0}
+      spAnimTrigger: 
+    - speaker: 2
+      speakerEmotion: 0
+      otherReactions: []
+      isThought: 0
+      text: ...Insisting that you have to surpass him by honest means!
       fixedClue: {fileID: 0}
       spAnimTrigger: 
     - speaker: 2
