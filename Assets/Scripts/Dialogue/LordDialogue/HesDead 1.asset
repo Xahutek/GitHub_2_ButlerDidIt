@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: HesDead 1
   m_EditorClassIdentifier: 
   Trigger_Optional: {fileID: 0}
+  TakeTriggerItemAway: 0
   NecessaryCluesKnown: []
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 1
-  seen: 0
+  seen: 1
   AvailabilityHours: {x: 0, y: 24}
   includedCharacters: 0000000001000000
   Lines:
@@ -35,7 +36,17 @@ MonoBehaviour:
     text: And I killed him.
     fixedClue: {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
     spAnimTrigger: 
-  ending: 3
-  ResumeFixed: {fileID: 0}
+  ending: 4
+  ResumeFixed: {fileID: 11400000, guid: e3ac255a98d21174aa7835d8e237690b, type: 2}
   availableAnswers: []
-  options: []
+  options:
+  - text: 
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    knownToCharacter: 0
+    rewards: []
+  - text: 
+    reaction: {fileID: 0}
+    trigger: {fileID: 0}
+    knownToCharacter: 0
+    rewards: []

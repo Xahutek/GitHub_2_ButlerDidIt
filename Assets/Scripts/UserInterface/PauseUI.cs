@@ -7,6 +7,10 @@ public class PauseUI : MonoBehaviour
     public static bool isOpen;
 
     public GameObject menu;
+    public GameObject OverrideSaveWindow;
+    public GameObject ConfirmDelete;
+
+    public Clue SaveClue, SaveDeletedClue;
 
     private void Awake()
     {
@@ -39,11 +43,12 @@ public class PauseUI : MonoBehaviour
         if (!isOpen) return;
 
         isOpen = false;
-
         GlobalBlackscreen.multiplier = 2;
         GlobalBlackscreen.on = true;
 
         Invoke("ToggleDelayed", 0.5f);
+        ConfirmDelete.SetActive(false);
+        OverrideSaveWindow.SetActive(false);
     }
 
     public void ToggleDelayed()
@@ -60,5 +65,24 @@ public class PauseUI : MonoBehaviour
         SaveSystem.SaveProgress();
 
         Application.Quit();
+    }
+
+    public void SaveGame()
+    {
+        SaveSystem.SaveProgress();
+        EventSystem.main.GetClue(SaveClue);
+    }
+    public void DeleteSave()
+    {
+        SaveSystem.SaveNewGame();
+        EventSystem.main.GetClue(SaveDeletedClue);
+    }
+    public void OpenWindow(GameObject window)
+    {
+        window.SetActive(true);
+    }
+    public void CloseWindow(GameObject window)
+    {
+        window.SetActive(false);
     }
 }

@@ -18,24 +18,10 @@ MonoBehaviour:
   NecessaryCluesUnknown: []
   nullDialogue: 0
   unique: 0
-  seen: 0
-  AvailabilityHours: {x: 0, y: 24}
+  seen: 1
+  AvailabilityHours: {x: 0, y: 9}
   includedCharacters: 
   Lines:
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: He's dead.
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
-  - speaker: 0
-    speakerEmotion: 0
-    otherReactions: []
-    isThought: 0
-    text: And I killed him...
-    fixedClue: {fileID: 0}
-    spAnimTrigger: 
   - speaker: 0
     speakerEmotion: 0
     otherReactions: []
@@ -48,7 +34,7 @@ MonoBehaviour:
     speakerEmotion: 0
     otherReactions: []
     isThought: 0
-    text: If where to clean them, it could help myself seem innocent.
+    text: If I where to clean them, it would be hard to figure out what did him in.
     fixedClue: {fileID: 0}
     spAnimTrigger: 
   ending: 2
@@ -56,12 +42,12 @@ MonoBehaviour:
   availableAnswers: []
   options:
   - text: '[Clean the glass shards]'
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: 7ff7fe573118c5d43b4d95dff76c3440, type: 2}
     trigger: {fileID: 0}
     knownToCharacter: 0
     rewards: []
   - text: '[Step away from the body]'
-    reaction: {fileID: 0}
+    reaction: {fileID: 11400000, guid: db52bb248a7fae646913720567e894bb, type: 2}
     trigger: {fileID: 0}
     knownToCharacter: 0
     rewards: []
