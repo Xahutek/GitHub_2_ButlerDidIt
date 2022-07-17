@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DiningHallPaintings
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: e743104e63dac3c4384bff6ade8b46ff, type: 3}
+    - {fileID: 2800000, guid: 5c1fc95608cf5554abe28c296e3a9b06, type: 3}
+    - {fileID: 2800000, guid: 6c921ccaf3b6f544e9c2152cb3be0b67, type: 3}
+    - {fileID: 2800000, guid: 30c23f9445ddf094abdd32d90afc4fa0, type: 3}
+    - {fileID: 2800000, guid: a606d4e4079f49149aacd0d4ec02d5cc, type: 3}
+    - {fileID: 2800000, guid: f3a58e6e49a32584090bc381270ce779, type: 3}
+    - {fileID: 2800000, guid: e64caac0d329a6747956d198058daaad, type: 3}
+    - {fileID: 2800000, guid: bc3b383a4ef2f43428d2171ccc55565b, type: 3}
+    - {fileID: 2800000, guid: 0828bf59707166f49b5d434e5ba5cd1f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e64caac0d329a6747956d198058daaad, type: 3}
+  - {fileID: 21300000, guid: 30c23f9445ddf094abdd32d90afc4fa0, type: 3}
+  - {fileID: 21300000, guid: a606d4e4079f49149aacd0d4ec02d5cc, type: 3}
+  - {fileID: 21300000, guid: 5c1fc95608cf5554abe28c296e3a9b06, type: 3}
+  - {fileID: 21300000, guid: 0828bf59707166f49b5d434e5ba5cd1f, type: 3}
+  - {fileID: 21300000, guid: bc3b383a4ef2f43428d2171ccc55565b, type: 3}
+  - {fileID: 21300000, guid: 6c921ccaf3b6f544e9c2152cb3be0b67, type: 3}
+  - {fileID: 21300000, guid: e743104e63dac3c4384bff6ade8b46ff, type: 3}
+  - {fileID: 21300000, guid: f3a58e6e49a32584090bc381270ce779, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - wolfman
+  - SirBun
+  - otter1
+  - BigEyeCat
+  - otter2
+  - EdnasGrandPa
+  - MouseLady
+  - Ox
+  - beaverman
+  m_RenderDataMap: {}
+  m_Tag: DiningHallPaintings
+  m_IsVariant: 0
