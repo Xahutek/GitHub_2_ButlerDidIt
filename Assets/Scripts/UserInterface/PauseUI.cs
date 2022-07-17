@@ -9,7 +9,7 @@ public class PauseUI : MonoBehaviour
     public GameObject menu;
     public GameObject OverrideSaveWindow;
     public GameObject ConfirmDelete;
-
+    public GameObject Controls;
     public Clue SaveClue, SaveDeletedClue;
 
     private void Awake()
@@ -49,6 +49,7 @@ public class PauseUI : MonoBehaviour
         Invoke("ToggleDelayed", 0.5f);
         ConfirmDelete.SetActive(false);
         OverrideSaveWindow.SetActive(false);
+        Controls.SetActive(false);
     }
 
     public void ToggleDelayed()
