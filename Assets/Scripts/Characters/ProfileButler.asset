@@ -18,13 +18,14 @@ MonoBehaviour:
   PortraitObject: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
   knownToPlayer: 1
-  currentRoom: 8
+  currentRoom: 9
   Timetable:
   - startHour: 0
     room: 5
     state: 0
     important: 0
   connectedClues:
+  - {fileID: 11400000, guid: e34388c6031abdb4caaf7473567f122e, type: 2}
   - {fileID: 11400000, guid: a0ef567f21a17e444923654281cd4a79, type: 2}
   - {fileID: 11400000, guid: 36451c991faaf824bb97150b1dc2dcc8, type: 2}
   - {fileID: 11400000, guid: a724cea2f55e3394dac3c568832bbb6c, type: 2}
